@@ -28,7 +28,7 @@
     <div class="jumbotron">
       <div class="container">
         <h1>Lebiocoin</h1>
-        <p>&Eacutechanges de fruits et légumes depuis 2015</p>
+        <p>&Eacutechanges de fruits et l&eacutegumes depuis 2015</p>
       </div>
     </div> 
 
@@ -41,7 +41,7 @@
       <div class= "col-md-2 col-lg-3">
         <div class ="newsletter">
        <h4>Newsletter</h4>
-       <p>Inscrivez-vous à</p>
+       <p>Inscrivez-vous &agrave</p>
        <p>notre   newsletter :</p>
         <ul>
           <p id="p01">mail</p>
@@ -52,14 +52,14 @@
      
      <div class= "slogan">
      <div class= "col-md-4 col-lg-3">
-        <h4>C'est BON, c'est BEAU, c'est BIO pour la santé !</h4>
+        <h4>C'est BON, c'est BEAU, c'est BIO pour la sant&eacute !</h4>
      </div>
      </div>
      
      
       <div class="actus">
        <div class="col-md-4 col-lg-3">
-          <h2>Actualités</h2>
+          <h2>Actualit&eacutes</h2>
           <p> Les produits stars de la saison ! </p>
        </div>
      </div>
