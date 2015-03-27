@@ -8,8 +8,5 @@
 p1{
 	color:red;
 }
-input{
-	type:text; /*cette ligne ne fait rien, il faut laisser type="text" dans formulaire.html/.php */
-}
 
 

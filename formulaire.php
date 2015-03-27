@@ -4,7 +4,6 @@
 	<meta charset="utf-8"/>  <!-- cette ligne sert à ce qu'on ai pas besoin d'ecrire le code des accents-->
   <title>Création de votre compte personnel</title>
   <link rel="stylesheet" href="formulaire.css">
-<b>
 </head>
 <body>
 <FONT SIZE=4>
@@ -15,17 +14,17 @@
 <p> CREEZ VOTRE COMPTE,</p><p style="color:green">C'EST GRATUIT</p></b>
 <p> Création de votre compte personnel</p></b>
 
-<TABLE border=1 >
+<table border=1 >  <!-- bordure droite du tableau à mettre pareil que bordure gauche -->
 <form action ="cible.php" method ="POST"> <!-- creation du formulaire, ce qui est entré va dans la page cible.php-->
   
   <TD BGCOLOR="#f1f1c1">
 
 <h5>
-<p>Mes identifiants</p>
+<p>Vos identifiants</p>
 <HR>
-<p><label>Nom: <input type="text" name="nom" /></label><p1 >*</p1>  <!-- ne pas retirer type="text" -->
-    <label>Prénom: <input type="text" name="Prenom"/></label><p1 >*</p1></p>
-<p><label>Date de Naissance: <input name="Datedenaissance"/></label><p1 >*</p1></p>	
+<p><label>Nom: <input type="text" name="nom" /></label><p1 >*</p1>  <!-- ne pas retirer type="text" parce que ce n'est PAS du css -->
+    <label>Prénom: <input type="text" name="prenom"/></label><p1 >*</p1></p>
+<p><label>Date de Naissance: <input name="datedenaissance"/></label><p1 >*</p1></p>	
 <p>
 <label>Adresse mail:<input type="text" name="adressemail" value="dupontjean@gmail.com"/></label><p1 >*</p1></p>
 
@@ -36,7 +35,7 @@
 <label>Confirmez votre mot de passe:<input type="password" name="motdepasse2"/></label><p1 >*</p1></p>
 
 <HR>
-<p>Mes coordonées de Livraison<p>
+<p>Vos coordonnées de livraison<p>
 <HR>
 
 <p>
@@ -101,30 +100,30 @@
 </select></label></p>
 
 <p>
-Numéro de fixe/mobile<input name="NUMÉRO" /></p>
+Numéro de fixe/mobile<input name="numéro" /></p>
 
 <p>
 Choix d'une photo de profil: <input type="file"/> </p>
 <HR>
 <p>Accepter les conditions d'utilisations de LEBIOCOIN</p>
 <HR>
-Cocher les produits que vous souhaiter mettre en vente:
+Cochez les produits que vous souhaitez mettre en vente:
 <input type="checkbox" name="case" id="case" /><p><label for="case"></label></p>
 
 
 
   
 <p>
-<input type="checkbox" name="case" id="case" /> <label for="case"> </label>
+<input type="checkbox" name="conditions" id="case" /> <label for="case"> </label>
 
-	J'accepte les Conditions d'utilisations  de LEBIOCOIN<p1>*</p1>
+	J'accepte les conditions d'utilisations  de LEBIOCOIN<p1>*</p1>
 </p>
+<p><input type="submit" ></p> <!-- bouton de submission qui envoie les données à la page cible.php-->
 
-
-<p1 style="color:red">* Champs Obligatoire</p1>
+<p1 style="color:red">* Champs obligatoires</p1>
 <TD>
 </form>
-</TABLE>
+</table>
 
 
 </CENTER>
