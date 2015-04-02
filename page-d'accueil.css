@@ -21,10 +21,37 @@
 	height:200px;
 	width:100%;
 }
-#nomdusite{}
-#agauche{}
+#nomdusite{
+	border-style: solid;
+	width:400px;
+	height:200px;
+	margin-left:150px;
+
+}
+#nomdusite ul{
+	text-align: center;
+	list-style-type:none;
+}
+#nomdusite ul li{
+	font-weight:bolder;
+	padding-top:15px;
+}
+#agauche{
+	height:500px;
+	width:200px;
+	background-color:grey;
+	border-radius:15px;
+	float:left;
+}
 #adroite{}
-.onglet{}
+.onglet{
+	width:150px;
+	height:20px;
+	background-color:grey;
+	float:left;
+	border-radius:15px;
+
+}
 #nomdusite{}
 #rechercher{}
 #annonces{}
