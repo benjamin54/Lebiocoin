@@ -2,19 +2,25 @@
 	background-color:grey;
 	border-radius:10px;
 	height:80px;
-	padding:10px,50px,10px,50px;
-
+	padding-top: 30px;
 }
-#nav > ul{
+#nav  ul{
 	text-align: center;
 	list-style-type:none;
 }
-#nav > ul > li{
+#nav  ul  li{
 	display:inline;
+	padding-right: 40px;
 
 }
 
-#bandeau{}
+
+#bandeau{
+	
+	border-style: solid;
+	height:200px;
+	width:100%;
+}
 #nomdusite{}
 #agauche{}
 #adroite{}
