@@ -8,19 +8,19 @@
 
 <body>
 
-    <p>Bonjour <?php echo $_POST['prenom'], $_POST['nom']; ?> </p>
+    <p>Bonjour <?php echo htmlspecialchars($_POST['prenom' ]), htmlspecialchars($_POST['nom']); ?> </p>  <!-- méthode POST pour accéder aux variables-->
 
     <?php
-    if (isset($_POST['conditions']))
+    if (isset($_POST['conditions']))  //si la case conditions d'utilisation a étée cochée..
     {
-        echo '<p>Vous avez accepté les conditions d\'utilisation </p>';
+        echo '<p>Vous avez accepté les conditions d\'utilisation </p>';  //renvoi texte
     }
     else
     {
         echo '<p>veuillez accepter les conditions d\'utilisations </p>';
     }
     ?>
-
+    <p><a href="formulaire.php">Retour au formulaire</a></p>  <!-- lien pour revenir au formulaire-->
 </body>
 
 </html>

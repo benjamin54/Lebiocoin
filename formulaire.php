@@ -22,8 +22,8 @@
 <h5>
 <p>Vos identifiants</p>
 <HR>
-<p><label>Nom: <input type="text" name="nom" /></label><p1 >*</p1>  <!-- ne pas retirer type="text" parce que ce n'est PAS du css -->
-    <label>Prénom: <input type="text" name="prenom"/></label><p1 >*</p1></p>
+<p><label>Prénom: <input type="text" name="prenom"/></label><p1 >*</p1>  <!-- ne pas retirer type="text" parce que ce n'est PAS du css -->
+    <label>Nom: <input type="text" name="nom" /></label><p1 >*</p1></p>
 <p><label>Date de Naissance: <input name="datedenaissance"/></label><p1 >*</p1></p>	
 <p>
 <label>Adresse mail:<input type="text" name="adressemail" value="dupontjean@gmail.com"/></label><p1 >*</p1></p>
@@ -118,7 +118,7 @@ Cochez les produits que vous souhaitez mettre en vente:
 
 	J'accepte les conditions d'utilisations  de LEBIOCOIN<p1>*</p1>
 </p>
-<p><input type="submit" ></p> <!-- bouton de submission qui envoie les données à la page cible.php-->
+<p><input type="submit" value ="Valider" /></p> <!-- bouton de submission qui envoie les données à la page cible.php-->
 
 <p1 style="color:red">* Champs obligatoires</p1>
 <TD>
