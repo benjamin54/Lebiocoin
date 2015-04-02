@@ -1,1 +1,24 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8"/>
+		<title>Légumes</title>
+	</head>
+
+	<body>
+		<div>
+			<ul>
+				<li><a href=<!-- mettre url achat -->>ACHAT</a></li>
+				<li><a href=<!-- mettre url echange -->>ECHANGE</a></li>
+				<li><a href=<!-- mettre url profil -->>PROFIL</a></li>
+			</ul>
+		</div>
+
+		<div>
+			<p>photo_legume</p>
+			<p>description_legume</p>
+			<ul>
+				<li><a href=<!-- fleche precedente></a></li>
+				<li><a href=<!-- fleche suivante--></a></li>
+		</div>
