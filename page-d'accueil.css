@@ -1,4 +1,19 @@
-#nav{}
+#nav{
+	background-color:grey;
+	border-radius:10px;
+	height:80px;
+	padding:10px,50px,10px,50px;
+
+}
+#nav > ul{
+	text-align: center;
+	list-style-type:none;
+}
+#nav > ul > li{
+	display:inline;
+
+}
+
 #bandeau{}
 #nomdusite{}
 #agauche{}
