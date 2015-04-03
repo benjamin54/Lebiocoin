@@ -14,7 +14,7 @@
 <p> Création de votre compte personnel</p></b>
 
 <table border=1 >  <!-- bordure droite du tableau à mettre pareil que bordure gauche -->
-<form action ="cible.php" method ="POST"> <!-- creation du formulaire, ce qui est entré va dans la page cible.php-->
+<form action ="cible.php" method ="POST" enctype="multipart/form-data"> <!-- creation du formulaire, ce qui est entré va dans la page cible.php-->
   
   <TD BGCOLOR="#f1f1c1">
 
@@ -48,7 +48,7 @@
 
 <select name="choix">
 
-    <option value="choix1">Alsace</option>
+    <option value="choix1" selected="selected">Alsace</option> <!-- Alsace en choix par défaut-->
 
     <option value="choix2">Aquitaine</option>
 
@@ -56,50 +56,47 @@
 
     <option value="choix4">Basse Normandie</option>
 
+    <option value="choix5">Bourgogne</option>
 
-    <option value="choix1">Bourgogne</option>
+    <option value="choix6">Bretagne</option>
 
-    <option value="choix2">Bretagne</option>
+    <option value="choix7">Centre</option>
 
-    <option value="choix3">Centre</option>
-
-    <option value="choix4">Champagne-Ardenne</option>
+    <option value="choix8">Champagne-Ardenne</option>
     
-    <option value="choix5">Corse</option>
+    <option value="choix9">Corse</option>
 
-    <option value="choix6">Franche-Comté</option>
+    <option value="choix10">Franche-Comté</option>
 
-    <option value="choix7">Haute normandie</option>
+    <option value="choix11">Haute normandie</option>
 
-    <option value="choix8">Ile de France</option>
+    <option value="choix12">Ile de France</option>
  
-    <option value="choix9">Languedoc Roussilon</option>
+    <option value="choix13">Languedoc Roussilon</option>
 
-    <option value="choix10">Limousin</option>
+    <option value="choix14">Limousin</option>
 
-    <option value="choix11">Loraine</option>
+    <option value="choix15">Loraine</option>
 
-    <option value="choix12">Midi-Pyrénées</option>
+    <option value="choix16">Midi-Pyrénées</option>
  
-    <option value="choix13">Nord pas de Calais</option>
+    <option value="choix17">Nord pas de Calais</option>
 
-    <option value="choix14">Pays de la Loire</option>
+    <option value="choix18">Pays de la Loire</option>
 
-    <option value="choix15">Picardie</option>
+    <option value="choix19">Picardie</option>
 
-    <option value="choix16">Poitou Charente</option>
+    <option value="choix20">Poitou Charente</option>
  
-    <option value="choix17">Provence Alpes Cote d'Azur</option>
+    <option value="choix21">Provence Alpes Cote d'Azur</option>
 
-    <option value="choix1" selected="selected">Alsace</option>  <!-- Alsace en choix par défaut-->
- 
-<option value="choix18">Rhône-Alpes</option>
+    <option value="choix18">Rhône-Alpes</option>
 
 </select></label></p>
 
 <p>Numéro de fixe/mobile : <input name="numéro" /></p>
 
-<p>Choix d'une photo de profil : <input type="file"/> </p>
+<p>Choix d'une photo de profil : <input type="file" name="image" /></p>
 
 <HR>
 <p>Accepter les conditions d'utilisations de LEBIOCOIN</p>
