@@ -23,6 +23,10 @@
 }
 #logo{
 	float:left;
+	height:200px;
+	border-style: solid;
+	border-width:1px;
+	width:200px;
 }
 #nomdusite{
 
@@ -49,7 +53,15 @@
 	border-radius:15px;
 	
 }
-#adroite{}
+#adroite{
+	position:absolute;
+	top:30px;
+	right:30px;
+	height:500px;
+	width:200px;
+	background-color:grey;
+	border-radius:15px;
+}
 .onglet{
 	width:150px;
 	height:20px;
