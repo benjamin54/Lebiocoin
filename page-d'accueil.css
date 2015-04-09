@@ -1,5 +1,6 @@
 nav{
-	margin-top:-120px;
+	z-index:1;
+	margin-top:-30px;
 	position:fixed;
 	width:99%;
 	background-color:grey;
@@ -16,8 +17,9 @@ nav  ul  li{
 	padding-right: 60px;
 }
 #bandeau{
-	margin-top:100px;
-	margin-bottom: :-10px;
+	margin-top:50px;
+	position:absolute;
+	background-color:green;
 	border-style: solid;
 	height:200px;
 	width:100%;
@@ -84,7 +86,10 @@ nav  ul  li{
 #actu4{}
 #bandeaupubs{}
 #pied{
+
+	position:absolute;
 	width:1024px;
+	margin-left:0px;
 	border-radius: 10px;
 	background-color:grey;
 	clear:both;
