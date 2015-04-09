@@ -1,15 +1,32 @@
-ul#disposition_list {
+ul#position_liste {
+	padding: 0%;
+}
+
+ul#position_liste li {
 	display: inline;
 }
 
-ul#disposition_list li a {
+ul#position_liste li a {
 	background-color: grey;
 	color: black;
-	padding: 10px 30px;
+	padding: 0.5% 1%;
 	text-decoration: none;
 	border-radius: 4px 4px 0 0;
 
 }
 
-ul#disposition_list li a:hover {
+ul#position_liste li a:hover {
 	background-color: red;
+}
+
+p#en_ligne {
+	display: inline;
+}
+
+ul#position_bouton {
+	margin-left: 25%;
+}	
+
+ul#position_bouton li {
+	display: inline;
+}
