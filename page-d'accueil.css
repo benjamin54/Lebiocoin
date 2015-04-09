@@ -1,4 +1,6 @@
 #nav{
+	position:fixed;
+	width:100%;
 	background-color:grey;
 	border-radius:10px;
 	height:80px;
@@ -11,25 +13,24 @@
 #nav  ul  li{
 	display:inline;
 	padding-right: 60px;
-
 }
-
-
 #bandeau{
+	margin-top:100px;
 	
+	margin-bottom: :-10px;
 	border-style: solid;
 	height:200px;
 	width:100%;
 }
 #logo{
+	margin-top:10px;
 	float:left;
-	height:200px;
+	height:180px;
 	border-style: solid;
 	border-width:1px;
-	width:200px;
+	width:160px;
 }
 #nomdusite{
-
 	border-style: solid;
 	border-width:1px;
 	width:400px;
@@ -46,15 +47,14 @@
 	padding-top:15px;
 }
 #agauche{
-	
+	float:left;
 	height:500px;
 	width:200px;
 	background-color:grey;
 	border-radius:15px;
-	
 }
 #adroite{
-	position:absolute;
+	float:right;
 	top:30px;
 	right:30px;
 	height:500px;
@@ -68,16 +68,20 @@
 	background-color:grey;
 	float:left;
 	border-radius:15px;
-
 }
 #nomdusite{}
 #rechercher{}
-#annonces{}
+#annonces{
+	margin-left:245px;
+}
 .actus{}
 #actu1{}
 #actu2{}
 #actu3{}
 #actu4{}
 #bandeaupubs{}
-#pied{}
+#pied{
+	background-color:grey;
+	clear:both;
+}
 #pays{}
