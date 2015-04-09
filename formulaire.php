@@ -20,11 +20,11 @@
   
   
 
-  <TD bgcolor="#f1f1c1">
+  <td bgcolor="#f1f1c1">
 
-<h5>
+<hr>
 <p>Vos identifiants</p>
-<HR>
+<hr>
 <p><label>Prénom : <input type="text" name="prenom"/></label><p1 > *</p1>  <!-- ne pas retirer type="text" parce que ce n'est PAS du css -->
     <label>Nom : <input type="text" name="nom" /></label><p1 > *</p1></p>
 <p><label>Date de Naissance : <input name="datedenaissance"/></label><p1 > *</p1></p>	
@@ -37,9 +37,9 @@
 <p>
 <label>Confirmez votre mot de passe : <input type="password" name="motdepasse2"/></label><p1 > *</p1></p>
 
-<HR>
+<hr>
 <p>Vos coordonnées de livraison<p>
-<HR>
+<hr>
 
 <p><label>Adresse : <input name="adresse" /></label><p1 > *</p1> </p>
 
@@ -102,9 +102,9 @@
 
 <p>Choix d'une photo de profil : <input type="file" name="image" /></p>
 
-<HR>
+<hr>
 <p>Accepter les conditions d'utilisations de LEBIOCOIN</p>
-<HR>
+<hr>
  
 <p><input type="checkbox" name="case" checked="checked" /> <label for="case"> </label>
     Je m'abonne à la newsletter 
