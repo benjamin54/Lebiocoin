@@ -6,17 +6,21 @@
   <link rel="stylesheet" href="formulaire.css">
 </head>
 <body>
-<FONT SIZE=4>
-    <CENTER>
+<font size=4>
+    <center>
 
 <p>Nouveau membre ? Bienvenue !</p></b>
 <p> CREEZ VOTRE COMPTE,</p><p style="color:green">C'EST GRATUIT</p></b>
 <p> Création de votre compte personnel</p></b>
 
 <table border=1 >  <!-- bordure droite du tableau à mettre pareil que bordure gauche -->
+
+
 <form action ="cible.php" method ="POST" enctype="multipart/form-data"> <!-- creation du formulaire, ce qui est entré va dans la page cible.php-->
   
-  <TD BGCOLOR="#f1f1c1">
+  
+
+  <TD bgcolor="#f1f1c1">
 
 <h5>
 <p>Vos identifiants</p>
@@ -114,12 +118,12 @@
 <p><input type="submit" value ="Valider" /></p> <!-- bouton de submission qui envoie les données à la page cible.php-->
 <p1 style="color:red">* Champs obligatoires</p1>
 
-<TD>
+<td>
 </form>
 </table>
 
 
-</CENTER>
-</FONT>
+</center>
+</font>
 </body>
 </html>
