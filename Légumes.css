@@ -1,0 +1,15 @@
+ul#disposition_list {
+	display: inline;
+}
+
+ul#disposition_list li a {
+	background-color: grey;
+	color: black;
+	padding: 10px 30px;
+	text-decoration: none;
+	border-radius: 4px 4px 0 0;
+
+}
+
+ul#disposition_list li a:hover {
+	background-color: red;

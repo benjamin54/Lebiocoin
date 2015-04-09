@@ -10,7 +10,7 @@
 }
 #nav  ul  li{
 	display:inline;
-	padding-right: 40px;
+	padding-right: 60px;
 
 }
 
@@ -21,12 +21,21 @@
 	height:200px;
 	width:100%;
 }
-#nomdusite{
+#logo{
+	float:left;
+	height:200px;
 	border-style: solid;
+	border-width:1px;
+	width:200px;
+}
+#nomdusite{
+
+	border-style: solid;
+	border-width:1px;
 	width:400px;
 	height:200px;
 	margin-left:150px;
-
+	margin-top:0px;
 }
 #nomdusite ul{
 	text-align: center;
@@ -37,13 +46,22 @@
 	padding-top:15px;
 }
 #agauche{
+	
 	height:500px;
 	width:200px;
 	background-color:grey;
 	border-radius:15px;
-	float:left;
+	
 }
-#adroite{}
+#adroite{
+	position:absolute;
+	top:30px;
+	right:30px;
+	height:500px;
+	width:200px;
+	background-color:grey;
+	border-radius:15px;
+}
 .onglet{
 	width:150px;
 	height:20px;
