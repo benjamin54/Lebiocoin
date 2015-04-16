@@ -4,11 +4,11 @@
 	background-color: ;
 	font-size: 400%;
 	font-family: cambria;
-	font-weight: ;
-	position: relative;
-	border :;
-	padding: ;
-	margin: ;
-	
-
+	font-weight: bold;
+	position: fixed;
+	top: 0%;
+	left: 0%;
+	height: 3%;
+	width: 98%;
+	text-transform: uppercase; 
 }
