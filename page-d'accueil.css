@@ -7,14 +7,14 @@ nav{
 	border-radius:10px;
 	height:50px;
 	padding-top:30px;
-	margin-top:40px;
-	font-family:"trebuchet MS".
 }
 nav  ul{
 	text-align: center;
 	list-style-type:none;
 }
 nav  ul  li{
+	font-family:Arial;
+	font-weight:bold;
 	margin-top:20px;
 	display:inline;
 	padding-right: 60px;
@@ -86,9 +86,13 @@ nav  ul  li{
 	border-radius:15px;
 }
 .onglet1 p{
+	font-family:Arial;
+	font-weight:bold;
 	text-align: center;
 }
 .onglet2 p{
+	font-family:Arial;
+	font-weight:bold;
 	text-align: center;
 }
 .onglet2{
