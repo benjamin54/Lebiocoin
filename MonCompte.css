@@ -1,9 +1,9 @@
-.nav a{
+.nav a {
 	display: inline-block;
 	color: #5a5a5a;
-	background-color: ;
+	background-color: grey;
 	font-size: 400%;
-	font-family: cambria;
+	font-family: Georgia;
 	font-weight: bold;
 	position: fixed;
 	top: 0%;
@@ -11,4 +11,33 @@
 	height: 3%;
 	width: 98%;
 	text-transform: uppercase; 
+}
+
+.jumbotron {
+	background-image:url('http://www.leanitup.com/wp-content/uploads/2012/10/3635-fruit-photo-1024x768.jpg');
+	background-repeat: no-repeat;
+	position: fixed;
+	top: 6%;
+	left: 0%;
+	height: 15%;
+	width: 98%;
+	border: 1%;
+	padding: 0%;
+}
+
+
+.jumbotron h1 {
+	display: inline-block;
+	color: black; 
+	font-size: 700%;
+	font-family: georgia;
+	font-weight: bold;
+}
+
+.jumbotron pre {
+	display: inline-block;
+	color: black;
+	font-size: 450%;
+	font-family: georgia;
+	font-style: normal;
 }
