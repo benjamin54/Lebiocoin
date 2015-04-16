@@ -58,8 +58,7 @@ nav  ul  li{
 }
 #agauche{
 	position:absolute;
-	margin-top:200px;
-	float:left;
+	margin-top:220px;
 	height:500px;
 	width:200px;
 	background-color:grey;
@@ -67,7 +66,7 @@ nav  ul  li{
 }
 #adroite{
 	position:absolute;
-	margin-top:200px;
+	margin-top:190px;
 	margin-left:555px; 
 	top:30px;
 	right:30px;
@@ -76,20 +75,36 @@ nav  ul  li{
 	background-color:grey;
 	border-radius:15px;
 }
-.onglet{
-	margin-left:400px;
-	margin-top:200px;
+.onglet1{
+	padding:5px,5px,5px,5px;
+	position:absolute;
+	margin-left:245px;
+	margin-top:220px;
 	width:150px;
-	height:20px;
+	height:40px;
 	background-color:grey;
-	float:left;
+	border-radius:15px;
+}
+.onglet1 p{
+	text-align: center;
+}
+.onglet2 p{
+	text-align: center;
+}
+.onglet2{
+	position:absolute;
+	margin-left:400px;
+	margin-top:220px;
+	width:150px;
+	height:40px;
+	background-color:grey;
 	border-radius:15px;
 }
 #nomdusite{}
 #rechercher{}
 #annonces{
-	margin-top:200px;
-	width:420px;
+	margin-top:220px;
+	width:500px;
 	height:420px;
 	border-style: solid;
 	margin-left:245px;
@@ -101,7 +116,7 @@ nav  ul  li{
 #actu4{}
 #bandeaupubs{}
 footer{
-	margin-top:1000px;
+	margin-top:520px;
 	width:1000px;
 	margin-left:-245px;
 	border-radius: 10px;
