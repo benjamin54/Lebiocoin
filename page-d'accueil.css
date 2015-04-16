@@ -1,0 +1,107 @@
+nav{
+	z-index:1;
+	margin-top:-40px;
+	position:fixed;
+	width:99%;
+	background-color:grey;
+	border-radius:10px;
+	height:50px;
+	padding-top:30px;
+}
+nav  ul{
+	text-align: center;
+	list-style-type:none;
+}
+nav  ul  li{
+	display:inline;
+	padding-right: 60px;
+}
+#bandeau{
+	border-style:solid;
+	border-radius:10px;
+	margin-top:50px;
+	position:absolute;
+	background-color:green;
+	height:200px;
+	width:99%;
+}
+#logo{
+	position:absolute;
+	margin-top:10px;
+	margin-left:10px;
+	float:left;
+	height:180px;
+	border-style: solid;
+	border-width:1px;
+	width:157px;
+}
+#nomdusite{
+	position:absolute;
+	margin-top:10px;
+	border-style: solid;
+	border-width:1px;
+	width:380px;
+	height:180px;
+	margin-left:180px;
+	
+}
+#nomdusite ul{
+	text-align: center;
+	list-style-type:none;
+}
+#nomdusite ul li{
+	font-weight:bolder;
+	padding-top:15px;
+}
+#agauche{
+	position:absolute;
+	margin-top:200px;
+	float:left;
+	height:500px;
+	width:200px;
+	background-color:grey;
+	border-radius:15px;
+}
+#adroite{
+	position:absolute;
+	margin-top:200px;
+	margin-left:555px; 
+	top:30px;
+	right:30px;
+	height:500px;
+	width:200px;
+	background-color:grey;
+	border-radius:15px;
+}
+.onglet{
+	margin-left:400px;
+	margin-top:200px;
+	width:150px;
+	height:20px;
+	background-color:grey;
+	float:left;
+	border-radius:15px;
+}
+#nomdusite{}
+#rechercher{}
+#annonces{
+	margin-top:200px;
+	width:420px;
+	height:420px;
+	border-style: solid;
+	margin-left:245px;
+}
+.actus{}
+#actu1{}
+#actu2{}
+#actu3{}
+#actu4{}
+#bandeaupubs{}
+footer{
+	margin-top:1000px;
+	width:1000px;
+	margin-left:-245px;
+	border-radius: 10px;
+	background-color:grey;	
+}
+#pays{}
