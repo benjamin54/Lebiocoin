@@ -1,8 +1,12 @@
 nav{
 	z-index:1;
+	margin-top:-3%;
 	position:fixed;
 	width:99%;
 	background-color:gray;
+	border-radius:2%;
+	height:12%;
+	padding:1%;
 	font-family:georgia;
 }
 nav  ul{
