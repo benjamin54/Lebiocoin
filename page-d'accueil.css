@@ -7,18 +7,15 @@ nav{
 	border-radius:10px;
 	height:10%;
 	padding-top:30px;
-<<<<<<< HEAD
 	margin-top:40px;
-	font-family:"trebuchet MS";
-=======
->>>>>>> origin/master
+	font-family:georgia;
 }
 nav  ul{
 	text-align: center;
 	list-style-type:none;
 }
 nav  ul  li{
-	font-family:Arial;
+	font-family: georgia;
 	font-weight:bold;
 	margin-top:20px;
 	display:inline;
@@ -63,19 +60,36 @@ nav  ul  li{
 }
 #agauche{
 	position:absolute;
+<<<<<<< HEAD
 	margin-top:25%;
 	height:500%;
 	width:20%;
 	background-color:grey;
+=======
+	margin-top:220px;
+	height:500px;
+	width:200px;
+	background-color:gray;
+>>>>>>> origin/master
 	border-radius:15px;
 }
 #adroite{
 	position:absolute;
+<<<<<<< HEAD
 	margin-top:25%; 
 	right:0%;
 	height:500%;
 	width:20%;
 	background-color:grey;
+=======
+	margin-top:190px;
+	margin-left:555px; 
+	top:30px;
+	right:30px;
+	height:500px;
+	width:200px;
+	background-color:gray;
+>>>>>>> origin/master
 	border-radius:15px;
 }
 .onglet1{
@@ -85,16 +99,16 @@ nav  ul  li{
 	margin-top:220px;
 	width:150px;
 	height:40px;
-	background-color:grey;
+	background-color:gray;
 	border-radius:15px;
 }
 .onglet1 p{
-	font-family:Arial;
+	font-family: georgia;
 	font-weight:bold;
 	text-align: center;
 }
 .onglet2 p{
-	font-family:Arial;
+	font-family: georgia;
 	font-weight:bold;
 	text-align: center;
 }
@@ -104,7 +118,7 @@ nav  ul  li{
 	margin-top:220px;
 	width:150px;
 	height:40px;
-	background-color:grey;
+	background-color:gray;
 	border-radius:15px;
 }
 #nomdusite{}
@@ -127,6 +141,6 @@ footer{
 	width:1000px;
 	margin-left:-245px;
 	border-radius: 10px;
-	background-color:grey;	
+	background-color:gray;	
 }
 #pays{}
