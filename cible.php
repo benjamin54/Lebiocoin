@@ -8,23 +8,23 @@
 
 <body>
 
-    <p>Bonjour <?php echo htmlspecialchars($_POST['prenom' ]), htmlspecialchars($_POST['nom']); ?> </p>  <!-- méthode POST pour accéder aux variables-->
+    <p>Bonjour <?php echo htmlspecialchars($_POST['prenom_membre' ]), htmlspecialchars($_POST['nom_membre']); ?> </p>  <!-- méthode POST pour accéder aux variables-->
 
     <?php
     // Testons si le fichier a bien été envoyé et s'il n'y a pas d'erreur
-    if (isset($_FILES['image']) AND $_FILES['image']['error'] == 0)
+    if (isset($_FILES['photo_profil']) AND $_FILES['photo_profil']['error'] == 0)
     {
         // Testons si le fichier n'est pas trop gros
-        if ($_FILES['image']['size'] <= 1000000)
+        if ($_FILES['photo_profil']['size'] <= 1000000)
         {
             //testons si l'extension est autorisée
-            $infosimage = pathinfo($_FILES['image']['name']);
+            $infosimage = pathinfo($_FILES['photo_profil']['name']);
             $extension_upload = $infosimage['extension']; 
             $extensions_autorisees = array('jpg', 'jpeg', 'gif', 'png');
             if (in_array($extension_upload, $extensions_autorisees))
             {
                     // On peut valider le fichier et le stocker définitivement
-                        move_uploaded_file($_FILES['image']['tmp_name'], 'uploads/' . basename($_FILES['monfichier']['name']));
+                        move_uploaded_file($_FILES['photo_profil']['tmp_name'], 'uploads/' . basename($_FILES['monfichier']['name']));
                         echo "L'envoi a bien été effectué !";   
             }
         }
@@ -40,6 +40,19 @@
         echo '<p>veuillez accepter les conditions d\'utilisations </p>';
     }
     ?>
+
+    <?php //traiter une erreur de connexion à la bdd
+    try
+    {
+    $bdd = new PDO('mysql:host=localhost;dbname=ma_base;charset=utf8', 'root', '');   //nouvelle session
+    }
+    catch(Exception $e)
+    {
+        die('Erreur : '.$e->getMessage());
+    } 
+    $requete= $bdd -> prepare('INSERT INTO `membre`(`id_membre`, `nom_membre`, `prenom_membre`, `pseudo_membre`, `photo_profil`, `date_naissance`, `adresse_mail`, `mot_de_passe`, `administrateur`)VALUES (?,?,?,?,?,?,?,?,?)');
+    $requete -> execute(array($_POST['id_membre'],$_POST['nom_membre'],$_POST['prenom_membre'],$_POST['pseudo_membre'],$_POST['photo_profil'],$_POST['date_naissance'],$_POST['adresse_mail'],$_POST['mot_de_passe'],$_POST['administrateur']));
+    ?> 
     
     <p><a href="formulaire.php">Retour au formulaire</a></p>  <!-- lien pour revenir au formulaire-->
 </body>

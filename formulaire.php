@@ -25,17 +25,17 @@
 <hr>
 <p>Vos identifiants</p>
 <hr>
-<p><label>Prénom : <input type="text" name="prenom"/></label><p1 > *</p1>  <!-- ne pas retirer type="text" parce que ce n'est PAS du css -->
-    <label>Nom : <input type="text" name="nom" /></label><p1 > *</p1></p>
-<p><label>Date de Naissance : <input name="datedenaissance"/></label><p1 > *</p1></p>	
-<p>
-<label>Adresse mail : <input type="text" name="adressemail" value="dupontjean@gmail.com"/></label><p1 > *</p1></p>
+<p><label>Prénom : <input type="text" name="prenom_membre"/></label><p1 > *</p1>  <!-- ne pas retirer type="text" parce que ce n'est PAS du css -->
+    <label>Nom : <input type="text" name="nom_membre" /></label><p1 > *</p1></p>
+<p><label>Date de Naissance : <input name="date_naissance"/></label><p1 > *</p1></p>	
 
-<p>
-<label>Mot de passe : <input type="password" name="motdepasse1"/></label><p1 > *</p1><p1 >(8 caractères minimum)</p1></p>
+<p><label>Adresse mail : <input type="text" name="adresse_mail" value="dupontjean@gmail.com"/></label><p1 > *</p1></p>
 
-<p>
-<label>Confirmez votre mot de passe : <input type="password" name="motdepasse2"/></label><p1 > *</p1></p>
+<p><label>Pseudo : <input type="text" name="pseudo_membre"/></label><p1 > *</p1>
+
+<p><label>Mot de passe : <input type="password" name="mot_de_passe"/></label><p1 > *</p1><p1 >(8 caractères minimum)</p1></p>
+
+<p><label>Confirmez votre mot de passe : <input type="password" name="mot_de_passe"/></label><p1 > *</p1></p>
 
 <hr>
 <p>Vos coordonnées de livraison<p>
@@ -100,7 +100,7 @@
 
 <p>Numéro de fixe/mobile : <input name="numéro" /></p>
 
-<p>Choix d'une photo de profil : <input type="file" name="image" /></p>
+<p>Choix d'une photo de profil : <input type="file" name="photo_profil" /></p>
 
 <hr>
 <p>Accepter les conditions d'utilisations de LEBIOCOIN</p>
