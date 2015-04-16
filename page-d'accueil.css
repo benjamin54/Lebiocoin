@@ -3,12 +3,12 @@ nav{
 	margin-top:-40px;
 	position:fixed;
 	width:99%;
-	background-color:grey;
+	background-color:gray;
 	border-radius:10px;
 	height:50px;
 	padding-top:30px;
 	margin-top:40px;
-	font-family:"trebuchet MS".
+	font-family:"trebuchet MS";
 }
 nav  ul{
 	text-align: center;

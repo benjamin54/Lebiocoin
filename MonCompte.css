@@ -1,8 +1,15 @@
-.nav a {
-	display: inline-block;
-	color: #5a5a5a;
-	background-color: grey;
-	font-size: 400%;
+.nav nav nav {
+	list-style-type: none;
+	padding: 0%;
+	margin: 0%;
+	}
+
+.nav ul li {
+	display:inline;
+	text-align: center;
+	color: black;
+	background-color: gray;
+	font-size: 90%;
 	font-family: Georgia;
 	font-weight: bold;
 	position: fixed;
@@ -27,17 +34,15 @@
 
 
 .jumbotron h1 {
-	display: inline-block;
 	color: black; 
-	font-size: 700%;
+	font-size: 200%;
 	font-family: georgia;
 	font-weight: bold;
 }
 
 .jumbotron pre {
-	display: inline-block;
 	color: black;
-	font-size: 450%;
+	font-size: 100%;
 	font-family: georgia;
 	font-style: normal;
 }
