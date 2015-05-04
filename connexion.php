@@ -27,7 +27,7 @@
         <ul><b>
           <li><a href="pagedaccueil.php">ACCUEIL</a></li>
           <li>LEGUMES</li>
-          <li><a href="fruit.html">FRUITS</a></li>
+          <li><a href="fruit.php">FRUITS</a></li>
           <li>LABEL BIO</li>
           <li>RECETTES</li>
           <li>FORUM</li>

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
 	<meta charset="utf-8"/>
  <div id="bor"> <title>Le Biocoin</title>
@@ -9,20 +8,20 @@
  <CENTER><div id="co"> <div></CENTER>
   <div id="ligne2"><h></div>
  <div id="forme">
-<div id="hautdepage"><p><a href="connexion.php">Je me connecte</a> <a href="inscription.php">Je m'inscris</a></p></div>
+<div id="hautdepage"><p>Je me connecte Je m'inscris</p></div>
 
 <p><p1>Le Biocoin</p1>
   <div id="logo"><img src="logo1.png"></img></div>
  <h3> Site de ventes de fruits & légumes</h3>
 
  <div id="pos"> <img src="fruits.jpg"></img></div>
-  <nav>
+    <nav>
 
 
         <ul><b>
-         <li><a href ="pagedaccueil.php">ACCUEIL</a></li>
+          <li>ACCUEIL</li>
           <li>LEGUMES</li>
-          <li><a href="fruit.php">FRUITS</a></li>
+          <li>FRUITS</li>
           <li>LABEL BIO</li>
           <li>RECETTES</li>
           <li>FORUM</li>
@@ -30,10 +29,21 @@
         </ul>
       </nav>
 
-<div id="contenuaccueilfruit"><p><h4><CENTER> LES FRUITS</CENTER> </h4></p>
-<img width="400" height="265" align="right" alt="fruitrouge" src="fruitr.jpg"></img>
+<div id="contenuaccueil"><p><h4> LE CONCEPT</h4></p>
+<img width="229" height="200" align="right" alt="pomme" src="po.jpg"></img>
+<p>LEBIOCOIN est un site d’échange et de ventes de fruits et légumes frais.</p>
+<p>Il a pour but de : </p>
+<p>-redonner de l’importance et de la valeur aux fruits et légumes </p> 
+<p>-privilégier la qualité et fraicheur des produits. Mais comment ? </p>
+<p>L’achat ou l’échange s’effectue entre deux producteurs à proximité </p>
+<p> Le nombre de kilomètre parcourus par les produits étant réduits,</p>
+<p> leur fraicheur et qualité en sera meilleur.</p>
 
-
+<h4>LE PANIER</h4>
+<img width="229" height="200" align="right" alt="pomme" src="livraison.jpg"></img>
+<p> LE BIOCOIN s’occupe <u>gratuitement</u> de la livraison de votre panier:
+ -directement chez vous.</p>
+<p>-sur votre lieu de vacances. </p>
 </div>
 
 
@@ -59,7 +69,7 @@
 
 <li>  Annonces échanges </li> <br><br>
 <li>  Annonces Ventes </li><br><br>
-<li>  <a href="annonce.php">Je crée mon annonce</a> </li> <br><br>
+<li>  Je crée mon annonce </li> <br><br>
 <li> Mentions legales</li><br><br>
 <li>  Aide </li> 
 </ul>
@@ -85,7 +95,6 @@
 
 </div> 
 </body>
-</div>
 </div>
 </div>
 </html>
