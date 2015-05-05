@@ -160,7 +160,7 @@ else {
 
 <li>  Annonces échanges </li> <br><br>
 <li>  Annonces Ventes </li><br><br>
-<li> <a href="annonce.html">Je crée mon annonce</a>  </li> <br><br>
+<li> <a href="annonce.php">Je crée mon annonce</a>  </li> <br><br>
 <li> Mentions legales</li><br><br>
 <li>  Aide </li> 
 </ul>
