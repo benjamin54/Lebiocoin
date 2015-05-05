@@ -40,7 +40,7 @@
   <p2 style="color:red">*</p2>prenom: <input type="text" name="prenom" /></p>
 
 <p>
-<p2 style="color:red">*</p2>Adresse mail:<input type="text" name="adressemail" value="dupontjean@gmail.com"/></p>
+<p2 style="color:red">*</p2>Adresse mail:<input type="text" name="adressemail" value=""/></p>
 
 <p>
 <p2 style="color:red">*</p2>Mot de passe:<input type="password" name="motdepasse1"/><p2 style="color:red">(8 caract&egraveres minimum)</p2> </p>
