@@ -22,7 +22,7 @@
         <ul><b>
          <li><a href ="Images/pagedaccueil.php">ACCUEIL</a></li>
           <li>LEGUMES</li>
-          <li><a href="Images/fruit.php">FRUITS</a></li>
+          <li><a href="fruit.php">FRUITS</a></li>
           <li>LABEL BIO</li>
           <li>RECETTES</li>
           <li>FORUM</li>
