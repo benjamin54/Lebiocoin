@@ -4,16 +4,13 @@ nav{
 	position:fixed;
 	width:99%;
 	background-color:gray;
-<<<<<<< HEAD
 	border-radius:2%;
 	height:12%;
 	padding:1%;
-=======
 	border-radius:10px;
 	height:10%;
 	padding-top:30px;
 	margin-top:40px;
->>>>>>> origin/master
 	font-family:georgia;
 }
 nav  ul{
@@ -66,28 +63,23 @@ nav  ul  li{
 }
 #agauche{
 	position:absolute;
-<<<<<<< HEAD
 	margin-top:25%;
 	height:500%;
 	width:20%;
-	background-color:grey;
-=======
+	background-color:gray;
 	margin-top:220px;
 	height:500px;
 	width:200px;
 	background-color:gray;
->>>>>>> origin/master
 	border-radius:15px;
 }
 #adroite{
 	position:absolute;
-<<<<<<< HEAD
 	margin-top:25%; 
 	right:0%;
 	height:500%;
 	width:20%;
-	background-color:grey;
-=======
+	background-color:gray;
 	margin-top:190px;
 	margin-left:555px; 
 	top:30px;
@@ -95,7 +87,6 @@ nav  ul  li{
 	height:500px;
 	width:200px;
 	background-color:gray;
->>>>>>> origin/master
 	border-radius:15px;
 }
 .onglet1{
