@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8"/>
  <div id="bor"> <title>Le Biocoin</title>
-  <link rel="stylesheet" href="accueil.css">
+  <link rel="stylesheet" href="styles/accueil.css">
 <div id=fond><body>
  <CENTER><div id="co"> <div></CENTER>
   <div id="ligne2"><h></div>
@@ -12,17 +12,17 @@
 <div id="hautdepage"><p><a href="connexion.php">Je me connecte</a> <a href="inscription.php">Je m'inscris</a></p></div>
 
 <p><p1>Le Biocoin</p1>
-  <div id="logo"><img src="logo1.png"></img></div>
+  <div id="logo"><img src="Images/logo1.png"></img></div>
  <h3> Site de ventes de fruits & légumes</h3>
 
- <div id="pos"> <img src="fruits.jpg"></img></div>
+ <div id="pos"> <img src="Images/fruits.jpg"></img></div>
   <nav>
 
 
         <ul><b>
-         <li><a href ="pagedaccueil.php">ACCUEIL</a></li>
+         <li><a href ="Images/pagedaccueil.php">ACCUEIL</a></li>
           <li>LEGUMES</li>
-          <li><a href="fruit.php">FRUITS</a></li>
+          <li><a href="Images/fruit.php">FRUITS</a></li>
           <li>LABEL BIO</li>
           <li>RECETTES</li>
           <li>FORUM</li>
@@ -31,7 +31,7 @@
       </nav>
 
 <div id="contenuaccueil"><p><h4> LE CONCEPT </h4></p>
-<img width="229" height="200" align="right" alt="pomme" src="po.jpg"></img>
+<img width="229" height="200" align="right" alt="pomme" src="Images/po.jpg"></img>
 <p>CONSOMMER SAIN EN CREANT DU LIEN SOCIAL...</p>
 <p>LEBIOCOIN est un site d’échange et de ventes de fruits et légumes frais.</p>
 <p> Les particuliers peuvent échanger ou vendre des fruits et légumes de leur potager </p>
@@ -51,8 +51,8 @@
 
 <div id=page>
  
- <div id="posi"> <img src="icone.jpg"></img></div>
-  <div id="posi2"> <img src="panier.jpg"></img></div>
+ <div id="posi"> <img src="Images/icone.jpg"></img></div>
+  <div id="posi2"> <img src="Images/panier.jpg"></img></div>
   <div id="menu"></div>
 </div>
 <div id="h"></div>
@@ -84,7 +84,7 @@
 </div>
 
 <div id="mag"><h4><u>LA REVUE</u></h4>
-  <img src="mag.png"></img>
+  <img src="Images/mag.png"></img>
 
  <p><input type="text" name="pseudo" value="rentrer votre mail" /> </p>
  <p><INPUT TYPE="submit" NAME="Valider" VALUE=" Envoyer"></p>
