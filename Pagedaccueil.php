@@ -20,7 +20,7 @@
 
 
         <ul><b>
-         <li><a href ="Images/pagedaccueil.php">ACCUEIL</a></li>
+         <li><a href ="pagedaccueil.php">ACCUEIL</a></li>
           <li>LEGUMES</li>
           <li><a href="fruit.php">FRUITS</a></li>
           <li>LABEL BIO</li>
@@ -43,7 +43,7 @@
 <p> leur fraicheur et qualité en sera meilleur.</p>
 
 <h4>LE PANIER</h4>
-<img width="229" height="200" align="right" alt="pomme" src="livraison.jpg"></img>
+<img width="229" height="200" align="right" alt="pomme" src="Images/livraison.jpg"></img>
 <p> LE BIOCOIN s’occupe <u>gratuitement</u> du contact entre les particuliers qui aura lieu par mail
 
 </div>
