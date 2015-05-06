@@ -11,7 +11,9 @@
     <?php include('includes/header.php');?>
 	<fieldset>
         <legend><b>Mon profil</b></legend>
-        <img src="Images/photo_profil_defaut.png" alt="photo de profil">
+        <div id="photoprof">
+            <img src="Images/photo_profil_defaut.png" alt="photo de profil">
+        </div>
     </fieldset>
 
     <fieldset>
