@@ -51,7 +51,8 @@
 
 <div id=page>
  
-  <div id="posi2"> <img src="Images/panier.jpg"></img></div>
+ <div id="posi"> <a href="compte_utilisateur.php"><img src="Images/icone.jpg"></img></a></div>
+  <div id="posi2">  <a href="mon_panier.php"><img src="Images/panier.jpg"></img></a></div>
   <div id="menu"></div>
 </div>
 <div id="h"></div>
