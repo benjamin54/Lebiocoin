@@ -51,7 +51,6 @@
 
 <div id=page>
  
- <div id="posi"> <img src="Images/icone.jpg"></img></div>
   <div id="posi2"> <img src="Images/panier.jpg"></img></div>
   <div id="menu"></div>
 </div>
