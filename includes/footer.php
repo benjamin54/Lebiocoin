@@ -8,13 +8,13 @@
 <footer>
 	<center>
 		<ul>
-			<li><a href="contact.php">contact</a></li>
+			<li><a href="pagesrelativesaufooter/contact.php">contact</a></li>
 			<br>
-			<li><a href="mentionlegale.php">Infos légales</a></li>
+			<li><a href="pagesrelativesaufooter/mentionlegale.php">Infos légales</a></li>
 			<br>
-			<li><a href="quisommesnous.php">qui sommes  nous ?</a></li>
+			<li><a href="pagesrelativesaufooter/quisommesnous.php">qui sommes  nous ?</a></li>
 			<br>
-			<li><a href="conditions.php">conditions générales de vente</a></li>
+			<li><a href="pagesrelativesaufooter/conditions.php">conditions générales de vente</a></li>
 		</ul>
 	</center>
 </footer>
