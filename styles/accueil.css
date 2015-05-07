@@ -168,11 +168,7 @@ font-weight:bold;
 	
 }
 
-#logo{
-position:absolute;
-margin-left:12%;
-margin-top:-7%;
-}
+
 
 #recherche{
 
@@ -262,16 +258,7 @@ margin-left:10%;
 
 }
 
-#hautdepage{
-	position: absolute;
-	margin-top: -5%;
-	font-weight:bold;
-	
-	margin-left:15%;
-	cursor: pointer;
 
-	
-}
 
 #oubli{
 	color:#999;

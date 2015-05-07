@@ -2,14 +2,15 @@
 <html>
 <head>
   <meta charset="utf-8"/>
-  <title>Le Biocoin</title>
+  <title>LeBioCoin</title>
+  <link rel="stylesheet" href="styles/header.css">
   <link rel="stylesheet" href="styles/accueil.css">
 </head>
 
 <body>
- <div id="forme">
+
   <div id="hautdepage"><p><a href="connexion.php">Je me connecte</a> <a href="inscription.php">Je m'inscris</a></p></div>
-<p><p1>Le Biocoin</p1>
+<p><p1>LeBioCoin</p1>
   <div id="logo"><img src="Images/logo1.png"></img></div>
  <h3> Site de ventes de fruits & légumes</h3>
 
