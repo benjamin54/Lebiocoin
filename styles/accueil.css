@@ -196,7 +196,15 @@ table{
 	
 }
 
-
+footer{
+	position:relative;
+	margin-top:70%;
+	
+	
+}
+footer ul li{
+	list-style: none;
+}
 
 #connexion{
 font-family :Georgia ;

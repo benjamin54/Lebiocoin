@@ -2,13 +2,20 @@
 <html>
 <head>
 	<meta charset="utf-8"/>  <!-- cette ligne sert à ce qu'on ai pas besoin d'ecrire le code des accents-->
+	<link rel="stylesheet" href="styles/accueil.css">
 </head>
 
-<body>
+<footer>
 	<center>
-		<h4>Contacts</h4>
-		<p>Clément Bazin de Jessey</p>
-		<p>Adresse mail : clembade@hotmail.fr</p>
+		<ul>
+			<li><a href="contact.php">contact</a></li>
+			<br>
+			<li><a href="mentionlegale.php">Infos légales</a></li>
+			<br>
+			<li><a href="quisommesnous.php">qui sommes  nous ?</a></li>
+			<br>
+			<li><a href="conditions.php">conditions générales de vente</a></li>
+		</ul>
 	</center>
-</body>
+</footer>
 </html>
