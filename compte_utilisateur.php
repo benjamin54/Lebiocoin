@@ -9,16 +9,29 @@
 <body>
 
     <?php include('includes/header.php');?>
+    <div id="profil_util">
 	<fieldset>
         <legend><b>Mon profil</b></legend>
-            <img src="Images/photo_profil_defaut.png" alt="photo de profil">  
+            <img src="Images/photo_profil_defaut.png" alt="photo de profil" id="photo_profil">  
+        <div id="noms">
+            <p> Dupont </p>
+            <p> Jean</p>
+        </div>
+
+            <p> 20/05/1990</p>
+            <p> jean@mail.com</p>
+            <p> Paris</p>
+            <p> Ile de France</p>
+            <div id="modif_profil"><a href=('#')> Modifier profil</a></div>
     </fieldset>
 
     <fieldset>
-        <legend><b>Dernières actions</b></legend>
+        <legend><b>Dernières actions : </b></legend>
+        <p> Achat : </p>
+        <p> Vente : </p>
     </fieldset>
 
-	<?php include('includes/footer.php');?>
+    </div>
 
 </body>
 </html>

@@ -1,4 +1,25 @@
-.img{
+#profil_util{
+	position: absolute;
+	top:40%;
+	left:35%;
+
+}
+#photo_profil{
 	width: 15%;
   	height:15%;
+}
+#noms{
+	position: absolute;
+	top:1%;
+	left:28%;
+}
+
+#modif_profil{
+	position: absolute;
+	left: 60%;
+	top: 50%;
+}
+{
+	border:1px solid ;
+	width: 25%;
 }
