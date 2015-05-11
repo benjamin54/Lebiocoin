@@ -27,10 +27,13 @@ if ( isset($_POST) && (!empty($_POST['login'])) && (!empty($_POST['Mdp'])) ) {
 if ($loginOK) {
   $_SESSION['pseudo'] = $data['pseudo'];
   $_SESSION['age'] = $data['age'];
-     $_SESSION['sexe'] = $data['sexe'];
   $_SESSION['ville'] = $data['ville'];
 }
 else {
   echo 'Une erreur est survenue, veuillez réessayer !';
+    // Le visiteur n'a pas été reconnu comme étant membre de notre site. On utilise alors un petit javascript lui signalant ce fait
+  echo '<body onLoad="alert(\'Membre non reconnu !\')">';
+  // puis on le redirige vers la page d'accueil
+  echo '<meta http-equiv="refresh" content="0;URL=ind.htm">';
 }
 ?>
