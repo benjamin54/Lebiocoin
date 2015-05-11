@@ -7,5 +7,11 @@ if (!isset($_SESSION['count'])) {
   $_SESSION['count']++;
 }
 
-session_destroy(); //fremer la session
+
+?>
+<?php include("pagedaccueil.php"); ?>
+
+
+<?php
+session_destroy(); //fermer la session
 ?>

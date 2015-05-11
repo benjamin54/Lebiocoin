@@ -37,7 +37,7 @@
 
 <div id="connex">
 <h4><u>JE ME CONNECTE</u></h4>
-<form method="post" action="traitement.php">
+<form method="post" action="controlleurs/traitement.php">
 <p><label>Pseudo </label> : <input type="text" name="pseudo" /> </p>
 <p><label>Mot de passe</label> : <input type="password" name="Mdp" /></p>
 

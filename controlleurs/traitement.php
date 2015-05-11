@@ -4,7 +4,7 @@ $loginOK = false;  // cf Astuce
 
 // On n'effectue les traitement qu'à la condition que
 // les informations aient été effectivement postées
-if ( isset($_POST) && (!empty($_POST['login'])) && (!empty($_POST['password'])) ) {
+if ( isset($_POST) && (!empty($_POST['login'])) && (!empty($_POST['Mdp'])) ) {
 
   extract($_POST);  // je vous renvoie à la doc de cette fonction
 
