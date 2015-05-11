@@ -1,62 +1,29 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8"/>
- <div id="bor"> <title>LeBiocoin</title>
-  <link rel="stylesheet" href="accueil.css">
-<div id=fond><body>
- <CENTER><div id="co"> <div></CENTER>
-  <div id="ligne2"><h></div>
- <div id="forme">
-<div id="hautdepage"><p><a href="connexion.php">Je me connecte</a> <a href="inscription.php">Je m'inscris</a></p></div>
-
-<p><p1>Le Biocoin</p1>
-  <div id="logo"><img src="Images/logo1.png"></img></div>
- <h3> Site de ventes de fruits & légumes</h3>
-
- <div id="pos"> <img src="Images/fruits.jpg"></img></div>
-    <nav>
-
-
-        <ul><b>
-          <li><a href ="pagedaccueil.php">ACCUEIL</a></li>
-          <li>LEGUMES</li>
-          <li>FRUITS</li>
-          <li>LABEL BIO</li>
-          <li>RECETTES</li>
-          <li>FORUM</li>
-          </b>
-        </ul>
-      </nav>
+<?php include("includes/header.php"); ?>
 
 <div id="contenuaccueil">
   <h4> <CENTER>JE CREE MON ANNONCE </CENTER></h4>
 
   <p>
     <font style="Verdana"> Veuillez remplir le formulaire ci dessous. Les champs  
-    <p2 style="color:red">*</p2> sont obligatoires.</font>
+    <p2 style="color:red"> * </p2> sont obligatoires.</font>
   </p>
 
   <p>
-    <p2 style="color:red">*</p2>Pseudo:
-    <input type="text" name="nom" />
+    Adresse mail:
+    <input type="mail" name="adressemail" value=""/><p2 style="color:red"> *</p2>
   </p>
 
   <p>
-    <p2 style="color:red">*</p2>Adresse mail:
-    <input type="mail" name="adressemail" value="dupontjean@gmail.com"/>
+    Code postal <input type="text" name="codepostal" id="codepostal"/> <p2 style="color:red"> *</p2>
   </p>
 
   <p>
-    <p2 style="color:red">*</p2>Code postal <input type="text" name="codepostal" />
+    Ville  
+    <input type="text" name="ville" id="ville"/><p2 style="color:red"> *</p2>  
   </p>
 
   <p>
-    <p2 style="color:red">*</p2>Ville  <input type="text" name="ville" />  
-  </p>
-
-  <p>
-    <p2 style="color:red">*</p2>D&eacutepartement/R&eacutegion:
+    D&eacutepartement/R&eacutegion:
     <select name="choix">
 
       <option value="choix1">Alsace</option>
@@ -103,28 +70,32 @@
  
       <option value="choix18">Rhône-Alpes</option>
     </select>
+    <p2 style="color:red"> *</p2>
   </p>
 
 <p>
-<p2 style="color:red">*</p2>Num&eacutero de fixe/Mobile<input type="text" name="NUMÉRO" />
-</p>
-<p>
-<p2 style="color:red">*</p2>Catégorie:
-</p>
-
-<select name="choixx">
-
+  Catégorie: 
+  <select name="choixx">
     <option value="choix0">Achat</option>
-
     <option value="choix01">Echange</option>
+  </select>
+  <p2 style="color:red"> *</p2>
+</p>
 
-<p2 style="color:red">*</p2>Prix<input type="text" name="Prix" /></p>
+<p>
+  Prix
+  <input type="text" name="Prix" /><p2 style="color:red"> *</p2>
+</p>
 
-<p2 style="color:red">*</p2>Titre de l'annonce<input type="text" name="Titre" /></p>
-<form method="post" action="traitement.php">
+<p>
+  Titre de l'annonce
+  <input type="text" name="Titre" /><p2 style="color:red"> *</p2>
+</p>
+
+<form method="post" action="traitement_annonce.php">
    <p>
       <label for="ameliorer">
-        <p2 style="color:red">*</p2>  Rédigez l'annonce
+        Rédigez l'annonce <p2 style="color:red"> *</p2><br>
       </label>
        
       <textarea name="ameliorer" id="ameliorer" rows="10" cols="50">
@@ -139,56 +110,6 @@
 </CENTER>
 </div>
 
-
-<div id=page>
-  <div id="posi"> <img src="Images/icone.jpg"></img></div>
-  <div id="posi2"> <img src="Images/panier.jpg"></img></div>
-  <div id="menu"></div>
-</div>
-<div id="h"></div>
-<div id="gauche">
-
-</div>
-
-
-<div id="recherche">
-<input type="texte" name="recherche" value="Je recherche..."/>
-<input type="submit" value="OK"/> 
-</div>
-<b>
-<ul> 
-  <div id="bordureg">
-
-<li>  Annonces échanges </li> <br><br>
-<li>  Annonces Ventes </li><br><br>
-<li> <a href="annonce.php">Je crée mon annonce</a>  </li> <br><br>
-<li>  Mentions legales</li><br><br>
-<li>  Aide </li> 
-</ul>
-</b>
-</div>
-<div id="newsletter"><h4><u>LA NEWSLETTER</u></h4>
-<p><input type="text" name="pseudo" value="rentrer votre mail" /> </p>
- <p><INPUT TYPE="submit" NAME="Valider" VALUE=" Envoyer"></p>
-
-</div>
-
-<div id="mag"><h4><u>LA REVUE</u></h4>
-  <img src="Images/mag.png"></img>
-
- <p><input type="text" name="pseudo" value="rentrer votre mail" /> </p>
- <p><INPUT TYPE="submit" NAME="Valider" VALUE=" Envoyer"></p>
- 
- <div id="liste">
-
-
-</div>
-
-
-</div> 
-</body>
-</div>
-</div>
 <?php include("includes/footer.php"); ?>
 </html>
 

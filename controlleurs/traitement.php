@@ -31,9 +31,9 @@ if ($loginOK) {
 }
 else {
   echo 'Une erreur est survenue, veuillez réessayer !';
-    // Le visiteur n'a pas été reconnu comme étant membre de notre site. On utilise alors un petit javascript lui signalant ce fait
+  // Le visiteur n'a pas été reconnu comme étant membre de notre site. On utilise alors un petit javascript lui signalant ce fait
   echo '<body onLoad="alert(\'Membre non reconnu !\')">';
   // puis on le redirige vers la page d'accueil
-  echo '<meta http-equiv="refresh" content="0;URL=ind.htm">';
+  echo '<meta http-equiv="refresh" content="0;URL=traitement.php">';
 }
 ?>
