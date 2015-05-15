@@ -4,21 +4,41 @@
   <h4> <CENTER>JE CREE MON ANNONCE </CENTER></h4>
 
   <p>
-    <font style="Verdana"> Veuillez remplir le formulaire ci dessous. Les champs  
+    Veuillez remplir le formulaire ci dessous. Les champs  
     <p2 style="color:red"> * </p2> sont obligatoires.</font>
   </p>
+<form method="post" action="controlleurs/traitement_annonce.php">
+
+
+<fieldset>
+  <legend><b>Catégorie</b></legend>
+
+<p>
+  Catégorie:
+  <select name="choixx">
+    <option value="choix02">Fruits</option>
+    <option value="choix03">Légumes</option>
+  </select>
+  <p2 style="color:red"> *</p2>
+</p>
+
+<p>
+  Type d'annonce: 
+  <input type="radio" name="achat" value="achat" id="achat"/> <label for="achat">Achat</label>
+  <input type="radio" name="echange" value="echange" id="echange"/> <label for="echange">Echange</label>
+  <p2 style="color:red"> *</p2>
+</p>
+</fieldset>
+
+  <fieldset>
+        <legend><b>Localisation</b></legend>
 
   <p>
-    Adresse mail:
-    <input type="mail" name="adressemail" value=""/><p2 style="color:red"> *</p2>
+    Code postal: <input type="text" name="codepostal" id="codepostal"/> <p2 style="color:red"> *</p2>
   </p>
 
   <p>
-    Code postal <input type="text" name="codepostal" id="codepostal"/> <p2 style="color:red"> *</p2>
-  </p>
-
-  <p>
-    Ville  
+    Ville:  
     <input type="text" name="ville" id="ville"/><p2 style="color:red"> *</p2>  
   </p>
 
@@ -26,7 +46,7 @@
     D&eacutepartement/R&eacutegion:
     <select name="choix">
 
-      <option value="choix1">Alsace</option>
+      <option value="choix1" selected="selected">Alsace</option>
 
       <option value="choix2">Aquitaine</option>
 
@@ -72,42 +92,56 @@
     </select>
     <p2 style="color:red"> *</p2>
   </p>
+</fieldset>
+<fieldset>
+  <legend><b>Vos informations</b></legend>
+  <p>
+    Votre nom:
+    <input type="mail" name="adressemail" value=""/><p2 style="color:red"> *</p2>
+  </p>
+  <p>
+    Adresse mail:
+    <input type="mail" name="adressemail" value=""/><p2 style="color:red"> *</p2>
+  </p>
+  <p>
+    Téléphone:
+    <input type="tel" name="tel" value=""/><p2 style="color:red"> *</p2>
+  </p>
+</fieldset>
 
-<p>
-  Catégorie: 
-  <select name="choixx">
-    <option value="choix0">Achat</option>
-    <option value="choix01">Echange</option>
-  </select>
-  <p2 style="color:red"> *</p2>
-</p>
-
-<p>
-  Prix
-  <input type="text" name="Prix" /><p2 style="color:red"> *</p2>
-</p>
-
+<fieldset>
+  <legend><b>Votre annonce</b></legend>
 <p>
   Titre de l'annonce
   <input type="text" name="Titre" /><p2 style="color:red"> *</p2>
 </p>
 
-<form method="post" action="traitement_annonce.php">
-   <p>
+<p>
+    <label for="photo_annonce">Choix d'une photo pour votre produit: </label>
+    <input type="file" name="photo_annonce" id="photo_annonce"/> <!-- mettre une photo à l'annonce -->
+</p>
+   
+
+  <p>
       <label for="ameliorer">
-        Rédigez l'annonce <p2 style="color:red"> *</p2><br>
+        Texte de l'annonce: <p2 style="color:red"> *</p2><br>
       </label>
        
       <textarea name="ameliorer" id="ameliorer" rows="10" cols="50">
       </textarea>       
-   </p>
-</form>
-
-<CENTER>
-  <p>
-  <INPUT TYPE="submit" NAME="Valider" VALUE=" ENVOYER">
   </p>
-</CENTER>
+
+<p>
+  Prix:
+  <input type="text" name="prix" id="prix"/><p2 style="color:red"> *</p2>
+</p>
+</fieldset>
+
+  <p>
+  <input type="submit" name="sauver" id="sauver" value="Sauvegarder l'annonce">
+  </p>
+
+</form>
 </div>
 
 <?php include("includes/footer.php"); ?>
