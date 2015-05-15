@@ -2,38 +2,49 @@
 <html>
 <head>
   <meta charset="utf-8"/>
-  <title>LeBioCoin</title>
+  <title>Lebiocoin</title>
   <link rel="stylesheet" href="styles/header.css">
-  <link rel="stylesheet" href="styles/accueil.css">
 </head>
 
 <body>
+	<div id="menu">
+        <ul height="100" width="500">
+          <li class="menu1"><a href ="pagedaccueil.php">ACCUEIL</a></li><!--
+          --><li class="menu1">LEGUMES</li><!--
+          --><li class="menu1"><a href="fruit.php">FRUITS</a></li><!--
+          --><li class="menu1">LABEL BIO</li><!--
+          --><li class="menu1">RECETTES</li><!--
+          --><li class="menu1">FORUM</li>
+          </ul>
+    </div>
+	
+	<div id="photo">
+    <img src="http://commentplaire.com/wp-content/uploads/2014/08/Fruits-and-Vegetable-Wallpapers-HD-1160x652.jpg" height="1500" width="1375"></img>
+  </div>
 
-  <div id="hautdepage"><p><a href="connexion.php">Je me connecte</a> <a href="inscription.php">Je m'inscris</a></p></div>
-<p><p1>LeBioCoin</p1>
-  <div id="logo"><img src="Images/logo1.png"></img></div>
- <h3> Site de ventes de fruits & légumes</h3>
+  <div id="bloc1">
+     <div id="nom">
+        <h1>LeBioCoin</h1>
+     </div>
+     <div id="logo">
+        <img src="logo1.png" width="30" height="30"></img>
+     </div>
+     <div id="nom2">
+        <p> Site de vente de fruits & légumes</p>
+     </div>
+  </div>
 
-<div id="pos"> <img src="Images/fruits.jpg"></img></div>
-    <nav>
-        <ul><b>
-          <li><a href ="pagedaccueil.php">ACCUEIL</a></li>
-          <li>LEGUMES</li>
-          <li><a href="fruit.php">FRUITS</a></li>
-          <li>LABEL BIO</li>
-          <li>RECETTES</li>
-          <li>FORUM</li>
-          </b>
-        </ul>
-    </nav>
-</div>
+    
+	
 
-<div id=page>
+<div id="page">
  
  <div id="posi"> <img src="icone.jpg"></img></div>
   <div id="posi2"> <img src="panier.jpg"></img></div>
   <div id="menu"></div>
 </div>
+
+<div id="hautdepage"><p><a href="connexion.php">Je me connecte</a> <a href="inscription.php">Je m'inscris</a></p></div>
 <div id="h"></div>
 <div id="gauche">
 
