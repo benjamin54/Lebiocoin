@@ -11,8 +11,7 @@
               mysqli_select_db ($base,'mabase') ;
 
 		$sql = 'INSERT INTO annonce VALUES ("")';
-		}
-		else{
+
 		mysqli_query ($base,$sql) or die ('Erreur SQL !'.$sql.'<br />'.mysqli_error($base)); 
  
         // on ferme la connexion
