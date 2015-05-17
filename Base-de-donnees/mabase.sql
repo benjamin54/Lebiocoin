@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.1.14
+-- version 4.0.10deb1
 -- http://www.phpmyadmin.net
 --
--- Client :  127.0.0.1
--- Généré le :  Lun 11 Mai 2015 à 18:07
--- Version du serveur :  5.6.17
--- Version de PHP :  5.5.12
+-- Host: localhost
+-- Generation Time: May 17, 2015 at 05:43 PM
+-- Server version: 5.5.41-0ubuntu0.14.04.1
+-- PHP Version: 5.5.9-1ubuntu4.6
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -17,13 +17,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8 */;
 
 --
--- Base de données :  `mabase`
+-- Database: `mabase`
 --
 
 -- --------------------------------------------------------
 
 --
--- Structure de la table `adresse`
+-- Table structure for table `adresse`
 --
 
 CREATE TABLE IF NOT EXISTS `adresse` (
@@ -37,18 +37,28 @@ CREATE TABLE IF NOT EXISTS `adresse` (
 -- --------------------------------------------------------
 
 --
--- Structure de la table `annonce`
+-- Table structure for table `annonce`
 --
 
 CREATE TABLE IF NOT EXISTS `annonce` (
   `id_annonce` int(11) NOT NULL AUTO_INCREMENT,
+  `codepostal` int(5) NOT NULL,
+  `ville` varchar(20) NOT NULL,
+  `region` varchar(20) NOT NULL,
+  `nom` varchar(12) NOT NULL,
+  `mail` varchar(320) NOT NULL,
+  `tel` tinyint(10) NOT NULL,
+  `titre` text NOT NULL,
+  `photo_annonce` blob NOT NULL,
+  `texte` text NOT NULL,
+  `prix` float NOT NULL,
   PRIMARY KEY (`id_annonce`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
 --
--- Structure de la table `categorie_a`
+-- Table structure for table `categorie_a`
 --
 
 CREATE TABLE IF NOT EXISTS `categorie_a` (
@@ -60,7 +70,7 @@ CREATE TABLE IF NOT EXISTS `categorie_a` (
 -- --------------------------------------------------------
 
 --
--- Structure de la table `categorie_produit`
+-- Table structure for table `categorie_produit`
 --
 
 CREATE TABLE IF NOT EXISTS `categorie_produit` (
@@ -72,7 +82,7 @@ CREATE TABLE IF NOT EXISTS `categorie_produit` (
 -- --------------------------------------------------------
 
 --
--- Structure de la table `categorie_sujet`
+-- Table structure for table `categorie_sujet`
 --
 
 CREATE TABLE IF NOT EXISTS `categorie_sujet` (
@@ -84,7 +94,7 @@ CREATE TABLE IF NOT EXISTS `categorie_sujet` (
 -- --------------------------------------------------------
 
 --
--- Structure de la table `forum`
+-- Table structure for table `forum`
 --
 
 CREATE TABLE IF NOT EXISTS `forum` (
@@ -96,7 +106,7 @@ CREATE TABLE IF NOT EXISTS `forum` (
 -- --------------------------------------------------------
 
 --
--- Structure de la table `membre`
+-- Table structure for table `membre`
 --
 
 CREATE TABLE IF NOT EXISTS `membre` (
@@ -113,7 +123,7 @@ CREATE TABLE IF NOT EXISTS `membre` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=89 ;
 
 --
--- Contenu de la table `membre`
+-- Dumping data for table `membre`
 --
 
 INSERT INTO `membre` (`id_membre`, `prenom`, `nom`, `adressemail`, `motdepasse1`, `motdepasse2`, `ville`, `num`, `photo`) VALUES
@@ -146,7 +156,7 @@ INSERT INTO `membre` (`id_membre`, `prenom`, `nom`, `adressemail`, `motdepasse1`
 -- --------------------------------------------------------
 
 --
--- Structure de la table `message_forum`
+-- Table structure for table `message_forum`
 --
 
 CREATE TABLE IF NOT EXISTS `message_forum` (
@@ -158,7 +168,7 @@ CREATE TABLE IF NOT EXISTS `message_forum` (
 -- --------------------------------------------------------
 
 --
--- Structure de la table `message_prive`
+-- Table structure for table `message_prive`
 --
 
 CREATE TABLE IF NOT EXISTS `message_prive` (
@@ -170,7 +180,7 @@ CREATE TABLE IF NOT EXISTS `message_prive` (
 -- --------------------------------------------------------
 
 --
--- Structure de la table `produit`
+-- Table structure for table `produit`
 --
 
 CREATE TABLE IF NOT EXISTS `produit` (
@@ -185,7 +195,7 @@ CREATE TABLE IF NOT EXISTS `produit` (
 -- --------------------------------------------------------
 
 --
--- Structure de la table `sujet_forum`
+-- Table structure for table `sujet_forum`
 --
 
 CREATE TABLE IF NOT EXISTS `sujet_forum` (

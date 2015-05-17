@@ -20,17 +20,28 @@
             }
         }
       }
-    $prenom=$_POST['prenom'];
-    $photo=$_POST['photo_annonce'];
+
+    $codepostal=$_POST['codepostal'];
+    $ville=$_POST['ville'];
+    $region=$_POST['region'];
+
+    $nom=$_POST['nom'];
+    $mail=$_POST['mail'];
+    $tel=$_POST['tel'];
+
+    $titre=$_POST['titre'];
+    $photo_annonce=$_POST['photo_annonce'];
+    $texte=$_POST['texte'];
+    $prix=$_POST['prix'];
 
 		$base = mysqli_connect ('localhost', 'root', '');  
-              mysqli_select_db ($base,'mabase') ;
+            mysqli_select_db ($base,'mabase') ;
 
-		$sql = 'INSERT INTO annonce VALUES ("")';
+		$sql = 'INSERT INTO annonce VALUES ("","'.$codepostal.'","'.$ville.'","'.$region.'","'.$nom.'","'.$mail.'","'.$tel.'","'.$titre.'","'.$photo_annonce.'","'.$texte.'","'.$prix.'")';
 
 		mysqli_query ($base,$sql) or die ('Erreur SQL !'.$sql.'<br />'.mysqli_error($base)); 
  
         // on ferme la connexion
-        mysqli_close($base);
+    mysqli_close($base);
   }
 ?>

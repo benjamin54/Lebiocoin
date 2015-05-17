@@ -15,9 +15,9 @@
 
 <p>
   Catégorie:
-  <select name="choixx">
-    <option value="choix02">Fruits</option>
-    <option value="choix03">Légumes</option>
+  <select name="categorie" id="categorie">
+    <option value="choix01">Fruits</option>
+    <option value="choix02">Légumes</option>
   </select>
   <p2 style="color:red"> *</p2>
 </p>
@@ -44,7 +44,7 @@
 
   <p>
     D&eacutepartement/R&eacutegion:
-    <select name="choix">
+    <select name="region" id="region">
 
       <option value="choix1" selected="selected">Alsace</option>
 
@@ -97,15 +97,15 @@
   <legend><b>Vos informations</b></legend>
   <p>
     Votre nom:
-    <input type="mail" name="adressemail" value=""/><p2 style="color:red"> *</p2>
+    <input type="text" name="nom" id="nom" value="" /><p2 style="color:red"> *</p2>
   </p>
   <p>
     Adresse mail:
-    <input type="mail" name="adressemail" value=""/><p2 style="color:red"> *</p2>
+    <input type="mail" name="mail" id="mail" value="" /><p2 style="color:red"> *</p2>
   </p>
   <p>
     Téléphone:
-    <input type="tel" name="tel" value=""/><p2 style="color:red"> *</p2>
+    <input type="tel" name="tel" id="tel" value=""/><p2 style="color:red"> *</p2>
   </p>
 </fieldset>
 
@@ -113,7 +113,7 @@
   <legend><b>Votre annonce</b></legend>
 <p>
   Titre de l'annonce
-  <input type="text" name="Titre" /><p2 style="color:red"> *</p2>
+  <input type="text" name="titre" id="titre" /><p2 style="color:red"> *</p2>
 </p>
 
 <p>
@@ -127,7 +127,7 @@
         Texte de l'annonce: <p2 style="color:red"> *</p2><br>
       </label>
        
-      <textarea name="ameliorer" id="ameliorer" rows="10" cols="50">
+      <textarea name="texte" id="texte" rows="10" cols="50">
       </textarea>       
   </p>
 
@@ -144,6 +144,5 @@
 </form>
 </div>
 
-<?php include("includes/footer.php"); ?>
 </html>
 
