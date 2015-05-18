@@ -3,8 +3,9 @@
 <head>
   <meta charset="utf-8"/>
   <title>LeBioCoin</title>
-  <link rel="stylesheet" href="styles/header.css">
-  <link rel="stylesheet" href="styles/accueil.css">
+  <link rel="icon" type="image/png" href="Images/favicon-32x32.png" sizes="32x32"/>
+  <link rel="stylesheet" href="styles/header.css"/>
+  <link rel="stylesheet" href="styles/accueil.css"/>
 </head>
 
 <body>

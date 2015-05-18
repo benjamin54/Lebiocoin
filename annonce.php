@@ -1,15 +1,14 @@
 <?php include("includes/header.php"); ?>
 
-<div id="contenuaccueil">
   <h4> <CENTER>JE CREE MON ANNONCE </CENTER></h4>
 
   <p>
     Veuillez remplir le formulaire ci dessous. Les champs  
     <p2 style="color:red"> * </p2> sont obligatoires.</font>
   </p>
+
 <form method="post" action="controlleurs/traitement_annonce.php">
-
-
+<div id="contenuaccueil">
 <fieldset>
   <legend><b>Catégorie</b></legend>
 
@@ -34,7 +33,7 @@
         <legend><b>Localisation</b></legend>
 
   <p>
-    Code postal: <input type="text" name="codepostal" id="codepostal"/> <p2 style="color:red"> *</p2>
+    Code postal: <input type="text" name="codepostal" id="codepostal" value=<?php echo $codepostal?>/> <p2 style="color:red"> *</p2> <!-- voir -->
   </p>
 
   <p>
@@ -46,49 +45,49 @@
     D&eacutepartement/R&eacutegion:
     <select name="region" id="region">
 
-      <option value="choix1" selected="selected">Alsace</option>
+      <option value="Alsace" selected="selected">Alsace</option>
 
-      <option value="choix2">Aquitaine</option>
+      <option value="Aquitaine">Aquitaine</option>
 
-      <option value="choix3">Auvergne</option>
+      <option value="Auvergne">Auvergne</option>
 
-      <option value="choix4">Basse Normandie</option>
+      <option value="Base Normandie">Basse Normandie</option>
 
-      <option value="choix1">Bourgogne</option>
+      <option value="Bourgogne">Bourgogne</option>
 
-      <option value="choix2">Bretagne</option>
+      <option value="Bretagne">Bretagne</option>
 
-      <option value="choix3">Centre</option>
+      <option value="Centre">Centre</option>
 
-      <option value="choix4">Champagne-Ardenne</option>
+      <option value="Champagne-Ardenne">Champagne-Ardenne</option>
     
-      <option value="choix5">Corse</option>
+      <option value="Corse">Corse</option>
 
-      <option value="choix6">Franche-Comté</option>
+      <option value="Franche-Comté">Franche-Comté</option>
 
-      <option value="choix7">Haute normandie</option>
+      <option value="Haute normandie">Haute normandie</option>
 
-      <option value="choix8">Ile de France</option>
+      <option value="Ile de France">Ile de France</option>
  
-      <option value="choix9">Languedoc Roussilon</option>
+      <option value="Languedoc Roussilon">Languedoc Roussilon</option>
 
-      <option value="choix10">Limousin</option>
+      <option value="Limousin">Limousin</option>
 
-      <option value="choix11">Loraine</option>
+      <option value="Loraine">Loraine</option>
 
-      <option value="choix12">Midi-Pyrénées</option>
+      <option value="Midi-Pyrénées">Midi-Pyrénées</option>
  
-      <option value="choix13">Nord pas de Calais</option>
+      <option value="Nord pas de Calais">Nord pas de Calais</option>
 
-      <option value="choix14">Pays de la Loire</option>
+      <option value="Pays de la Loire">Pays de la Loire</option>
 
-      <option value="choix15">Picardie</option>
+      <option value="Picardie">Picardie</option>
 
-      <option value="choix16">Poitou Charente</option>
+      <option value="Poitou Charente">Poitou Charente</option>
  
-      <option value="choix17">Provence Alpes Cote d'Azur</option>
+      <option value="Provence Alpes Cote d'Azur">Provence Alpes Cote d'Azur</option>
  
-      <option value="choix18">Rhône-Alpes</option>
+      <option value="Rhône-Alpes">Rhône-Alpes</option>
     </select>
     <p2 style="color:red"> *</p2>
   </p>
@@ -118,7 +117,7 @@
 
 <p>
     <label for="photo_annonce">Choix d'une photo pour votre produit: </label>
-    <input type="file" name="photo_annonce" id="photo_annonce"/> <!-- mettre une photo à l'annonce -->
+    <input type="file" name="photo_annonce" id="photo_annonce"/> <!-- mettre une photo à l\'annonce -->
 </p>
    
 
@@ -140,9 +139,8 @@
   <p>
   <input type="submit" name="sauver" id="sauver" value="Sauvegarder l'annonce">
   </p>
-
-</form>
 </div>
+</form>
 
 </html>
 
