@@ -4,6 +4,7 @@
 
   <meta charset="utf-8"/>
   <title>LeBioCoin</title>
+  <link rel="icon" type="image/png" href="Images/favicon-32x32.png" sizes="32x32"/> <!-- ici la favicon, ici pamplemousse, se mettant à côté du title -->
   <link rel="stylesheet" href="header.css">
 
 </head>
@@ -24,6 +25,7 @@
   
   <div id="photo">
       <img src="http://commentplaire.com/wp-content/uploads/2014/08/Fruits-and-Vegetable-Wallpapers-HD-1160x652.jpg" height="1500" width="1368"></img>
+      <!-- possible de telecharger la photo?-->
   </div>
 
 
@@ -36,7 +38,7 @@
           </div>
 
           <div id="logo">
-            <img src="logo3.PNG" width="160" height="150"></img>
+            <img src="logo3.PNG" width="160" height="150"></img> <!-- mettre l'image dans le dossier Images-->
           </div>
 
           <div id="nom2">
@@ -77,7 +79,7 @@
 
           <div id="newsletter">
             <p class="titre_footer1">LA NEWSLETTER</p>
-            <form action="news">
+            <form action="news">   <!-- la methode d'envoi?-->
               <input type="text" name="pseudo" placeholder="Rentrer votre email" />
               <input type="bouton" name="submit" value=" Envoyer"/>
             </form>
