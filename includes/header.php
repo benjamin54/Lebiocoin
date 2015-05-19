@@ -24,7 +24,7 @@
 
   
   <div id="photo">
-      <img src="http://commentplaire.com/wp-content/uploads/2014/08/Fruits-and-Vegetable-Wallpapers-HD-1160x652.jpg" height="1500" width="1368"></img>
+      <img src="Images/imagedefond_fruit.jpg" height="1500" width="1368"></img>
       <!-- possible de telecharger la photo?-->
   </div>
 
