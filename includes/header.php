@@ -4,14 +4,13 @@
 
   <meta charset="utf-8"/>
   <title>LeBioCoin</title>
-  <link rel="icon" type="image/png" href="Images/favicon-32x32.png" sizes="32x32"/> <!-- ici la favicon, ici pamplemousse, se mettant à côté du title -->
-  <link rel="stylesheet" href="includes/header.css">
+  <link rel="stylesheet" href="Header.css">
 
 </head>
 
 <body>
 
-  <div id="menu">
+	<div id="menu">
         <ul height="100" width="500">
           <li class="menu1"><a href ="pagedaccueil.php">ACCUEIL</a></li><!--
           --><li class="menu1">LEGUMES</li><!--
@@ -22,10 +21,9 @@
           </ul>
   </div>
 
-  
-  <div id="photo">
+	
+	<div id="photo">
       <img src="Images/imagedefond_fruit.jpg" height="1500" width="1368"></img>
-      <!-- possible de telecharger la photo?-->
   </div>
 
 
@@ -38,7 +36,7 @@
           </div>
 
           <div id="logo">
-            <img src="Images/logo.PNG" width="160" height="150"></img> <!-- mettre l'image dans le dossier Images-->
+            <img src="logo.PNG" width="160" height="150"></img>
           </div>
 
           <div id="nom2">
@@ -79,7 +77,7 @@
 
           <div id="newsletter">
             <p class="titre_footer1">LA NEWSLETTER</p>
-            <form action="news">   <!-- la methode d'envoi?-->
+            <form action="news">
               <input type="text" name="pseudo" placeholder="Rentrer votre email" />
               <input type="bouton" name="submit" value=" Envoyer"/>
             </form>
