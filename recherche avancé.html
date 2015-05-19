@@ -1,0 +1,127 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+<title>Liste de fruits de A à Z</title>
+<meta name="description" content="Nous vous présentons une liste de fruits exotiques et de fruits de saison classée par ordre alphabétique afin de composer votre panier au marché" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="initial-scale=1.0">
+<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+<link href='style.css' rel='stylesheet' type='text/css'>
+<script type="text/javascript">
+var dfLoadStatus = 0;
+var dfLoadFiles = [
+      ["https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"],
+      ["js/retour_haut_min.js"]
+     ];
+function downloadJSAtOnload() {
+    if (!dfLoadFiles.length) return;
+    var dfGroup = dfLoadFiles.shift();
+    dfLoadStatus = 0;
+    for(var i = 0; i<dfGroup.length; i++) {
+        dfLoadStatus++;
+        var element = document.createElement('script');
+        element.src = dfGroup[i];
+        element.onload = element.onreadystatechange = function() {
+        if ( ! this.readyState || 
+               this.readyState == 'complete') {
+            dfLoadStatus--;
+            if (dfLoadStatus==0) downloadJSAtOnload();
+        }
+    };
+    document.body.appendChild(element);
+  }
+}
+if (window.addEventListener)
+    window.addEventListener("load", downloadJSAtOnload, false);
+else if (window.attachEvent)
+    window.attachEvent("onload", downloadJSAtOnload);
+else window.onload = downloadJSAtOnload;
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-46870814-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+</head>
+<body>
+<div id="header">
+    <div class="logo"><a href="/" title="liste de mots"><img src="images/logo.png" width="410" height="74" alt="Liste de mots"/></a></div>
+</div>
+<div id="Buttons">
+    <a href="liste-animaux" class="myButton" title="Animaux">Animaux</a><a href="liste-arbres" class="myButton" title="Arbres">Arbres</a><a href="liste-capitales" class="myButton" title="Capitales">Capitales</a><a href="liste-chaines-television" class="myButton" title="Chaînes de télévision">Chaînes de télévision</a><a href="liste-departements-francais" class="myButton" title="Départements français">Départements français</a><a href="liste-elements-chimiques" class="myButton" title="Eléments chimiques">Eléments chimiques</a><a href="liste-epices" class="myButton" title="Épices">Épices</a><a href="liste-etats-usa" class="myButton" title="États des USA">États des USA</a><a href="liste-fleurs" class="myButton" title="Fleurs">Fleurs</a><a href="liste-fruits" class="myButton" title="Fruits">Fruits</a><a href="liste-legumes" class="myButton" title="Légumes">Légumes</a><a href="liste-metiers" class="myButton" title="Métiers">Métiers</a><a href="liste-moyens-transport" class="myButton" title="Moyens de transport">Moyens de transport</a><a href="liste-outils" class="myButton" title="Outils">Outils</a><a href="liste-pays" class="myButton" title="Pays">Pays</a><a href="liste-pokemons" class="myButton" title="Pokémons">Pokémons</a><a href="liste-prenoms-feminins" class="myButton" title="Prénoms féminins">Prénoms féminins</a><a href="liste-prenoms-masculins" class="myButton" title="Prénoms masculins">Prénoms masculins</a><a href="liste-sports" class="myButton" title="Sports">Sports</a><a href="liste-verbes-irreguliers-anglais" class="myButton" title="Verbes irréguliers anglais">Verbes irréguliers anglais</a><a href="proposer" class="myButton red" title="Proposer un mot">Proposer un mot</a></div>
+<div id="content">	
+		<div class="post">
+                    <h1>Liste des fruits</h1>
+                    <h2>Tous les fruits par ordre alphabétique</h2>
+                    <p>Il existe un débat sans fin concernant les fruits. En effet, à l'inverse des légumes, les fruits peuvent avoir deux définitions selon que l'on se place dan le cadre de la cuisine ou le cadre de la botanique.<br />
+En botanique, un fruit est un végétal qui contient un ou plusieurs noyaux. Il est la suite logique de la fleur et permet de protéger ces fameuses graines pour la dissémination de celles-ci. On peut prendre l'exemple de l'abricot qui possède un noyau.<br />
+En cuisine, un fruit est plutôt un ingrédient comestible qui se consomme cru ou cuit et que l'on utilise principalement dans les préparations sucrés et les desserts comme par exemple les fraises et les pommes.</p>
+                    <div id="ligne_pub">
+                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    <!-- Listedemots - ligne - (responsive) -->
+                    <ins class="adsbygoogle listedemots-ligne-responsive"
+                         style="display:block"
+                         data-ad-client="ca-pub-8124868829091013"
+                         data-ad-slot="7500148687"
+                         data-ad-format="auto"></ins>
+                    <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                    </div>
+                    <form action="recherche" method="POST" id="contenuform">
+                        <p class="info">
+                        Pour aller plus loin, choisissez la première lettre
+                        <select name="lettre">
+                            <option value=""></option><option value="a">a</option><option value="b">b</option><option value="c">c</option><option value="d">d</option><option value="e">e</option><option value="f">f</option><option value="g">g</option><option value="h">h</option><option value="i">i</option><option value="j">j</option><option value="k">k</option><option value="l">l</option><option value="m">m</option><option value="n">n</option><option value="o">o</option><option value="p">p</option><option value="q">q</option><option value="r">r</option><option value="s">s</option><option value="t">t</option><option value="u">u</option><option value="v">v</option><option value="w">w</option><option value="x">x</option><option value="y">y</option><option value="z">z</option>                        </select>
+                        et/ou le nombre de lettres
+                        <select name="nombre">
+                            <option value=""></option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option>                        </select>
+                        des
+                        fruits                        que vous cherchez et cliquez sur le bouton suivant => 
+                        <input type="hidden" name="recherche" value="ok"/>
+                        <input type="hidden" name="theme" value="fruits"/>
+                        <button type="submit" class="button bouton_recherche" style="display:block; margin-top: 10px;">Rechercher</button>
+                        </p>
+                    </form>
+                    <div class="colonne_mots"><div class="mot">Abricot</div></div><div class="colonne_mots"><div class="mot">Airelle</div></div><div class="colonne_mots"><div class="mot">Aki</div></div><div class="colonne_mots"><div class="mot">Ananas</div></div><div class="colonne_mots"><div class="mot">Arbouse</div></div><div class="colonne_mots"><div class="mot">Avocat</div></div><div class="colonne_mots"><div class="mot">Banane</div></div><div class="colonne_mots"><div class="mot">Barbadine</div></div><div class="colonne_mots"><div class="mot">Bigarade</div></div><div class="colonne_mots"><div class="mot">Brugnon</div></div><div class="colonne_mots"><div class="mot">Cabosse</div></div><div class="colonne_mots"><div class="mot">Carambole</div></div><div class="colonne_mots"><div class="mot">Cassis</div></div><div class="colonne_mots"><div class="mot">Cédrat</div></div><div class="colonne_mots"><div class="mot">Cériman</div></div><div class="colonne_mots"><div class="mot">Cerise</div></div><div class="colonne_mots"><div class="mot">Châtaigne</div></div><div class="colonne_mots"><div class="mot">Chayote</div></div><div class="colonne_mots"><div class="mot">Citron</div></div><div class="colonne_mots"><div class="mot">Clémentine</div></div><div class="colonne_mots"><div class="mot">Clemenvilla</div></div><div class="colonne_mots"><div class="mot">Coing</div></div><div class="colonne_mots"><div class="mot">Combava</div></div><div class="colonne_mots"><div class="mot">Corme</div></div><div class="colonne_mots"><div class="mot">Cranberry</div></div><div class="colonne_mots"><div class="mot">Curuba</div></div><div class="colonne_mots"><div class="mot">Datte</div></div><div class="colonne_mots"><div class="mot">Feijoas</div></div><div class="colonne_mots"><div class="mot">Figue</div></div><div class="colonne_mots"><div class="mot">Fraise</div></div><div class="colonne_mots"><div class="mot">Framboise</div></div><div class="colonne_mots"><div class="mot">Fruit de la passion</div></div><div class="colonne_mots"><div class="mot">Girembelle</div></div><div class="colonne_mots"><div class="mot">Goyave</div></div><div class="colonne_mots"><div class="mot">Grenade</div></div><div class="colonne_mots"><div class="mot">Grenadelle</div></div><div class="colonne_mots"><div class="mot">Grenadille</div></div><div class="colonne_mots"><div class="mot">Griotte</div></div><div class="colonne_mots"><div class="mot">Groseille</div></div><div class="colonne_mots"><div class="mot">Icaque</div></div><div class="colonne_mots"><div class="mot">Jaboticaba</div></div><div class="colonne_mots"><div class="mot">Jambolan</div></div><div class="colonne_mots"><div class="mot">Jaque</div></div><div class="colonne_mots"><div class="mot">Jujube</div></div><div class="colonne_mots"><div class="mot">Kaki</div></div><div class="colonne_mots"><div class="mot">Kiwaï</div></div><div class="colonne_mots"><div class="mot">Kiwi</div></div><div class="colonne_mots"><div class="mot">Kumquat</div></div><div class="colonne_mots"><div class="mot">Lime</div></div><div class="colonne_mots"><div class="mot">Litchi</div></div><div class="colonne_mots"><div class="mot">Longane</div></div><div class="colonne_mots"><div class="mot">Mandarine</div></div><div class="colonne_mots"><div class="mot">Mangoustan</div></div><div class="colonne_mots"><div class="mot">Mangue</div></div><div class="colonne_mots"><div class="mot">Marang</div></div><div class="colonne_mots"><div class="mot">Marron</div></div><div class="colonne_mots"><div class="mot">Melon</div></div><div class="colonne_mots"><div class="mot">Mirabelle</div></div><div class="colonne_mots"><div class="mot">Mûre</div></div><div class="colonne_mots"><div class="mot">Myrtille</div></div><div class="colonne_mots"><div class="mot">Nectarine</div></div><div class="colonne_mots"><div class="mot">Nèfle</div></div><div class="colonne_mots"><div class="mot">Noisette</div></div><div class="colonne_mots"><div class="mot">Noix</div></div><div class="colonne_mots"><div class="mot">Noix de coco</div></div><div class="colonne_mots"><div class="mot">Olive</div></div><div class="colonne_mots"><div class="mot">Orange</div></div><div class="colonne_mots"><div class="mot">Pamplemousse</div></div><div class="colonne_mots"><div class="mot">Papaye</div></div><div class="colonne_mots"><div class="mot">Pastèque</div></div><div class="colonne_mots"><div class="mot">Pêche</div></div><div class="colonne_mots"><div class="mot">Physalis</div></div><div class="colonne_mots"><div class="mot">Pistache</div></div><div class="colonne_mots"><div class="mot">Pitaya</div></div><div class="colonne_mots"><div class="mot">Poire</div></div><div class="colonne_mots"><div class="mot">Pomelo</div></div><div class="colonne_mots"><div class="mot">Pomme</div></div><div class="colonne_mots"><div class="mot">Prune</div></div><div class="colonne_mots"><div class="mot">Pruneau</div></div><div class="colonne_mots"><div class="mot">Prunelle</div></div><div class="colonne_mots"><div class="mot">Quetsche</div></div><div class="colonne_mots"><div class="mot">Raisin</div></div><div class="colonne_mots"><div class="mot">Ramboutan</div></div><div class="colonne_mots"><div class="mot">Sapote</div></div><div class="colonne_mots"><div class="mot">Tamarin</div></div><div class="colonne_mots"><div class="mot">Tangerine</div></div><div class="colonne_mots"><div class="mot">Tomate</div></div><div class="colonne_mots"><div class="mot">Yuzu</div></div><div class="colonne_mots"><div class="mot">Zévi</div></div><div class="spacer"></div>                        <div id="ligne_pub">
+                        <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                        <!-- Listedemots - ligne - (responsive) - 2 -->
+                        <ins class="adsbygoogle listedemots-ligne-responsive2"
+                             style="display:block"
+                             data-ad-client="ca-pub-8124868829091013"
+                             data-ad-slot="7043768287"
+                             data-ad-format="auto"></ins>
+                        <script>
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
+                        </div>
+                        <h2>Trouvez d'autres listes concernant les fruits</h2>
+
+                        <div class="colonne_mots lien_lettre"><div class="mot"><a href="http://www.listedemots.com/liste-fruits_en-A" title="Fruits en A">Fruits en A</a></div></div><div class="colonne_mots lien_lettre"><div class="mot"><a href="http://www.listedemots.com/liste-fruits_en-B" title="Fruits en B">Fruits en B</a></div></div><div class="colonne_mots lien_lettre"><div class="mot"><a href="http://www.listedemots.com/liste-fruits_en-C" title="Fruits en C">Fruits en C</a></div></div><div class="colonne_mots lien_lettre"><div class="mot"><a href="http://www.listedemots.com/liste-fruits_en-D" title="Fruits en D">Fruits en D</a></div></div><div class="colonne_mots lien_lettre"><div class="mot"><a href="http://www.listedemots.com/liste-fruits_en-E" title="Fruits en E">Fruits en E</a></div></div><div class="colonne_mots lien_lettre"><div class="mot"><a href="http://www.listedemots.com/liste-fruits_en-F" title="Fruits en F">Fruits en F</a></div></div><div class="colonne_mots lien_lettre"><div class="mot"><a href="http://www.listedemots.com/liste-fruits_en-G" title="Fruits en G">Fruits en G</a></div></div><div class="colonne_mots lien_lettre"><div class="mot"><a href="http://www.listedemots.com/liste-fruits_en-H" title="Fruits en H">Fruits en H</a></div></div><div class="colonne_mots lien_lettre"><div class="mot"><a href="http://www.listedemots.com/liste-fruits_en-I" title="Fruits en I">Fruits en I</a></div></div><div class="colonne_mots lien_lettre"><div class="mot"><a href="http://www.listedemots.com/liste-fruits_en-J" title="Fruits en J">Fruits en J</a></div></div><div class="colonne_mots lien_lettre"><div class="mot"><a href="http://www.listedemots.com/liste-fruits_en-K" title="Fruits en K">Fruits en K</a></div></div><div class="colonne_mots lien_lettre"><div class="mot"><a href="http://www.listedemots.com/liste-fruits_en-L" title="Fruits en L">Fruits en L</a></div></div><div class="colonne_mots lien_lettre"><div class="mot"><a href="http://www.listedemots.com/liste-fruits_en-M" title="Fruits en M">Fruits en M</a></div></div><div class="colonne_mots lien_lettre"><div class="mot"><a href="http://www.listedemots.com/liste-fruits_en-N" title="Fruits en N">Fruits en N</a></div></div><div class="colonne_mots lien_lettre"><div class="mot"><a href="http://www.listedemots.com/liste-fruits_en-O" title="Fruits en O">Fruits en O</a></div></div><div class="colonne_mots lien_lettre"><div class="mot"><a href="http://www.listedemots.com/liste-fruits_en-P" title="Fruits en P">Fruits en P</a></div></div><div class="colonne_mots lien_lettre"><div class="mot"><a href="http://www.listedemots.com/liste-fruits_en-Q" title="Fruits en Q">Fruits en Q</a></div></div><div class="colonne_mots lien_lettre"><div class="mot"><a href="http://www.listedemots.com/liste-fruits_en-R" title="Fruits en R">Fruits en R</a></div></div><div class="colonne_mots lien_lettre"><div class="mot"><a href="http://www.listedemots.com/liste-fruits_en-S" title="Fruits en S">Fruits en S</a></div></div><div class="colonne_mots lien_lettre"><div class="mot"><a href="http://www.listedemots.com/liste-fruits_en-T" title="Fruits en T">Fruits en T</a></div></div><div class="colonne_mots lien_lettre"><div class="mot"><a href="http://www.listedemots.com/liste-fruits_en-U" title="Fruits en U">Fruits en U</a></div></div><div class="colonne_mots lien_lettre"><div class="mot"><a href="http://www.listedemots.com/liste-fruits_en-V" title="Fruits en V">Fruits en V</a></div></div><div class="colonne_mots lien_lettre"><div class="mot"><a href="http://www.listedemots.com/liste-fruits_en-W" title="Fruits en W">Fruits en W</a></div></div><div class="colonne_mots lien_lettre"><div class="mot"><a href="http://www.listedemots.com/liste-fruits_en-X" title="Fruits en X">Fruits en X</a></div></div><div class="colonne_mots lien_lettre"><div class="mot"><a href="http://www.listedemots.com/liste-fruits_en-Y" title="Fruits en Y">Fruits en Y</a></div></div><div class="colonne_mots lien_lettre"><div class="mot"><a href="http://www.listedemots.com/liste-fruits_en-Z" title="Fruits en Z">Fruits en Z</a></div></div><div class="spacer"></div>                    <div id="ligne_pub">
+                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    <!-- Listedemots - ligne - (responsive) - 3 -->
+                    <ins class="adsbygoogle listedemots-ligne-responsive3"
+                         style="display:block"
+                         data-ad-client="ca-pub-8124868829091013"
+                        data-ad-slot="6764566688"
+                        data-ad-format="auto"></ins>
+                    <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                    </div> 
+		</div>
+</div>
+<div id="footer">
+	<div class="copyright">
+		© Copyright 2014 <a href="/" title="Combien de mots" rel="nofollow">Liste de mots</a> - Tous droits réservés
+	</div>
+	<div class="liens">
+		Créé par <a href="webiiz" title="Développeur web">Webiiz</a> - <a href="contact" title="Contactez-nous">Contactez-nous</a> - <a href="mentions_legales" title="Mentions légales">Mentions légales</a>
+	</div>
+</div>
+<div id="bouton_retour_haut"><img alt="Retour en haut" title="Retour en haut" src="images/fleche_haut.png" width="70" height="70" /></div>
+</body>
+</html>
