@@ -38,7 +38,7 @@
           </div>
 
           <div id="logo">
-            <img src="logo.PNG" width="160" height="150"></img> <!-- mettre l'image dans le dossier Images-->
+            <img src="Images/logo.PNG" width="160" height="150"></img> <!-- mettre l'image dans le dossier Images-->
           </div>
 
           <div id="nom2">
