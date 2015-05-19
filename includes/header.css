@@ -102,17 +102,18 @@ title {
 	font-size:450%;
 	font-family:georgia;
 	font-style: oblique;
-	margin-left:17%;
-	margin-top:-0.7%;
+	margin-left:20%;
+	margin-top:-1%;
 	color:#007C32;
-	position: fixed;
+	
 }
 
 
 #logo{
+	
 	position:absolute;
-	margin-top: -2.2%;
-	margin-left:0.4%;
+	margin-top: -13.2%;
+	margin-left:-1.7%;
 	height:10%;
 	width:10%;
 }
@@ -121,7 +122,7 @@ title {
 	font-family: georgia;
 	font-size: 250%;
 	font-style: oblique;
-	margin-top: 6.2%;
+	margin-top: -6%;
 	margin-left: 20%;
 	color: #007C32;
 }
@@ -199,7 +200,7 @@ title {
 	margin-top: -2.6%; 
 	color: #C3D9E0;
 	box-shadow: 3% solid gray;
-	cursor: pointer;
+	
 	border-bottom-width: 0px;
 	border-top-width: 0px;
 
