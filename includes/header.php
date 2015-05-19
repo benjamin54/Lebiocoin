@@ -5,7 +5,7 @@
   <meta charset="utf-8"/>
   <title>LeBioCoin</title>
   <link rel="icon" type="image/png" href="Images/favicon-32x32.png" sizes="32x32"/> <!-- ici la favicon, ici pamplemousse, se mettant à côté du title -->
-  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="includes/header.css">
 
 </head>
 
