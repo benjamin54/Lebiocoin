@@ -45,7 +45,7 @@
     D&eacutepartement/R&eacutegion:
     <select name="region" id="region">
 
-      <option value="Alsace" selected="selected">Alsace</option>
+      <option value="Alsace" selected>Alsace</option>
 
       <option value="Aquitaine">Aquitaine</option>
 
