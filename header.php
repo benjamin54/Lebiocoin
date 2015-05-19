@@ -19,15 +19,7 @@
           --><li class="menu1">RECETTES</li><!--
           --><li class="menu1">FORUM</li>
           </ul>
-  </div>
-
-	
-	<div id="photo">
-  <img src="Images/imagedefond_fruit.png">
-  </div>
-
-
-  
+  </div>	  
 
   <div id="bloc1">
 
