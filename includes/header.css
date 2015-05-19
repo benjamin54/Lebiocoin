@@ -92,12 +92,39 @@ title {
 	padding-right: 2%;
 	background-color: white;
 	border: 3px solid #E00048;
-	position: absolute;
-	height: 15%;
-	width: 80%;
+	position: relative;
+	height: 16%;
+	width: 81%;
 }
 
+#bloc2 {
+	margin-left: 8%;
+	margin-top: 3%;
+	padding-top: 2%;
+	padding-left: 2%;
+	padding-bottom: 2%;
+	padding-right: 2%;
+	background-color: white;
+	border: 3px solid #E00048;
+	position: relative;
+	height: 140%;
+	width: 81%;
+}
+#bloc3 {
+	margin-left: 8%;
+	margin-top: 3%;
+	padding-top: 2%;
+	margin-bottom:1%;
+	padding-left: 2%;
+	padding-bottom: 2%;
+	padding-right: 2%;
+	background-color: white;
+	border: 3px solid #E00048;
+	position: relative;
+	height: 12%;
+	width: 81%;
 
+}
 #nom h1 {
 	font-size:450%;
 	font-family:georgia;
@@ -127,23 +154,6 @@ title {
 	color: #007C32;
 }
 
-
-
-
-#bloc2 {
-	margin-left: 8%;
-	margin-top: 13.5%;
-	padding-top: 2%;
-	padding-left: 2%;
-	padding-bottom: 2%;
-	padding-right: 2%;
-	background-color: white;
-	border: 3px solid #E00048;
-	position: relative;
-	height: 140%;
-	width: 81%;
-
-}
 
 #recherche {
 
@@ -253,20 +263,7 @@ title {
 
 
 
-#bloc3 {
-	margin-left: 2.25%;
-	margin-top: 7%;
-	padding-top: 2%;
-	padding-left: 2%;
-	padding-bottom: 2%;
-	padding-right: 2%;
-	background-color: white;
-	border: 3px solid #E00048;
-	position: relative;
-	height: 12%;
-	width: 92%;
 
-}
 
 #newsletter{
 	position: absolute;
