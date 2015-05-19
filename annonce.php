@@ -1,4 +1,4 @@
-<?php include("includes/header.php"); ?>
+<?php include("header.php"); ?>
 
   <h4> <CENTER>JE CREE MON ANNONCE </CENTER></h4>
 
@@ -45,7 +45,7 @@
     D&eacutepartement/R&eacutegion:
     <select name="region" id="region">
 
-      <option value="Alsace" selected="selected">Alsace</option>
+      <option value="Alsace" selected>Alsace</option>
 
       <option value="Aquitaine">Aquitaine</option>
 

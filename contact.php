@@ -5,12 +5,6 @@
   global $errors;
   echo (isset($errors[$nom]) ? $errors[$nom] : '');
 }
-if (isset($_SESSION['id'])) {
-  include('includes/header.php');
-}
-else {
-  include('includes/header.php');
-}
   // Définition de quelques fonctions
   function message ($message, $type = null) {
     $color = $type === 'error' ? '#ff0000' : '#1E824c';
@@ -91,4 +85,3 @@ else {
       </div>
    </div>  
 
-<?php include('includes/footer.php'); ?>

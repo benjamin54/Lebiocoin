@@ -8,7 +8,7 @@
 
 <body>
 
-    <?php include('includes/header.php');?>
+    <?php include('header.php');?>
     <div id="profil_util">
 	<fieldset>
         <legend><b>Mon profil</b></legend>
@@ -34,5 +34,5 @@
     </div>
 
 </body>
-<?php include("includes/footer.php"); ?>
+
 </html>
