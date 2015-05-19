@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<?php include("includes/header.php"); ?>
 <html>
 <head>
 	<meta charset="utf-8"/>  <!-- cette ligne sert à ce qu'on ai pas besoin d'ecrire le code des accents-->
@@ -9,7 +8,7 @@
 
 <body>
 
-    <?php include('includes/header.php');?>
+    <?php include('header.php');?>
     <div id="profil_util">
 	<fieldset>
         <legend><b>Mon profil</b></legend>
