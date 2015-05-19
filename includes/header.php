@@ -23,7 +23,6 @@
 
 	
 	<div id="photo">
-      <img src="Images/imagedefond_fruit.jpg" height="1500" width="1368"></img>
   </div>
 
 
