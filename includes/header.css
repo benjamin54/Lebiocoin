@@ -347,3 +347,14 @@ body{
 
 }
 
+footer{
+	margin-left:35%;
+	margin-top: -2%;
+	width:25%;
+	border:none;
+	position:relative;	
+	padding-top:-5%;
+}
+footer ul li{
+	list-style: none;
+}

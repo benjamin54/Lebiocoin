@@ -86,7 +86,19 @@
           <div id="revue">
             <p class="titre_footer2">LA REVUE</p>
           </div>
-
+          <footer>
+			<center>
+				<ul>
+					<li><a href="contact.php">contact</a></li>
+					
+					<li><a href="mentionlegale.php">Infos légales</a></li>
+					
+					<li><a href="quisommesnous.php">qui sommes  nous ?</a></li>
+					
+					<li><a href="conditions.php">conditions générales de vente</a></li>
+				</ul>
+			</center>
+		</footer>
   </div>
 
 
