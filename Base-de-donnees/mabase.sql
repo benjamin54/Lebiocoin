@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.0.10deb1
+-- version 4.1.14
 -- http://www.phpmyadmin.net
 --
--- Host: localhost
--- Generation Time: May 17, 2015 at 05:43 PM
--- Server version: 5.5.41-0ubuntu0.14.04.1
--- PHP Version: 5.5.9-1ubuntu4.6
+-- Client :  127.0.0.1
+-- Généré le :  Mar 19 Mai 2015 à 02:07
+-- Version du serveur :  5.6.17
+-- Version de PHP :  5.5.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -17,13 +17,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8 */;
 
 --
--- Database: `mabase`
+-- Base de données :  `mabase`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `adresse`
+-- Structure de la table `adresse`
 --
 
 CREATE TABLE IF NOT EXISTS `adresse` (
@@ -37,7 +37,7 @@ CREATE TABLE IF NOT EXISTS `adresse` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `annonce`
+-- Structure de la table `annonce`
 --
 
 CREATE TABLE IF NOT EXISTS `annonce` (
@@ -52,13 +52,22 @@ CREATE TABLE IF NOT EXISTS `annonce` (
   `photo_annonce` blob NOT NULL,
   `texte` text NOT NULL,
   `prix` float NOT NULL,
+  `date_ajout` datetime NOT NULL,
   PRIMARY KEY (`id_annonce`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
+
+--
+-- Contenu de la table `annonce`
+--
+
+INSERT INTO `annonce` (`id_annonce`, `codepostal`, `ville`, `region`, `nom`, `mail`, `tel`, `titre`, `photo_annonce`, `texte`, `prix`, `date_ajout`) VALUES
+(1, 75014, 'PARIS', 'Ile de France', 'benjamin', 'dubus.benjamin1@gmail.com', 127, 'topinembourg', 0x494d475f303331322e4a5047, '      bla', 50, '0000-00-00 00:00:00'),
+(2, 75014, 'PARIS', 'Ile de France', 'benjamin', 'dubus.benjamin1@gmail.com', 127, 'tomates', 0x494d475f303331332e4a5047, 'pas cher', 2, '2015-05-19 01:57:36');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `categorie_a`
+-- Structure de la table `categorie_a`
 --
 
 CREATE TABLE IF NOT EXISTS `categorie_a` (
@@ -70,7 +79,7 @@ CREATE TABLE IF NOT EXISTS `categorie_a` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `categorie_produit`
+-- Structure de la table `categorie_produit`
 --
 
 CREATE TABLE IF NOT EXISTS `categorie_produit` (
@@ -82,7 +91,7 @@ CREATE TABLE IF NOT EXISTS `categorie_produit` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `categorie_sujet`
+-- Structure de la table `categorie_sujet`
 --
 
 CREATE TABLE IF NOT EXISTS `categorie_sujet` (
@@ -94,7 +103,7 @@ CREATE TABLE IF NOT EXISTS `categorie_sujet` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `forum`
+-- Structure de la table `forum`
 --
 
 CREATE TABLE IF NOT EXISTS `forum` (
@@ -106,7 +115,7 @@ CREATE TABLE IF NOT EXISTS `forum` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `membre`
+-- Structure de la table `membre`
 --
 
 CREATE TABLE IF NOT EXISTS `membre` (
@@ -123,7 +132,7 @@ CREATE TABLE IF NOT EXISTS `membre` (
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=89 ;
 
 --
--- Dumping data for table `membre`
+-- Contenu de la table `membre`
 --
 
 INSERT INTO `membre` (`id_membre`, `prenom`, `nom`, `adressemail`, `motdepasse1`, `motdepasse2`, `ville`, `num`, `photo`) VALUES
@@ -156,7 +165,7 @@ INSERT INTO `membre` (`id_membre`, `prenom`, `nom`, `adressemail`, `motdepasse1`
 -- --------------------------------------------------------
 
 --
--- Table structure for table `message_forum`
+-- Structure de la table `message_forum`
 --
 
 CREATE TABLE IF NOT EXISTS `message_forum` (
@@ -168,7 +177,7 @@ CREATE TABLE IF NOT EXISTS `message_forum` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `message_prive`
+-- Structure de la table `message_prive`
 --
 
 CREATE TABLE IF NOT EXISTS `message_prive` (
@@ -180,7 +189,7 @@ CREATE TABLE IF NOT EXISTS `message_prive` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `produit`
+-- Structure de la table `produit`
 --
 
 CREATE TABLE IF NOT EXISTS `produit` (
@@ -195,7 +204,7 @@ CREATE TABLE IF NOT EXISTS `produit` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `sujet_forum`
+-- Structure de la table `sujet_forum`
 --
 
 CREATE TABLE IF NOT EXISTS `sujet_forum` (

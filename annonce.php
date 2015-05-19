@@ -33,7 +33,7 @@
         <legend><b>Localisation</b></legend>
 
   <p>
-    Code postal: <input type="text" name="codepostal" id="codepostal" value=<?php echo $codepostal?>/> <p2 style="color:red"> *</p2> <!-- voir -->
+    Code postal: <input type="text" name="codepostal" id="codepostal" /> <p2 style="color:red"> *</p2> <!-- voir -->
   </p>
 
   <p>
