@@ -327,3 +327,62 @@ footer{
 footer ul li{
 	list-style: none;
 }
+/*CSS contact */
+article legend {
+  color:#1E824C;
+  font-size:40px;
+  margin:50px auto;
+  width:280px;
+}
+
+.titre_contact {
+  color:#1E824C;
+  font-size:40px;
+  padding-left:350px;
+}
+.contact_input {
+  background-color:#ECECEC;
+  font-size:26px;
+  height:30px;
+  margin-left:150px;
+  width:400px;
+}
+element.style {
+  margin-right:-15px;
+}
+.contact_sujet {
+  background-color:#ECECEC;
+  height:50px;
+  margin-left:150px;
+  width:400px;
+}
+#cadre_1 input, textarea{
+	margin-left:590px;
+	margin-top:10px;
+}
+#cadre_1 {
+	width:400px;
+}
+#cadre_1 input, textarea, select {
+  border:1px solid rgba(255, 255, 255, 0.74902);
+  border-radius:5px;
+  padding:3px;
+  width:200px;
+}
+#cadre_1 input, textarea, select, option {
+  background-color:#ECECEC;
+}
+#envoyer {
+  background-color:#1E824C;
+  color:white;
+  font-size:25px;
+  height:50px;
+  margin-left:570px;
+  margin-top:10px;
+  width:250px;
+}
+#cadre_contact{
+	position:relative;
+	margin-top:-50%;
+}
+/* Fin CSS Contact*/

@@ -53,9 +53,8 @@
     ?>
 
     <?php include("header.php"); ?>
-    <link rel="stylesheet" href="styles/accueil.css">
-        <div> 
-      		<div id="cadre_contact">
+    <link rel="stylesheet" href="styles/header.css">
+        		<div id="cadre_contact">
        			<article id="contact">
        				<form class="ctc" method="post" action="">
 
@@ -84,5 +83,5 @@
 					</form>	
 				</article>		
       </div>
-   </div>  
+     
 
