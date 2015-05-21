@@ -4,7 +4,7 @@
 
   <meta charset="utf-8"/>
   <title>LeBioCoin</title>
-  <link rel="stylesheet" href="styles/Header.css">
+  <link rel="stylesheet" href="styles/header.css">
 
 </head>
 

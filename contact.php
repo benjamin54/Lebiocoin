@@ -1,6 +1,5 @@
-<?php
 
- 
+<?php
  function error ($nom) {
   global $errors;
   echo (isset($errors[$nom]) ? $errors[$nom] : '');
@@ -52,6 +51,8 @@
      }
     }
     ?>
+
+    <?php include("header.php"); ?>
     <link rel="stylesheet" href="styles/accueil.css">
         <div> 
       		<div id="cadre_contact">

@@ -2,10 +2,8 @@
 
 
 body {
-	background-color:white;
-	background-image:url("imagedefond_fruit.jpg") no-repeat;
+	background-image:url("3761-bio-plante-WallFizz.jpg");
 	background-attachment:fixed;
-
 }
 
 
@@ -16,16 +14,6 @@ title {
 }
 
 
-
-#photo{
-	margin-left:-2%;
-	margin-right:-2%;
-	margin-top:4%;
-	margin-bottom: -2%;
-	width: 20%;
-	height: 10%;
-	
-}
 
 
 #menu ul {
@@ -63,6 +51,7 @@ title {
 #menu a {
 	text-decoration: none;
 	color: #C3D9E0; 
+	
 }
 #menu ul li a:hover,
 #menu ul li a:focus {
@@ -82,8 +71,7 @@ title {
 	padding-left: 2%;
 	padding-bottom: 2%;
 	padding-right: 2%;
-	background-color: white;
-	border: 3px solid #E00048;
+	background-color:rgba(0, 0, 0, 0.8);
 	position: relative;
 	height: 16%;
 	width: 81%;
@@ -96,8 +84,7 @@ title {
 	padding-left: 2%;
 	padding-bottom: 2%;
 	padding-right: 2%;
-	background-color: white;
-	border: 3px solid #E00048;
+	background-color:rgba(0, 0,0, 0.8);
 	position: relative;
 	height: 140%;
 	width: 81%;
@@ -110,8 +97,7 @@ title {
 	padding-left: 2%;
 	padding-bottom: 2%;
 	padding-right: 2%;
-	background-color: white;
-	border: 3px solid #E00048;
+	background-color:rgba(0, 0,0, 0.8);
 	position: relative;
 	height: 12%;
 	width: 81%;
@@ -124,6 +110,7 @@ title {
 	margin-left:20%;
 	margin-top:-1%;
 	color:#007C32;
+
 	
 }
 
@@ -326,16 +313,6 @@ p .titre_footer2 {
 	font-size:250%;
 	font-family: georgia;
 	font-style: bold;
-
-}
-
-
-
-
-
-
-body{
-	background-image: url(bhjpg);
 
 }
 
