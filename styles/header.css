@@ -13,7 +13,14 @@ title {
 	font-weight: bold;
 }
 
-
+#connexion{
+	position:relative;
+	margin-left:90%;
+	margin-top:10%;
+	width:7%;
+	height:3%;
+	background-color:green;
+}
 
 
 #menu ul {
@@ -120,8 +127,8 @@ title {
 	position:absolute;
 	margin-top: -13.2%;
 	margin-left:-1.7%;
-	height:10%;
-	width:10%;
+	height:13%;
+	width:13%;
 }
 
 #nom2 {
@@ -386,3 +393,12 @@ element.style {
 	margin-top:-50%;
 }
 /* Fin CSS Contact*/
+/*début quisommesnous*/
+#quisommesnous{
+	position:relative;
+	margin-top:-52%;
+	margin-left:30%;
+}
+#quisommesnous p{
+	color:white;
+/*fin quisommesnous*/
