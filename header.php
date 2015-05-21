@@ -10,6 +10,10 @@
 
 <body>
 
+<div id="connexion"><a href=connexion.php>Connexion</a></div>
+
+<div id="inscription"><a href=inscription.php>Inscription</a></div>
+
 	<div id="menu">
         <ul height="100" width="500">
           <li class="menu1"><a href ="pagedaccueil.php">ACCUEIL</a></li><!--
