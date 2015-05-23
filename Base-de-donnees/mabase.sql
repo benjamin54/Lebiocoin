@@ -53,13 +53,7 @@ CREATE TABLE IF NOT EXISTS `annonce` (
   `texte` text NOT NULL,
   `prix` float NOT NULL,
   `date_ajout` datetime NOT NULL,
-  PRIMARY KEY (`id_annonce`)
-  CONSTRAINT fk_categoriea          -- On donne un nom à notre clé
-        FOREIGN KEY ('id_categoriea')             -- Colonne sur laquelle on crée la clé
-        REFERENCES categorie_a(1),              -- Colonne de référence
-  CONSTRAINT fk_categorie_produit          -- On donne un nom à notre clé
-        FOREIGN KEY ('id_categoriep')             -- Colonne sur laquelle on crée la clé
-        REFERENCES categorie_produit(1)
+  PRIMARY KEY (`id_annonce`)  
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
 
 --
