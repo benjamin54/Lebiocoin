@@ -4,11 +4,15 @@
 
   <meta charset="utf-8"/>
   <title>LeBioCoin</title>
-  <link rel="stylesheet" href="styles/Header.css">
+  <link rel="stylesheet" href="styles/header.css">
 
 </head>
 
 <body>
+
+<div id="connexion"><a href=connexion.php>Connexion</a></div>
+
+<div id="inscription"><a href=inscription.php>Inscription</a></div>
 
 	<div id="menu">
         <ul height="100" width="500">
