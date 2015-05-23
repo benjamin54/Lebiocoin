@@ -181,9 +181,10 @@ if (isset($_FILES['photo_annonce']) AND $_FILES['photo_annonce']['error'] == 0)
     }
   }
 }
-        //html5 section validator.w3.org,   <nav>
+      //html5 section validator.w3.org,   <nav>
       //vérifier cé client que form rempli, message disant à quel niveau pas rempli ou erreur
-
+$nom_categoriep=$POST['nom_categoriep'];
+$nom_categoriea=$POST['nom_categoriea'];
 
 $codepostal=$_POST['codepostal'];
 $ville=$_POST['ville'];
@@ -202,8 +203,13 @@ $prix=$_POST['prix'];
     mysqli_select_db ($base,'mabase') ;
 
     $sql = 'INSERT INTO annonce VALUES ("","'.$codepostal.'","'.$ville.'","'.$region.'","'.$nom.'","'.$mail.'","'.$tel.'","'.$titre.'","'.$photo_annonce.'","'.$texte.'","'.$prix.'",NOW())';
+    $sql1= 'INSERT INTO categorie_produit VALUES ("","'.$nom_categoriep.'")';
+    $sql2= 'INSERT INTO categorie_a VALUES ("","'.$nom_categoriea.'")';
 
+    
     mysqli_query ($base,$sql) or die ('Erreur SQL !'.$sql.'<br />'.mysqli_error($base)); 
+    mysqli_query ($base,$sql1) or die ('Erreur SQL !'.$sql1.'<br />'.mysqli_error($base));
+    mysqli_query ($base,$sql2) or die ('Erreur SQL !'.$sql2.'<br />'.mysqli_error($base));
 
         // on ferme la connexion
     mysqli_close($base);

@@ -14,17 +14,17 @@
 
 <p>
   Catégorie:
-  <select name="categorie" id="categorie">
-    <option value="choix01">Fruits</option>
-    <option value="choix02">Légumes</option>
+  <select name="nom_categoriep" id="nom_categoriep">
+    <option name="fruit" id="fruit"value="fruit">Fruits</option>
+    <option name="legume" id="legume"value="legume">Légumes</option>
   </select>
   <p2 style="color:red"> *</p2>
 </p>
 
 <p>
   Type d'annonce: 
-  <input type="radio" name="achat" value="achat" id="achat"/> <label for="achat">Achat</label>
-  <input type="radio" name="echange" value="echange" id="echange"/> <label for="echange">Echange</label>
+  <input type="radio" name="achat" value="achat" id="nom_categoriea"/> <label for="achat">Achat</label>
+  <input type="radio" name="echange" value="echange" id="nom_categoriea"/> <label for="echange">Echange</label>
   <p2 style="color:red"> *</p2>
 </p>
 </fieldset>
