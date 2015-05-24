@@ -1,4 +1,4 @@
-
+<?php include ('includes/header.php') ?>
 
 <?php
 try
@@ -23,11 +23,12 @@ while ($donnees = $reponse->fetch())
 	<p>
 		<strong>Annonce :</strong> : <?php echo $donnees['titre']; ?><br />
 		Mise en ligne par : <?php echo $donnees['nom']; ?>, le <?php echo $donnees['date_ajout']?>, le prix est de <?php echo $donnees['prix']; ?> euros <br />
-		<br />
-		<?php echo $donnees['nom']; ?> a laissé ces commentaires sur <?php echo $donnees['titre']; ?> 
+		<br />. <?php echo '<img src="uploads/' . $donnees["photo_annonce"] . '">'; ?><br/>
+		Description : <br/> <?php echo $donnees['texte']?> 
 	</p>
 	<?php
 }
+$reponse->closeCursor(); // Termine le traitement de la requête
 
 /*$codepostal=$sql->fetch()'codepostal';
 $ville='ville';
@@ -43,11 +44,6 @@ $date_ajout='date_ajout';
 */
 ?>
 
-<?php     // on ferme la connexion
-   	mysqli_close($base);
-   	?>
-
-   	<?php include ('includes/header.php') ?>
 
    	<link rel="stylesheet" href="styles/includes/header.css">
    	<div id="annonce">

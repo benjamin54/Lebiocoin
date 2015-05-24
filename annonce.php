@@ -7,7 +7,7 @@
     <p2 style="color:red"> * </p2> sont obligatoires.</font>
   </p>
 
-<form method="post" action="controlleurs/traitement_annonce.php">
+<form method="post" action="controlleurs/traitement_annonce.php" enctype="multipart/form-data">
 <div id="contenuaccueil">
 <fieldset>
   <legend><b>Catégorie</b></legend>
@@ -116,8 +116,9 @@
 </p>
 
 <p>
-    <label for="photo_annonce">Choix d'une photo pour votre produit: </label>
+    <label for="photo_annonce">Choix d'une photo pour votre produit: 
     <input type="file" name="photo_annonce" id="photo_annonce"/> <!-- mettre une photo à l\'annonce -->
+    </label>
 </p>
    
 

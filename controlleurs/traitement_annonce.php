@@ -99,7 +99,6 @@ else
 
   <option value="Pays de la Loire">Pays de la Loire</option>
 
-  $base = mysqli_connect ('localhost', 'root', '')
   <option value="Picardie">Picardie</option>
 
   <option value="Poitou Charente">Poitou Charente</option>
@@ -163,6 +162,26 @@ else
   ';
 }
 
+if (isset($_FILES['photo_annonce']))
+{
+  if ($_FILES['photo_annonce']['error'] > 0) $erreur = "Erreur lors du transfert";
+  $maxsize= 1000000;
+  if ($_FILES['photo_annonce']['size'] > $maxsize) $erreur = "Le fichier est trop gros";
+  $extensions_valides = array( 'jpg' , 'jpeg' , 'gif' , 'png' );
+  //1. strrchr renvoie l'extension avec le point (« . »).
+  //2. substr(chaine,1) ignore le premier caractère de chaine.
+  //3. strtolower met l'extension en minuscules.
+  $extension_upload = strtolower(  substr(  strrchr($_FILES['photo_annonce']['name'], '.')  ,1)  );
+  if ( in_array($extension_upload,$extensions_valides) ) echo "Extension correcte";
+   
+
+  //$nom = "uploads/{$id_membre}.{$extension_upload}";
+  //$resultat = move_uploaded_file($_FILES['photo_annonce']['tmp_name'],$nom);
+  $resultat = move_uploaded_file($_FILES['photo_annonce']['tmp_name'], 'uploads/' . basename($_FILES['photo_annonce']['name']));
+  if ($resultat) echo "Transfert réussi"; // On peut valider le fichier et le stocker définitivement
+}
+
+/*
     //On récupère les valeurs entrées par l'utilisateur :
 if (isset($_FILES['photo_annonce']) AND $_FILES['photo_annonce']['error'] == 0)
 {
@@ -181,10 +200,12 @@ if (isset($_FILES['photo_annonce']) AND $_FILES['photo_annonce']['error'] == 0)
     }
   }
 }
+*/
+
       //html5 section validator.w3.org,   <nav>
       //vérifier cé client que form rempli, message disant à quel niveau pas rempli ou erreur
-$nom_categoriep=$POST['nom_categoriep'];
-$nom_categoriea=$POST['nom_categoriea'];
+//$nom_categoriep=$POST['nom_categoriep'];
+//$nom_categoriea=$POST['nom_categoriea'];
 
 $codepostal=$_POST['codepostal'];
 $ville=$_POST['ville'];
@@ -195,7 +216,7 @@ $mail=$_POST['mail'];
 $tel=$_POST['tel'];
 
 $titre=$_POST['titre'];
-$photo_annonce=$_POST['photo_annonce'];
+$photo_annonce = $_POST['photo_annonce'];
 $texte=$_POST['texte'];
 $prix=$_POST['prix'];
 
@@ -203,13 +224,13 @@ $prix=$_POST['prix'];
     mysqli_select_db ($base,'mabase') ;
 
     $sql = 'INSERT INTO annonce VALUES ("","'.$codepostal.'","'.$ville.'","'.$region.'","'.$nom.'","'.$mail.'","'.$tel.'","'.$titre.'","'.$photo_annonce.'","'.$texte.'","'.$prix.'",NOW())';
-    $sql1= 'INSERT INTO categorie_produit VALUES ("","'.$nom_categoriep.'")';
-    $sql2= 'INSERT INTO categorie_a VALUES ("","'.$nom_categoriea.'")';
+    //$sql1= 'INSERT INTO categorie_produit VALUES ("","'.$nom_categoriep.'")';
+    //$sql2= 'INSERT INTO categorie_a VALUES ("","'.$nom_categoriea.'")';
 
     
     mysqli_query ($base,$sql) or die ('Erreur SQL !'.$sql.'<br />'.mysqli_error($base)); 
-    mysqli_query ($base,$sql1) or die ('Erreur SQL !'.$sql1.'<br />'.mysqli_error($base));
-    mysqli_query ($base,$sql2) or die ('Erreur SQL !'.$sql2.'<br />'.mysqli_error($base));
+    //mysqli_query ($base,$sql1) or die ('Erreur SQL !'.$sql1.'<br />'.mysqli_error($base));
+    //mysqli_query ($base,$sql2) or die ('Erreur SQL !'.$sql2.'<br />'.mysqli_error($base));
 
         // on ferme la connexion
     mysqli_close($base);

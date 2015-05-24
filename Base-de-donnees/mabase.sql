@@ -74,7 +74,7 @@ CREATE TABLE IF NOT EXISTS `categorie_a` (
   `id_categoriea` int(11) NOT NULL AUTO_INCREMENT,
   `nom_categoriea` varchar(255) NOT NULL,
   PRIMARY KEY (`id_categoriea`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 
 
 -- --------------------------------------------------------
 
