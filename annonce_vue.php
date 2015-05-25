@@ -22,13 +22,12 @@ while ($donnees = $reponse->fetch())
 {
 	?>
 	<p>
-		<strong>Annonce :</strong> : <?php echo $donnees['titre']; ?><br />
-		Mise en ligne par : <?php echo $donnees['nom']; ?>, le <?php echo $donnees['date_ajout']?>, le prix est de <?php echo $donnees['prix']; ?> euros. <br />
-		<?php echo $donnees['photo_annonce'];  /*je galere ici !!!!!!*/?> <br/>  
-		Description : <br/> <?php echo $donnees['texte']?> 
+		<strong>Annonce :</strong> : <?php echo htmlentities($donnees['titre']); ?><br />
+		Mise en ligne par : <?php echo htmlentities($donnees['nom']); ?>, le <?php echo htmlentities($donnees['date_ajout']);?>, le prix est de <?php echo htmlentities($donnees['prix']); ?> euros. <br />
+		<?php echo "<img src='controlleurs/uploads/".$donnees['photo_annonce']."'>";  /*je galere ici !!!!!!*/?> <br/>  
+		Description : <br/> <?php echo htmlentities($donnees['texte'])?> 
 	</p>
-	<?php //echo "<img src=\"/images/{$data["image"]}\">";   //printf('<img src="/images/%s">', $data['image']);
-//printf('<div class="contenunews"><p>%s</p></div>', $data['contenu']);
+	<?php
 }
 $reponse->closeCursor(); // Termine le traitement de la requête
 

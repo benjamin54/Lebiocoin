@@ -1,5 +1,7 @@
 <?php include ('includes/header.php') ?>
 
+<?php session_start(); ?> 
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -41,7 +43,7 @@
 
         <p>
           <label for="codepostal">Code postal:</label> 
-          <input type="text" name="codepostal" id="codepostal" value="<?php if (isset($_POST['codepostal'])){echo $_POST['codepostal'];} ?>"/> <p2 style="color:red"> *</p2> <!-- voir -->
+          <input type="text" name="codepostal" id="codepostal" value=<?php if (isset($_POST['codepostal'])){echo $_POST['codepostal'];} ?>/> <p2 style="color:red"> *</p2> <!-- voir -->
         </p>
 
         <p>
