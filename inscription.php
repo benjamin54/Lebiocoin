@@ -1,65 +1,67 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8"/>
-<title>LeBiocoin</title>
-  <link rel="stylesheet" href="styles/accueil.css">
- <?php include("header.php"); ?>
+    <meta charset="utf-8"/>
+    <title>LeBiocoin</title>
+    <link rel="stylesheet" href="styles/accueil.css">
+    <?php include("header.php"); ?>
  </head>
 
-<div id="contenuaccueil"><p><h4> <CENTER>INSCRIPTION</CENTER></h4></p>
-  <p><font style="Verdana"> Veuillez remplir le formulaire ci dessous. Les champs  <p2 style="color:red">*</p2> sont obligatoires.</font></p>
+
+
+<body>
+
+  <div id="contenuaccueil">
+    <p>
+      <h4><CENTER>INSCRIPTION</CENTER></h4>
+    </p>
+    <p><font style="Verdana"> Veuillez remplir le formulaire ci dessous. Les champs  <p2 style="color:red">*</p2> sont obligatoires.</font></p>
 
           
-<h4> <CENTER>Mes identifiants</CENTER> </h4>
+    <h4> <CENTER>Mes identifiants</CENTER> </h4>
 
-<form name="inscription" method="post" action="inscription.php">
-<p><p2 style="color:red">*</p2>nom:
- <input type="text" name="nom" />
-  <p2 style="color:red">*</p2>prenom: <input type="text" name="prenom" /></p>
+    <form name="inscription" method="post" action="inscription.php">
 
-<p>
-<p2 style="color:red">*</p2>Adresse mail:<input type="text" name="adressemail" value=""/></p>
+      <p><p2 style="color:red">*</p2>nom: <input type="text" name="nom" />
 
-<p>
-<p2 style="color:red">*</p2>Mot de passe:<input type="password" name="motdepasse1"/><p2 style="color:red">(8 caract&egraveres minimum)</p2> </p>
+      <p2 style="color:red">*</p2>prénom: <input type="text" name="prenom" /></p>
 
-<p>
-<p2 style="color:red">*</p2>Confirmer votre mot de passe:<input type="password" name="motdepasse2"/></p>
+      <p><p2 style="color:red">*</p2>Adresse mail: <input type="text" name="adressemail" value=""/></p>
+
+      <p><p2 style="color:red">*</p2>Mot de passe: <input type="password" name="motdepasse1"/><p2 style="color:red">(8 caract&egraveres minimum)</p2> </p>
+
+      <p><p2 style="color:red">*</p2>Confirmer votre mot de passe: <input type="password" name="motdepasse2"/></p>
 
 
-<h4><CENTER>Mes coordonées de livraisons</CENTER></h4>
+    <h4><CENTER>Mes coordonées de livraisons</CENTER></h4>
+
+      <p>
+      <p>
+        <p2 style="color:red">*</p2>Ville  <input type="text" name="ville" />
+      </p>
+      <p>
+
+      </select>
+
+      <p><p2 style="color:red">*</p2>Num&eacutero de fixe/Mobile<input type="text" name="num" /></p>
+
+      <p><p2 style="color:red">*</p2>Choix d'une photo de profil: <input type="file" name="photo"/> </p>
+
+      <p><u>Accepter les conditions d'utilisations du BIOCOIN</u><p>
 
 
-<p>
-
-<p>
-<p2 style="color:red">*</p2>Ville  <input type="text" name="ville" />  </p>
-<p>
-
-
-</select>
-
-<p>
-<p2 style="color:red">*</p2>Num&eacutero de fixe/Mobile<input type="text" name="num" /></p>
-
-<p>
-<p2 style="color:red">*</p2>Choix d'une photo de profil: <input type="file" name="photo"/> </p>
-
-<p><u>Accepter les conditions d'utilisations du BIOCOIN</u><p>
-
-
-<p>"Je suis ag&eacute d'au moins 18 ans"</p>
-   <p>"La transaction se fait en main propre, car le site a pour vocation de cr&eacuteer du lien localement"</p>
-<p>
-<input type="checkbox" name="case" id="case" /> <label for="case"> </label>
-<p2 style="color:red">*</p2>J'accepte ces conditions
-</p>
+      <p>"Je suis ag&eacute d'au moins 18 ans"</p>
+      <p>"La transaction se fait en main propre, car le site a pour vocation de cr&eacuteer du lien localement"</p>
+      <p><input type="checkbox" name="case" id="case" /> <label for="case"> </label>
+      <p2 style="color:red">*</p2>J'accepte ces conditions</p>
 
 
 
-<CENTER><p> <input type="submit" name="valider"  value=" Valider ma création de compte"></p></CENTER>
-</form>
+      <CENTER><p> <input type="submit" name="valider"  value=" Valider ma création de compte"></p></CENTER>
+
+
+    </form>
+
 <?php
         if (isset ($_POST['valider']))  
         {
@@ -67,24 +69,22 @@
             
             $prenom=$_POST['prenom'];
             $nom=$_POST['nom'];
-             $adressemail=$_POST['adressemail'];
+            $adressemail=$_POST['adressemail'];
             $motdepasse1=$_POST['motdepasse1'];
-             $motdepasse2=$_POST['motdepasse2'];
-             $ville=$_POST['ville'];
-             $num=$_POST['num'];
-
-           $photo=$_POST['photo'];
-           $case=$_POST['case'];
-           
+            $motdepasse2=$_POST['motdepasse2'];
+            $ville=$_POST['ville'];
+            $num=$_POST['num'];
+            $photo=$_POST['photo'];
+            $case=$_POST['case'];      
               
                 
   
-                 if (strlen($_POST['motdepasse1'])<8 ){
+        if (strlen($_POST['motdepasse1'])<8 ){
   //header('Location: do.php'); 
-  echo"Le mot de passe doit contenir 8 caractères!";
-}
-else {
-          echo "Veuillez remplir tous les champs"; 
+              echo"Le mot de passe doit contenir 8 caractères!";
+        }
+        else {
+              echo "Veuillez remplir tous les champs"; 
         }
 
 
