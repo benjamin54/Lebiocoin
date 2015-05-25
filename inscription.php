@@ -7,7 +7,7 @@
  <?php include("header.php"); ?>
  </head>
 
-<div id="contenuaccueil"><p><h4> <CENTER>NOUVEAU CLIENT ? </CENTER></h4></p>
+<div id="contenuaccueil"><p><h4> <CENTER>INSCRIPTION</CENTER></h4></p>
   <p><font style="Verdana"> Veuillez remplir le formulaire ci dessous. Les champs  <p2 style="color:red">*</p2> sont obligatoires.</font></p>
 
           
