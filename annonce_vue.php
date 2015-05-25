@@ -1,6 +1,7 @@
 <?php include ('includes/header.php') ?>
 
 <?php
+
 try
 {
 	// On se connecte à MySQL
@@ -22,11 +23,12 @@ while ($donnees = $reponse->fetch())
 	?>
 	<p>
 		<strong>Annonce :</strong> : <?php echo $donnees['titre']; ?><br />
-		Mise en ligne par : <?php echo $donnees['nom']; ?>, le <?php echo $donnees['date_ajout']?>, le prix est de <?php echo $donnees['prix']; ?> euros <br />
-		<br />. <?php echo '<img src="uploads/' . $donnees["photo_annonce"] . '">'; ?><br/>
+		Mise en ligne par : <?php echo $donnees['nom']; ?>, le <?php echo $donnees['date_ajout']?>, le prix est de <?php echo $donnees['prix']; ?> euros. <br />
+		<?php echo "<img src=\"/uploads.{$donnees['photo_annonce']}\" >";  /*je galere ici !!!!!!*/?> <br/>  
 		Description : <br/> <?php echo $donnees['texte']?> 
 	</p>
-	<?php
+	<?php //echo "<img src=\"/images/{$data["image"]}\">";   //printf('<img src="/images/%s">', $data['image']);
+//printf('<div class="contenunews"><p>%s</p></div>', $data['contenu']);
 }
 $reponse->closeCursor(); // Termine le traitement de la requête
 
@@ -43,9 +45,3 @@ $prix='prix';
 $date_ajout='date_ajout';
 */
 ?>
-
-
-   	<link rel="stylesheet" href="styles/includes/header.css">
-   	<div id="annonce">
-
-   	</div>

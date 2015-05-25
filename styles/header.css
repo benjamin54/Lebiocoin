@@ -414,3 +414,23 @@ element.style {
 #quisommesnous p{
 	color:white;
 /*fin quisommesnous*/
+}
+
+
+
+/* style formulaire annonce.php */
+#annonce{
+	position: absolute;
+	left:25%;
+	top:45%;
+	width: 40%;
+}
+#annonce textarea{
+	position: relative;
+	right:36%;
+}
+#annonce label{
+	display: block;  /*aligner les cases formulaire*/
+	width: 50%;
+	float: left;
+}

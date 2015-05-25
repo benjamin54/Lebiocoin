@@ -19,7 +19,7 @@ if(!empty($_POST))  //on utilise des boucles pour vérifier que tous les champs 
   }
   else
   {
-    echo 'C\'est bon, on poursuit donc l\'exécution du script';
+    echo 'C\'est bon, on poursuit donc l\'exécution du script'; ?></br><?php
   }
 }
 else
@@ -172,12 +172,15 @@ if (isset($_FILES['photo_annonce']))
   //2. substr(chaine,1) ignore le premier caractère de chaine.
   //3. strtolower met l'extension en minuscules.
   $extension_upload = strtolower(  substr(  strrchr($_FILES['photo_annonce']['name'], '.')  ,1)  );
-  if ( in_array($extension_upload,$extensions_valides) ) echo "Extension correcte";
+  if ( in_array($extension_upload,$extensions_valides) ) echo "Extension correcte"; ?></br>
+  <?php
    
+  //Créer un identifiant difficile à deviner
+  $nom_comp = md5(uniqid(rand(), true));
 
-  //$nom = "uploads/{$id_membre}.{$extension_upload}";
+  $new_nom = "{$nom_comp}.{$extension_upload}";
   //$resultat = move_uploaded_file($_FILES['photo_annonce']['tmp_name'],$nom);
-  $resultat = move_uploaded_file($_FILES['photo_annonce']['tmp_name'], 'uploads/' . basename($_FILES['photo_annonce']['name']));
+  $resultat = move_uploaded_file($_FILES['photo_annonce']['tmp_name'], 'uploads/' . $new_nom);
   if ($resultat) echo "Transfert réussi"; // On peut valider le fichier et le stocker définitivement
 }
 
@@ -216,7 +219,7 @@ $mail=$_POST['mail'];
 $tel=$_POST['tel'];
 
 $titre=$_POST['titre'];
-$photo_annonce = $_POST['photo_annonce'];
+$photo_annonce = $new_nom;
 $texte=$_POST['texte'];
 $prix=$_POST['prix'];
 
