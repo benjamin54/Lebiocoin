@@ -24,7 +24,7 @@ while ($donnees = $reponse->fetch())
 	<p>
 		<strong>Annonce :</strong> : <?php echo $donnees['titre']; ?><br />
 		Mise en ligne par : <?php echo $donnees['nom']; ?>, le <?php echo $donnees['date_ajout']?>, le prix est de <?php echo $donnees['prix']; ?> euros. <br />
-		<?php echo "<img src=\"/uploads.{$donnees['photo_annonce']}\" >";  /*je galere ici !!!!!!*/?> <br/>  
+		<?php echo $donnees['photo_annonce'];  /*je galere ici !!!!!!*/?> <br/>  
 		Description : <br/> <?php echo $donnees['texte']?> 
 	</p>
 	<?php //echo "<img src=\"/images/{$data["image"]}\">";   //printf('<img src="/images/%s">', $data['image']);
