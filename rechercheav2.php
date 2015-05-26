@@ -46,29 +46,7 @@
 
    
 
-    <div class="social-links">
-        <img src="images/languages/fr/common/suivez-nous.png" alt="">
-        <div class="social-links-content">
-            <a href="https://www.facebook.com/lesfruitsetlegumesfrais" target="_blank">
-                <img class="paqkjxtxbkhlrzuijmxk" src="images/common/picto-facebook.png" alt="Facebook">
-            </a>
-            <a href="https://twitter.com/fruitslegumesfr" target="_blank">
-                <img class="paqkjxtxbkhlrzuijmxk" src="images/common/picto-twitter.png" alt="Twitter">
-            </a>
-            <a href="https://plus.google.com/112636442578572179197/posts" target="_blank">
-                <img class="paqkjxtxbkhlrzuijmxk" src="images/common/picto-gplus.png" alt="Google +">
-            </a>
-            <a href="https://www.youtube.com/user/FruitsEtLegumesFrais" target="_blank">
-                <img class="paqkjxtxbkhlrzuijmxk" src="images/common/picto-youtube.png" alt="Youtube">
-            </a>
-            <!-- AddThis Button BEGIN -->
-            <div class="addthis_toolbox addthis_default_style float-right addthis_20x20_style">
-                <a class="addthis_button_compact"></a>
-            </div>
-            <!-- AddThis Button END -->
-        </div>
-        <div class="addthis_sharing_toolbox"></div>
-    </div>
+   
 
     <div id="navbar">
         <a id="mobile-menu" href="#" class="float-right">
