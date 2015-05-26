@@ -20,7 +20,7 @@
           <li class="menu1"><a href ="pagedaccueil.php">ACCUEIL</a></li><!--
           --><li class="menu1">LEGUMES</li><!--
           --><li class="menu1"><a href="fruit.php">FRUITS</a></li><!--
-          --><li class="menu1">LABEL BIO</li><!--
+          --><li class="menu1"><a href="forum/index.php">FORUM</a></li><!--
           --><li class="menu1">RECETTES</li><!--
           --><li class="menu1">FORUM</li>
           </ul>
@@ -61,7 +61,7 @@
             --><li class="menu2"><a href="http://www.creativejuiz.fr/blog/theme/css-css3">Annonce</a></li><!--
             --><li class="menu2"><a href="http://www.creativejuiz.fr/blog/theme/css-css3">Panier</a></li><!--
             --><li class="menu2"><a href="http://www.creativejuiz.fr/blog/theme/css-css3">Compte</a></li><!--
-             --><li class="menu2"><a href="http://www.creativejuiz.fr/blog/theme/css-css3">Déconnexion</a></li>
+            --><li class="menu2"><a href="http://www.creativejuiz.fr/blog/theme/css-css3">Déconnexion</a></li>
             </ul>
           </div>
 
