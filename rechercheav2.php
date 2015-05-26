@@ -63,16 +63,7 @@
 
  
             
-            <div id="breadcrumb">
-        <a href="http://www.lesfruitsetlegumesfrais.com">Bienvenue</a>    
-      
-         &gt; Les fruits et légumes</div> 
-            <div class="wrapper">
-               
-                                        <form class="search-filters sheet-filters row" action="/fruits-legumes/liste" method="get">
-    <div class="float-right">
-        <input src="images/common/submit-filters.gif" type="image">
-    </div>
+           
     <p class="cell">
         <label>Cœur de saison</label>     
         <select name="sa">
