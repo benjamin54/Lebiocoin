@@ -49,14 +49,7 @@
             <img src="images/common/logo.png" alt="">
         </a>
     </div>
-    <ul class="alt-menu">
-        <li><a href="/inscription-newsletter">Inscription newsletter</a></li> 
-        <li><a href="/calendrier-fruits-legumes">Calendrier des fruits &amp; légumes</a></li>
-        <li><a href="/presse">Presse</a></li>
-        <li><a target="_blank" href="http://mediatheque.lesfruitsetlegumesfrais.com/">Médiathèque</a></li>
-        <li><a href="/qui-sommes-nous">Qui sommes-nous ?</a></li>
-    </ul>
-
+   
     <form class="search-form" action="/recherche" method="get">
         <p>
             <input id="searchTerm" name="term" placeholder="Recherche..." value="" type="text">
