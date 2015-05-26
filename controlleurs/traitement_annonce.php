@@ -162,6 +162,7 @@ else
   </div>
   </form>
   ';
+?>
 }
 
 if (isset($_FILES['photo_annonce']))
@@ -186,26 +187,6 @@ if (isset($_FILES['photo_annonce']))
   if ($resultat) echo "Transfert réussi"; // On peut valider le fichier et le stocker définitivement
 }
 
-/*
-    //On récupère les valeurs entrées par l'utilisateur :
-if (isset($_FILES['photo_annonce']) AND $_FILES['photo_annonce']['error'] == 0)
-{
-        // Testons si le fichier n'est pas trop gros
-  if ($_FILES['photo_annonce']['size'] <= 1000000)
-  {
-            //testons si l'extension est autorisée
-    $infosimage = pathinfo($_FILES['photo_annonce']['name']);
-    $extension_upload = $infosimage['extension']; 
-    $extensions_autorisees = array('jpg', 'jpeg', 'gif', 'png');
-    if (in_array($extension_upload, $extensions_autorisees))
-    {
-                    // On peut valider le fichier et le stocker définitivement
-      move_uploaded_file($_FILES['photo_annonce']['tmp_name'], 'uploads/' . basename($_FILES['photo_annonce']['name']));
-      echo "L'envoi a bien été effectué !";   
-    }
-  }
-}
-*/
 
       //html5 section validator.w3.org,   <nav>
       //vérifier cé client que form rempli, message disant à quel niveau pas rempli ou erreur

@@ -18,8 +18,8 @@
 	<div id="menu">
         <ul height="100" width="500">
           <li class="menu1"><a href ="pagedaccueil.php">ACCUEIL</a></li><!--
-          --><li class="menu1">LEGUMES</li><!--
-          --><li class="menu1"><a href="fruit.php">FRUITS</a></li><!--
+          --><li class="menu1"><a href="annonce_vue.php">ANNONCE LEGUMES</li><!--
+          --><li class="menu1"><a href="annonce_vue.php">ANNONCE FRUITS</a></li><!--
           --><li class="menu1"><a href="forum/index.php">FORUM</a></li><!--
           --><li class="menu1">RECETTES</li><!--
           --><li class="menu1">FORUM</li>
