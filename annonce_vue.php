@@ -1,14 +1,46 @@
-
 <?php include ('includes/header.php') ?>
+
 <?php
-$base = mysqli_connect ('localhost', 'root', '');  //choisir mp
-mysqli_select_db ($base,'mabase') ;
 
-$sql = 'SELECT `id_annonce`, `codepostal`, `ville`, `region`, `nom`, `mail`, `tel`, `titre`, `photo_annonce`, `texte`, `prix`, `date_ajout` FROM `annonce` WHERE date_ajout>=DAY';
+try
+{
+	// On se connecte à MySQL
+	$base = new PDO('mysql:host=localhost;dbname=mabase;charset=utf8', 'root', '');
+}
+catch(Exception $e)
+{
+	// En cas d'erreur, on affiche un message et on arrête tout
+        die('Erreur : '.$e->getMessage());
+}
+//$reponse = $base->query('SELECT `id_annonce`, `codepostal`, `ville`, `region`, `nom`, `mail`, `tel`, `titre`, `photo_annonce`, `texte`, `prix`, `date_ajout` FROM annonce WHERE id_annonce>=1');
+ 
+// On récupère tout le contenu de la table annonce
+$reponse = $base->query('SELECT * FROM annonce');
 
-mysqli_query ($base,$sql) or die ('Erreur SQL !'.$sql.'<br />'.mysqli_error($base)); 
+// On affiche chaque entrée une à une
+while ($donnees = $reponse->fetch())
+{
+	?>
+	<p>
+		<strong>Annonce :</strong> : <?php echo htmlentities($donnees['titre']); ?><br />
+		Mise en ligne par : <?php echo htmlentities($donnees['nom']); ?>, le <?php echo htmlentities($donnees['date_ajout']);?>, le prix est de <?php echo htmlentities($donnees['prix']); ?> euros. <br />
+		<?php echo "<img src='controlleurs/uploads/".$donnees['photo_annonce']."'>";  /*je galere ici !!!!!!*/?> <br/>  
+		Description : <br/> <?php echo htmlentities($donnees['texte'])?> 
+	</p>
+	<?php
+}
+$reponse->closeCursor(); // Termine le traitement de la requête
 
-        // on ferme la connexion
-mysqli_close($base);
-?><p></p>
-<?php include('includes/footer.php') ?>
+/*$codepostal=$sql->fetch()'codepostal';
+$ville='ville';
+$region='region';
+$nom='nom';
+$mail='mail';
+$tel='tel';
+$titre='titre';
+$photo_annonce='photo_annonce';
+$texte='texte';
+$prix='prix';
+$date_ajout='date_ajout';
+*/
+?>
