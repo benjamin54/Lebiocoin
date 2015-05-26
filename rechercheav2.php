@@ -1,5 +1,5 @@
 <head>
-        
+        <link rel="icon" type="image/png" href="Images/favicon-32x32.png" sizes="32x32"/> 
         <base href="http://www.lesfruitsetlegumesfrais.com/">
         <title>Fruits &amp; Légumes - Les fruits et légumes frais</title>
         <meta name="viewport" content="initial-scale=1.0">
@@ -19,7 +19,6 @@
 <link href="css/print.css" media="print" rel="stylesheet" type="text/css">
 <link href="css/mediaelementplayer.css" media="screen" rel="stylesheet" type="text/css">
 <link href="css/jquery-ui-timepicker-addon.css" media="screen" rel="stylesheet" type="text/css">
-<link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
 <link href="apple-icon.png" rel="apple-touch-icon-precomposed">
         
         <script style="" src="http://www.google-analytics.com/analytics.js" async="" type="text/javascript"></script><script src="//www.googletagmanager.com/gtm.js?id=GTM-5VC8NS" async=""></script><script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
@@ -64,310 +63,12 @@
  
             
            
-    <p class="cell">
-        <label>Cœur de saison</label>     
-        <select name="sa">
-            <option value="a">Tous les mois</option>
-            <option value="1">Janvier</option><option value="2">Février</option><option value="3">Mars</option><option value="4">Avril</option><option value="5">Mai</option><option value="6">Juin</option><option value="7">Juillet</option><option value="8">Août</option><option value="9">Septembre</option><option value="10">Octobre</option><option value="11">Novembre</option><option value="12">Décembre</option>        </select>
-    </p>
-    <p class="cell">
-        <label>Fruits</label>
-        <select name="fp1">
-            <option value="">Tous</option>
-             <option value="12">
-   Abricot 
-</option>
-<option value="7">
-   Amande 
-</option>
-<option value="22">
-   Ananas 
-</option>
-<option value="23">
-   Anone 
-</option>
-<option value="24">
-   Avocat 
-</option>
-<option value="25">
-   Banane 
-</option>
-<option value="26">
-   Carambole 
-</option>
-<option value="44">
-   Cassis 
-</option>
-<option value="13">
-   Cerise 
-</option>
-<option value="8">
-   Châtaigne 
-</option>
-<option value="1">
-   Citron, Citron vert 
-</option>
-<option value="2">
-   Clémentine, Mandarine 
-</option>
-<option value="17">
-   Coing 
-</option>
-<option value="27">
-   Datte 
-</option>
-<option value="40">
-   Figue 
-</option>
-<option value="28">
-   Figue de Barbarie 
-</option>
-<option value="6">
-   Fleurs comestibles 
-</option>
-<option value="45">
-   Fraise 
-</option>
-<option value="46">
-   Framboise 
-</option>
-<option value="29">
-   Fruit de la passion 
-</option>
-<option value="30">
-   Goyave 
-</option>
-<option value="31">
-   Grenade 
-</option>
-<option value="47">
-   Groseille 
-</option>
-<option value="32">
-   Kaki 
-</option>
-<option value="20">
-   Kiwi 
-</option>
-<option value="33">
-   Litchi 
-</option>
-<option value="34">
-   Mangoustan 
-</option>
-<option value="35">
-   Mangue 
-</option>
-<option value="42">
-   Melon 
-</option>
-<option value="14">
-   Mirabelle 
-</option>
-<option value="48">
-   Mûre 
-</option>
-<option value="49">
-   Myrtille 
-</option>
-<option value="41">
-   Noisette 
-</option>
-<option value="9">
-   Noix 
-</option>
-<option value="10">
-   Noix de coco 
-</option>
-<option value="3">
-   Orange 
-</option>
-<option value="36">
-   Papaye 
-</option>
-<option value="43">
-   Pastèque 
-</option>
-<option value="15">
-   Pêche, Nectarine 
-</option>
-<option value="37">
-   Physalis 
-</option>
-<option value="11">
-   Pignon de pin 
-</option>
-<option value="38">
-   Pitaya 
-</option>
-<option value="18">
-   Poire 
-</option>
-<option value="4">
-   Pomelo 
-</option>
-<option value="19">
-   Pomme 
-</option>
-<option value="16">
-   Prune 
-</option>
-<option value="21">
-   Raisin 
-</option>
-<option value="5">
-   Rhubarbe 
-</option>
-<option value="39">
-   Sapotille 
-</option>
-        </select>
-    </p>
-    <p class="cell">
-        <label>Légumes</label>
-        <select name="fp2">
-            <option value="">Tous</option>
-             <option value="50">
-   Ail 
-</option>
-<option value="69">
-   Artichaut 
-</option>
-<option value="79">
-   Asperge 
-</option>
-<option value="75">
-   Aubergine 
-</option>
-<option value="80">
-   Betterave 
-</option>
-<option value="70">
-   Blette 
-</option>
-<option value="57">
-   Brocoli 
-</option>
-<option value="81">
-   Carotte 
-</option>
-<option value="71">
-   Céleri-branche 
-</option>
-<option value="82">
-   Céleri-rave 
-</option>
-<option value="54">
-   Cèpe 
-</option>
-<option value="55">
-   Champignon de Paris 
-</option>
-<option value="87">
-   Chicorée 
-</option>
-<option value="58">
-   Chou pommé 
-</option>
-<option value="59">
-   Chou-fleur 
-</option>
-<option value="76">
-   Concombre 
-</option>
-<option value="60">
-   Courgette 
-</option>
-<option value="88">
-   Cresson 
-</option>
-<option value="51">
-   Échalote 
-</option>
-<option value="89">
-   Endive 
-</option>
-<option value="72">
-   Épinard 
-</option>
-<option value="73">
-   Fenouil 
-</option>
-<option value="62">
-   Fève 
-</option>
-<option value="63">
-   Germe de haricot mungo Soja vert 
-</option>
-<option value="64">
-   Haricot vert 
-</option>
-<option value="90">
-   Laitue 
-</option>
-<option value="65">
-   Lentille 
-</option>
-<option value="91">
-   Mâche 
-</option>
-<option value="56">
-   Morille 
-</option>
-<option value="83">
-   Navet 
-</option>
-<option value="84">
-   Oignon 
-</option>
-<option value="52">
-   Oseille 
-</option>
-<option value="95">
-   Panais 
-</option>
-<option value="68">
-   Patate douce 
-</option>
-<option value="53">
-   Persil 
-</option>
-<option value="66">
-   Petit pois 
-</option>
-<option value="74">
-   Poireau 
-</option>
-<option value="67">
-   Pois gourmand 
-</option>
-<option value="77">
-   Poivron 
-</option>
-<option value="86">
-   Pomme de terre 
-</option>
-<option value="61">
-   Potiron 
-</option>
-<option value="92">
-   Pourpier 
-</option>
-<option value="85">
-   Radis 
-</option>
-<option value="78">
-   Tomate 
-</option>
-        </select>
-    </p>
    
-</form>
     
 <!-- data-all -->
 <div class="data-all">
     <div class="grid-d">
-        <span class="float-right"><strong>49</strong> résultat(s)</span>
+        
         <h1 class="h1-like"><span>Les fruits</span></h1>
          <div class="data-category">
     <a href="/fruits-legumes/liste?fp=1">
@@ -464,7 +165,7 @@
 </div>       
     </div>
     <div class="grid-d">
-        <span class="float-right"><strong>44</strong> résultat(s)</span>
+       
         <h1 class="h1-like"><span>Les légumes</span></h1>
         <div class="data-category">
     <a href="/fruits-legumes/liste?fp=12">
