@@ -44,18 +44,7 @@
             <!-- header -->
 <div id="header">
 
-    <div id="logo">
-        <a href="/">
-            <img src="images/common/logo.png" alt="">
-        </a>
-    </div>
    
-    <form class="search-form" action="/recherche" method="get">
-        <p>
-            <input id="searchTerm" name="term" placeholder="Recherche..." value="" type="text">
-            <input src="images/common/btn-search.gif" type="image">
-        </p>
-    </form>
 
     <div class="social-links">
         <img src="images/languages/fr/common/suivez-nous.png" alt="">
