@@ -13,7 +13,7 @@
           
 <h4> <CENTER>Mes identifiants</CENTER> </h4>
 
-<form name="inscription" method="post" action="inscription.php">
+<form name="inscription" method="post" action="1.php">
 <p><p2 style="color:red">*</p2>nom:
  <input type="text" name="nom" />
   <p2 style="color:red">*</p2>prenom: <input type="text" name="prenom" /></p>
