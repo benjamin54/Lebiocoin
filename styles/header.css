@@ -434,4 +434,14 @@ element.style {
 	width: 50%;
 	float: left;
 }
+#sauver {
+	float:right;
+}
 /*fin style annonce.php*/
+ 
+/* annonce_vue.php*/
+#annonce_pub{
+	font-size: 20%;
+	font-family: georgia ;
+	background-color: #F0E000;
+}
