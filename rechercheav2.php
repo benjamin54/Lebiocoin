@@ -361,10 +361,7 @@
 </option>
         </select>
     </p>
-    <p class="cell">
-        <label>Recherche libre</label>
-        <input id="rl" name="rl" value="" placeholder="Recherche..." size="30" type="text">
-    </p>
+   
 </form>
     
 <!-- data-all -->
