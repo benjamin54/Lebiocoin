@@ -3,14 +3,9 @@
 <head>
     <meta charset="utf-8"/>
     <title>LeBiocoin</title>
-    <link rel="stylesheet" href="styles/accueil.css">
+    <link rel="stylesheet" href="styles/header.css">
     <?php include("header.php"); ?>
  </head>
-
-
-
-<body>
-
   <div id="contenuaccueil">
     <p>
       <h4><CENTER>INSCRIPTION</CENTER></h4>
@@ -24,14 +19,12 @@
 
       <p><p2 style="color:red">*</p2>nom: <input type="text" name="nom" />
 
-<<<<<<< HEAD
 <form name="inscription" method="post" action="1.php">
 <p><p2 style="color:red">*</p2>nom:
  <input type="text" name="nom" />
   <p2 style="color:red">*</p2>prenom: <input type="text" name="prenom" /></p>
-=======
+
       <p2 style="color:red">*</p2>prénom: <input type="text" name="prenom" /></p>
->>>>>>> origin/master
 
       <p><p2 style="color:red">*</p2>Adresse mail: <input type="text" name="adressemail" value=""/></p>
 
@@ -146,60 +139,6 @@
     <input type="texte" name="recherche" value="Je recherche..."/>
     <input type="submit" value="OK"/> 
   </div>
-
-  <b>
-  
-  <ul> 
-    <div id="bordureg">
-
-      <li>  Annonces échanges </li>
-      <br>
-      <br>
-      <li>  Annonces Ventes </li>
-      <br>
-      <br>
-      <li> <a href="annonce.php">Je crée mon annonce</a> </li>
-      <br>
-      <br>
-      <li> Mentions legales</li>
-      <br>
-      <br>
-      <li> Aide </li>
-
-     </div>  
-  </ul>
-
-  </b>
-
-   
-  <div id="newsletter">
-    <h4><u>LA NEWSLETTER</u></h4>
-
-    <p><input type="text" name="pseudo" value="rentrer votre mail" /> </p>
-    <p><INPUT TYPE="submit" NAME="Valider" VALUE=" Envoyer"></p>
-
-  </div>
-
-
-  <div id="mag"> 
-
-    <h4><u>LA REVUE</u></h4>
-  
-    <img src="mag.png"></img>
-
-    <p><input type="text" name="pseudo" value="rentrer votre mail" /> </p>
-    <p><INPUT TYPE="submit" NAME="Valider" VALUE=" Envoyer"></p>
-  
-  </div> 
-  
-  <div id="liste">
-  </div>
-
-
-  
-
-</body>
-
 
 </html>
 
