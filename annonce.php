@@ -23,7 +23,7 @@
 
         <p>
           <label for="nom_categoriep">Catégorie:</label>
-          <select id="nom_categoriep">
+          <select id="nom_categoriep" >
             <option name="fruit" id="nom_categoriep" value="fruit">Fruits</option>
             <option name="legume" value="legume">Légumes</option>
           </select>
@@ -43,12 +43,12 @@
 
         <p>
           <label for="codepostal">Code postal:</label> 
-          <input type="text" name="codepostal" id="codepostal" value=<?php if (isset($_POST['codepostal'])){echo $_POST['codepostal'];} ?>/> <p2 style="color:red"> *</p2> <!-- voir -->
+          <input type="text" name="codepostal" id="codepostal" value="<?php if (isset($_POST['codepostal'])){echo $_POST['codepostal'];} ?>" required/> <p2 style="color:red"> *</p2> <!-- voir -->
         </p>
 
         <p>
           <label for="ville">Ville: </label> 
-          <input type="text" name="ville" id="ville"/><p2 style="color:red"> *</p2>  
+          <input type="text" name="ville" id="ville" required/><p2 style="color:red"> *</p2>  
         </p>
 
         <p>
@@ -106,15 +106,15 @@
         <legend><b>Vos informations</b></legend>
         <p>
           <label for="nom">Votre nom:</label>
-          <input type="text" name="nom" id="nom" value="" /><p2 style="color:red"> *</p2>
+          <input type="text" name="nom" id="nom" value="" required/><p2 style="color:red"> *</p2>
         </p>
         <p>
           <label for="mail">Adresse mail:</label>
-          <input type="mail" name="mail" id="mail" value="" /><p2 style="color:red"> *</p2>
+          <input type="mail" name="mail" id="mail" value="" required/><p2 style="color:red"> *</p2>
         </p>
         <p>
           <label for="tel">Téléphone:</label>
-          <input type="tel" name="tel" id="tel" value=""/><p2 style="color:red"> *</p2>
+          <input type="tel" name="tel" id="tel" value="" required/><p2 style="color:red"> *</p2>
         </p>
       </fieldset>
 
@@ -122,23 +122,23 @@
         <legend><b>Votre annonce</b></legend>
         <p>
           <label for="titre">Titre de l'annonce</label>
-          <input type="text" name="titre" id="titre" /><p2 style="color:red"> *</p2>
+          <input type="text" name="titre" id="titre" required /><p2 style="color:red"> *</p2>
         </p>
 
         <p>
           <label for="photo_annonce">Choix d'une photo pour votre produit:</label>
-          <input type="file" name="photo_annonce" id="photo_annonce"/> <!-- mettre une photo à l\'annonce -->
+          <input type="file" name="photo_annonce" id="photo_annonce" required/> <!-- mettre une photo à l\'annonce -->
         </p>
 
 
         <p>
           <label for="texte"> Texte de l'annonce:</label> 
-          <textarea name="texte" id="texte" wrap="off" rows="6" cols="50"></textarea> <p2 style="color:red"> *</p2>      
+          <textarea name="texte" id="texte" wrap="off" rows="6" cols="50" required></textarea> <p2 style="color:red"> *</p2>      
         </p>
 
         <p>
           <label for="prix"> Prix:</label>
-          <input type="text" name="prix" id="prix"/><p2 style="color:red"> *</p2>
+          <input type="text" name="prix" id="prix" required/><p2 style="color:red"> *</p2>
         </p>
       </fieldset>
 

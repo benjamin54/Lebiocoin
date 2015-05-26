@@ -24,7 +24,7 @@ while ($donnees = $reponse->fetch())
 	<div id="annonce_pub">
 	<p>
 		<strong>Annonce :</strong> : <?php echo htmlentities($donnees['titre']); ?><br />
-		Mise en ligne par : <?php echo htmlentities($donnees['nom']); ?>, le <?php echo htmlentities($donnees['date_ajout']);?>, le prix est de <?php echo htmlentities($donnees['prix']); ?> euros. <br />
+		Mise en ligne par : <?php echo htmlentities($donnees['nom']); ?>, le <?php echo htmlentities($donnees['date_ajout']);?>, le prix est de <?php echo htmlentities($donnees['prix']); ?> euros/kg. <br />
 		<?php echo "<img src='controlleurs/uploads/".$donnees['photo_annonce']."'>";  /*je galere ici !!!!!!*/?> <br/>  
 		Description : <br/> <?php echo htmlentities($donnees['texte'])?> 
 	</p>
