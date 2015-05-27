@@ -440,11 +440,22 @@ element.style {
 /*fin style annonce.php*/
  
 /* annonce_vue.php*/
-#annonce_pub{
-	font-size: 20%;
+#annoncecadre{
+	font-size: 100%;
 	font-family: georgia ;
-	background-color: #F0E000;
-	position: relative;
-	top:25%;
+	background-color: #FFB000;
+	position: absolute;
+	top:50%;
+	left:25%;
+	border-style: inset;
+	border-color: #00C020;
+	border-width: 5px;
 	width:40%;
+}
+#annonce_gauche{
+	border-spacing: 10px;
+}
+#annonce_droite{
+	position: relative;
+	float:right;
 }

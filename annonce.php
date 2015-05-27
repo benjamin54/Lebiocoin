@@ -4,9 +4,7 @@
 
 <!DOCTYPE html>
 <html>
-<head>
-  <link rel="stylesheet" href="styles/header.css">
-</head>
+
 
 <body>
   <div id="annonce">
@@ -126,6 +124,12 @@
         </p>
 
         <p>
+          <label for="variete">Variété:</label>
+          <select name="variete" id="variete">
+
+          </select>
+        </p>
+        <p>
           <label for="photo_annonce">Choix d'une photo pour votre produit:</label>
           <input type="file" name="photo_annonce" id="photo_annonce" required/> <!-- mettre une photo à l\'annonce -->
         </p>
@@ -138,7 +142,7 @@
 
         <p>
           <label for="prix"> Prix:</label>
-          <input type="text" name="prix" id="prix" required/><p2 style="color:red"> *</p2>
+          <input type="text" name="prix" id="prix" required/> (en euros/kg)<p2 style="color:red"> *</p2>
         </p>
       </fieldset>
 

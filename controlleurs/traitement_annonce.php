@@ -1,4 +1,6 @@
-
+<head>
+  <meta charset="utf-8">
+</head>
 <?php
 
 session_start();
@@ -162,7 +164,6 @@ else
   </div>
   </form>
   ';
-?>
 }
 
 if (isset($_FILES['photo_annonce']))
@@ -193,7 +194,7 @@ if (isset($_FILES['photo_annonce']))
 //$nom_categoriep=$POST['nom_categoriep'];
 //$nom_categoriea=$POST['nom_categoriea'];
 
-if (isset($_POST['envoi']))
+if (isset($_POST['sauver']))
 {
 $base = mysqli_connect ('localhost', 'root', '');  //choisir mp
 mysqli_select_db ($base,'mabase') ;
