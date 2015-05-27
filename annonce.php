@@ -14,7 +14,7 @@
       Veuillez remplir le formulaire ci dessous. Les champs <p2 style="color:red"> * </p2> sont obligatoires.</font>
     </p>
 
-    <form method="post" action="controlleurs/traitement_annonce.php" enctype="multipart/form-data">
+    <form method="POST" action="controlleurs/traitement_annonce.php" enctype="multipart/form-data">
 
       <fieldset>
         <legend><b>Catégorie</b></legend>
@@ -22,16 +22,16 @@
         <p>
           <label for="nom_categoriep">Catégorie:</label>
           <select id="nom_categoriep" >
-            <option name="fruit" id="nom_categoriep" value="fruit">Fruits</option>
-            <option name="legume" value="legume">Légumes</option>
+            <option name="nom_categoriep" id="nom_categoriep" value="fruit">Fruits</option>
+            <option name="nom_categoriep" value="legume">Légumes</option>
           </select>
           <p2 style="color:red"> *</p2>
         </p>
 
         <p>
           <label for="nom_categoriea">Type d'annonce:</label> 
-          <input type="radio" name="choix" value="achat" id="nom_categoriea" checked/> Achat
-          <input type="radio" name="choix" value="echange" /> Echange
+          <input type="radio" name="nom_categoriea" value="achat" id="nom_categoriea" checked/> Achat
+          <input type="radio" name="nom_categoriea" value="echange" /> Echange
           <p2 style="color:red"> *</p2>
         </p>
       </fieldset>

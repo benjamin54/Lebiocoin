@@ -29,139 +29,142 @@ if(!empty($_POST))  //on utilise des boucles pour vérifier que tous les champs 
 else
 {
   echo '
-  <form method="post" action="controlleurs/traitement_annonce.php">
-  <div id="contenuaccueil">
-  <fieldset>
-  <legend><b>Catégorie</b></legend>
+  <form method="POST" action="controlleurs/traitement_annonce.php" enctype="multipart/form-data">
 
-  <p>
-  Catégorie:
-  <select name="categorie" id="categorie">
-  <option value="choix01">Fruits</option>
-  <option value="choix02">Légumes</option>
-  </select>
-  <p2 style="color:red"> *</p2>
-  </p>
+      <fieldset>
+        <legend><b>Catégorie</b></legend>
 
-  <p>
-  Type d\'annonce: 
-  <input type="radio" name="achat" value="achat" id="achat"/> <label for="achat">Achat</label>
-  <input type="radio" name="echange" value="echange" id="echange"/> <label for="echange">Echange</label>
-  <p2 style="color:red"> *</p2>
-  </p>
-  </fieldset>
+        <p>
+          <label for="nom_categoriep">Catégorie:</label>
+          <select id="nom_categoriep" >
+            <option name="fruit" id="nom_categoriep" value="fruit">Fruits</option>
+            <option name="legume" value="legume">Légumes</option>
+          </select>
+          <p2 style="color:red"> *</p2>
+        </p>
 
-  <fieldset>
-  <legend><b>Localisation</b></legend>
+        <p>
+          <label for="nom_categoriea">Type d\'annonce:</label> 
+          <input type="radio" name="choix" value="achat" id="nom_categoriea" checked/> Achat
+          <input type="radio" name="choix" value="echange" /> Echange
+          <p2 style="color:red"> *</p2>
+        </p>
+      </fieldset>
 
-  <p>
-  Code postal: <input type="text" name="codepostal" id="codepostal"/> <p2 style="color:red"> *</p2>
-  </p>
+      <fieldset>
+        <legend><b>Localisation</b></legend>
 
-  <p>
-  Ville:  
-  <input type="text" name="ville" id="ville"/><p2 style="color:red"> *</p2>  
-  </p>
+        <p>
+          <label for="codepostal">Code postal:</label> 
+          <input type="text" name="codepostal" id="codepostal" value="<?php if (isset($_POST[\'codepostal\'])){echo $_POST[\'codepostal\'];} ?>" required/> <p2 style="color:red"> *</p2> <!-- voir -->
+        </p>
 
-  <p>
-  D&eacutepartement/R&eacutegion:
-  <select name="region" id="region">
+        <p>
+          <label for="ville">Ville: </label> 
+          <input type="text" name="ville" id="ville" required/><p2 style="color:red"> *</p2>  
+        </p>
 
-  <option value="Alsace" selected="selected">Alsace</option>
+        <p>
+          <label for="region">D&eacutepartement/R&eacutegion:</label>
+          <select name="region" id="region">
 
-  <option value="Aquitaine">Aquitaine</option>
+            <option value="Alsace" selected>Alsace</option>
 
-  <option value="Auvergne">Auvergne</option>
+            <option value="Aquitaine">Aquitaine</option>
 
-  <option value="Base Normandie">Basse Normandie</option>
+            <option value="Auvergne">Auvergne</option>
 
-  <option value="Bourgogne">Bourgogne</option>
+            <option value="Base Normandie">Basse Normandie</option>
 
-  <option value="Bretagne">Bretagne</option>
+            <option value="Bourgogne">Bourgogne</option>
 
-  <option value="Centre">Centre</option>
+            <option value="Bretagne">Bretagne</option>
 
-  <option value="Champagne-Ardenne">Champagne-Ardenne</option>
+            <option value="Centre">Centre</option>
 
-  <option value="Corse">Corse</option>
+            <option value="Champagne-Ardenne">Champagne-Ardenne</option>
 
-  <option value="Franche-Comté">Franche-Comté</option>
+            <option value="Corse">Corse</option>
 
-  <option value="Haute normandie">Haute normandie</option>
+            <option value="Franche-Comté">Franche-Comté</option>
 
-  <option value="Ile de France">Ile de France</option>
+            <option value="Haute normandie">Haute normandie</option>
 
-  <option value="Languedoc Roussilon">Languedoc Roussilon</option>
+            <option value="Ile de France">Ile de France</option>
 
-  <option value="Limousin">Limousin</option>
+            <option value="Languedoc Roussilon">Languedoc Roussilon</option>
 
-  <option value="Loraine">Loraine</option>
+            <option value="Limousin">Limousin</option>
 
-  <option value="Midi-Pyrénées">Midi-Pyrénées</option>
+            <option value="Loraine">Loraine</option>
 
-  <option value="Nord pas de Calais">Nord pas de Calais</option>
+            <option value="Midi-Pyrénées">Midi-Pyrénées</option>
 
-  <option value="Pays de la Loire">Pays de la Loire</option>
+            <option value="Nord pas de Calais">Nord pas de Calais</option>
 
-  <option value="Picardie">Picardie</option>
+            <option value="Pays de la Loire">Pays de la Loire</option>
 
-  <option value="Poitou Charente">Poitou Charente</option>
+            <option value="Picardie">Picardie</option>
 
-  <option value="Provence Alpes Cote d\'Azur">Provence Alpes Cote d\'Azur</option>
+            <option value="Poitou Charente">Poitou Charente</option>
 
-  <option value="Rhône-Alpes">Rhône-Alpes</option>
-  </select>
-  <p2 style="color:red"> *</p2>
-  </p>
-  </fieldset>
-  <fieldset>
-  <legend><b>Vos informations</b></legend>
-  <p>
-  Votre nom:
-  <input type="text" name="nom" id="nom" value="" /><p2 style="color:red"> *</p2>
-  </p>
-  <p>
-  Adresse mail:
-  <input type="mail" name="mail" id="mail" value="" /><p2 style="color:red"> *</p2>
-  </p>
-  <p>
-  Téléphone:
-  <input type="tel" name="tel" id="tel" value=""/><p2 style="color:red"> *</p2>
-  </p>
-  </fieldset>
+            <option value="Provence Alpes Cote d\'Azur">Provence Alpes Cote d\'Azur</option>
 
-  <fieldset>
-  <legend><b>Votre annonce</b></legend>
-  <p>
-  Titre de l\'annonce
-  <input type="text" name="titre" id="titre" /><p2 style="color:red"> *</p2>
-  </p>
+            <option value="Rhône-Alpes">Rhône-Alpes</option>
+          </select>
+          <p2 style="color:red"> *</p2>
+        </p>
+      </fieldset>
+      <fieldset>
+        <legend><b>Vos informations</b></legend>
+        <p>
+          <label for="nom">Votre nom:</label>
+          <input type="text" name="nom" id="nom" value="" required/><p2 style="color:red"> *</p2>
+        </p>
+        <p>
+          <label for="mail">Adresse mail:</label>
+          <input type="mail" name="mail" id="mail" value="" required/><p2 style="color:red"> *</p2>
+        </p>
+        <p>
+          <label for="tel">Téléphone:</label>
+          <input type="tel" name="tel" id="tel" value="" required/><p2 style="color:red"> *</p2>
+        </p>
+      </fieldset>
 
-  <p>
-  <label for="photo_annonce">Choix d\'une photo pour votre produit: </label>
-  <input type="file" name="photo_annonce" id="photo_annonce"/> <!-- mettre une photo à l\'annonce -->
-  </p>
+      <fieldset>
+        <legend><b>Votre annonce</b></legend>
+        <p>
+          <label for="titre">Titre de l\'annonce</label>
+          <input type="text" name="titre" id="titre" required /><p2 style="color:red"> *</p2>
+        </p>
+
+        <p>
+          <label for="variete">Variété:</label>
+          <select name="variete" id="variete">
+
+          </select>
+        </p>
+        <p>
+          <label for="photo_annonce">Choix d\'une photo pour votre produit:</label>
+          <input type="file" name="photo_annonce" id="photo_annonce" required/> <!-- mettre une photo à l\'annonce -->
+        </p>
 
 
-  <p>
-  <label for="ameliorer">
-  Texte de l\'annonce: <p2 style="color:red"> *</p2><br>
-  </label>
+        <p>
+          <label for="texte"> Texte de l\'annonce:</label> 
+          <textarea name="texte" id="texte" wrap="off" rows="6" cols="50" required></textarea> <p2 style="color:red"> *</p2>      
+        </p>
 
-  <textarea name="texte" id="texte" rows="10" cols="50">
-  </textarea>       
-  </p>
+        <p>
+          <label for="prix"> Prix:</label>
+          <input type="text" name="prix" id="prix" required/> (en euros/kg)<p2 style="color:red"> *</p2>
+        </p>
+      </fieldset>
 
-  <p>
-  Prix:
-  <input type="text" name="prix" id="prix"/><p2 style="color:red"> *</p2>
-  </p>
-  </fieldset>
-
-  <p>
-  <input type="submit" name="sauver" id="sauver" value="Sauvegarder l\'annonce">
-  </p>
-  </div>
+      <p>
+        <input type="submit" name="sauver" id="sauver" value="Sauvegarder l\'annonce">
+      </p>
+    </div>
   </form>
   ';
 }
@@ -199,6 +202,9 @@ if (isset($_POST['sauver']))
 $base = mysqli_connect ('localhost', 'root', '');  //choisir mp
 mysqli_select_db ($base,'mabase') ;
 
+$nom_categoriep=$_POST['nom_categoriep'];
+$nom_categoriea=$_POST['nom_categoriea'];
+
 $codepostal=$_POST['codepostal'];
 $ville=$_POST['ville'];
 $region=$_POST['region'];
@@ -214,13 +220,13 @@ $prix=$_POST['prix'];
 
 
 $sql = 'INSERT INTO annonce VALUES ("","'.$codepostal.'","'.$ville.'","'.$region.'","'.$nom.'","'.$mail.'","'.$tel.'","'.$titre.'","'.$photo_annonce.'","'.$texte.'","'.$prix.'",NOW())';
-    //$sql1= 'INSERT INTO categorie_produit VALUES ("","'.$nom_categoriep.'")';
-    //$sql2= 'INSERT INTO categorie_a VALUES ("","'.$nom_categoriea.'")';
+    $sql1= 'INSERT INTO categorie_produit VALUES ("","'.$nom_categoriep.'")';
+    $sql2= 'INSERT INTO categorie_a VALUES ("","'.$nom_categoriea.'")';
 
 
 mysqli_query ($base,$sql) or die ('Erreur SQL !'.$sql.'<br />'.mysqli_error($base)); 
-    //mysqli_query ($base,$sql1) or die ('Erreur SQL !'.$sql1.'<br />'.mysqli_error($base));
-    //mysqli_query ($base,$sql2) or die ('Erreur SQL !'.$sql2.'<br />'.mysqli_error($base));
+mysqli_query ($base,$sql1) or die ('Erreur SQL !'.$sql1.'<br />'.mysqli_error($base));
+mysqli_query ($base,$sql2) or die ('Erreur SQL !'.$sql2.'<br />'.mysqli_error($base));
 
         // on ferme la connexion
 mysqli_close($base);

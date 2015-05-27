@@ -444,8 +444,8 @@ element.style {
 	font-size: 100%;
 	font-family: georgia ;
 	background-color: #FFB000;
-	position: absolute;
-	top:50%;
+	position: relative;
+	top:0%;
 	left:25%;
 	border-style: inset;
 	border-color: #00C020;
@@ -453,9 +453,15 @@ element.style {
 	width:40%;
 }
 #annonce_gauche{
-	border-spacing: 10px;
+	position: relative;
+	bottom:20%;
+	left:5%;
 }
 #annonce_droite{
-	position: relative;
-	float:right;
+	position: absolute;
+	top:10%;
+	left:60%;
+}
+#titreannonce{
+	font-weight: bold;
 }
