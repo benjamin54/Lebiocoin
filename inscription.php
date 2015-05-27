@@ -120,14 +120,12 @@ $bdd = new PDO ('mysql:host=127.0.0.1;dbname=bdlebiocoin','root','');
 
 <body>
 
-    <div id="contenuaccueil" align="center">
+    <div id="contenuaccueil">
         <form method="POST" action="">
-          <fieldset>
-            <legend><h2>INSCRIPTION</h2></legend>
+          
+            <h2>INSCRIPTION</h2>
               
-                <br/>
                 <p>Veuillez remplir le formulaire ci dessous. Les champs <p2 style="color:red">*</p2> sont obligatoires.</p>
-                <br/>
               
                 <h3>Mes identifiants</h3>
 
@@ -192,7 +190,7 @@ $bdd = new PDO ('mysql:host=127.0.0.1;dbname=bdlebiocoin','root','');
                               <label for="numero">Votre numéro de téléphone :</label>
                           </td>
                           <td>
-                              <input type="int" value="" id="numero" name="num">
+                              <input type="text" placeholder="Votre numéro de téléphone" id="numero" name="num">
                           </td>
                         </tr>  
                           <td align="right">
@@ -237,7 +235,7 @@ $bdd = new PDO ('mysql:host=127.0.0.1;dbname=bdlebiocoin','root','');
       }
     ?>
 
-            </fieldset>
+            
           </form>
 
 
