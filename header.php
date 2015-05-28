@@ -16,7 +16,7 @@
 <div id="inscription"><a href=inscription.php>Inscription</a></div>
 
 	<div id="menu">
-        <ul height="100" width="500">
+        <ul>
           <li class="menu1"><a href ="pagedaccueil.php">ACCUEIL</a></li><!--
           --><li class="menu1"><a href="annonce_vue.php">ANNONCE LEGUMES</li><!--
           --><li class="menu1"><a href="annonce_vue.php">ANNONCE FRUITS</a></li><!--
