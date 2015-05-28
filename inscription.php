@@ -45,10 +45,11 @@ $bdd = new PDO ('mysql:host=127.0.0.1;dbname=mabase','root','');
                                     
                                             if($mailexist == 0)
                                             {
+                                              $token = rand('23456','65432');
 
-                                              $insertmembre = $bdd -> prepare("INSERT INTO membre (prenom, nom, pseudo, adressemail, motdepasse1, motdepasse2, num, region, ville, case) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"); 
+                                              $insertmembre = $bdd -> prepare("INSERT INTO membre (prenom, nom, pseudo, adressemail, token, active, motdepasse1, motdepasse2, num, region, ville, case) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"); 
                                             /* INSERT INTO est une fonction sql et il ne faut pas oublier de la preparer en mettant le prepare*/                                        
-                                              $insertmembre -> execute(array($prenom, $nom, $pseudo, $adressemail, $motdepasse1, $num, $region, $ville, $case));
+                                              $insertmembre -> execute(array($prenom, $nom, $pseudo, $adressemail, $token, '0'; $motdepasse1, $num, $region, $ville, $case));
                                               $message = "Votre compte a bien été créé. Bienvenue !";
                                            }
 
