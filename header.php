@@ -48,7 +48,7 @@
   <div id="bloc2">
 
           <div id="recherche">
-            <form action=" ">
+            <form >
               <input class="barre" type="search" name="recherche" placeholder="Rechercher"/>
               <input class="bouton" type="submit" value="OK"/>
             </form> 
