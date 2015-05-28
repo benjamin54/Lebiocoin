@@ -1,4 +1,4 @@
--- phpMyAdmin SQL Dump
+﻿-- phpMyAdmin SQL Dump
 -- version 4.1.14
 -- http://www.phpmyadmin.net
 --
@@ -216,3 +216,20 @@ CREATE TABLE IF NOT EXISTS `sujet_forum` (
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
+---------------------------------------------------------------------
+
+CREATE TABLE IF NOT EXISTS `membre` (
+  `id_membre` int(11) NOT NULL AUTO_INCREMENT,
+  `prenom` varchar(255) NOT NULL,
+  `nom` varchar(255) NOT NULL,
+  `pseudo` varchar(255) NOT NULL,
+  `adressemail` varchar(320) CHARACTER SET ascii NOT NULL,
+  `motdepasse1` text NOT NULL,
+  `motdepasse2` text NOT NULL,
+  `num` int(11) NOT NULL,
+  `ville` varchar(60) NOT NULL,
+  `region` varchar(30) NOT NULL,
+  `case` char(1) NOT NULL,
+  PRIMARY KEY (`id_membre`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=26 ;
