@@ -131,7 +131,7 @@
  'Unstick topic'                     => 'Détacher la discussion',
  'Stick topic'                       => 'Épingler la discussion',
  'Moderate forum'                    =>	'Modérer le forum',
- 'Powered by'                        => 'Propulsé par %s',
+ 'Powered by'                        => '',
  
  // Debug information
  'Debug table'                       => 'Informations de débogage',
