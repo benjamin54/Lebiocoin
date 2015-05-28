@@ -1,10 +1,11 @@
-<head>
-  <meta charset="utf-8">
-</head>
+
 <?php
 
 session_start();
  
+$_SESSION['codepostal']=$_POST['codepostal'];
+$_SESSION['ville']=$_POST['ville'];
+
 error_reporting(E_ALL);
 if(!empty($_POST))  //on utilise des boucles pour vérifier que tous les champs sont remplis, équivalent à if(isset($_POST['nom'])&& $_POST['nom']!='' && $_POST['nom']!=='0'))
 {
@@ -56,7 +57,7 @@ else
 
         <p>
           <label for="codepostal">Code postal:</label> 
-          <input type="text" name="codepostal" id="codepostal" value="<?php if (isset($_POST[\'codepostal\'])){echo $_POST[\'codepostal\'];} ?>" required/> <p2 style="color:red"> *</p2> <!-- voir -->
+          <input type="text" name="codepostal" id="codepostal" value="<?php if (isset($_POST[\'codepostal\'])){echo $_SESSION[\'codepostal\'];} ?>" required/> <p2 style="color:red"> *</p2> <!-- voir -->
         </p>
 
         <p>
@@ -169,7 +170,7 @@ else
   ';
 }
 
-if (isset($_FILES['photo_annonce']))
+if (isset($_FILES['photo_annonce']))   //verifs sur l'image envoyée
 {
   if ($_FILES['photo_annonce']['error'] > 0) $erreur = "Erreur lors du transfert";
   $maxsize= 1000000;
@@ -179,7 +180,7 @@ if (isset($_FILES['photo_annonce']))
   //2. substr(chaine,1) ignore le premier caractère de chaine.
   //3. strtolower met l'extension en minuscules.
   $extension_upload = strtolower(  substr(  strrchr($_FILES['photo_annonce']['name'], '.')  ,1)  );
-  if ( in_array($extension_upload,$extensions_valides) ) echo "Extension correcte"; ?></br>
+  if (in_array($extension_upload,$extensions_valides)) echo "Extension correcte"; ?></br>
   <?php
 
   //Créer un identifiant difficile à deviner
@@ -197,31 +198,31 @@ if (isset($_FILES['photo_annonce']))
 //$nom_categoriep=$POST['nom_categoriep'];
 //$nom_categoriea=$POST['nom_categoriea'];
 
-if (isset($_POST['sauver']))
+if (!empty($_POST['sauver']))
 {
 $base = mysqli_connect ('localhost', 'root', '');  //choisir mp
 mysqli_select_db ($base,'mabase') ;
 
-$nom_categoriep=$_POST['nom_categoriep'];
-$nom_categoriea=$_POST['nom_categoriea'];
+$nom_categoriep = securite_bdd($_POST['nom_categoriep']);
+$nom_categoriea = securite_bdd($_POST['nom_categoriea']);
 
-$codepostal=$_POST['codepostal'];
-$ville=$_POST['ville'];
-$region=$_POST['region'];
+$codepostal = securite_bdd($_POST['codepostal']);
+$ville = securite_bdd($_POST['ville']);
+$region = securite_bdd($_POST['region']);
 
-$nom=$_POST['nom'];
-$mail=$_POST['mail'];
-$tel=$_POST['tel'];
+$nom = securite_bdd($_POST['nom']);
+$mail = securite_bdd($_POST['mail']);
+$tel = securite_bdd($_POST['tel']);
 
-$titre=$_POST['titre'];
-$photo_annonce = $new_nom;
-$texte=$_POST['texte'];
-$prix=$_POST['prix'];
+$titre = securite_bdd($_POST['titre']);
+$photo_annonce = securite_bdd($new_nom);
+$texte = securite_bdd($_POST['texte']);
+$prix = securite_bdd($_POST['prix']);
 
 
 $sql = 'INSERT INTO annonce VALUES ("","'.$codepostal.'","'.$ville.'","'.$region.'","'.$nom.'","'.$mail.'","'.$tel.'","'.$titre.'","'.$photo_annonce.'","'.$texte.'","'.$prix.'",NOW())';
-    $sql1= 'INSERT INTO categorie_produit VALUES ("","'.$nom_categoriep.'")';
-    $sql2= 'INSERT INTO categorie_a VALUES ("","'.$nom_categoriea.'")';
+$sql1= 'INSERT INTO categorie_produit VALUES ("","'.$nom_categoriep.'")';
+$sql2= 'INSERT INTO categorie_a VALUES ("","'.$nom_categoriea.'")';
 
 
 mysqli_query ($base,$sql) or die ('Erreur SQL !'.$sql.'<br />'.mysqli_error($base)); 

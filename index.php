@@ -9,7 +9,7 @@ if (!isset($_SESSION['count'])) {
 
 
 ?>
-<?php include("pagedaccueil.php"); ?>
+<?php include("annonce_vue.php"); ?>
 
 
 <?php

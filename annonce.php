@@ -6,6 +6,7 @@
 <html>
 
 
+
 <body>
   <div id="annonce">
     <h4>JE CREE MON ANNONCE</h4>
@@ -14,7 +15,7 @@
       Veuillez remplir le formulaire ci dessous. Les champs <p2 style="color:red"> * </p2> sont obligatoires.</font>
     </p>
 
-    <form method="POST" action="controlleurs/traitement_annonce.php" enctype="multipart/form-data">
+    <form method="POST" action="controlleurs/traitement_annonce.php" onSubmit="return verif_formulaire()" enctype="multipart/form-data">
 
       <fieldset>
         <legend><b>Catégorie</b></legend>
@@ -46,7 +47,7 @@
 
         <p>
           <label for="ville">Ville: </label> 
-          <input type="text" name="ville" id="ville" required/><p2 style="color:red"> *</p2>  
+          <input type="text" name="ville" id="ville" value="<?php if (isset($_POST['ville'])){echo $_SESSION['ville'];}?>" required/><p2 style="color:red"> *</p2>  
         </p>
 
         <p>
