@@ -8,7 +8,8 @@ $bdd = new PDO ('mysql:host=127.0.0.1;dbname=mabase','root','');
 
   if(isset($_POST['forminscription']))
   {
-     $prenom = htmlspecialchars($_POST['prenom']);
+      $prenom = htmlspecialchars($_POST['id_membre']);
+      $prenom = htmlspecialchars($_POST['prenom']);
       $nom = htmlspecialchars($_POST['nom']);
       $pseudo = htmlspecialchars($_POST['pseudo']);
       $adressemail = htmlspecialchars($_POST['adressemail']);
@@ -19,7 +20,7 @@ $bdd = new PDO ('mysql:host=127.0.0.1;dbname=mabase','root','');
       $ville = htmlspecialchars($_POST['ville']);
       $case = htmlspecialchars($_POST['case']);
 
-      if(!empty($_POST['prenom']) AND !empty($_POST['nom']) AND !empty($_POST['pseudo']) AND !empty($_POST['adressemail']) AND !empty($_POST['motdepasse1']) AND !empty($_POST['motdepasse2']) AND 
+      if(!empty($_POST['id_membre']) AND !empty($_POST['prenom']) AND !empty($_POST['nom']) AND !empty($_POST['pseudo']) AND !empty($_POST['adressemail']) AND !empty($_POST['motdepasse1']) AND !empty($_POST['motdepasse2']) AND 
       !empty($_POST['num']) AND !empty($_POST['region']) AND !empty($_POST['ville']) AND !empty($_POST['case']))
       {
 
@@ -46,9 +47,9 @@ $bdd = new PDO ('mysql:host=127.0.0.1;dbname=mabase','root','');
                                             if($mailexist == 0)
                                             {
 
-                                              $insertmembre = $bdd -> prepare("INSERT INTO membre (prenom, nom, pseudo, adressemail, motdepasse1, motdepasse2, num, region, ville, case) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"); 
+                                              $insertmembre = $bdd -> prepare("INSERT INTO membre (id_membre, prenom, nom, pseudo, adressemail, motdepasse1, motdepasse2, num, region, ville, case) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"); 
                                             /* INSERT INTO est une fonction sql et il ne faut pas oublier de la preparer en mettant le prepare*/                                        
-                                              $insertmembre = $bdd -> execute(array($prenom, $nom, $pseudo, $adressemail, $motdepasse1, $num, $region, $ville, $case));
+                                              $insertmembre = $bdd -> execute(array($id_membre, $prenom, $nom, $pseudo, $adressemail, $motdepasse1, $motdepasse2, $num, $region, $ville, $case));
                                               $message = "Votre compte a bien été créé. Bienvenue !";
                                            }
 
