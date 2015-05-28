@@ -233,3 +233,66 @@ CREATE TABLE IF NOT EXISTS `membre` (
   `case` char(1) NOT NULL,
   PRIMARY KEY (`id_membre`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=26 ;
+
+
+
+---------------------------------------------------------------
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+
+--
+-- Base de données :  `bdlebiocoin`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `membre`
+--
+
+CREATE TABLE IF NOT EXISTS `membre` (
+  `id_membre` int(11) NOT NULL AUTO_INCREMENT,
+  `prenom` varchar(255) NOT NULL,
+  `nom` varchar(255) NOT NULL,
+  `pseudo` varchar(255) NOT NULL,
+  `adressemail` varchar(320) CHARACTER SET ascii NOT NULL,
+  `motdepasse1` text NOT NULL,
+  `motdepasse2` text NOT NULL,
+  `num` int(11) NOT NULL,
+  `region` varchar(30) NOT NULL,
+  `ville` varchar(60) NOT NULL,
+  `case` char(1) NOT NULL,
+  PRIMARY KEY (`id_membre`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=26 ;
+
+--
+-- Contenu de la table `membre`
+--
+
+INSERT INTO `membre` (`id_membre`, `prenom`, `nom`, `pseudo`, `adressemail`, `motdepasse1`, `motdepasse2`, `num`, `region`, `ville`, `case`) VALUES
+(13, 'stellina', 'epanda', '', 'dupontjean@gmail.com', '1233333', '33333', 0, '699145449', 'paris', 'o'),
+(14, '', '', '', 'dupontjean@gmail.com', '', '', 0, '0', '', ''),
+(15, '', '', '', 'dupontjean@gmail.com', '', '', 0, '0', '', 'o'),
+(16, 'aude', 'ddd', '', 'oppp@gmail.com', 'nnnnnnnnnnn', 'nnnnnnnnn', 0, '699145449', 'jjjjjjj', 'o'),
+(17, 'ff', 'fff', '', 'dupontjean@gmail.com', '', '', 0, '699145449', 'ff', 'o'),
+(18, 'stellina', 'ddd', '', 'dupontjean@gmail.com', 'jjjjj', 'jjjjj', 0, '699145449', 'kjj', 'o'),
+(19, 'stellina', 'fff', '', 'dupontjean@gmail.com', 'eeee', 'jjjj', 0, '699145449', 'paris', 'o'),
+(20, 'kkkk', 'ikikkk', '', 'dupontjean@gmail.com', 'eeee', 'kkkk', 0, '0', 'kkk ', 'o'),
+(21, '', '', '', 'dupontjean@gmail.com', 'eeee', '', 0, '0', '', ''),
+(22, '', '', '', 'dupontjean@gmail.com', 'eeee', '', 0, '0', '', ''),
+(23, 'ggggggg', 'kjjjjj', '', 'stell@gmail.com', 'eeeeff', 'ffff', 0, '699145449', 'paris', 'o'),
+(24, 'aude', 'ddd', '', 'dupontjean@gmail.com', 'eeeekkkkkk', 'kkkkkkkkkk', 0, '699145449', 'paris', 'o'),
+(25, 'aude', 'ddd', '', 'dupontjean@gmail.com', 'eeee', 'kkk', 0, '699145449', 'paris', 'o');
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
+
