@@ -147,7 +147,7 @@
  'RSS description topic'             => 'Les sujets les plus récents dans %s.',
  'RSS reply'                         => 'Réponse à&#160;:  ', // The topic subject will be appended to this string (to signify a reply)
  'RSS active topics feed'            =>	'Flux RSS des discussions actives',
- 'Atom active topics feed'           =>	'Flux Atom des discussions actives',
+ 'Atom active topics feed'           =>	'',
  'RSS forum feed'                    =>	'Flux RSS du forum',
  'Atom forum feed'                   =>	'Flux Atom du forum',
  'RSS topic feed'                    =>	'Flux RSS de la discussion',
