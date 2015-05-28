@@ -14,6 +14,7 @@ $bdd = new PDO ('mysql:host=127.0.0.1;dbname=mabase','root','');
       $adressemail = htmlspecialchars($_POST['adressemail']);
       $motdepasse1 = sha1($_POST['motdepasse1']);
       $motdepasse2 = sha1($_POST['motdepasse2']);
+      $num = htmlspecialchars($_POST['num']);
       $region = htmlspecialchars($_POST['region']);
       $ville = htmlspecialchars($_POST['ville']);
       $case = htmlspecialchars($_POST['case']);
@@ -219,7 +220,7 @@ $bdd = new PDO ('mysql:host=127.0.0.1;dbname=mabase','root','');
                            
                               <br>
 
-                        <CENTER><input type="submit" name="valider"  name="confirminscription" value=" Valider mon inscription"></CENTER>
+                        <CENTER><input type="submit" name="confirminscription" value=" Valider mon inscription"></CENTER>
 
                  
 
