@@ -5,42 +5,33 @@
   <meta charset="utf-8">
   <title>LeBioCoin</title>
   <link rel="stylesheet" href="styles/header.css">
-  <link rel="icon" type="image/png" href="Images/favicon-32x32.png" sizes="32x32"/> <!-- ici le favicon, ici pamplemousse, se mettant à côté du title -->
-  
-  <script language ="Javascript"> 
+  <link rel="icon" type="image/png" href="Images/favicon-32x32.png" sizes="32x32"/> <!-- ici la favicon, ici pamplemousse, se mettant à côté du title -->
+  <script language="Javascript"> 
 function bascule(elem) 
 { 
-  // Quel est l'état actuel ? 
-  etat=document.getElementById(elem).style.visibility; 
-  if(etat == "hidden")
-    {
-      document.getElementById(elem).style.visibility="visible";
-    } 
-  else
-    {
-      document.getElementById(elem).style.visibility="hidden";
-    } 
+// Quel est l'état actuel ? 
+etat=document.getElementById(elem).style.visibility; 
+if(etat=="hidden"){document.getElementById(elem).style.visibility="visible";} 
+else{document.getElementById(elem).style.visibility="hidden";} 
 } 
 </script> 
 </head>
 
-
-
 <body>
 
-  <div id="connexion" onClick="bascule('connex');"><a>Connexion</a></div>
+<div id="connexion" onClick="bascule('connex');"><a>Connexion</a></div>
 
-  <div id="inscription"><a href="inscription.php">Inscription</a></div>
+<div id="inscription"><a href="inscription.php">Inscription</a></div>
 
 	<div id="menu">
-          <ul>
-               <li class="menu1"><a href ="pagedaccueil.php">ACCUEIL</a></li><!--
-            --><li class="menu1"><a href="annonce_vue.php">ANNONCE LEGUMES</li><!--
-            --><li class="menu1"><a href="annonce_vue.php">ANNONCE FRUITS</a></li><!--
-            --><li class="menu1"><a href="forum/index.php">FORUM</a></li><!--
-            --><li class="menu1"><a>RECETTES</a></li><!--
-            -->
-            </ul>
+        <ul>
+             <li class="menu1"><a href ="pagedaccueil.php">ACCUEIL</a></li><!--
+          --><li class="menu1"><a href="annonce_vue.php">ANNONCE LEGUMES</li><!--
+          --><li class="menu1"><a href="annonce_vue.php">ANNONCE FRUITS</a></li><!--
+          --><li class="menu1"><a href="forum/index.php">FORUM</a></li><!--
+          --><li class="menu1"><a>RECETTES</a></li><!--
+          -->
+          </ul>
   </div>	  
 
   <div id="bloc1">
@@ -63,8 +54,8 @@ function bascule(elem)
             <ul>
               <li class="menu2"><a href="http://www.creativejuiz.fr/blog/theme/css-css3">Actualités</a></li><!--
             --><li class="menu2"><a href="annonce.php">Déposer Annonce</a></li><!--
-            --><li class="menu2"><a href="http://www.creativejuiz.fr/blog/theme/css-css3">Mon Panier</a></li><!--
-            --><li class="menu2"><a href="compte_utilisateur.php">Mon Compte</a></li><!--
+            --><li class="menu2"><a href="http://www.creativejuiz.fr/blog/theme/css-css3">Panier</a></li><!--
+            --><li class="menu2"><a href="compte_utilisateur.php">Compte</a></li><!--
             --><li class="menu2"><a href="http://www.creativejuiz.fr/blog/theme/css-css3">Déconnexion</a></li>
             </ul>
  </div>

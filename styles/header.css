@@ -1,4 +1,6 @@
 
+
+
 body {
 	background-image:url("3761-bio-plante-WallFizz.jpg");
 	background-attachment:fixed;
@@ -16,84 +18,33 @@ title {
 	font-weight: bold;
 	position:absolute;
 	margin-left:77%;
-	margin-top:-2%;
+	margin-top:-3%;
 	padding:30%,20%,30%,20%;
 	width:7%;
 	height:5%;
-	color: #C3D9E0;
+	background-color:green;
 }
-#connexion a { color: black; text-decoration: none; }
-#inscription a { color: black; text-decoration: none; }
-#connexion a:hover  { color: white; text-decoration: none; cursor: pointer; }
-#inscription a:hover { color: white;  text-decoration: none;}
 #inscription{
 	font-family: Lucida Sans Unicode, Lucida Grande, sans-serif;
 	font-weight: bold;
 	position:absolute;
 	margin-left:85%;
-	margin-top:-2%;
+	margin-top:-3%;
 	padding:30%,20%,30%,20%;
 	width:7%;
 	height:5%;
-	color: #C3D9E0;
-
-}
-#connex {
-	padding:1%;
-	background-color: #05966D; 
-	color:#C3D9E0;
-	position:absolute;
-	width:22%;
-	height:25.5%;
-	color:#C3D9E0;
-	margin-left:77%;
-	margin-top:-73.3%;
-
-}
-#connex h4{
-	margin-top:-1%;
-	text-align:center;
-	text-decoration:none;
-	font-family: Lucida Sans Unicode, Lucida Grande, sans-serif;
-	font-weight: bold;
-}
-#valider {
-	text-align:center;
-}
-#pseudo{
-	margin-left:25%;
-	position:absolute;
-	width: 40%;
-}
-#mdp{
-	margin-top:0%;
-	margin-left:12%;
-	position:absolute;
-	width: 40%;
-}
-#oubli{
-	margin-left:50%;
-	margin-top:-5%;
-}
-#oubli a{
-	font-size:50%;
-	text-decoration: none;
-	color:#C3D9E0;
-}
-#oubli a:hover { color: white;  text-decoration: none; font-size:75%; margin-left:-11%;}
-#menu{
-	z-index: 1;
-	position:fixed;
+	background-color:green;
 }
 #menu ul {
-	position:fixed;
-	
+	z-index: 1;
 	list-style-type:none;
-	margin-top:-11%;
+	position: fixed;
+	margin-top: -11%;
 	margin-left: -4%;
 	cursor: pointer;
 	color: #C3D9E0;
-	width: 125%;
+	border-width: 1% 0%;
+	width: 110%;
 	height: 10%;
 	max-height: 231px;
 	padding-left: 1%;
@@ -142,7 +93,7 @@ title {
 	background-color:rgba(0, 0, 0, 0.8);
 	position: relative;
 	height: 16%;
-	width: 83%;
+	width: 81%;
 }
 
 #bloc2 {
@@ -154,7 +105,7 @@ title {
 	padding-right: 2%;
 	background-color:rgba(0, 0,0, 0.8);
 	position: relative;
-	height: 143%;
+	height: 140%;
 	width: 81%;
 }
 #bloc3 {
@@ -186,8 +137,8 @@ title {
 #logo{
 	
 	position:absolute;
-	margin-top: -12.2%;
-	margin-left:-1.1%;
+	margin-top: -13.2%;
+	margin-left:-1.7%;
 	height:13%;
 	width:13%;
 }
@@ -206,10 +157,10 @@ title {
 
 	position:absolute;
 	margin-top: 0%;
-	margin-left:73%;
+	margin-left:79%;
 	width: 10%;
-	height:5%;
-
+	height: 4%;
+	display: inline-block;
 }
 
 #recherche .barre {
@@ -219,36 +170,48 @@ title {
 	margin-top: -20%;
 	margin-left: -46%;
 	width: 200%;
-
+	min-height: 70%;
+	max-height: 140%;
 	display: inline-block;
 	border: 2% solid gray;
 }
 
-#recherche .bouton {
+#recherche .bouton{
+
 	font-family: Bookman Old Style, serif;
-	font-size: 60%;
-	font-style: bold;
-	color: black;
+	font-size: 80%;
+	font-style: normal;
+	color: #555;
 	background-color: #fff;
-	margin-top:-20%;
+
+	padding: 0;
+	margin-top: -20%;
 	margin-left: 155%;
 	position: absolute;
-	height: 101%;
+	height: 70%;
 	width: 30%;
+	border-radius: 10%;
+
 	cursor: pointer;
-	text-align:center;
-	padding-right:30%;
+	text-transform: capitalize;	
+	box-shadow: 5% 5% 8% #aaa;
 }
+
+
+
 
 #menu_vertical ul {
 	position: relative;
 	width: 20%;
 	list-style-type: none; /*supprime les puces de la liste*/
-	margin-left: 4.8%;
-	margin-top: 4.8%; 
+	margin-left: -6.3%;
+	margin-top: -2.6%; 
 	color: #C3D9E0;
 	box-shadow: 3% solid gray;
 	
+	border-bottom-width: 0px;
+	border-top-width: 0px;
+
 }
 
 .menu2,
@@ -257,15 +220,20 @@ title {
 }
 
 #menu_vertical ul li {
+	display: block;
 	font-family: Lucida Sans Unicode, Lucida Grande, sans-serif;
 	font-size: 150%;
-	font-weight: bold;
-	display: block;
+	font-style: oblique;
+	margin-top: 1%;
+	margin-left: 1%;
 	padding-left: 10%; 
 	padding-right: 10%;
 	padding-top: 8%;
 	padding-bottom: 8%;
-	background-color: #05966D;	
+	background-color: #05966D;
+	border: 1px solid #1ABC9C;
+	border-radius: 6%;
+	
 }
 
 .menu2 a {
@@ -274,7 +242,8 @@ title {
 	margin: 2%;
 }
 
-.menu2 a:hover, .menu2 a:focus {
+.menu2 a:hover,
+.menu2 a:focus {
 	background-color: #1ABC9C;
 	color: #FFF;
 	padding-left: 3%;
@@ -285,13 +254,8 @@ title {
 	border-radius: 6%;
 
 }
-#bloc2 {
-	position:absolute;
-	width:60%;
-	margin-top:-37.7%;
-	margin-left: 27.5%;
-	height:62%;
-}
+
+
 
 
 
@@ -480,8 +444,8 @@ element.style {
 	font-size: 100%;
 	font-family: georgia ;
 	background-color: #FFB000;
-	position: relative;
-	top:0%;
+	position: absolute;
+	top:50%;
 	left:25%;
 	border-style: inset;
 	border-color: #00C020;
@@ -489,29 +453,9 @@ element.style {
 	width:40%;
 }
 #annonce_gauche{
-	position: relative;
-	bottom:20%;
-	left:5%;
+	border-spacing: 10px;
 }
 #annonce_droite{
-	position: absolute;
-	top:10%;
-	left:60%;
-}
-#titreannonce{
-	font-weight: bold;
-}
-#contenuaccueil{
-	padding:3%;
-	padding-top:1%;
-	font-family: Lucida Sans Unicode, Lucida Grande, sans-serif;
-	background-color:rgba(0, 0,0, 0.3);
-	overflow:auto;
-	position:absolute;
-	height:50%;
-	width:51%;
-	margin-top:-50%;
-	margin-left: 31%;
-	font-weight: bold;
-	color: #C3D9E0;
+	position: relative;
+	float:right;
 }
