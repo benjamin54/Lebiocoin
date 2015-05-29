@@ -1,6 +1,4 @@
 
-
-
 body {
 	background-image:url("3761-bio-plante-WallFizz.jpg");
 	background-attachment:fixed;
@@ -188,8 +186,8 @@ title {
 #logo{
 	
 	position:absolute;
-	margin-top: -13.2%;
-	margin-left:-1.7%;
+	margin-top: -12.2%;
+	margin-left:-1.1%;
 	height:13%;
 	width:13%;
 }
@@ -208,10 +206,10 @@ title {
 
 	position:absolute;
 	margin-top: 0%;
-	margin-left:79%;
+	margin-left:73%;
 	width: 10%;
-	height: 4%;
-	display: inline-block;
+	height:5%;
+
 }
 
 #recherche .barre {
@@ -221,31 +219,25 @@ title {
 	margin-top: -20%;
 	margin-left: -46%;
 	width: 200%;
-	min-height: 70%;
-	max-height: 140%;
+
 	display: inline-block;
 	border: 2% solid gray;
 }
 
 #recherche .bouton {
-
 	font-family: Bookman Old Style, serif;
-	font-size: 80%;
-	font-style: normal;
-	color: #555;
+	font-size: 60%;
+	font-style: bold;
+	color: black;
 	background-color: #fff;
-
-	padding: 0;
-	margin-top: -20%;
+	margin-top:-20%;
 	margin-left: 155%;
 	position: absolute;
-	height: 70%;
+	height: 101%;
 	width: 30%;
-	border-radius: 10%;
-
 	cursor: pointer;
-	text-transform: capitalize;	
-	box-shadow: 5% 5% 8% #aaa;
+	text-align:center;
+	padding-right:30%;
 }
 
 #menu_vertical ul {
@@ -257,9 +249,6 @@ title {
 	color: #C3D9E0;
 	box-shadow: 3% solid gray;
 	
-	border-bottom-width: 0px;
-	border-top-width: 0px;
-
 }
 
 .menu2,
@@ -520,9 +509,9 @@ element.style {
 	overflow:auto;
 	position:absolute;
 	height:50%;
-	width:50%;
+	width:51%;
 	margin-top:-50%;
-	margin-left: 29%;
+	margin-left: 31%;
 	font-weight: bold;
 	color: #C3D9E0;
 }

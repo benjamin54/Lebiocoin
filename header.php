@@ -41,7 +41,7 @@ else{document.getElementById(elem).style.visibility="hidden";}
           </div>
 
           <div id="logo">
-            <img src="Images/logo.PNG" width="160" height="150"></img>
+            <img src="Images/logo.PNG" width="160" height="170"></img>
           </div>
 
           <div id="nom2">
