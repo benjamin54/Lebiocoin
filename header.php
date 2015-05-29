@@ -25,7 +25,7 @@ else{document.getElementById(elem).style.visibility="hidden";}
 
 	<div id="menu">
         <ul>
-          <li class="menu1"><a href ="pagedaccueil.php">ACCUEIL</a></li><!--
+             <li class="menu1"><a href ="pagedaccueil.php">ACCUEIL</a></li><!--
           --><li class="menu1"><a href="annonce_vue.php">ANNONCE LEGUMES</li><!--
           --><li class="menu1"><a href="annonce_vue.php">ANNONCE FRUITS</a></li><!--
           --><li class="menu1"><a href="forum/index.php">FORUM</a></li><!--
@@ -103,13 +103,12 @@ else{document.getElementById(elem).style.visibility="hidden";}
 		</footer>
   </div>
 <div id="connex" style="visibility: hidden" name="connex">
-<h4><u>JE ME CONNECTE</u></h4>
+<h4>JE ME CONNECTE</h4>
 <form method="post" action="controlleurs/traitement.php">
-<p><label>Pseudo </label> : <input type="text" name="pseudo" /> </p>
-<p><label>Mot de passe</label> : <input type="password" name="Mdp" /></p>
-
-
-<p><INPUT TYPE="submit" NAME="Valider" VALUE=" VALIDER"> <div id="oubli"><a href="mdpo.php">J'ai oublié mon mot de passe</a></div>
+<p1><label>Pseudo </label> : <input id="pseudo" type="text" name="pseudo"/> </p>
+</br>
+<p2><label>Mot de passe</label> : <input id="mdp" type="password" name="Mdp" /></p>
+<p id="valider"><INPUT TYPE="submit" NAME="Valider" VALUE=" VALIDER"> <div id="oubli"><a href="mdpo.php">J'ai oublié mon mot de passe</a></div>
 </form>
 </div>
 

@@ -41,14 +41,39 @@ title {
 
 }
 #connex {
-	background-color:white;
+	padding:1%;
+	background-color: #05966D; 
+	color:#C3D9E0;
 	position:absolute;
-	width:20%;
-	height:30%;
+	width:22%;
+	height:25.5%;
 	color:#C3D9E0;
 	margin-left:77%;
 	margin-top:-73.3%;
-};
+
+}
+#connex h4{
+	margin-top:-1%;
+	text-align:center;
+	text-decoration:none;
+	font-family: Lucida Sans Unicode, Lucida Grande, sans-serif;
+	font-weight: bold;
+}
+#valider {
+	text-align:center;
+}
+#pseudo{
+	margin-left:25%;
+	position:absolute;
+	width: 40%;
+}
+#mdp{
+	margin-top:0%;
+	margin-left:12%;
+	position:absolute;
+	width: 40%;
+}
+
 #menu{
 	position:fixed;
 }
