@@ -48,6 +48,7 @@ catch (PDOException $e) {
                                             /* INSERT INTO est une fonction sql et il ne faut pas oublier de la preparer en mettant le prepare*/                                        
                                               $insertmembre = $bdd -> execute(array($prenom, $nom, $pseudo, $adressemail, $motdepasse1, $motdepasse2, $num, $region, $ville, $case));
                                               $message = "Votre compte a bien été créé. Bienvenue !";
+                                            
                                            }
 
                                            else 

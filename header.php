@@ -1,7 +1,8 @@
 <!DOCTYPE html>
+
 <html>
 <head>
-
+	
   <meta charset="utf-8">
   <title>LeBioCoin</title>
   <link rel="stylesheet" href="styles/header.css">
@@ -54,8 +55,8 @@ else{document.getElementById(elem).style.visibility="hidden";}
             <ul>
               <li class="menu2"><a href="http://www.creativejuiz.fr/blog/theme/css-css3">Actualités</a></li><!--
             --><li class="menu2"><a href="annonce.php">Déposer Annonce</a></li><!--
-            --><li class="menu2"><a href="http://www.creativejuiz.fr/blog/theme/css-css3">Panier</a></li><!--
-            --><li class="menu2"><a href="compte_utilisateur.php">Compte</a></li><!--
+            --><li class="menu2"><a href="http://www.creativejuiz.fr/blog/theme/css-css3">Mon Panier</a></li><!--
+            --><li class="menu2"><a href="compte_utilisateur.php">Mon Compte</a></li><!--
             --><li class="menu2"><a href="http://www.creativejuiz.fr/blog/theme/css-css3">Déconnexion</a></li>
             </ul>
  </div>
@@ -102,17 +103,57 @@ else{document.getElementById(elem).style.visibility="hidden";}
 			</center>
 		</footer>
   </div>
-<div id="connex" style="visibility: hidden" name="connex">
-<h4>JE ME CONNECTE</h4>
-<form method="post" action="controlleurs/traitement.php">
-<p1><label>Pseudo </label> : <input id="pseudo" type="text" name="pseudo"/> </p>
-</br>
-<p2><label>Mot de passe</label> : <input id="mdp" type="password" name="Mdp" /></p>
-<div id="oubli"><a href="mdpo.php">J'ai oublié mon mot de passe</a></div>
-<p id="valider"><INPUT TYPE="submit" NAME="Valider" VALUE=" VALIDER">
-</form>
+	<div id="connex" style="visibility: hidden" name="connex">
+		<h4>JE ME CONNECTE</h4>
+		<form method="post" action="">
+			<p1><label>Pseudo </label> : <input id="pseudo" type="text" name="adressemail"/> </p>
+			</br>
+			<p2><label>Mot de passe</label> : <input id="mdp" type="password" name="motdepasse1" /></p>
+			<div id="oubli"><a href="mdpo.php">J'ai oublié mon mot de passe</a></div>
+			<p id="valider"><INPUT TYPE="submit" NAME="Valider" VALUE="VALIDER">
+		</form>
 </div>
 
 </body>
 
 </html>
+<?php
+ini_set('display_errors','off');
+// on se connecte à MySQL 
+$db = mysql_connect('localhost','root',''); 
+mysql_select_db('mabase',$db); 
+
+if(isset($_POST) && !empty($_POST['adressemail']) && !empty($_POST['motdepasse1'])) {
+$_POST['motdepasse1'] = hash("sha256", $_POST['motdepasse1']);
+  extract($_POST);
+  // on recupére le password de la table qui correspond au login du visiteur
+  $sql = "select motdepasse1 from membre where adressemail='".$adressemail."'";
+  $req = mysql_query($sql) or die('Erreur SQL !<br>'.$sql.'<br>'.mysql_error());
+
+  $data = mysql_fetch_assoc($req);
+
+  if($data['motdepasse1'] != $motdepasse1) {
+    echo '<div class="alert alert-dismissable alert-danger">
+  <button type="button" class="close" data-dismiss="alert">x</button>
+  <strong>Oh Non !</strong> Mauvais login / password. Merci de recommencer !
+</div>';
+  }
+  
+  else {
+    session_start();
+    $_SESSION['login'] = $adressemail;
+    
+    echo '<div class="alert alert-dismissable alert-success">
+  <button type="button" class="close" data-dismiss="alert">×</button>
+  <strong>Yes !</strong> Vous etes bien logué, Redirection dans 5 secondes ! <meta http-equiv="refresh" content="5; URL=dashboard">
+</div>';
+    // ici vous pouvez afficher un lien pour renvoyer
+    // vers la page d'accueil de votre espace membres 
+  }    
+}
+else {
+  $champs = '<p><b>(Remplissez tous les champs pour vous connectez !)</b></p>';
+}
+
+
+?>
