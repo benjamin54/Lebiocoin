@@ -233,13 +233,6 @@ $bdd = new PDO ('mysql:host=127.0.0.1;dbname=mabase','root','');
         echo '<font-color="blue">' .$message. "</font>";
       }
 
-      /*on lance la commande (mysql_query) et au cas où, 
-            on rédige un petit message d'erreur si la requête ne passe pas (or die) 
-            (Message qui intègrera les causes d'erreur sql)*/
-            mysqli_query ($bdd,$sql) or die ('Erreur SQL !'.$sql.'<br />'.mysqli_error($bdd)); 
- 
-            // on ferme la connexion
-            mysqli_close($bdd);
     ?>
 
             
