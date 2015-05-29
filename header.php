@@ -19,9 +19,9 @@ else{document.getElementById(elem).style.visibility="hidden";}
 
 <body>
 
-<div id="connexion" onClick="bascule('connex');"><p>Connexion</p></div>
+<div id="connexion" onClick="bascule('connex');"><a>Connexion</a></div>
 
-<div id="inscription"><p>Inscription</p></div>
+<div id="inscription"><a href="inscription.php">Inscription</a></div>
 
 	<div id="menu">
         <ul>
@@ -29,7 +29,7 @@ else{document.getElementById(elem).style.visibility="hidden";}
           --><li class="menu1"><a href="annonce_vue.php">ANNONCE LEGUMES</li><!--
           --><li class="menu1"><a href="annonce_vue.php">ANNONCE FRUITS</a></li><!--
           --><li class="menu1"><a href="forum/index.php">FORUM</a></li><!--
-          --><li class="menu1">RECETTES</li><!--
+          --><li class="menu1"><a>RECETTES</a></li><!--
           -->
           </ul>
   </div>	  
