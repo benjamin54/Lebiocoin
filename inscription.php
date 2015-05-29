@@ -154,7 +154,7 @@ $bdd = new PDO ('mysql:host=127.0.0.1;dbname=mabase','root','');
                         </tr> 
                         <tr>
                           <td align="right">
-                              <label for="pseudo">Pseudo :</label>
+                              <label for="pseudo1">Pseudo :</label>
                           </td>
                           <td>
                               <input type="text" placeholder="Votre pseudo" id="pseudo1" name="pseudo">
@@ -170,7 +170,7 @@ $bdd = new PDO ('mysql:host=127.0.0.1;dbname=mabase','root','');
                         </tr> 
                         <tr> 
                           <td align="right">
-                              <label for="mdp">Mot de passe :</label>
+                              <label for="mdp1">Mot de passe :</label>
                           </td>
                           <td>
                               <input type="password" placeholder="Votre mot de passe" id="mdp1" name="motdepasse1">
