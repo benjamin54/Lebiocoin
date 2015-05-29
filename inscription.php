@@ -127,7 +127,7 @@ $bdd = new PDO ('mysql:host=127.0.0.1;dbname=mabase','root','');
           
             <h2>INSCRIPTION</h2>
               
-                <p>Veuillez remplir le formulaire ci dessous. Les champs <p2 style="color:red">*</p2> sont obligatoires.</p>
+                <p>Veuillez remplir le formulaire ci dessous. Tous les champs sont obligatoires.</p>
               
                 
 
