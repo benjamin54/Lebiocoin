@@ -1,3 +1,20 @@
+<!DOCTYPE html> 
+
+<html>
+<head>
+
+    <meta charset="utf-8"/>
+    <title>LeBiocoin</title>
+    <link rel="stylesheet" href="styles/header.css">
+    <?php include("header.php"); ?>
+</head>
+
+<body>
+    
+</body>
+
+</html> 
+
 <?php 
 
 ini_set('display_errors',1);
@@ -45,4 +62,3 @@ $insertmembre -> execute(array('prenom' => $prenom,
 
 ?>
 
-<a href="pagedaccueil.php">Votre compte a bien été créé !</a>

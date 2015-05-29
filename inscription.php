@@ -20,14 +20,14 @@ catch (PDOException $e) {
       if(!empty($_POST['prenom']) AND !empty($_POST['nom']) AND !empty($_POST['pseudo']) AND !empty($_POST['adressemail']) AND !empty($_POST['motdepasse1']) AND !empty($_POST['motdepasse2']) AND 
       !empty($_POST['num']) AND !empty($_POST['region']) AND !empty($_POST['ville']))
       {
-
-          $reqpseudo = $bdd -> prepare("SELECT * FROM membre WHERE pseudo = ?");
-          $reqpseudo -> execute(array($pseudo));
+          $pseudo = $_POST['pseudo'];
+          $reqpseudo = $bdd -> prepare("SELECT * FROM membre WHERE pseudo = ".$pseudo."");
           $pseudoexist = $reqpseudo -> rowCount('');
 
               if($pseudoexist == 0)
               {
-
+                $motdepasse1 = $_POST['motdepasse1'];
+                $motdepasse2 = $_POST['motdepasse2'];
                  $motdepasse1length = strlen($motdepasse1);
                   if($motdepasse1length >= 8)
                   {
@@ -35,7 +35,7 @@ catch (PDOException $e) {
                         {
                                   if(filter_var($motdepasse1, FILTER_VALIDATE_EMAIL))
                                   {
-
+                                        $adressemail = $_POST['adressemail'];
                                         $reqmail = $bdd -> prepare("SELECT * FROM membre WHERE adressemail = ?"); /* requete qui permet des sélectionner toutes les entrées de la table membre ou le mail 
                                         etait egal au mail que l'utilisateur a enregistré, et donc ca permet de verifier si le mail existe deja*/
                                         $reqmail -> execute(array($adressemail));
