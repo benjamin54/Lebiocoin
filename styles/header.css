@@ -73,7 +73,16 @@ title {
 	position:absolute;
 	width: 40%;
 }
-
+#oubli{
+	margin-left:50%;
+	margin-top:-5%;
+}
+#oubli a{
+	font-size:50%;
+	text-decoration: none;
+	color:#C3D9E0;
+}
+#oubli a:hover { color: white;  text-decoration: none; font-size:75%; margin-left:-11%;}
 #menu{
 	position:fixed;
 }

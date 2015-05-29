@@ -108,7 +108,8 @@ else{document.getElementById(elem).style.visibility="hidden";}
 <p1><label>Pseudo </label> : <input id="pseudo" type="text" name="pseudo"/> </p>
 </br>
 <p2><label>Mot de passe</label> : <input id="mdp" type="password" name="Mdp" /></p>
-<p id="valider"><INPUT TYPE="submit" NAME="Valider" VALUE=" VALIDER"> <div id="oubli"><a href="mdpo.php">J'ai oublié mon mot de passe</a></div>
+<div id="oubli"><a href="mdpo.php">J'ai oublié mon mot de passe</a></div>
+<p id="valider"><INPUT TYPE="submit" NAME="Valider" VALUE=" VALIDER">
 </form>
 </div>
 
