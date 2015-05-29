@@ -44,7 +44,7 @@ title {
 	cursor: pointer;
 	color: #C3D9E0;
 	border-width: 1% 0%;
-	width: 110%;
+	width: 105%;
 	height: 10%;
 	max-height: 231px;
 	padding-left: 1%;
@@ -458,4 +458,21 @@ element.style {
 #annonce_droite{
 	position: relative;
 	float:right;
+}
+
+
+}
+#contenuaccueil{
+	padding:3%;
+	padding-top:1%;
+	font-family: Lucida Sans Unicode, Lucida Grande, sans-serif;
+	background-color:rgba(0, 0,0, 0.3);
+	overflow:auto;
+	position:absolute;
+	height:50%;
+	width:50%;
+	margin-top:-50%;
+	margin-left: 29%;
+	font-weight: bold;
+	color: #C3D9E0;
 }
