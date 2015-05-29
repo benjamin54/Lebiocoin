@@ -6,14 +6,22 @@
   <title>LeBioCoin</title>
   <link rel="stylesheet" href="styles/header.css">
   <link rel="icon" type="image/png" href="Images/favicon-32x32.png" sizes="32x32"/> <!-- ici la favicon, ici pamplemousse, se mettant à côté du title -->
-
+  <script language="Javascript"> 
+function bascule(elem) 
+{ 
+// Quel est l'état actuel ? 
+etat=document.getElementById(elem).style.visibility; 
+if(etat=="hidden"){document.getElementById(elem).style.visibility="visible";} 
+else{document.getElementById(elem).style.visibility="hidden";} 
+} 
+</script> 
 </head>
 
 <body>
 
-<div id="connexion"><a href=connexion.php>Connexion</a></div>
+<div id="connexion" onClick="bascule('connex');"><p>Connexion</p></div>
 
-<div id="inscription"><a href=inscription.php>Inscription</a></div>
+<div id="inscription"><p>Inscription</p></div>
 
 	<div id="menu">
         <ul>
@@ -94,7 +102,16 @@
 			</center>
 		</footer>
   </div>
+<div id="connex" style="visibility: hidden" name="connex">
+<h4><u>JE ME CONNECTE</u></h4>
+<form method="post" action="controlleurs/traitement.php">
+<p><label>Pseudo </label> : <input type="text" name="pseudo" /> </p>
+<p><label>Mot de passe</label> : <input type="password" name="Mdp" /></p>
 
+
+<p><INPUT TYPE="submit" NAME="Valider" VALUE=" VALIDER"> <div id="oubli"><a href="mdpo.php">J'ai oublié mon mot de passe</a></div>
+</form>
+</div>
 
 </body>
 

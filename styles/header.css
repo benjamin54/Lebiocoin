@@ -24,8 +24,8 @@ title {
 	height:5%;
 	color: #C3D9E0;
 }
-#connexion a,#inscription a { color: black; text-decoration: none; }
-#connexion a:hover,#inscription a:hover { color: white; text-decoration: none; }
+#connexion p { color: black; text-decoration: none; }
+#connexion p:hover { color: white; text-decoration: underline; }
 #inscription{
 	font-family: Lucida Sans Unicode, Lucida Grande, sans-serif;
 	font-weight: bold;
@@ -36,6 +36,17 @@ title {
 	width:7%;
 	height:5%;
 	color: #C3D9E0;
+
+}
+#connex {
+	background-color:white;
+	position:absolute;
+	width:20%;
+	height:30%;
+	color:#C3D9E0;
+	margin-left:77%;
+	margin-top:-85%;
+};
 }
 #menu ul {
 
