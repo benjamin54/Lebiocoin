@@ -18,7 +18,7 @@ catch (PDOException $e) {
 
 
       if(!empty($_POST['prenom']) AND !empty($_POST['nom']) AND !empty($_POST['pseudo']) AND !empty($_POST['adressemail']) AND !empty($_POST['motdepasse1']) AND !empty($_POST['motdepasse2']) AND 
-      !empty($_POST['num']) AND !empty($_POST['region']) AND !empty($_POST['ville']) AND !empty($_POST['case']))
+      !empty($_POST['num']) AND !empty($_POST['region']) AND !empty($_POST['ville']))
       {
 
           $reqpseudo = $bdd -> prepare("SELECT * FROM membre WHERE pseudo = ?");
@@ -44,9 +44,6 @@ catch (PDOException $e) {
                                             if($mailexist == 0)
                                             {
 
-                                              $insertmembre = $bdd -> prepare("INSERT INTO membre (prenom, nom, pseudo, adressemail, motdepasse1, motdepasse2, num, region, ville, case) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"); 
-                                            /* INSERT INTO est une fonction sql et il ne faut pas oublier de la preparer en mettant le prepare*/                                        
-                                              $insertmembre = $bdd -> execute(array($prenom, $nom, $pseudo, $adressemail, $motdepasse1, $motdepasse2, $num, $region, $ville, $case));
                                               $message = "Votre compte a bien été créé. Bienvenue !";
                                             
                                            }

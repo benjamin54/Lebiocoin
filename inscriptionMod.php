@@ -14,9 +14,8 @@ catch (PDOException $e) {
 
   
 
-  if(isset($_POST['forminscription']))
+  if(isset($_POST['confirminscription']))
   {
-      $id_membre = htmlspecialchars($_POST['id_membre']);
       $prenom = htmlspecialchars($_POST['prenom']);
       $nom = htmlspecialchars($_POST['nom']);
       $pseudo = htmlspecialchars($_POST['pseudo']);
@@ -26,13 +25,24 @@ catch (PDOException $e) {
       $num = htmlspecialchars($_POST['num']);
       $region = htmlspecialchars($_POST['region']);
       $ville = htmlspecialchars($_POST['ville']);
-      $case = htmlspecialchars($_POST['case']);
+     
 
-$insertmembre = $bdd -> prepare("INSERT INTO membre (prenom, nom, pseudo, adressemail, motdepasse1, motdepasse2, num, region, ville, case) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"); 
-                                            /* INSERT INTO est une fonction sql et il ne faut pas oublier de la preparer en mettant le prepare*/                                        
-                                              $insertmembre = $bdd -> execute(array($prenom, $nom, $pseudo, $adressemail, $motdepasse1, $motdepasse2, $num, $region, $ville, $case));
-                                              $message = "Votre compte a bien été créé. Bienvenue !";
+$insertmembre = $bdd -> prepare("INSERT INTO membre (prenom, nom, pseudo, adressemail, motdepasse1, motdepasse2, num, region, ville) VALUES (:prenom, :nom, :pseudo, :adressemail, :motdepasse1, :motdepasse2, :num, :region, :ville)"); 
+/* INSERT INTO est une fonction sql et il ne faut pas oublier de la preparer en mettant le prepare*/                                        
+$insertmembre -> execute(array('prenom' => $prenom,
+									  'nom' => $nom,
+									   'pseudo' => $pseudo,
+									   'adressemail' => $adressemail,
+									   'motdepasse1' => $motdepasse1,
+									   'motdepasse2' => $motdepasse2, 
+									    'num' => $num,
+									    'region' => $region,
+									    'ville' => $ville,
+									    ));
+                                             
 
   }
 
 ?>
+
+<a href="pagedaccueil.php">Votre compte a bien été créé !</a>
