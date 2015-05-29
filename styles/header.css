@@ -1,6 +1,4 @@
 
-
-
 body {
 	background-image:url("3761-bio-plante-WallFizz.jpg");
 	background-attachment:fixed;
@@ -24,24 +22,17 @@ title {
 	height:5%;
 	color: #C3D9E0;
 }
-
 #connexion a { color: black; text-decoration: none; }
 #inscription a { color: black; text-decoration: none; }
 #connexion a:hover  { color: white; text-decoration: none; cursor: pointer; }
 #inscription a:hover { color: white;  text-decoration: none;}
-
 #inscription{
 	font-family: Lucida Sans Unicode, Lucida Grande, sans-serif;
 	font-weight: bold;
 	position:absolute;
 	margin-left:85%;
-	margin-top:-2.1%;
+	margin-top:-2%;
 	padding:30%,20%,30%,20%;
-	width:7%;
-	height:5%;
-	color: #C3D9E0;
-
-	title {
 	width:7%;
 	height:5%;
 	color: #C3D9E0;
@@ -54,12 +45,11 @@ title {
 	position:absolute;
 	width:22%;
 	height:25.5%;
+	color:#C3D9E0;
 	margin-left:77%;
 	margin-top:-73.3%;
-};
 
 }
-
 #connex h4{
 	margin-top:-1%;
 	text-align:center;
@@ -81,7 +71,6 @@ title {
 	position:absolute;
 	width: 40%;
 }
-
 #oubli{
 	margin-left:50%;
 	margin-top:-5%;
@@ -92,25 +81,19 @@ title {
 	color:#C3D9E0;
 }
 #oubli a:hover { color: white;  text-decoration: none; font-size:75%; margin-left:-11%;}
-
 #menu{
+	z-index: 1;
 	position:fixed;
 }
-
-
-
-
-
 #menu ul {
-	z-index: 1;
+	position:fixed;
+	
 	list-style-type:none;
-	position: fixed;
-	margin-top: -11%;
+	margin-top:-11%;
 	margin-left: -4%;
 	cursor: pointer;
 	color: #C3D9E0;
-	border-width: 1% 0%;
-	width: 140%;
+	width: 125%;
 	height: 10%;
 	max-height: 231px;
 	padding-left: 1%;
@@ -159,24 +142,24 @@ title {
 	background-color:rgba(0, 0, 0, 0.8);
 	position: relative;
 	height: 16%;
-	width: 81%;
+	width: 83%;
 }
 
 #bloc2 {
 	margin-left: 8%;
-	margin-top: -30%;
+	margin-top: 3%;
 	padding-top: 2%;
 	padding-left: 2%;
 	padding-bottom: 2%;
 	padding-right: 2%;
 	background-color:rgba(0, 0,0, 0.8);
 	position: relative;
-	height: 400%;
+	height: 143%;
 	width: 81%;
 }
 #bloc3 {
 	margin-left: 8%;
-	margin-top: 10%;
+	margin-top: 3%;
 	padding-top: 2%;
 	margin-bottom:1%;
 	padding-left: 2%;
@@ -225,7 +208,8 @@ title {
 	margin-top: 0%;
 	margin-left:73%;
 	width: 10%;
-	height: 5%;
+	height:5%;
+
 }
 
 #recherche .barre {
@@ -235,39 +219,36 @@ title {
 	margin-top: -20%;
 	margin-left: -46%;
 	width: 200%;
+
 	display: inline-block;
 	border: 2% solid gray;
 }
 
-#recherche .bouton{
-
+#recherche .bouton {
 	font-family: Bookman Old Style, serif;
 	font-size: 60%;
 	font-style: bold;
 	color: black;
 	background-color: #fff;
-
+	margin-top:-20%;
 	margin-left: 155%;
 	position: absolute;
 	height: 101%;
 	width: 30%;
-
 	cursor: pointer;
 	text-align:center;
 	padding-right:30%;
 }
 
-
-
-
 #menu_vertical ul {
 	position: relative;
 	width: 20%;
 	list-style-type: none; /*supprime les puces de la liste*/
-	margin-left: -6.3%;
-	margin-top: -2.6%; 
+	margin-left: 4.8%;
+	margin-top: 4.8%; 
 	color: #C3D9E0;
 	box-shadow: 3% solid gray;
+	
 }
 
 .menu2,
@@ -275,23 +256,16 @@ title {
 	display: block;
 }
 
-
-
 #menu_vertical ul li {
-	display: block;
 	font-family: Lucida Sans Unicode, Lucida Grande, sans-serif;
 	font-size: 150%;
-	font-style: oblique;
-	margin-top: 1%;
-	margin-left: 1%;
+	font-weight: bold;
+	display: block;
 	padding-left: 10%; 
 	padding-right: 10%;
 	padding-top: 8%;
 	padding-bottom: 8%;
-	background-color: #05966D;
-	border: 1px solid #1ABC9C;
-	border-radius: 6%;
-	
+	background-color: #05966D;	
 }
 
 .menu2 a {
@@ -300,8 +274,7 @@ title {
 	margin: 2%;
 }
 
-.menu2 a:hover,
-.menu2 a:focus {
+.menu2 a:hover, .menu2 a:focus {
 	background-color: #1ABC9C;
 	color: #FFF;
 	padding-left: 3%;
@@ -312,8 +285,13 @@ title {
 	border-radius: 6%;
 
 }
-
-
+#bloc2 {
+	position:absolute;
+	width:60%;
+	margin-top:-37.7%;
+	margin-left: 27.5%;
+	height:62%;
+}
 
 
 
@@ -424,20 +402,9 @@ article legend {
   margin-left:150px;
   width:400px;
 }
-
 element.style {
-  	margin-right:-15px;
-	overflow:auto;
-	position:absolute;
-	height:50%;
-	width:51%;
-	margin-top:-50%;
-	margin-left: 31%;
-	font-weight: bold;
-	color: #C3D9E0;
-
+  margin-right:-15px;
 }
-
 .contact_sujet {
   background-color:#ECECEC;
   height:50px;
@@ -513,8 +480,8 @@ element.style {
 	font-size: 100%;
 	font-family: georgia ;
 	background-color: #FFB000;
-	position: absolute;
-	top:50%;
+	position: relative;
+	top:0%;
 	left:25%;
 	border-style: inset;
 	border-color: #00C020;
@@ -522,14 +489,17 @@ element.style {
 	width:40%;
 }
 #annonce_gauche{
-	border-spacing: 10px;
+	position: relative;
+	bottom:20%;
+	left:5%;
 }
 #annonce_droite{
-	position: relative;
-	float:right;
+	position: absolute;
+	top:10%;
+	left:60%;
 }
-
-
+#titreannonce{
+	font-weight: bold;
 }
 #contenuaccueil{
 	padding:3%;
@@ -539,9 +509,9 @@ element.style {
 	overflow:auto;
 	position:absolute;
 	height:50%;
-	width:50%;
+	width:51%;
 	margin-top:-50%;
-	margin-left: 29%;
+	margin-left: 31%;
 	font-weight: bold;
 	color: #C3D9E0;
 }
