@@ -84,11 +84,12 @@ title {
 }
 #oubli a:hover { color: white;  text-decoration: none; font-size:75%; margin-left:-11%;}
 #menu{
+	z-index: 1;
 	position:fixed;
 }
 #menu ul {
 	position:fixed;
-	z-index: 1;
+	
 	list-style-type:none;
 	margin-top:-11%;
 	margin-left: -4%;
@@ -143,7 +144,7 @@ title {
 	background-color:rgba(0, 0, 0, 0.8);
 	position: relative;
 	height: 16%;
-	width: 81%;
+	width: 83%;
 }
 
 #bloc2 {
@@ -155,7 +156,7 @@ title {
 	padding-right: 2%;
 	background-color:rgba(0, 0,0, 0.8);
 	position: relative;
-	height: 140%;
+	height: 143%;
 	width: 81%;
 }
 #bloc3 {
@@ -268,11 +269,9 @@ title {
 
 #menu_vertical ul li {
 	font-family: Lucida Sans Unicode, Lucida Grande, sans-serif;
-	font-size: 120%;
+	font-size: 150%;
 	font-weight: bold;
 	display: block;
-	font-family: Lucida Sans Unicode, Lucida Grande, sans-serif;
-	font-size: 150%;
 	padding-left: 10%; 
 	padding-right: 10%;
 	padding-top: 8%;
@@ -302,7 +301,7 @@ title {
 	width:60%;
 	margin-top:-37.7%;
 	margin-left: 27.5%;
-	height:64.5%;
+	height:62%;
 }
 
 
@@ -512,4 +511,18 @@ element.style {
 }
 #titreannonce{
 	font-weight: bold;
+}
+#contenuaccueil{
+	padding:3%;
+	padding-top:1%;
+	font-family: Lucida Sans Unicode, Lucida Grande, sans-serif;
+	background-color:rgba(0, 0,0, 0.3);
+	overflow:auto;
+	position:absolute;
+	height:50%;
+	width:50%;
+	margin-top:-50%;
+	margin-left: 29%;
+	font-weight: bold;
+	color: #C3D9E0;
 }

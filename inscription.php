@@ -129,16 +129,19 @@ $bdd = new PDO ('mysql:host=127.0.0.1;dbname=mabase','root','');
               
                 <p>Veuillez remplir le formulaire ci dessous. Les champs <p2 style="color:red">*</p2> sont obligatoires.</p>
               
-                <h3>Mes identifiants</h3>
+                
 
                   
                     <table>
+                        <tr>
+                        <td><h3>Mes identifiants</h3></td>
+                        </tr>
                         <tr>
                           <td align="right">
                               <label for="prenom">Prénom :</label>
                           </td>
                           <td>
-                              <input type="text" placeholder="Votre prénom" id="prenom" name="prenom" >
+                              <input type="text" placeholder="Votre prénom" id="prenom" name="prenom">
                           </td>
                         </tr>
                         <tr>
@@ -146,7 +149,7 @@ $bdd = new PDO ('mysql:host=127.0.0.1;dbname=mabase','root','');
                               <label for="nom">Nom :</label>
                           </td>
                           <td>
-                              <input type="text" placeholder="Votre nom" id="nom" name="nom" >
+                              <input type="text" placeholder="Votre nom" id="nom" name="nom">
                           </td>
                         </tr> 
                         <tr>
@@ -154,23 +157,26 @@ $bdd = new PDO ('mysql:host=127.0.0.1;dbname=mabase','root','');
                               <label for="pseudo">Pseudo :</label>
                           </td>
                           <td>
-                              <input type="text" placeholder="Votre pseudo" id="pseudo" name="pseudo" >
+                              <input type="text" placeholder="Votre pseudo" id="pseudo1" name="pseudo">
                           </td>
                         </tr> 
+                        <tr>
                           <td align="right">
                               <label for="mail">Mail :</label>
                           </td>
                           <td>
                               <input type="email" placeholder="Votre email" id="mail" name="adressemail">
                           </td>
-                        </tr>  
+                        </tr> 
+                        <tr> 
                           <td align="right">
                               <label for="mdp">Mot de passe :</label>
                           </td>
                           <td>
-                              <input type="password" placeholder="Votre mot de passe" id="mdp" name="motdepasse1">
+                              <input type="password" placeholder="Votre mot de passe" id="mdp1" name="motdepasse1">
                           </td>
-                         </tr> 
+                        </tr>
+                        <tr> 
                           <td align="right">
                               <label for="mdp2">Confirmation du mot de passe :</label>
                           </td>
@@ -178,15 +184,9 @@ $bdd = new PDO ('mysql:host=127.0.0.1;dbname=mabase','root','');
                               <input type="password" placeholder="Confirmer le mot de passe" id="mdp2" name="motdepasse2">
                           </td>
                         </tr>
-                    </table>
-                 
-
-              <br>                
-
-                  <h3>Mes coordonées de livraison</h3>
-                    
-               
-                      <table>
+                         <tr>
+                         <td> <h3>Mes coordonnées de livraison</h3></td>
+                         </tr>
                         <tr>
                           <td align="right">
                               <label for="numero">Votre numéro de téléphone :</label>
@@ -213,11 +213,8 @@ $bdd = new PDO ('mysql:host=127.0.0.1;dbname=mabase','root','');
 
                     <br>
 
-                    <p>J'accepte les conditions d'utilisation du BIOCOIN :<input type="checkbox" name="case" value="case"></p>
-                                    
-                              <p>"Je suis âgé(e) d'au moins 18 ans."</p>
-                          
-                              <p>"La transaction se fait en main propre, car le site a pour vocation de créer du lien localement."</p>
+                    <p>J'accepte les <a href="conditions-generales-de-vente.php">conditions d'utilisation</a> du BIOCOIN :<input type="checkbox" name="case" value="case"></p>
+                             
                            
                               <br>
 
