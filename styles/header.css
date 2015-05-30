@@ -142,10 +142,11 @@ title {
 	background-color:rgba(0, 0, 0, 0.8);
 	position: relative;
 	height: 16%;
-	width: 83%;
+	width: 81%;
 }
 
 #bloc2 {
+	position: relative;
 	margin-left: 8%;
 	margin-top: 3%;
 	padding-top: 2%;
