@@ -1,7 +1,8 @@
 
 body {
-	background-image:url("3761-bio-plante-WallFizz.jpg");
+	background-image:url("http://www.google.fr/url?source=imglanding&ct=img&q=http://www.tao-mieux-etre.fr/web_images/pamplemousse-muffetflickr-cc.jpg&sa=X&ei=KadsVazYBMi1UbiwgNgM&ved=0CAkQ8wc4pgI&usg=AFQjCNHYb0JLWZ968Qpg9VzUwsZocn0uWQ");
 	background-attachment:fixed;
+	background-size: cover; 
 }
 
 
@@ -22,10 +23,15 @@ title {
 	height:5%;
 	color: #C3D9E0;
 }
+
 #connexion a { color: black; text-decoration: none; }
+
 #inscription a { color: black; text-decoration: none; }
-#connexion a:hover  { color: white; text-decoration: none; cursor: pointer; }
-#inscription a:hover { color: white;  text-decoration: none;}
+
+#connexion a:hover  { color: #FCC7CD; text-decoration: none; cursor: pointer; }
+
+#inscription a:hover { color: #FCC7CD;  text-decoration: none;}
+
 #inscription{
 	font-family: Lucida Sans Unicode, Lucida Grande, sans-serif;
 	font-weight: bold;
@@ -81,10 +87,16 @@ title {
 	color:#C3D9E0;
 }
 #oubli a:hover { color: white;  text-decoration: none; font-size:75%; margin-left:-11%;}
+
+
+
+
+
 #menu{
 	z-index: 1;
 	position:fixed;
 }
+
 #menu ul {
 	position:fixed;
 	
@@ -92,7 +104,7 @@ title {
 	margin-top:-11%;
 	margin-left: -4%;
 	cursor: pointer;
-	color: #C3D9E0;
+	color: #F67887;
 	width: 125%;
 	height: 10%;
 	max-height: 231px;
@@ -104,11 +116,11 @@ title {
 }
 #menu ul  li {
 	font-family: Lucida Sans Unicode, Lucida Grande, sans-serif;
-	font-size: 120%;
+	font-size: 140%;
 	font-weight: bold;
 	display: inline; 
 	/*en ligne*/
-	background-color: #05966D;
+	background-color: #F8001D;
 	border: 0px;
 	padding-left: 4.4%;
 	padding-right: 4.4%;
@@ -118,14 +130,14 @@ title {
 }
 #menu a {
 	text-decoration: none;
-	color: #C3D9E0; 
+	color: #FCD2D7; 
 	
 }
 #menu ul li a:hover,
 #menu ul li a:focus, #connexion a:hover,#inscription a:hover,#inscription a:focus, connexion a:focus {
-	background : #1ABC9C;
-	color: #FFF;
-	border: 1px solid #1ABC9C;
+	background : #DE001A;
+	color: #FCC7CD;
+	border: 1px solid #DE001A;
 	border-radius: 7%;
 }
 
@@ -139,7 +151,7 @@ title {
 	padding-left: 2%;
 	padding-bottom: 2%;
 	padding-right: 2%;
-	background-color:rgba(0, 0, 0, 0.8);
+	background-color:rgba(0, 0, 0, 0.65);
 	position: relative;
 	height: 16%;
 	width: 81%;
@@ -147,17 +159,26 @@ title {
 
 #bloc2 {
 	position: relative;
-	margin-left: 8%;
-	margin-top: 3%;
+	margin-left: 31.8%;
+	margin-top: -38.1%;
 	padding-top: 2%;
 	padding-left: 2%;
 	padding-bottom: 2%;
 	padding-right: 2%;
-	background-color:rgba(0, 0,0, 0.8);
-	position: relative;
-	height: 143%;
-	width: 81%;
+	background-color:rgba(0, 0,0, 0.65);
+	height: 438px;
+	width: 57.2%;
 }
+
+/*#bloc2 {
+	/*position:absolute;
+	width:60%;
+	margin-top:-37.7%;
+	margin-left: 27.5%;
+	height:62%;
+}*/
+
+
 #bloc3 {
 	margin-left: 8%;
 	margin-top: 3%;
@@ -166,7 +187,7 @@ title {
 	padding-left: 2%;
 	padding-bottom: 2%;
 	padding-right: 2%;
-	background-color:rgba(0, 0,0, 0.8);
+	background-color:rgba(0, 0,0, 0.65);
 	position: relative;
 	height: 12%;
 	width: 81%;
@@ -178,7 +199,7 @@ title {
 	font-style: oblique;
 	margin-left:20%;
 	margin-top:-1%;
-	color:#007C32;
+	color:#FEE2E7;
 
 	
 }
@@ -187,7 +208,7 @@ title {
 #logo{
 	
 	position:absolute;
-	margin-top: -12.2%;
+	margin-top: -11.2%;
 	margin-left:-1.1%;
 	height:13%;
 	width:13%;
@@ -199,7 +220,7 @@ title {
 	font-style: oblique;
 	margin-top: -6%;
 	margin-left: 20%;
-	color: #007C32;
+	color: #FEE2E7;
 }
 
 
@@ -241,14 +262,19 @@ title {
 	padding-right:30%;
 }
 
+
+
+
 #menu_vertical ul {
 	position: relative;
-	width: 20%;
+	width: 24%;
+
 	list-style-type: none; /*supprime les puces de la liste*/
 	margin-left: 4.8%;
 	margin-top: 4.8%; 
-	color: #C3D9E0;
+	color: #FCD2D7;
 	box-shadow: 3% solid gray;
+
 	
 }
 
@@ -266,32 +292,38 @@ title {
 	padding-right: 10%;
 	padding-top: 8%;
 	padding-bottom: 8%;
-	background-color: #05966D;	
+	background-color: #F8001D;	
 }
 
 .menu2 a {
 	text-decoration: none;
-	color: #C3D9E0; 
+	color: #FCD2D7; 
 	margin: 2%;
 }
 
 .menu2 a:hover, .menu2 a:focus {
-	background-color: #1ABC9C;
-	color: #FFF;
-	padding-left: 3%;
-	padding-right: 35%;
-	padding-top: 2%;
-	padding-bottom: 2%;
-	border: 1px solid #1ABC9C;
+	background-color: #DE001A;
+	color: #FCC7CD;	
+	border: 1px solid #DE001A;
 	border-radius: 6%;
 
 }
-#bloc2 {
+
+
+/*le css du formulaire*/
+#contenuaccueil{
+	padding:3%;
+	padding-top:1%;
+	font-family: Lucida Sans Unicode, Lucida Grande, sans-serif;
+	background-color:rgba(0, 0,0, 0.45);
+	overflow:auto;
 	position:absolute;
-	width:60%;
-	margin-top:-37.7%;
-	margin-left: 27.5%;
-	height:62%;
+	height:50%;
+	width:51%;
+	margin-top:-49.5%;
+	margin-left: 35%;
+	font-weight: bold;
+	color: #C3D9E0;
 }
 
 
@@ -302,11 +334,13 @@ title {
 
 #newsletter{
 	position: absolute;
+	font-family: 'Arial Black', Gadget, sans-serif;
+	font-size: 135%;
 	margin-left: -1%;
 	margin-top: -2%;
 	border:0px;
 	padding: 0%;
-	color:#05966D;
+	color: #FCC7CD;
 	width: 20%;
 	height: 15%;
 
@@ -347,30 +381,20 @@ title {
 
 #revue {
 	position: relative;
+	font-family: 'Arial Black', Gadget, sans-serif;
+	font-size: 135%;
 	margin-top: -2%;
 	margin-left: 25%;
 	border: 0px;
 	padding : 0%;
-	color : #05966D;
+	color : #FCC7CD;
 	width: 20%;
 	height: 15%;
 }
 
-p .titre_footer1 {
-	color:#05966D;
-	font-size:250%;
-	font-family: georgia;
-	font-style: bold;
 
-}
 
-p .titre_footer2 {
-	color:#05966D;
-	font-size:250%;
-	font-family: georgia;
-	font-style: bold;
 
-}
 
 footer{
 	margin-left:35%;
@@ -383,6 +407,13 @@ footer{
 footer ul li{
 	list-style: none;
 }
+
+footer ul li a {
+	text-decoration: none;
+	color: #FCC7CD;
+}
+
+
 /*CSS contact */
 article legend {
   color:#1E824C;
@@ -502,17 +533,5 @@ element.style {
 #titreannonce{
 	font-weight: bold;
 }
-#contenuaccueil{
-	padding:3%;
-	padding-top:1%;
-	font-family: Lucida Sans Unicode, Lucida Grande, sans-serif;
-	background-color:rgba(0, 0,0, 0.3);
-	overflow:auto;
-	position:absolute;
-	height:50%;
-	width:51%;
-	margin-top:-50%;
-	margin-left: 31%;
-	font-weight: bold;
-	color: #C3D9E0;
-}
+
+

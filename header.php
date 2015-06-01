@@ -1,8 +1,7 @@
 <!DOCTYPE html>
-
 <html>
 <head>
-	
+
   <meta charset="utf-8">
   <title>LeBioCoin</title>
   <link rel="stylesheet" href="styles/header.css">
@@ -26,11 +25,11 @@ else{document.getElementById(elem).style.visibility="hidden";}
 
 	<div id="menu">
         <ul>
-             <li class="menu1"><a href ="pagedaccueil.php">ACCUEIL</a></li><!--
-          --><li class="menu1"><a href="annonce_vue.php">ANNONCE LEGUMES</li><!--
-          --><li class="menu1"><a href="annonce_vue.php">ANNONCE FRUITS</a></li><!--
-          --><li class="menu1"><a href="forum/index.php">FORUM</a></li><!--
-          --><li class="menu1"><a>RECETTES</a></li><!--
+             <li class="menu1"><a href ="pagedaccueil.php">Accueil</a></li><!--
+          --><li class="menu1"><a href="annonce_vue.php">Annonces Légumes</li><!--
+          --><li class="menu1"><a href="annonce_vue.php">Annonces Fruits</a></li><!--
+          --><li class="menu1"><a href="forum/index.php">Forum</a></li><!--
+          --><li class="menu1"><a>Recettes</a></li><!--
           -->
           </ul>
   </div>	  
@@ -42,7 +41,7 @@ else{document.getElementById(elem).style.visibility="hidden";}
           </div>
 
           <div id="logo">
-            <img src="Images/logo.PNG" width="160" height="170"></img>
+            <img src="Images/logo.PNG" width="160" height="155"></img>
           </div>
 
           <div id="nom2">
@@ -55,8 +54,8 @@ else{document.getElementById(elem).style.visibility="hidden";}
             <ul>
               <li class="menu2"><a href="http://www.creativejuiz.fr/blog/theme/css-css3">Actualités</a></li><!--
             --><li class="menu2"><a href="annonce.php">Déposer Annonce</a></li><!--
-            --><li class="menu2"><a href="http://www.creativejuiz.fr/blog/theme/css-css3">Mon Panier</a></li><!--
-            --><li class="menu2"><a href="compte_utilisateur.php">Mon Compte</a></li><!--
+            --><li class="menu2"><a href="http://www.creativejuiz.fr/blog/theme/css-css3">Panier</a></li><!--
+            --><li class="menu2"><a href="compte_utilisateur.php">Compte</a></li><!--
             --><li class="menu2"><a href="http://www.creativejuiz.fr/blog/theme/css-css3">Déconnexion</a></li>
             </ul>
  </div>
@@ -66,8 +65,10 @@ else{document.getElementById(elem).style.visibility="hidden";}
 
           <div id="recherche">
             <form >
+              <tr>
               <input class="barre" type="search" name="recherche" placeholder="Rechercher"/>
               <input class="bouton" type="submit" value="OK"/>
+              </tr>
             </form> 
           </div>
   </div>
@@ -78,7 +79,7 @@ else{document.getElementById(elem).style.visibility="hidden";}
   <div id="bloc3">
 
           <div id="newsletter">
-            <p class="titre_footer1">LA NEWSLETTER</p>
+            <p class="titre_footer1">La Newsletter</p>
             <form action="news">
               <input type="text" name="pseudo" placeholder="Rentrer votre email" />
               <input type="bouton" name="submit" value=" Envoyer"/>
@@ -87,73 +88,36 @@ else{document.getElementById(elem).style.visibility="hidden";}
 
           
           <div id="revue">
-            <p class="titre_footer2">LA REVUE</p>
+            <p class="titre_footer2">La Revue</p>
           </div>
+
           <footer>
-			<center>
-				<ul>
-					<li><a href="contact.php">contact</a></li>
-					
-					<li><a href="mentionlegale.php">Infos légales</a></li>
-					
-					<li><a href="quisommesnous.php">qui sommes  nous ?</a></li>
-					
-					<li><a href="conditions.php">conditions générales de vente</a></li>
-				</ul>
-			</center>
-		</footer>
+      			<center>
+      				<ul>
+      					<li><a href="contact.php">Contacts</a></li>
+      					
+      					<li><a href="mentionlegale.php">Infos légales</a></li>
+      					
+      					<li><a href="quisommesnous.php">Qui sommes-nous ?</a></li>
+      					
+      					<li><a href="conditions.php">Conditions générales de vente</a></li>
+      				</ul>
+      			</center>
+		      </footer>
+
   </div>
-	<div id="connex" style="visibility: hidden" name="connex">
-		<h4>JE ME CONNECTE</h4>
-		<form method="post" action="">
-			<p1><label>Pseudo </label> : <input id="pseudo" type="text" name="adressemail"/> </p>
-			</br>
-			<p2><label>Mot de passe</label> : <input id="mdp" type="password" name="motdepasse1" /></p>
-			<div id="oubli"><a href="mdpo.php">J'ai oublié mon mot de passe</a></div>
-			<p id="valider"><INPUT TYPE="submit" NAME="Valider" VALUE="VALIDER">
-		</form>
+
+<div id="connex" style="visibility: hidden" name="connex">
+<h4>JE ME CONNECTE</h4>
+<form method="post" action="controlleurs/traitement.php">
+<p1><label>Pseudo </label> : <input id="pseudo" type="text" name="pseudo"/> </p>
+</br>
+<p2><label>Mot de passe</label> : <input id="mdp" type="password" name="Mdp" /></p>
+<div id="oubli"><a href="mdpo.php">J'ai oublié mon mot de passe</a></div>
+<p id="valider"><INPUT TYPE="submit" NAME="Valider" VALUE=" VALIDER">
+</form>
 </div>
 
 </body>
 
 </html>
-<?php
-ini_set('display_errors','off');
-// on se connecte à MySQL 
-$db = mysql_connect('localhost','root',''); 
-mysql_select_db('mabase',$db); 
-
-if(isset($_POST) && !empty($_POST['adressemail']) && !empty($_POST['motdepasse1'])) {
-$_POST['motdepasse1'] = hash("sha256", $_POST['motdepasse1']);
-  extract($_POST);
-  // on recupére le password de la table qui correspond au login du visiteur
-  $sql = "select motdepasse1 from membre where adressemail='".$adressemail."'";
-  $req = mysql_query($sql) or die('Erreur SQL !<br>'.$sql.'<br>'.mysql_error());
-
-  $data = mysql_fetch_assoc($req);
-
-  if($data['motdepasse1'] != $motdepasse1) {
-    echo '<div class="alert alert-dismissable alert-danger">
-  <button type="button" class="close" data-dismiss="alert">x</button>
-  <strong>Oh Non !</strong> Mauvais login / password. Merci de recommencer !
-</div>';
-  }
-  
-  else {
-    session_start();
-    $_SESSION['login'] = $adressemail;
-    
-    echo '<div class="alert alert-dismissable alert-success">
-  <button type="button" class="close" data-dismiss="alert">×</button>
-  <strong>Yes !</strong> Vous etes bien logué, Redirection dans 5 secondes ! <meta http-equiv="refresh" content="5; URL=dashboard">
-</div>';
-    // ici vous pouvez afficher un lien pour renvoyer
-    // vers la page d'accueil de votre espace membres 
-  }    
-}
-else {
-  $champs = '<p><b>(Remplissez tous les champs pour vous connectez !)</b></p>';
-}
-
-
-?>
