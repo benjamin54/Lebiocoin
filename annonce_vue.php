@@ -14,8 +14,8 @@ catch(Exception $e)
 }
 //$reponse = $base->query('SELECT `id_annonce`, `codepostal`, `ville`, `region`, `nom`, `mail`, `tel`, `titre`, `photo_annonce`, `texte`, `prix`, `date_ajout` FROM annonce WHERE id_annonce>=1');
 
-// On récupère tout le contenu de la table annonce
-$reponse = $base->query('SELECT * FROM annonce');
+// On récupère tout le contenu de la table annonce par date + recente
+$reponse = $base->query('SELECT * FROM annonce where date_ajout IS NOT NULL ORDER BY date_ajout DESC'); //annonces triées par date la plus récente
 
 // On affiche chaque entrée une à une
 while ($donnees = $reponse->fetch())
