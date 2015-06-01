@@ -203,21 +203,21 @@ if (!empty($_POST['sauver']))
 $base = mysqli_connect ('localhost', 'root', '');  //choisir mp
 mysqli_select_db ($base,'mabase') ;
 
-$nom_categoriep = securite_bdd($_POST['nom_categoriep']);
-$nom_categoriea = securite_bdd($_POST['nom_categoriea']);
+$nom_categoriep = $_POST['nom_categoriep'];
+$nom_categoriea = $_POST['nom_categoriea'];
 
-$codepostal = securite_bdd($_POST['codepostal']);
-$ville = securite_bdd($_POST['ville']);
-$region = securite_bdd($_POST['region']);
+$codepostal = $_POST['codepostal'];
+$ville =$_POST['ville'];
+$region = $_POST['region'];
 
-$nom = securite_bdd($_POST['nom']);
-$mail = securite_bdd($_POST['mail']);
-$tel = securite_bdd($_POST['tel']);
+$nom = $_POST['nom'];
+$mail = $_POST['mail'];
+$tel = $_POST['tel'];
 
-$titre = securite_bdd($_POST['titre']);
-$photo_annonce = securite_bdd($new_nom);
-$texte = securite_bdd($_POST['texte']);
-$prix = securite_bdd($_POST['prix']);
+$titre = $_POST['titre'];
+$photo_annonce = $new_nom;
+$texte = $_POST['texte'];
+$prix = $_POST['prix'];
 
 
 $sql = 'INSERT INTO annonce VALUES ("","'.$codepostal.'","'.$ville.'","'.$region.'","'.$nom.'","'.$mail.'","'.$tel.'","'.$titre.'","'.$photo_annonce.'","'.$texte.'","'.$prix.'",NOW())';

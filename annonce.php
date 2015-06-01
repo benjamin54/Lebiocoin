@@ -22,9 +22,9 @@
 
         <p>
           <label for="nom_categoriep">Catégorie:</label>
-          <select id="nom_categoriep" >
-            <option name="nom_categoriep" id="nom_categoriep" value="fruit">Fruits</option>
-            <option name="nom_categoriep" value="legume">Légumes</option>
+          <select name="nom_categoriep" id="nom_categoriep">
+            <option value="fruit">Fruits</option>
+            <option value="legume">Légumes</option>
           </select>
           <p2 style="color:red"> *</p2>
         </p>
