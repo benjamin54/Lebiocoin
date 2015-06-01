@@ -265,8 +265,9 @@ catch (PDOException $e) {
             (Message qui intègrera les causes d'erreur sql)*/
             mysqli_query ($base,$sql) or die ('Erreur SQL !'.$sql.'<br />'.mysqli_error($base)); 
  
-            // on ferme la connexion
+             on ferme la connexion
             mysqli_close($base);
+            select
         }
         
         ?>
