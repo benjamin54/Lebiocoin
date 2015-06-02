@@ -3,6 +3,17 @@
 
 session_start();
  
+ini_set('display_errors',1);
+ini_set('display_startup_errors',1);
+error_reporting(-1);
+
+try {
+    $bdd = new PDO('mysql:host=localhost;dbname=mabase', 'root','', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION, PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8" ));
+} 
+catch (PDOException $e) {
+    echo "Erreur ! ";
+    die();
+}
 $_SESSION['codepostal']=$_POST['codepostal'];
 $_SESSION['ville']=$_POST['ville'];
 
@@ -218,11 +229,13 @@ $tel = $_POST['tel'];
 
 $titre = $_POST['titre'];
 $photo_annonce = $new_nom;
+$variete=$_POST['variete'];
 $texte = $_POST['texte'];
+$quantite=$_POST['quantite'];
 $prix = $_POST['prix'];
 
 
-$sql = 'INSERT INTO annonce VALUES ("","'.$codepostal.'","'.$ville.'","'.$region.'","'.$nom.'","'.$mail.'","'.$tel.'","'.$titre.'","'.$photo_annonce.'","'.$texte.'","'.$prix.'",NOW())';
+$sql = 'INSERT INTO annonce VALUES ("","'.$codepostal.'","'.$ville.'","'.$region.'","'.$nom.'","'.$mail.'","'.$tel.'","'.$titre.'","'.$photo_annonce.'","'.$variete.'","'.$texte.'","'.$quantite.'","'.$prix.'",NOW())';
 $sql1= 'INSERT INTO categorie_produit VALUES ("","'.$nom_categoriep.'")';
 $sql2= 'INSERT INTO categorie_a VALUES ("","'.$nom_categoriea.'")';
 

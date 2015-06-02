@@ -109,11 +109,11 @@ $_SESSION['ville']='paris';
         </p>
         <p>
           <label for="mail">Adresse mail:</label>
-          <input type="mail" name="mail" id="mail" value="" required/><p2 style="color:red"> *</p2>
+          <input type="mail" name="mail" id="mail" value="<?php if (isset($_SESSION['mail'])){echo $_SESSION['mail'];}?>" required/><p2 style="color:red"> *</p2>
         </p>
         <p>
           <label for="tel">Téléphone:</label>
-          <input type="tel" name="tel" id="tel" value="" required/><p2 style="color:red"> *</p2>
+          <input type="tel" name="tel" id="tel" value="<?php if (isset($_SESSION['tel'])){echo $_SESSION['tel'];}?>" required/><p2 style="color:red"> *</p2>
         </p>
       </fieldset>
 
@@ -139,6 +139,11 @@ $_SESSION['ville']='paris';
         <p>
           <label for="texte"> Texte de l'annonce:</label> 
           <textarea name="texte" id="texte" wrap="off" rows="6" cols="50" required></textarea> <p2 style="color:red"> *</p2>      
+        </p>
+
+        <p>
+          <label for="quantite"> Quantité:</label>
+          <input type="text" name="quantite" id="quantite" value="2" required/> (en kgs)<p2 style="color:red"> *</p2>
         </p>
 
         <p>
