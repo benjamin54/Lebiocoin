@@ -140,11 +140,11 @@ $active = '0';
 
       if(isset($erreur))
       {
-        echo = $erreur;
+        echo "<h4>$erreur</h4>";
       }
       if(isset($message))
       {
-        echo = $message;
+        echo "<h4>$message</h4>";
       }
 
 ?>
