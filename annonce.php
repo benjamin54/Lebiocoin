@@ -1,25 +1,12 @@
 <?php include ('header.php') ?>
 
-<?php session_start(); ?> 
+<?php session_start(); 
 
-<!DOCTYPE html>
-<?php
-ini_set('display_errors',1);
-ini_set('display_startup_errors',1);
-error_reporting(-1);
-
-try {
-    $bdd = new PDO('mysql:host=localhost;dbname=mabase', 'root','', array(PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION, PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8" ));
-} 
-catch (PDOException $e) {
-    echo "Erreur ! ";
-    die();
-}
+$_SESSION['codepostal']='75014';
+$_SESSION['ville']='paris';
 ?>
+<!DOCTYPE html>
 <html>
-
-
-
 <body>
   <div id="annonce">
     <h4>JE CREE MON ANNONCE</h4>
@@ -55,12 +42,12 @@ catch (PDOException $e) {
 
         <p>
           <label for="codepostal">Code postal:</label> 
-          <input type="text" name="codepostal" id="codepostal" value="<?php if (isset($_POST['codepostal'])){echo $_POST['codepostal'];} ?>" required/> <p2 style="color:red"> *</p2> <!-- voir -->
+          <input type="text" name="codepostal" id="codepostal" value="<?php if (isset($_SESSION['codepostal'])){echo $_SESSION['codepostal'];} ?>" required/> <p2 style="color:red"> *</p2> <!-- voir -->
         </p>
 
         <p>
           <label for="ville">Ville: </label> 
-          <input type="text" name="ville" id="ville" value="<?php if (isset($_POST['ville'])){echo $_SESSION['ville'];}?>" required/><p2 style="color:red"> *</p2>  
+          <input type="text" name="ville"$mail  id="ville" value="<?php if (isset($_SESSION['ville'])){echo $_SESSION['ville'];}?>" required/><p2 style="color:red"> *</p2>  
         </p>
 
         <p>

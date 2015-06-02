@@ -211,7 +211,9 @@ $ville =$_POST['ville'];
 $region = $_POST['region'];
 
 $nom = $_POST['nom'];
-$mail = $_POST['mail'];
+if(filter_var($_POST['mail'], FILTER_VALIDATE_EMAIL)){
+  $mail = $_POST['mail'];
+} 
 $tel = $_POST['tel'];
 
 $titre = $_POST['titre'];
