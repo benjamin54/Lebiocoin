@@ -47,8 +47,8 @@ il faut noter que dans cette page, elle est facultative
   
           echo"<h2>LES MEMBRES </h2>";  
 
-
-
+?>
+<?php
 //on se connecte à MySql
 
 
