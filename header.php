@@ -127,6 +127,7 @@ session_start();
 $bdd= new PDO('mysql:host=127.0.0.1;dbname=mabase','root','');
 if(isset($_POST['Valider']))
 {
+	$ville=($_POST['ville']);
   $adressemail=($_POST['adressemail']);
   $motdepasse1=($_POST['motdepasse1']);
   if(!empty($adressemail) AND !empty($motdepasse1))
@@ -138,6 +139,7 @@ if(isset($_POST['Valider']))
     // compte le nombre de rangée qui correspondent aux informations de l'utilisateur
 if($userexist==1){
 $userinfo=$requser->fetch();
+$_SESSION['ville']=($_POST['ville']);
 $_SESSION['id_membre']=$userinfo['id_membre'];
 $_SESSION['adressemail']=$userinfo['motdepasse1'];
 header("Location:indexe.php?id=".$_SESSION['id']);
