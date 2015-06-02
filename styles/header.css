@@ -488,10 +488,12 @@ element.style {
 
 /* style formulaire annonce.php */
 #annonce{
+	overflow:auto;
 	position: absolute;
-	left:25%;
-	top:45%;
-	width: 40%;
+	left:35%;
+	top:55%;
+	height:58%;
+	width: 45%;
 }
 #annonce textarea{
 	position: relative;
