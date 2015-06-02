@@ -140,7 +140,7 @@ $active = '0';
 
       if(isset($erreur))
       {
-        echo "<h4>$erreur</h4>";
+        echo "<div id="positionerreur"><h4>$erreur</h4></div>";
       }
       if(isset($message))
       {
