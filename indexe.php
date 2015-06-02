@@ -9,7 +9,7 @@
 </head>
 <body>
 <CENTER>
-<h2>Administrateur <?php echo '.$_SESSION['pseudoadmin'].'      ;?></h2>
+<h2>Administrateur <?php echo '.$_SESSION['pseudoadmin']';?></h2>
 
  <p>  <INPUT TYPE="submit" NAME="ajouter id" VALUE=" ajouter un utilisateur"> <a href="listemembre.php"><INPUT TYPE="submit" NAME="Liste" VALUE=" Liste des utilisateurs">   </a>       </p>
 <p>       <INPUT TYPE="submit" NAME="supprimera" VALUE=" supprimer une annonce">                   <INPUT TYPE="submit" NAME="ajoutera" VALUE=" ajouter une annonce">   
@@ -21,10 +21,6 @@
 </body>
 </html> 
 
-
-<?php
-}
-?>
 
 
 
