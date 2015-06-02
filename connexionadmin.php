@@ -15,48 +15,41 @@
     </body>
     </html>
 
-     <?php
-
-
-session_start();
-
-
-
+        <?php
+    
 $bdd= new PDO('mysql:host=127.0.0.1;dbname=mabase','root','');
-if(isset($_POST['Valider']))
-{
-  $adressemail=($_POST['adressemail']);
-  $motdepasse1=($_POST['motdepasse1']);
-  if(!empty($adressemail) AND !empty($motdepasse1))
-  {
-    $requser=$bdd->prepare("SELECT * FROM membre WHERE adressemail=? AND motdepasse1=?");
-  //execution requete
-    $requser->execute(array($adressemail,$motdepasse1));
-    $userexist=$requser->rowCount();
-    // compte le nombre de rangée qui correspondent aux informations de l'utilisateur
-if($userexist==1){
-$userinfo=$requser->fetch();
-$_SESSION['id']=$userinfo['id'];
-$_SESSION['adressemail']=$userinfo['motdepasse1'];
-header("Location:indexe.php?id=".$_SESSION['id']);
+    $pseudov = "admin";
+    $mdpv = "luxurio";
+
+    
+    if (isset($_POST['pseudoadmin']) && isset($_POST['mdpadmin'])) {
+
+        // on vérifie les informations du formulaire, à savoir si le pseudo saisi est bien un pseudo autorisé, de même pour le mot de passe
+        if ($pseudov== $_POST['pseudoadmin'] && $mdpv== $_POST['mdpadmin']) {
+            // dans ce cas, tout est ok, on peut démarrer notre session
+
+            // on la démarre :)
+            session_start ();
+         
+            $_SESSION['pseudoadmin'] = $_POST['pseudoadmin'];
+            $_SESSION['mdpadmin'] = $_POST['mdpadmin'];
+
+            // on redirige notre visiteur vers une page de notre section administrateur
+            header ('location: pageadmin.php');
+        
+       }
+        else {
+            // Le visiteur n'a pas été reconnu comme étant membre de notre site. On utilise alors un petit javascript lui signalant ce fait
+            echo '<body onLoad="alert(\'Membre non reconnu...\')">';
+            // puis on le redirige vers la page d'accueil
+            echo '<meta http-equiv="refresh" content="0;URL=connexionadmin.php">';
+       
+ 
 
 }
-else{
-  $erreur="mauvais pseudo ou mot de passe";
-}
-}
-  else {
-    $erreur="Veuillez remplir tout les champs!";
-  }
 
-
-if(isset($erreur))
-{
-  echo'<font color="red">'.$erreur."</font>";
-}
 }
 
 
 
-
-?>
+    ?>
