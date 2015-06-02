@@ -10,7 +10,8 @@
 </head>
 
 <body>
-    
+
+
 </body>
 
 </html> 
@@ -46,23 +47,105 @@ catch (PDOException $e) {
 $token = rand('123','321');
 $active = '0';
 
-$insertmembre = $bdd -> prepare("INSERT INTO membre (prenom, nom, pseudo, adressemail, token, active, motdepasse1, motdepasse2, num, region, ville) VALUES (:prenom, :nom, :pseudo, :adressemail, :token, :active, :motdepasse1, :motdepasse2, :num, :region, :ville)"); 
-/* INSERT INTO est une fonction sql et il ne faut pas oublier de la preparer en mettant le prepare*/                                        
-$insertmembre -> execute(array('prenom' => $prenom,
-									  'nom' => $nom,
-									   'pseudo' => $pseudo,
-									   'adressemail' => $adressemail,
-									   'motdepasse1' => $motdepasse1,
-									   'motdepasse2' => $motdepasse2,
-                     'token' => $token,
-                     'active' => $active,
-									    'num' => $num,
-									    'region' => $region,
-									    'ville' => $ville,
-									    ));
+
+ if(!empty($_POST['prenom']) AND !empty($_POST['nom']) AND !empty($_POST['pseudo']) AND !empty($_POST['adressemail']) AND !empty($_POST['motdepasse1']) AND !empty($_POST['motdepasse2']) AND 
+      !empty($_POST['num']) AND !empty($_POST['region']) AND !empty($_POST['ville']))
+      {
+
+          $pseudo = $_POST['pseudo'];
+          $reqpseudo = $bdd -> prepare("SELECT * FROM membre WHERE pseudo = ".$pseudo."");
+          $pseudoexist = $reqpseudo -> rowCount('');
+
+              if($pseudoexist == 0)
+              {
+                $motdepasse1 = $_POST['motdepasse1'];
+                $motdepasse2 = $_POST['motdepasse2'];
+                 $motdepasse1length = strlen($motdepasse1);
+                  if($motdepasse1length >= 8)
+                  {
+                        if($motdepasse1 == $motdepasse2)
+                        {
+                                  if(filter_var($motdepasse1, FILTER_VALIDATE_EMAIL))
+                                  {
+                                        $adressemail = $_POST['adressemail'];
+                                        $reqmail = $bdd -> prepare("SELECT * FROM membre WHERE adressemail = ?"); /* requete qui permet des sélectionner toutes les entrées de la table membre ou le mail 
+                                        etait egal au mail que l'utilisateur a enregistré, et donc ca permet de verifier si le mail existe deja*/
+                                        $reqmail -> execute(array($adressemail));
+                                        $mailexist = $reqmail -> rowCount(''); /* rowCount compte le nombre de colonnes qui existe pour ce qu'on a rentré avant*/
+                                    
+                                            if($mailexist == 0)
+                                            {
+                                            
+
+                                              $insertmembre = $bdd -> prepare("INSERT INTO membre (prenom, nom, pseudo, adressemail, token, active, motdepasse1, motdepasse2, num, region, ville) VALUES (:prenom, :nom, :pseudo, :adressemail, :token, :active, :motdepasse1, :motdepasse2, :num, :region, :ville)"); 
+                                              /* INSERT INTO est une fonction sql et il ne faut pas oublier de la preparer en mettant le prepare*/                                        
+                                              $insertmembre -> execute(array('prenom' => $prenom,
+                                              									             'nom' => $nom,
+                                              									             'pseudo' => $pseudo,
+                                              									             'adressemail' => $adressemail,
+                                              									             'motdepasse1' => $motdepasse1,
+                                                        									   'motdepasse2' => $motdepasse2,
+                                                                             'token' => $token,
+                                                                             'active' => $active,
+                                                        									   'num' => $num,
+                                                        									   'region' => $region,
+                                                        									   'ville' => $ville,
+                                                        									    ));
                                              
+                                            $message = "Votre compte a bien été créé. Bienvenue !";
+                                            
+                                            }
+
+                                            else 
+                                            {
+                                              $erreur = "Adresse email déjà utilisée !";
+                                            }
+
+                                  }
+
+                                  else
+                                  {
+                                    $erreur = "Votre email n'est pas valide !";
+                                  } 
+                        }
+
+
+                        else
+                        {
+                          $erreur = "Vos mots de passe ne correspondent pas !";
+                        }
+                  }
+
+                  else
+                  {
+                    $erreur = "Le mot de passe doit contenir au minimum 8 caractères !";
+                  }
+              }
+
+              else
+              {
+                $erreur = "Votre pseudo a déjà été utilisé !";
+              }
+
+
+      }
+
+      else 
+      {
+        $erreur = "Tous les champs doivent être complétés !";
+      }
+
 
   }
+
+      if(isset($erreur))
+      {
+        echo = $erreur;
+      }
+      if(isset($message))
+      {
+        echo = $message;
+      }
 
 ?>
 
