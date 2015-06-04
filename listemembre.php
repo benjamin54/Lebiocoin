@@ -12,24 +12,11 @@ html>
 <body>
 
     <div id="contenuaccueil">
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
 <style>
 table, th, td {
     border: 1px solid black;
     border-collapse: collapse;
+    background-color:white;
 }
 th, td {
     padding: 5px;

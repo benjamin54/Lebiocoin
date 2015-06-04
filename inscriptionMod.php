@@ -61,7 +61,7 @@ $active = '0';
                 $motdepasse1 = $_POST['motdepasse1'];
                 $motdepasse2 = $_POST['motdepasse2'];
                  $motdepasse1length = strlen($motdepasse1);
-                  if($motdepasse1length >= 8)
+                  if($motdepasse1length >= 1)
                   {
                         if($motdepasse1 == $motdepasse2)
                         {
@@ -140,7 +140,7 @@ $active = '0';
 
       if(isset($erreur))
       {
-        echo "<div id="positionerreur"><h4>$erreur</h4></div>";
+        echo "<div id=\"positionerreur\"><h4>$erreur</h4></div>";
       }
       if(isset($message))
       {
