@@ -14,8 +14,6 @@ catch (PDOException $e) {
     echo "Erreur ! ";
     die();
 }
-$_SESSION['codepostal']=$_POST['codepostal'];
-$_SESSION['ville']=$_POST['ville'];
 
 error_reporting(E_ALL);
 if(!empty($_POST))  //on utilise des boucles pour vérifier que tous les champs sont remplis, équivalent à if(isset($_POST['nom'])&& $_POST['nom']!='' && $_POST['nom']!=='0'))
@@ -162,7 +160,7 @@ else
         </p>
 
 
-        <p>
+        <p>_vue.php?recherche=
           <label for="texte"> Texte de l\'annonce:</label> 
           <textarea name="texte" id="texte" wrap="off" rows="6" cols="50" required></textarea> <p2 style="color:red"> *</p2>      
         </p>
@@ -216,7 +214,7 @@ function VerifierAdresseMail($mail)
   {
     return '<p>Votre adresse est trop longue.</p>';
   }
-  //Caractères non-ASCII autorisés dans un nom de domaine .eu :
+  //Caractères non-ASCII autorisés d_vue.php?recherche=ans un nom de domaine .eu :
 
   $nonASCII='ďđēĕėęěĝğġģĥħĩīĭįıĵķĺļľŀłńņňŉŋōŏőoeŕŗřśŝsťŧ';
   $nonASCII.='ďđēĕėęěĝğġģĥħĩīĭįıĵķĺļľŀłńņňŉŋōŏőoeŕŗřśŝsťŧ';
