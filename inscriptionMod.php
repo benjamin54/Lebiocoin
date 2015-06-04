@@ -91,6 +91,39 @@ $active = '0';
                                        									     'region' => $region,
                                                         					 'ville' => $ville,
                                                         				 ));
+
+                                              //email
+                                              require 'phpmailer/PHPMailerAutoload.php';
+                                              $mail = new PHPMailer;
+
+
+                                              $mail->isSMTP();                                      
+                                              $mail->Host = 'smtp.gmail.com';  
+                                              $mail->SMTPAuth = true;                               
+                                              $mail->Username = 'romain.merle91@gmail.com';                 
+                                              $mail->Password = 'r9m99n99';                           
+                                              $mail->SMTPSecure = 'tls';                            
+                                              $mail->Port = 587;                                    
+
+                                              $mail->From = 'Lebiocoin@lebiocoin.com';
+                                              $mail->FromName = 'Lebiocoin';
+                                              $mail->addAddress($adressemail);     
+
+                                              $mail->isHTML(true);                                  
+
+                                              $mail->Subject = 'Email de confirmation Lebiocoin';
+                                              $mail->Body    = 'Bonjour et bienvenue $nom $prenom, merci d\'avoir rejoint Lebiocoin. 
+                                                        Pour valider votre inscription veuillez cliquer sur ce lien';
+
+                                              $mail->AltBody = 'Le mail est envoyé';
+
+                                              if(!$mail->send()) {
+                                                  echo 'Le message n\'a pas été envoyé';
+                                                  echo 'Mailer Error: ' . $mail->ErrorInfo;
+                                              } else {
+                                                  echo 'Le message a été envoyé';
+                                              }
+                                              // fin email
                                              
                                             $message = "Votre compte a bien été créé. Bienvenue !";
                                             
