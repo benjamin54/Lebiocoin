@@ -80,17 +80,17 @@ $active = '0';
                                               $insertmembre = $bdd -> prepare("INSERT INTO membre (prenom, nom, pseudo, adressemail, token, active, motdepasse1, motdepasse2, num, region, ville) VALUES (:prenom, :nom, :pseudo, :adressemail, :token, :active, :motdepasse1, :motdepasse2, :num, :region, :ville)"); 
                                               /* INSERT INTO est une fonction sql et il ne faut pas oublier de la preparer en mettant le prepare*/                                        
                                               $insertmembre -> execute(array('prenom' => $prenom,
-                                              									             'nom' => $nom,
-                                              									             'pseudo' => $pseudo,
-                                              									             'adressemail' => $adressemail,
-                                              									             'motdepasse1' => $motdepasse1,
-                                                        									   'motdepasse2' => $motdepasse2,
+                                              								 'nom' => $nom,
+                                              					             'pseudo' => $pseudo,
+                                              								 'adressemail' => $adressemail,
+                                            					             'motdepasse1' => $motdepasse1,
+                                                        				     'motdepasse2' => $motdepasse2,
                                                                              'token' => $token,
                                                                              'active' => $active,
-                                                        									   'num' => $num,
-                                                        									   'region' => $region,
-                                                        									   'ville' => $ville,
-                                                        									    ));
+                                      									     'num' => $num,
+                                       									     'region' => $region,
+                                                        					 'ville' => $ville,
+                                                        				 ));
                                              
                                             $message = "Votre compte a bien été créé. Bienvenue !";
                                             
