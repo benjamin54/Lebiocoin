@@ -60,7 +60,7 @@ $bdd->query('DELETE FROM annonce WHERE id_annonce='.$_GET['delete'].'');
     ?>
       <tr>
         <td><?php echo $titre_annonce ?></td>
-        <td><?php echo $image_annoce ?></td>
+        <td><?php echo $image_annonce ?></td>
         <td><?php echo $id_annonce ?></td>
         <td><?php echo $id_membre ?></td>
         <td><a href ="listeannonce.php?delete=<?php echo $id_annonce; ?>">Supprimer</a></td>
