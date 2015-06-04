@@ -15,6 +15,9 @@
     catch(Exception $e) {
       die('Erreur: '.$e->getMessage());
     }
+$bdd->query('DELETE FROM membre WHERE id_membre='.$_GET['delete'].'');
+
+
     $request=$bdd->query('SELECT * FROM membre ORDER BY id_membre');
     ?>
 
@@ -44,16 +47,28 @@
       while($row = $request->fetch(PDO::FETCH_OBJ))
     {  
     $nom= $row->nom;
+    $id_membre= $row->id_membre;
     $prenom= $row->prenom;
     $adressemail= $row->adressemail;
-  }
+    ?>
+    <?php
+    if(isset($_POST['supprimmer']))
+{
+     $delete=$bdd->query('DELETE * FROM membre');
+   }
     ?>
       <tr>
-        <td> <?php echo $prenom; ?></td>
-        <td><?php echo $nom; ?></td>
-        <td><?php echo $adressemail; ?></td>
-        <td><?php echo "X"; ?></td>
-      </tr>
+        <td><?php echo $prenom ?></td>
+        <td><?php echo $nom ?></td>
+        <td><?php echo $adressemail;?></td>
+        <td><a href ="listemembre.php?delete=<?php echo $id_membre; ?>">Supprimer</a></td>
+        </tr>'
+    <?php
+
+    }
+
+   ?>
+      
     </table>
     </center>
     </div>
