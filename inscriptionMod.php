@@ -65,7 +65,7 @@ $active = '0';
                   {
                         if($motdepasse1 == $motdepasse2)
                         {
-                                  if(filter_var($motdepasse1, FILTER_VALIDATE_EMAIL))
+                                  if(filter_var($adressemail, FILTER_VALIDATE_EMAIL))
                                   {
                                         $adressemail = $_POST['adressemail'];
                                         $reqmail = $bdd -> prepare("SELECT * FROM membre WHERE adressemail = ?"); /* requete qui permet des sélectionner toutes les entrées de la table membre ou le mail 
