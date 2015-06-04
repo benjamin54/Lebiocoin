@@ -33,6 +33,7 @@ $bdd= new PDO('mysql:host=127.0.0.1;dbname=mabase','root','');
          
             $_SESSION['pseudoadmin'] = $_POST['pseudoadmin'];
             $_SESSION['mdpadmin'] = $_POST['mdpadmin'];
+            
 
             // on redirige notre visiteur vers une page de notre section administrateur
             header ('location: pageadmin.php');
