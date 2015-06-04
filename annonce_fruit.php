@@ -15,7 +15,7 @@ catch(Exception $e)
 //$reponse = $base->query('SELECT `id_annonce`, `codepostal`, `ville`, `region`, `nom`, `mail`, `tel`, `titre`, `photo_annonce`, `texte`, `prix`, `date_ajout` FROM annonce WHERE id_annonce>=1');
 
 // On récupère tout le contenu de la table annonce
-$reponse = $base->query('SELECT * FROM annonce, categorie_a,categorie_produit WHERE nom_categoriep=fruit');
+$reponse = $base->query('SELECT * FROM annonce WHERE id_cat_annonce=1 ORDER BY date_ajout DESC');
 
 // On affiche chaque entrée une à une
 while ($donnees = $reponse->fetch())

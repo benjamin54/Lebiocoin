@@ -1,7 +1,7 @@
 <?php include ('header.php') ?> 
 <?php
-$_SESSION['codepostal']='75014';
-$_SESSION['ville']='paris';
+$_SESSION['codepostal']=$_POST['codepostal'];
+$_SESSION['ville']=$_POST['ville'];
 ?>
 <!DOCTYPE html>
 <html>
