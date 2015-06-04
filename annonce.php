@@ -1,7 +1,5 @@
-<?php include ('header.php') ?>
-
-<?php session_start(); 
-
+<?php include ('header.php') ?> 
+<?php
 $_SESSION['codepostal']='75014';
 $_SESSION['ville']='paris';
 ?>

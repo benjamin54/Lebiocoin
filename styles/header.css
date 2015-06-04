@@ -518,19 +518,23 @@ element.style {
 #annoncecadre{
 	font-size: 100%;
 	font-family: georgia ;
-	background-color: #FFB000;
-	position: relative;
-	top:0%;
-	left:25%;
+	background-color: #F0D000;
+	position:relative;
+	top:30%;
+	left:40%;
 	border-style: inset;
-	border-color: #00C020;
-	border-width: 5px;
+	border-color: #FF0000;
+	border-width: 8px;
 	width:40%;
 }
 #annonce_gauche{
 	position: relative;
 	bottom:20%;
 	left:5%;
+}
+#annoncecadre img{
+	max-width: 100%;
+	height: auto;
 }
 #annonce_droite{
 	position: absolute;

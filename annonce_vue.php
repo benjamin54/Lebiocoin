@@ -25,7 +25,9 @@ while ($donnees = $reponse->fetch())
 	<section id="annonce_gauche">
 		<p id="titreannonce">Annonce : <?php echo htmlentities($donnees['titre']); ?></p><br />
 		<p>	Mise en ligne par : <?php echo htmlentities($donnees['nom']) ?>. <br /><br/>
-			<?php echo "<img src='controlleurs/uploads/".$donnees['photo_annonce']."'>"; ?> <br/><br/>  
+			<?php echo "<img src='controlleurs/uploads/".$donnees['photo_annonce']."'srcset=\"controlleurs/uploads/".$donnees['photo_annonce']." 1x,
+             controlleurs/uploads/".$donnees['photo_annonce']." 320w 1x,
+             controlleurs/uploads/".$donnees['photo_annonce']." 320w 2x\"  width=\"300\" height=\"300\" alt=\"\">"; ?> <br/><br/>  
 			Description : <br/> <?php echo htmlentities($donnees['texte'])?> 
 		</p>
 	</section>
