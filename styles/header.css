@@ -1,4 +1,77 @@
-
+.contener_slideshow
+{
+  margin-left: 25%;
+  margin-top: -39.1%;
+  width:57.2%;
+  height:438px;
+  overflow: hidden;
+  position: relative;
+  background-image: url(YOUR-URL-IMAGE.png);
+}
+.slid_1, .slid_2, .slid_3
+{
+  position: absolute;
+  width:40.2%;
+  height:438px;
+}
+.slid_1{left: 0;}
+.slid_2{left: 57.2%;}
+.slid_3{left: 114.5%;}
+.contener_slide
+{
+  width: 114.5%;
+  height: 438px;
+  left:0px;
+  position: absolute;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-iteration-count:infinite;
+  -webkit-animation-name: anim_slide;
+  -moz-animation-duration: 5s;
+  -moz-animation-iteration-count:infinite;
+  -moz-animation-name: anim_slide;
+  -ms-animation-duration: 5s;
+  -ms-animation-iteration-count:infinite;
+  -ms-animation-name: anim_slide;
+  animation-duration: 5s;
+  animation-iteration-count:infinite;
+  animation-name: anim_slide;
+}
+@-webkit-keyframes anim_slide 
+{
+  0% {left:0px;}
+  22% {left:0px;}
+  33% {left:-57.2%;}
+  45% {left:-57.2%;}
+  66% {left:-114.4%;}
+  90% {left:-114.4%;}
+}
+@-moz-keyframes anim_slide 
+{
+  0% {left:0px;}
+  22% {left:0px;}
+  33% {left:-57.2%;}
+  45% {left:-57.2%;}
+  66% {left:-114.4%;}
+  90% {left:-114.4%;}
+}
+@-ms-keyframes anim_slide 
+{
+  0% {left:0px;}
+  22% {left:0px;}
+  33% {left:-57.2%;}
+  45% {left:-57.2%;}
+  66% {left:-114.4%;}
+  90% {left:-114.4%;}
+}
+@keyframes anim_slide 
+{
+  0% {left:0px;}
+  22% {left:0px;}
+  33% {left:-57.2%;}
+  45% {left:-57.2%;}
+  66% {left:-114.4%;}
+  90% {left:-114.4%;}
+}
 body {
 	background-image:url("http://www.google.fr/url?source=imglanding&ct=img&q=http://www.tao-mieux-etre.fr/web_images/pamplemousse-muffetflickr-cc.jpg&sa=X&ei=KadsVazYBMi1UbiwgNgM&ved=0CAkQ8wc4pgI&usg=AFQjCNHYb0JLWZ968Qpg9VzUwsZocn0uWQ");
 	background-attachment:fixed;
