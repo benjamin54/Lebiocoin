@@ -46,7 +46,6 @@ catch (PDOException $e) {
      
 $token = rand('123','321');
 $active = '0';
-$derid = $bdd->lastInsertId();
 
 
  if(!empty($_POST['prenom']) AND !empty($_POST['nom']) AND !empty($_POST['pseudo']) AND !empty($_POST['adressemail']) AND !empty($_POST['motdepasse1']) AND !empty($_POST['motdepasse2']) AND 
@@ -96,6 +95,8 @@ $derid = $bdd->lastInsertId();
                                               
 
                                               //email
+                                              $derid = $bdd->lastInsertId();
+
                                               require 'phpmailer/PHPMailerAutoload.php';
                                               $mail = new PHPMailer;
 
@@ -115,8 +116,8 @@ $derid = $bdd->lastInsertId();
                                               $mail->isHTML(true);                                  
 
                                               $mail->Subject = 'Email de confirmation Lebiocoin';
-                                              $mail->Body    = 'Bonjour et bienvenue \'$nom $prenom\', merci d\'avoir rejoint Lebiocoin. \n\n 
-                                                        Pour valider votre inscription veuillez cliquer sur ce <a href="http://localhost/Lebiocoin/active.php?id_membre='$derid'&code='$token'">lien</a>';
+                                              $mail->Body    = 'Bonjour et bienvenue '.$nom.' '.$prenom.', merci d\'avoir rejoint Lebiocoin. \\/n/n 
+                                                        Pour valider votre inscription veuillez cliquer sur ce <a href="http://localhost/Lebiocoin/active.php?id_membre='.urlencode($derid).'&code='.urlencode($token).'">lien</a>';
 
                                               $mail->AltBody = 'Le mail est envoyé';
 
