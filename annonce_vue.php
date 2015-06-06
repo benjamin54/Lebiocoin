@@ -19,7 +19,7 @@ $reponse = $base->query('SELECT * FROM annonce WHERE date_ajout IS NOT NULL ORDE
 
 //d'abord selec legumes/fruits, puis localité et achat/echange
 //toutes annonces où la ville est Paris et offres d'achat, tri plus récent
-$reponse = $base->query('SELECT * FROM annonce WHERE id_cat_produit = 1 AND ville = PARIS AND id_cat_annonce =1 ORDER BY date_ajout DESC ');
+//$reponse = $base->query('SELECT * FROM annonce WHERE id_cat_produit = 1 AND ville = PARIS AND id_cat_annonce =1 ORDER BY date_ajout DESC ');
 
 
 
@@ -34,13 +34,16 @@ while ($donnees = $reponse->fetch())
 			<?php echo htmlentities($donnees['variete']) ?> <br/>
 			<?php echo "<img src='controlleurs/uploads/".$donnees['photo_annonce']."'srcset=\"controlleurs/uploads/".$donnees['photo_annonce']." 1x,
              controlleurs/uploads/".$donnees['photo_annonce']." 320w 1x,
-             controlleurs/uploads/".$donnees['photo_annonce']." 320w 2x\"  width=\"300\" height=\"300\" alt=\"\">"; ?> <br/><br/>  
+             controlleurs/uploads/".$donnees['photo_annonce']." 320w 2x\"  width=\"300\" height=\"300\" onmouseover=\"this.width=400; this.heigth=400;\" onmouseout =\"this.width=300; this.heigth=300;\"alt=\"\">"; ?> <br/><br/>  
 			Description : <br/> <?php echo htmlentities($donnees['texte'])?> 
 		</p>
 	</section>
 	<section id="annonce_droite">
 		<p id="datehautdroit"><?php echo htmlentities($donnees['date_ajout']); ?></p>
+		<p><?php echo htmlentities($donnees['codepostal']); ?></p>
+		<p><?php echo htmlentities($donnees['ville']); ?></p>
 		<p>Contacter : <a href="<?php 'echo htmlentities($donnees[\'mail\']);' ?>"><?php echo htmlentities($donnees['mail']); ?></a> </p>
+		<p><?php echo htmlentities($donnees['tel']); ?> </p>
 		<p>Stock : <?php echo htmlentities($donnees['quantite']); ?> kgs.</p>
 		<p>Prix : <?php echo htmlentities($donnees['prix']); ?> euros/kg.</p>
 	</section>

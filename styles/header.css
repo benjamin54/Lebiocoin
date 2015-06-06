@@ -591,13 +591,13 @@ element.style {
 #annoncecadre{
 	font-size: 100%;
 	font-family: georgia ;
-	background-color: #F0D000;
+	background-color: #80F030;
 	position:relative;
 	top:30%;
 	left:40%;
 	border-style: inset;
 	border-color: #FF0000;
-	border-width: 8px;
+	border-width: 10px;
 	width:40%;
 }
 #annonce_gauche{
@@ -610,9 +610,12 @@ element.style {
 	height: auto;
 }
 #annonce_droite{
-	position: absolute;
+	position: relative;
 	top:10%;
-	left:60%;
+	left:55%;
+	background-color: #00B000;
+	width: 40%;
+	border-radius: 10%;
 }
 #titreannonce{
 	font-weight: bold;
