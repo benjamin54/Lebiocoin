@@ -53,7 +53,7 @@ else{document.getElementById(elem).style.visibility="hidden";}
 
 <div id="menu_vertical">
 	<ul>
-              <li class="menu2"><a href="http://www.creativejuiz.fr/blog/theme/css-css3">Actualités</a></li><!--
+              <li class="menu2"><a href="chat.php">Le mini chat</a></li><!--
             --><li class="menu2"><a href="annonce.php">Déposer Annonce</a></li><!--
             --><li class="menu2"><a href="http://www.creativejuiz.fr/blog/theme/css-css3">Mon Panier</a></li><!--
             --><li class="menu2"><a href="compte_utilisateur.php">Mon Compte</a></li><!--
