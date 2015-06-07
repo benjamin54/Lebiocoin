@@ -173,7 +173,7 @@ $active = '0';
       }
 
 
-  }
+
 
       if(isset($erreur))
       {
@@ -183,6 +183,7 @@ $active = '0';
       {
         echo "<h4>$message</h4>";
       }
+}
 
 ?>
 

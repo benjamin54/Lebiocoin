@@ -217,17 +217,7 @@ catch (PDOException $e) {
                  
 
 
-    <?php
-      if(isset($erreur))
-      {
-        echo '<font-color="red">' .$erreur. "</font>";
-      }
-      if(isset($message))
-      {
-        echo '<font-color="blue">' .$message. "</font>";
-      }
-
-    ?>
+    
 
             
           </form>
