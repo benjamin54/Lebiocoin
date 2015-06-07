@@ -207,7 +207,7 @@ catch (PDOException $e) {
 
                     <br>
 
-                    <p>J'accepte les <a href="conditions-generales-de-vente.php">conditions d'utilisation</a> du BIOCOIN :<input type="checkbox" name="case" value="case"></p>
+                    <p>J'accepte les <a href="conditions-generales-de-vente.php">conditions d'utilisation</a> du BIOCOIN :<input type="checkbox" name="case" value="case" checked="checked"></p>
                              
                            
                               <br>
