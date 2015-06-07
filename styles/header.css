@@ -101,9 +101,9 @@ title {
 
 #inscription a { color: black; text-decoration: none; }
 
-#connexion a:hover  { color: #FCC7CD; text-decoration: none; cursor: pointer; }
+#connexion a:hover  { color: transparent; text-decoration: none; cursor: pointer; }
 
-#inscription a:hover { color: #FCC7CD;  text-decoration: none;}
+#inscription a:hover { color: transparent;  text-decoration: none;}
 
 #inscription{
 	font-family: Lucida Sans Unicode, Lucida Grande, sans-serif;
@@ -119,12 +119,11 @@ title {
 }
 #connex {
 	padding:1%;
-	background-color: #05966D; 
-	color:#C3D9E0;
+	background-color: #F8001D; 
+	color: #FCD2D7;
 	position:absolute;
 	width:22%;
 	height:22%;
-	color:#C3D9E0;
 	margin-left:77%;
 	margin-top:-70%;
 
@@ -243,13 +242,6 @@ title {
 	width: 57.2%;
 }
 
-/*#bloc2 {
-	/*position:absolute;
-	width:60%;
-	margin-top:-37.7%;
-	margin-left: 27.5%;
-	height:62%;
-}*/
 
 
 #bloc3 {
