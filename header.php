@@ -127,11 +127,11 @@ else{document.getElementById(elem).style.visibility="hidden";}
 
 	</html>
 <?php
-$bdd= new PDO('mysql:host=127.0.0.1;dbname=mabase','root','');
+	$bdd= new PDO('mysql:host=127.0.0.1;dbname=mabase','root','');
 if(isset($_POST['Valider']))
 {
   $adressemail=($_POST['adressemail']);
-  $motdepasse1=($_POST['motdepasse1']);
+  $motdepasse1=sha1($_POST['motdepasse1']);
   if(!empty($adressemail) AND !empty($motdepasse1))
   {
     $requser=$bdd->prepare("SELECT * FROM membre WHERE adressemail=? AND motdepasse1=?");

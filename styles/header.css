@@ -488,21 +488,25 @@ footer ul li a {
 article legend {
   color:#1E824C;
   font-size:40px;
-  margin:50px auto;
+  margin:3% auto;
   width:280px;
+  
 }
 
 .titre_contact {
   color:#1E824C;
   font-size:40px;
-  padding-left:350px;
+  padding-left:40%;
 }
 .contact_input {
   background-color:#ECECEC;
   font-size:26px;
   height:30px;
-  margin-left:150px;
+  margin-left:10%;
   width:400px;
+}
+#message{
+	margin-left:56%;
 }
 element.style {
   margin-right:-15px;
@@ -510,7 +514,7 @@ element.style {
 .contact_sujet {
   background-color:#ECECEC;
   height:50px;
-  margin-left:150px;
+  margin-left:10%;
   width:400px;
 }
 #cadre_1 input, textarea{
@@ -534,9 +538,9 @@ element.style {
   color:white;
   font-size:25px;
   height:50px;
-  margin-left:570px;
+  margin-left:56%;
   margin-top:10px;
-  width:250px;
+  width:20%;
 }
 #cadre_contact{
 	position:relative;
