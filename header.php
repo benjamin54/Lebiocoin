@@ -53,9 +53,9 @@ else{document.getElementById(elem).style.visibility="hidden";}
 
 <div id="menu_vertical">
 	<ul>
-              <li class="menu2"><a href="chat.php">Le mini chat</a></li><!--
+              <li class="menu2"><a href="chat.php">Discussion membres</a></li><!--
             --><li class="menu2"><a href="annonce.php">Déposer Annonce</a></li><!--
-            --><li class="menu2"><a href="http://www.creativejuiz.fr/blog/theme/css-css3">Mon Panier</a></li><!--
+            --><li class="menu2"><a href="http://www.creativejuiz.fr/blog/theme/css-css3">Mes contacts</a></li><!--
             --><li class="menu2"><a href="compte_utilisateur.php">Mon Compte</a></li><!--
         --><li class="menu2"><a href="http://www.creativejuiz.fr/blog/theme/css-css3">Déconnexion</a></li>
     </ul>
@@ -63,16 +63,7 @@ else{document.getElementById(elem).style.visibility="hidden";}
 
 
 <div id="bloc2">
-  <?php
-  if(isset($erreur))
-      {
-        echo "<div id=\"positionerreur\"><h4>$erreur</h4></div>";
-      }
-      if(isset($message))
-      {
-        echo "<h4>$message</h4>";
-      }
-  ?>
+
 	<div id="recherche">
 		<form >
 			<input class="barre" type="search" name="recherche" placeholder="Rechercher"/>
@@ -115,7 +106,7 @@ else{document.getElementById(elem).style.visibility="hidden";}
 <div id="connex" style="visibility: hidden" name="connex">
 	<h4>JE ME CONNECTE</h4>
 	<form method="post" action="">
-		<p1><label>e-mail</label> : <input id="pseudo" type="text" name="adressemail"/> </p>
+		<p1><label>Pseudo </label> : <input id="pseudo" type="text" name="adressemail"/> </p>
 		</br>
 		<p2><label>Mot de passe</label> : <input id="mdp" type="password" name="motdepasse1" /></p>
 			<div id="oubli"><a href="mdpo.php">J'ai oublié mon mot de passe</a></div>
@@ -127,11 +118,11 @@ else{document.getElementById(elem).style.visibility="hidden";}
 
 	</html>
 <?php
-	$bdd= new PDO('mysql:host=127.0.0.1;dbname=mabase','root','');
+$bdd= new PDO('mysql:host=127.0.0.1;dbname=mabase','root','');
 if(isset($_POST['Valider']))
 {
   $adressemail=($_POST['adressemail']);
-  $motdepasse1=sha1($_POST['motdepasse1']);
+  $motdepasse1=($_POST['motdepasse1']);
   if(!empty($adressemail) AND !empty($motdepasse1))
   {
     $requser=$bdd->prepare("SELECT * FROM membre WHERE adressemail=? AND motdepasse1=?");
