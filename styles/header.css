@@ -231,14 +231,14 @@ title {
 
 #bloc2 {
 	position: relative;
-	margin-left: 31.8%;
-	margin-top: -38.1%;
+	margin-left: 35.8%;
+	margin-top: -42%;
 	padding-top: 2%;
 	padding-left: 2%;
 	padding-bottom: 2%;
 	padding-right: 2%;
 	background-color:rgba(0, 0,0, 0.65);
-	height: 438px;
+	height: 491px;
 	width: 57.2%;
 }
 
@@ -332,11 +332,11 @@ title {
 
 #menu_vertical ul {
 	position: relative;
-	width: 24%;
+	width: 28%;
 
 	list-style-type: none; /*supprime les puces de la liste*/
 	margin-left: 4.8%;
-	margin-top: 4.8%; 
+	margin-top: 5%; 
 	color: #FCD2D7;
 	box-shadow: 3% solid gray;
 
