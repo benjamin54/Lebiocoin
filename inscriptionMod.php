@@ -9,12 +9,8 @@
     <?php include("header.php"); ?>
 </head>
 
-<body>
+ 
 
-
-</body>
-
-</html> 
 
 <?php 
 
@@ -125,7 +121,7 @@ $active = '0';
                                                   echo 'Le message n\'a pas été envoyé';
                                                   echo 'Mailer Error: ' . $mail->ErrorInfo;
                                               } else {
-                                                  echo 'Le message a été envoyé';
+                                                  echo'Le message a été envoyé';
                                               }
                                               // fin email
                                              
@@ -175,15 +171,27 @@ $active = '0';
 
 
 
-      if(isset($erreur))
-      {
-        echo "<div id=\"positionerreur\"><h4>$erreur</h4></div>";
-      }
-      if(isset($message))
-      {
-        echo "<h4>$message</h4>";
-      }
+   
 }
 
 ?>
 
+<body>
+  <div id="contenuaccueil">
+    <?php
+      if(isset($erreur))
+          {
+            echo "<h4>$erreur</h4>";
+          }
+          if(isset($message))
+          {
+            echo "<h4>$message</h4>";
+          }
+    ?>
+    <br>
+    <a href="inscription.php">Recommencer l'inscription en cliquant ici.</a>
+  </div>
+
+</body>
+
+</html> 

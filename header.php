@@ -63,7 +63,16 @@ else{document.getElementById(elem).style.visibility="hidden";}
 
 
 <div id="bloc2">
-
+  <?php
+  if(isset($erreur))
+      {
+        echo "<div id=\"positionerreur\"><h4>$erreur</h4></div>";
+      }
+      if(isset($message))
+      {
+        echo "<h4>$message</h4>";
+      }
+  ?>
 	<div id="recherche">
 		<form >
 			<input class="barre" type="search" name="recherche" placeholder="Rechercher"/>
