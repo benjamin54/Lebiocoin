@@ -29,7 +29,8 @@ while ($donnees = $reponse->fetch())
 	?>
 <div id="annoncecadre">
 	<section id="annonce_gauche">
-		<p id="titreannonce">Annonce : <?php echo htmlentities($donnees['titre']); ?></p><br />
+		<p id="titreannonce">Annonce : <?php echo htmlentities($donnees['titre']); ?></p>
+		<p id="datehautgauche"><?php echo htmlentities($donnees['date_ajout']); ?></p>
 		<p>	Mise en ligne par : <?php echo htmlentities($donnees['nom']) ?>. <br />
 			<?php echo htmlentities($donnees['variete']) ?> <br/>
 			<?php echo "<img src='controlleurs/uploads/".$donnees['photo_annonce']."'srcset=\"controlleurs/uploads/".$donnees['photo_annonce']." 1x,
@@ -39,7 +40,6 @@ while ($donnees = $reponse->fetch())
 		</p>
 	</section>
 	<section id="annonce_droite">
-		<p id="datehautdroit"><?php echo htmlentities($donnees['date_ajout']); ?></p>
 		<p><?php echo htmlentities($donnees['codepostal']); ?></p>
 		<p><?php echo htmlentities($donnees['ville']); ?></p>
 		<p>Contacter : <a href="<?php 'echo htmlentities($donnees[\'mail\']);' ?>"><?php echo htmlentities($donnees['mail']); ?></a> </p>

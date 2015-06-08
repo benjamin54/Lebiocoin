@@ -655,12 +655,14 @@ element.style {
 #annoncecadre img{
 	max-width: 100%;
 	height: auto;
+	border-radius: 10%;
 }
 #annonce_droite{
-	position: relative;
+	position: absolute;
 	top:10%;
 	left:55%;
 	background-color: #00B000;
+	text-align: center;
 	width: 40%;
 	border-radius: 10%;
 }
