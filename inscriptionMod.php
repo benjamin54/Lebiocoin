@@ -54,10 +54,10 @@ $active = '0';
 
               if($pseudoexist == 0)
               {
-                $motdepasse1 = $_POST['motdepasse1'];
-                $motdepasse2 = $_POST['motdepasse2'];
+                $motdepasse1 = sha1($_POST['motdepasse1']);
+                $motdepasse2 = sha1($_POST['motdepasse2']);
                  $motdepasse1length = strlen($motdepasse1);
-                  if($motdepasse1length >= 1)
+                  if($motdepasse1length >= 8)
                   {
                         if($motdepasse1 == $motdepasse2)
                         {
@@ -182,14 +182,15 @@ $active = '0';
       if(isset($erreur))
           {
             echo "<h4>$erreur</h4>";
+            echo '<a href="inscription.php">Recommencer l\'inscription en cliquant ici.</a>';
           }
+
           if(isset($message))
           {
             echo "<h4>$message</h4>";
           }
     ?>
-    <br>
-    <a href="inscription.php">Recommencer l'inscription en cliquant ici.</a>
+    
   </div>
 
 </body>
