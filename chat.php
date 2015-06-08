@@ -10,7 +10,7 @@
 
 
 <body>
-<div id="contenuaccueil">
+<div id="discussion">
      
           
             <h2>DISCUTER EN LIGNE AVEC LES AUTRES MEMBRES !</h2>
@@ -20,7 +20,6 @@
               <label for="texte"> Votre Post:</label> 
               <textarea name="texte" id="texte" wrap="off" rows="6" cols="50" required></textarea>      
             </p>
-          <br>
             <p>
               <input type="submit" name="sauver" id="sauver" value="Publier">
             </p>

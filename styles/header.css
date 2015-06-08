@@ -400,6 +400,34 @@ title {
 
 
 
+#discussion {
+	padding:3%;
+	padding-top:1%;
+	font-family: Lucida Sans Unicode, Lucida Grande, sans-serif;
+	background-color:rgba(0, 0,0, 0.0);
+	overflow:auto;
+	position:absolute;
+	height:50%;
+	width:51%;
+	margin-top:-46%;
+	margin-left: 32.5%;
+	font-weight: bold;
+	color: #C3D9E0;
+}
+
+#discussion input {
+	box-shadow: 5px;
+	font-family: Lucida Sans Unicode, Lucida Grande, sans-serif;
+}
+
+#discussion textarea {
+	position: relative;
+	right: 50%;
+}
+
+
+
+
 
 
 #newsletter{
