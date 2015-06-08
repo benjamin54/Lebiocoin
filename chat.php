@@ -1,0 +1,79 @@
+<html>
+<head>
+
+    <meta charset="utf-8"/>
+    <title>LeBiocoin</title>
+    <link rel="stylesheet" href="styles/header.css">
+    <?php include("header.php") ?>
+
+ </head>
+
+
+<body>
+<div id="contenuaccueil">
+     
+          
+            <h2>LE MINI CHAT BLABLA...</h2>
+              <h7>Venez Discuter,Echanger,Demander conseil...</h7>
+               
+              
+                
+<?php
+// Connexion à la base de données
+
+$bdd = new PDO('mysql:host=localhost;dbname=mabase', 'root','');
+
+ if(isset($_POST['pseudo']) AND isset($_POST['message']) AND !empty($_POST['pseudo']) AND !empty($_POST['message']))
+ {
+          $pseudo = htmlspecialchars($_POST['pseudo']);
+          $message =htmlspecialchars($_POST['message']);
+$insertmsg= $bdd->prepare('INSERT INTO chat(pseudo,message) VALUES (?,?) ');
+$insertmsg->execute(array($pseudo,$message));
+ }
+   // rows="8" cols="45"
+?>
+<html>
+<body>
+<form method="post" action ="">
+  <br> 
+<p>Pseudo:<input type="text" name="pseudo" placeholder="votre pseudo du chat" value="<?php if(isset($pseudo)) { echo $pseudo;} ?>   "/></p>
+<p align="left">Message: <textarea type="text" name ="message" > </textarea></p>
+<br/>
+
+<input type="submit" name="envoyer" />
+
+</form>
+<?php
+
+$allmsg= $bdd->query('SELECT * FROM chat ORDER BY id_chat DESC');
+while($msg= $allmsg->fetch())
+{
+  ?>
+  <b><?php echo $msg['pseudo'] ?> : </b>
+<?php echo $msg['message']
+
+
+
+ ?><br />
+
+
+<?php
+}
+
+?>
+  </div>
+
+  </body>
+
+
+
+            
+          
+
+
+
+        
+
+
+
+</html>

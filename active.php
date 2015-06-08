@@ -1,4 +1,12 @@
+<!DOCTYPE html> 
 
+<html>
+<head>
+
+    <meta charset="utf-8"/>
+    </head>
+
+<body>
 <?php
 
 if(isset($_GET['id_membre'])&&isset($_GET['code']))
@@ -14,7 +22,8 @@ $code = $_GET['code'];
 	$rows = mysqli_num_rows($query);
 	if($rows==1)
 	{
-
+		$act = mysqli_query($base,"UPDATE membre SET active='1' WHERE id_membre='$id_membre'");
+		die("Votre compte a été activé vous pouvez vous <a href='http://localhost/Lebiocoin/pagedaccueil.php'/>connecter</a>");	
 
 	} else { 
 		echo"id ou token invalide";
@@ -22,5 +31,7 @@ $code = $_GET['code'];
 } else {
 	echo"informations introuvables";
 }
-
 ?>
+</body>
+
+</hmtl>

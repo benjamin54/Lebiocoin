@@ -14,8 +14,6 @@ catch (PDOException $e) {
     echo "Erreur ! ";
     die();
 }
-$_SESSION['codepostal']=$_POST['codepostal'];
-$_SESSION['ville']=$_POST['ville'];
 
 error_reporting(E_ALL);
 if(!empty($_POST))  //on utilise des boucles pour vérifier que tous les champs sont remplis, équivalent à if(isset($_POST['nom'])&& $_POST['nom']!='' && $_POST['nom']!=='0'))
@@ -162,7 +160,7 @@ else
         </p>
 
 
-        <p>
+        <p>_vue.php?recherche=
           <label for="texte"> Texte de l\'annonce:</label> 
           <textarea name="texte" id="texte" wrap="off" rows="6" cols="50" required></textarea> <p2 style="color:red"> *</p2>      
         </p>
@@ -209,6 +207,38 @@ if (isset($_FILES['photo_annonce']))   //verifs sur l'image envoyée
 //$nom_categoriep=$POST['nom_categoriep'];
 //$nom_categoriea=$POST['nom_categoriea'];
 
+function VerifierAdresseMail($mail)
+{
+  //Adresse mail trop longue (254 octets max)
+  if(strlen($mail)>254)
+  {
+    return '<p>Votre adresse est trop longue.</p>';
+  }
+  //Caractères non-ASCII autorisés d_vue.php?recherche=ans un nom de domaine .eu :
+
+  $nonASCII='ďđēĕėęěĝğġģĥħĩīĭįıĵķĺļľŀłńņňŉŋōŏőoeŕŗřśŝsťŧ';
+  $nonASCII.='ďđēĕėęěĝğġģĥħĩīĭįıĵķĺļľŀłńņňŉŋōŏőoeŕŗřśŝsťŧ';
+  $nonASCII.='ũūŭůűųŵŷźżztșțΐάέήίΰαβγδεζηθικλμνξοπρςστυφ';
+  $nonASCII.='χψωϊϋόύώабвгдежзийклмнопрстуфхцчшщъыьэюяt';
+  $nonASCII.='ἀἁἂἃἄἅἆἇἐἑἒἓἔἕἠἡἢἣἤἥἦἧἰἱἲἳἴἵἶἷὀὁὂὃὄὅὐὑὒὓὔ';
+  $nonASCII.='ὕὖὗὠὡὢὣὤὥὦὧὰάὲέὴήὶίὸόὺύὼώᾀᾁᾂᾃᾄᾅᾆᾇᾐᾑᾒᾓᾔᾕᾖᾗ';
+  $nonASCII.='ᾠᾡᾢᾣᾤᾥᾦᾧᾰᾱᾲᾳᾴᾶᾷῂῃῄῆῇῐῑῒΐῖῗῠῡῢΰῤῥῦῧῲῳῴῶῷ';
+  // note : 1 caractète non-ASCII vos 2 octets en UTF-8
+
+  $syntaxe="#^[[:alnum:][:punct:]]{1,64}@[[:alnum:]-.$nonASCII]{2,253}\.[[:alpha:].]{2,6}$#";
+
+  if(preg_match($syntaxe,$mail))
+  {
+    return '<p>Votre adresse est valide.</p>';
+  }
+  else
+  {
+    return '<p>Votre adresse e-mail n\'est pas valide.</p>';
+  }
+}
+
+// Utilisez \w à la place de [:alnum:] si vous n'utilisez pas [:punct:] afin d'autoriser le _ puis ajoutez le . et - C'est à dire  ^[\w-.]{1,64}@
+
 if (!empty($_POST['sauver']))
 {
 $base = mysqli_connect ('localhost', 'root', '');  //choisir mp
@@ -222,9 +252,7 @@ $ville =$_POST['ville'];
 $region = $_POST['region'];
 
 $nom = $_POST['nom'];
-if(filter_var($_POST['mail'], FILTER_VALIDATE_EMAIL)){
-  $mail = $_POST['mail'];
-} 
+$mail=VerifierAdresseMail($_POST['mail']);
 $tel = $_POST['tel'];
 
 $titre = $_POST['titre'];

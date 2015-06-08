@@ -1,4 +1,77 @@
-
+.contener_slideshow
+{
+  margin-left: 25%;
+  margin-top: -39.1%;
+  width:57.2%;
+  height:438px;
+  overflow: hidden;
+  position: relative;
+  background-image: url(YOUR-URL-IMAGE.png);
+}
+.slid_1, .slid_2, .slid_3
+{
+  position: absolute;
+  width:40.2%;
+  height:438px;
+}
+.slid_1{left: 0;}
+.slid_2{left: 57.2%;}
+.slid_3{left: 114.5%;}
+.contener_slide
+{
+  width: 114.5%;
+  height: 438px;
+  left:0px;
+  position: absolute;
+  -webkit-animation-duration: 5s;
+  -webkit-animation-iteration-count:infinite;
+  -webkit-animation-name: anim_slide;
+  -moz-animation-duration: 5s;
+  -moz-animation-iteration-count:infinite;
+  -moz-animation-name: anim_slide;
+  -ms-animation-duration: 5s;
+  -ms-animation-iteration-count:infinite;
+  -ms-animation-name: anim_slide;
+  animation-duration: 5s;
+  animation-iteration-count:infinite;
+  animation-name: anim_slide;
+}
+@-webkit-keyframes anim_slide 
+{
+  0% {left:0px;}
+  22% {left:0px;}
+  33% {left:-57.2%;}
+  45% {left:-57.2%;}
+  66% {left:-114.4%;}
+  90% {left:-114.4%;}
+}
+@-moz-keyframes anim_slide 
+{
+  0% {left:0px;}
+  22% {left:0px;}
+  33% {left:-57.2%;}
+  45% {left:-57.2%;}
+  66% {left:-114.4%;}
+  90% {left:-114.4%;}
+}
+@-ms-keyframes anim_slide 
+{
+  0% {left:0px;}
+  22% {left:0px;}
+  33% {left:-57.2%;}
+  45% {left:-57.2%;}
+  66% {left:-114.4%;}
+  90% {left:-114.4%;}
+}
+@keyframes anim_slide 
+{
+  0% {left:0px;}
+  22% {left:0px;}
+  33% {left:-57.2%;}
+  45% {left:-57.2%;}
+  66% {left:-114.4%;}
+  90% {left:-114.4%;}
+}
 body {
 	background-image:url("http://www.google.fr/url?source=imglanding&ct=img&q=http://www.tao-mieux-etre.fr/web_images/pamplemousse-muffetflickr-cc.jpg&sa=X&ei=KadsVazYBMi1UbiwgNgM&ved=0CAkQ8wc4pgI&usg=AFQjCNHYb0JLWZ968Qpg9VzUwsZocn0uWQ");
 	background-attachment:fixed;
@@ -28,9 +101,9 @@ title {
 
 #inscription a { color: black; text-decoration: none; }
 
-#connexion a:hover  { color: #FCC7CD; text-decoration: none; cursor: pointer; }
+#connexion a:hover  { color: transparent; text-decoration: none; cursor: pointer; }
 
-#inscription a:hover { color: #FCC7CD;  text-decoration: none;}
+#inscription a:hover { color: transparent;  text-decoration: none;}
 
 #inscription{
 	font-family: Lucida Sans Unicode, Lucida Grande, sans-serif;
@@ -46,14 +119,13 @@ title {
 }
 #connex {
 	padding:1%;
-	background-color: #05966D; 
-	color:#C3D9E0;
+	background-color: #F8001D; 
+	color: #FCD2D7;
 	position:absolute;
 	width:22%;
-	height:25.5%;
-	color:#C3D9E0;
+	height:22%;
 	margin-left:77%;
-	margin-top:-73.3%;
+	margin-top:-70%;
 
 }
 #connex h4{
@@ -170,13 +242,6 @@ title {
 	width: 57.2%;
 }
 
-/*#bloc2 {
-	/*position:absolute;
-	width:60%;
-	margin-top:-37.7%;
-	margin-left: 27.5%;
-	height:62%;
-}*/
 
 
 #bloc3 {
@@ -310,7 +375,7 @@ title {
 }
 
 
-/*le css du formulaire*/
+/*le css du formulaire et du bloc contenant toutes les infos des autres pages*/
 #contenuaccueil{
 	padding:3%;
 	padding-top:1%;
@@ -326,9 +391,9 @@ title {
 	color: #C3D9E0;
 }
 
-/*css pour placer les erreurs du formulaire d'inscription*/
-h4 {
-	
+#contenuaccueil a {
+	text-decoration: underline;
+	color : #C3D9E0;
 }
 
 
@@ -492,7 +557,7 @@ element.style {
 
 
 /* style formulaire annonce.php */
-#annonce{
+/*#annonce{
 	overflow:auto;
 	position: absolute;
 	left:35%;
@@ -500,31 +565,54 @@ element.style {
 	height:58%;
 	width: 45%;
 }
+*/
+
+#annonce{
+	padding:3%;
+	padding-top: 0%;
+	font-family: Lucida Sans Unicode, Lucida Grande, sans-serif;
+	background-color:rgba(0, 0,0, 0.0);
+	overflow:auto;
+	position:absolute;
+	height:55%;
+	width:51%;
+	margin-top:-65%;
+	margin-left: 32%;
+	font-weight: bold;
+	color: #C3D9E0;
+}
 #annonce textarea{
 	position: relative;
-	right:36%;
+	right: 50%;
 }
 #annonce label{
 	display: block;  /*aligner les cases formulaire*/
 	width: 50%;
 	float: left;
 }
+#annonce label input {
+	margin-left: 35%;
+}
+/*
 #sauver {
 	float:right;
 }
+*/
+
 /*fin style annonce.php*/
  
 /* annonce_vue.php*/
+
 #annoncecadre{
 	font-size: 100%;
 	font-family: georgia ;
-	background-color: #F0D000;
+	background-color: #80F030;
 	position:relative;
 	top:30%;
 	left:40%;
 	border-style: inset;
 	border-color: #FF0000;
-	border-width: 8px;
+	border-width: 10px;
 	width:40%;
 }
 #annonce_gauche{
@@ -537,12 +625,17 @@ element.style {
 	height: auto;
 }
 #annonce_droite{
-	position: absolute;
+	position: relative;
 	top:10%;
-	left:60%;
+	left:55%;
+	background-color: #00B000;
+	width: 40%;
+	border-radius: 10%;
 }
 #titreannonce{
 	font-weight: bold;
 }
+
+
 
 

@@ -9,12 +9,8 @@
     <?php include("header.php"); ?>
 </head>
 
-<body>
+ 
 
-
-</body>
-
-</html> 
 
 <?php 
 
@@ -58,14 +54,14 @@ $active = '0';
 
               if($pseudoexist == 0)
               {
-                $motdepasse1 = $_POST['motdepasse1'];
-                $motdepasse2 = $_POST['motdepasse2'];
+                $motdepasse1 = sha1($_POST['motdepasse1']);
+                $motdepasse2 = sha1($_POST['motdepasse2']);
                  $motdepasse1length = strlen($motdepasse1);
                   if($motdepasse1length >= 8)
                   {
                         if($motdepasse1 == $motdepasse2)
                         {
-                                  if(filter_var($motdepasse1, FILTER_VALIDATE_EMAIL))
+                                  if(filter_var($adressemail, FILTER_VALIDATE_EMAIL))
                                   {
                                         $adressemail = $_POST['adressemail'];
                                         $reqmail = $bdd -> prepare("SELECT * FROM membre WHERE adressemail = ?"); /* requete qui permet des sélectionner toutes les entrées de la table membre ou le mail 
@@ -80,17 +76,54 @@ $active = '0';
                                               $insertmembre = $bdd -> prepare("INSERT INTO membre (prenom, nom, pseudo, adressemail, token, active, motdepasse1, motdepasse2, num, region, ville) VALUES (:prenom, :nom, :pseudo, :adressemail, :token, :active, :motdepasse1, :motdepasse2, :num, :region, :ville)"); 
                                               /* INSERT INTO est une fonction sql et il ne faut pas oublier de la preparer en mettant le prepare*/                                        
                                               $insertmembre -> execute(array('prenom' => $prenom,
-                                              									             'nom' => $nom,
-                                              									             'pseudo' => $pseudo,
-                                              									             'adressemail' => $adressemail,
-                                              									             'motdepasse1' => $motdepasse1,
-                                                        									   'motdepasse2' => $motdepasse2,
+                                              								 'nom' => $nom,
+                                              					             'pseudo' => $pseudo,
+                                              								 'adressemail' => $adressemail,
+                                            					             'motdepasse1' => $motdepasse1,
+                                                        				     'motdepasse2' => $motdepasse2,
                                                                              'token' => $token,
                                                                              'active' => $active,
-                                                        									   'num' => $num,
-                                                        									   'region' => $region,
-                                                        									   'ville' => $ville,
-                                                        									    ));
+                                      									     'num' => $num,
+                                       									     'region' => $region,
+                                                        					 'ville' => $ville,
+                                                        				 ));
+
+                                              
+
+                                              //email
+                                              $derid = $bdd->lastInsertId();
+
+                                              require 'phpmailer/PHPMailerAutoload.php';
+                                              $mail = new PHPMailer;
+
+
+                                              $mail->isSMTP();                                      
+                                              $mail->Host = 'smtp.gmail.com';  
+                                              $mail->SMTPAuth = true;                               
+                                              $mail->Username = 'romain.merle91@gmail.com';                 
+                                              $mail->Password = 'r9m99n99';                           
+                                              $mail->SMTPSecure = 'tls';                            
+                                              $mail->Port = 587;                                    
+
+                                              $mail->From = 'Lebiocoin@lebiocoin.com';
+                                              $mail->FromName = 'Lebiocoin';
+                                              $mail->addAddress($adressemail);     
+
+                                              $mail->isHTML(true);                                  
+
+                                              $mail->Subject = 'Email de confirmation Lebiocoin';
+                                              $mail->Body    = 'Bonjour et bienvenue '.$nom.' '.$prenom.', merci d\'avoir rejoint Lebiocoin. \\/n/n 
+                                                        Pour valider votre inscription veuillez cliquer sur ce <a href="http://localhost/Lebiocoin/active.php?id_membre='.urlencode($derid).'&code='.urlencode($token).'">lien</a>';
+
+                                              $mail->AltBody = 'Le mail est envoyé';
+
+                                              if(!$mail->send()) {
+                                                  echo 'Le message n\'a pas été envoyé';
+                                                  echo 'Mailer Error: ' . $mail->ErrorInfo;
+                                              } else {
+                                                  echo'Le message a été envoyé';
+                                              }
+                                              // fin email
                                              
                                             $message = "Votre compte a bien été créé. Bienvenue !";
                                             
@@ -136,16 +169,30 @@ $active = '0';
       }
 
 
-  }
 
-      if(isset($erreur))
-      {
-        echo "<div id="positionerreur"><h4>$erreur</h4></div>";
-      }
-      if(isset($message))
-      {
-        echo "<h4>$message</h4>";
-      }
+
+   
+}
 
 ?>
 
+<body>
+  <div id="contenuaccueil">
+    <?php
+      if(isset($erreur))
+          {
+            echo "<h4>$erreur</h4>";
+            echo '<a href="inscription.php">Recommencer l\'inscription en cliquant ici.</a>';
+          }
+
+          if(isset($message))
+          {
+            echo "<h4>$message</h4>";
+          }
+    ?>
+    
+  </div>
+
+</body>
+
+</html> 

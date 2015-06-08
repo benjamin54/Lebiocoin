@@ -51,7 +51,7 @@ else{document.getElementById(elem).style.visibility="hidden";}
  <div id="menu_vertical">
             <ul>
               <li class="menu2"><a href="listemembre.php">Gerer les membres</a></li><!--
-            --><li class="menu2"><a href="annonce.php">Gérer les annonces</a></li><!--
+            --><li class="menu2"><a href="listeannonce.php">Gérer les annonces</a></li><!--
             --><li class="menu2">Publier une annonce</li><!--
             --><li class="menu2"><a href="">Ajouter une catégorie de fruits/légumes</a></li><!--
             --><a href="deconnexionadmin.php"><li class="menu2">Déconnexion</li></a>

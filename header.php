@@ -53,7 +53,7 @@ else{document.getElementById(elem).style.visibility="hidden";}
 
 <div id="menu_vertical">
 	<ul>
-              <li class="menu2"><a href="http://www.creativejuiz.fr/blog/theme/css-css3">Actualités</a></li><!--
+              <li class="menu2"><a href="chat.php">Le mini chat</a></li><!--
             --><li class="menu2"><a href="annonce.php">Déposer Annonce</a></li><!--
             --><li class="menu2"><a href="http://www.creativejuiz.fr/blog/theme/css-css3">Mon Panier</a></li><!--
             --><li class="menu2"><a href="compte_utilisateur.php">Mon Compte</a></li><!--
@@ -63,7 +63,16 @@ else{document.getElementById(elem).style.visibility="hidden";}
 
 
 <div id="bloc2">
-
+  <?php
+  if(isset($erreur))
+      {
+        echo "<div id=\"positionerreur\"><h4>$erreur</h4></div>";
+      }
+      if(isset($message))
+      {
+        echo "<h4>$message</h4>";
+      }
+  ?>
 	<div id="recherche">
 		<form >
 			<input class="barre" type="search" name="recherche" placeholder="Rechercher"/>
@@ -106,7 +115,7 @@ else{document.getElementById(elem).style.visibility="hidden";}
 <div id="connex" style="visibility: hidden" name="connex">
 	<h4>JE ME CONNECTE</h4>
 	<form method="post" action="">
-		<p1><label>Pseudo </label> : <input id="pseudo" type="text" name="adressemail"/> </p>
+		<p1><label>e-mail</label> : <input id="pseudo" type="text" name="adressemail"/> </p>
 		</br>
 		<p2><label>Mot de passe</label> : <input id="mdp" type="password" name="motdepasse1" /></p>
 			<div id="oubli"><a href="mdpo.php">J'ai oublié mon mot de passe</a></div>
@@ -118,16 +127,9 @@ else{document.getElementById(elem).style.visibility="hidden";}
 
 	</html>
 <?php
-
-
-session_start();
-
-
-
 $bdd= new PDO('mysql:host=127.0.0.1;dbname=mabase','root','');
 if(isset($_POST['Valider']))
 {
-	$ville=($_POST['ville']);
   $adressemail=($_POST['adressemail']);
   $motdepasse1=($_POST['motdepasse1']);
   if(!empty($adressemail) AND !empty($motdepasse1))
@@ -139,10 +141,9 @@ if(isset($_POST['Valider']))
     // compte le nombre de rangée qui correspondent aux informations de l'utilisateur
 if($userexist==1){
 $userinfo=$requser->fetch();
-$_SESSION['ville']=($_POST['ville']);
 $_SESSION['id_membre']=$userinfo['id_membre'];
 $_SESSION['adressemail']=$userinfo['motdepasse1'];
-header("Location:indexe.php?id=".$_SESSION['id']);
+header("Location:indexe.php?id_membre=".$_SESSION['id_membre']);
 
 }
 else{
@@ -159,8 +160,4 @@ if(isset($erreur))
   echo'<font color="red">'.$erreur."</font>";
 }
 }
-
-
-
-
 ?>
