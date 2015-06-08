@@ -125,7 +125,7 @@ $active = '0';
                                               }
                                               // fin email
                                              
-                                            $message = "Votre compte a bien été créé. Bienvenue !";
+                                            $message = "Votre compte a bien été créé. Veuillez cliquez sur lien qui vous a été envoyé par mail pour valider votre compte !";
                                             
                                             }
 
