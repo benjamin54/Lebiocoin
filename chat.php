@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+
 <html>
 <head>
 
@@ -8,22 +10,6 @@
 
  </head>
 
-
-<body>
-<div id="discussion">
-     
-          
-            <h2>DISCUTER EN LIGNE AVEC LES AUTRES MEMBRES !</h2>
-              <h7>Venez discuter,échanger, demander conseil...</h7>
-
-            <p>
-              <label for="texte"> Votre Post:</label> 
-              <textarea name="texte" id="texte" wrap="off" rows="6" cols="50" required></textarea>      
-            </p>
-            <br>
-            <p>
-              <input type="submit" name="sauver" id="sauver" value="Publier">
-            </p>
               
                 
 <?php
@@ -40,17 +26,41 @@ $insertmsg->execute(array($pseudo,$message));
  }
    // rows="8" cols="45"
 ?>
-<html>
+
+
 <body>
-<form method="post" action ="">
-  <br> 
-<p>Pseudo:<input type="text" name="pseudo" placeholder="votre pseudo du chat" value="<?php if(isset($pseudo)) { echo $pseudo;} ?>   "/></p>
-<p align="left">Message: <textarea type="text" name ="message" > </textarea></p>
-<br/>
 
-<input type="submit" name="envoyer" />
+  <div id="discussion">
 
-</form>
+    <form method="post" action ="">
+  
+      <fieldset>
+        <legend><h2>Discussion</h2></legend>
+          <br>
+          <tr>
+          <td> 
+            <label>Pseudo: </label>
+          </td>
+          <td>    
+            <input type="text" name="pseudo" placeholder="votre pseudo du chat" value="<?php if(isset($pseudo)) { echo $pseudo;} ?>   "/>
+          </td>
+        </tr>
+        <br>
+        <tr>
+          <td>
+            <label>Message: </label>
+          </td>
+          <td>
+            <textarea type="text" name ="message" > </textarea>
+          </td>
+        </tr>
+        <br/>
+
+        <input type="submit" name="envoyer" value="Publier"/>
+
+      </fieldset>
+    </form>
+
 <?php
 
 $allmsg= $bdd->query('SELECT * FROM chat ORDER BY id_chat DESC');
@@ -72,16 +82,5 @@ while($msg= $allmsg->fetch())
   </div>
 
   </body>
-
-
-
-            
-          
-
-
-
-        
-
-
 
 </html>
