@@ -375,7 +375,7 @@ title {
 }
 
 
-/*le css du formulaire*/
+/*le css du formulaire et du bloc contenant toutes les infos des autres pages*/
 #contenuaccueil{
 	padding:3%;
 	padding-top:1%;
@@ -394,11 +394,6 @@ title {
 #contenuaccueil a {
 	text-decoration: underline;
 	color : #C3D9E0;
-}
-
-/*css pour placer les erreurs du formulaire d'inscription*/
-h4 {
-	
 }
 
 
@@ -562,7 +557,7 @@ element.style {
 
 
 /* style formulaire annonce.php */
-#annonce{
+/*#annonce{
 	overflow:auto;
 	position: absolute;
 	left:35%;
@@ -570,21 +565,44 @@ element.style {
 	height:58%;
 	width: 45%;
 }
+*/
+
+#annonce{
+	padding:3%;
+	padding-top: 0%;
+	font-family: Lucida Sans Unicode, Lucida Grande, sans-serif;
+	background-color:rgba(0, 0,0, 0.0);
+	overflow:auto;
+	position:absolute;
+	height:55%;
+	width:51%;
+	margin-top:-65%;
+	margin-left: 32%;
+	font-weight: bold;
+	color: #C3D9E0;
+}
 #annonce textarea{
 	position: relative;
-	right:36%;
+	right: 50%;
 }
 #annonce label{
 	display: block;  /*aligner les cases formulaire*/
 	width: 50%;
 	float: left;
 }
+#annonce label input {
+	margin-left: 35%;
+}
+/*
 #sauver {
 	float:right;
 }
+*/
+
 /*fin style annonce.php*/
  
 /* annonce_vue.php*/
+
 #annoncecadre{
 	font-size: 100%;
 	font-family: georgia ;
@@ -617,5 +635,7 @@ element.style {
 #titreannonce{
 	font-weight: bold;
 }
+
+
 
 

@@ -21,21 +21,25 @@ $reponse = $base->query('SELECT * FROM annonce WHERE id_cat_annonce=1 ORDER BY d
 while ($donnees = $reponse->fetch())
 {
 	?>
-<div id="annoncecadre">
-	<section id="annonce_gauche">
-		<p id="titreannonce">Annonce : <?php echo htmlentities($donnees['titre']); ?></p><br />
-		<p>	Mise en ligne par : <?php echo htmlentities($donnees['nom']) ?>. <br /><br/>
-			<?php echo "<img src='controlleurs/uploads/".$donnees['photo_annonce']."'>"; ?> <br/><br/>  
-			Description : <br/> <?php echo htmlentities($donnees['texte'])?> 
-		</p>
-	</section>
-	<section id="annonce_droite">
-		<p id="datehautdroit"><?php echo htmlentities($donnees['date_ajout']); ?></p>
-		<p>Contacter : <a href="<?php 'echo htmlentities($donnees[\'mail\']);' ?>"><?php echo htmlentities($donnees['mail']); ?></a> </p>
-		<p>Quantité en stock : <?php echo htmlentities($donnees['prix']); ?> kgs.</p>
-		<p>Prix : <?php echo htmlentities($donnees['prix']); ?> euros/kg.</p>
-	</section>
-</div>
+
+	<div id="contenuaccueil">
+		<div id="annoncecadre">
+			<section id="annonce_gauche">
+				<p id="titreannonce">Annonce : <?php echo htmlentities($donnees['titre']); ?></p><br />
+				<p>	Mise en ligne par : <?php echo htmlentities($donnees['nom']) ?>. <br /><br/>
+					<?php echo "<img src='controlleurs/uploads/".$donnees['photo_annonce']."'>"; ?> <br/><br/>  
+					Description : <br/> <?php echo htmlentities($donnees['texte'])?> 
+				</p>
+			</section>
+			<section id="annonce_droite">
+				<p id="datehautdroit"><?php echo htmlentities($donnees['date_ajout']); ?></p>
+				<p>Contacter : <a href="<?php 'echo htmlentities($donnees[\'mail\']);' ?>"><?php echo htmlentities($donnees['mail']); ?></a> </p>
+				<p>Quantité en stock : <?php echo htmlentities($donnees['prix']); ?> kgs.</p>
+				<p>Prix : <?php echo htmlentities($donnees['prix']); ?> euros/kg.</p>
+			</section>
+		</div>
+	</div>
+	
 <?php
 }
 $reponse->closeCursor();
