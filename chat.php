@@ -20,6 +20,7 @@
               <label for="texte"> Votre Post:</label> 
               <textarea name="texte" id="texte" wrap="off" rows="6" cols="50" required></textarea>      
             </p>
+            <br>
             <p>
               <input type="submit" name="sauver" id="sauver" value="Publier">
             </p>
