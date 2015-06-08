@@ -67,7 +67,7 @@ CREATE TABLE IF NOT EXISTS `annonce` (
 -- Contenu de la table `annonce`
 --
 
-INSERT INTO `annonce` (`id_annonce`, `codepostal`, `ville`, `region`, `nom`, `mail`, `tel`, `titre`, `variete`, `photo_annonce`, `texte`, `quantite`, `prix`, `date_ajout`, `id_cat_annonce`,'id_cat_produit') VALUES
+INSERT INTO `annonce` (`id_annonce`, `codepostal`, `ville`, `region`, `nom`, `mail`, `tel`, `titre`, `variete`, `photo_annonce`, `texte`, `quantite`, `prix`, `date_ajout`, `id_categoriea`) VALUES
 (60, 75244, 'lille', 'Alsace', 'jer', 'jer@mail.fr', 127, 'avocat', '', 0x39323066396163343263303830386532326534623363366533656334393233662e6a7067, 'azdad', 0, 7, '2015-05-25 17:41:42', 0),
 (61, 75014, 'PARIS', 'Ile de France', 'benjamin', 'dubus.benjamin1@gmail.com', 127, 'pommes', '', 0x61383839366637396162646435626131356561343361643565326561393734652e6a7067, 'variÃ©tÃ© granny smith\r\n5 kg', 0, 5, '2015-05-27 13:39:33', 0),
 (62, 75014, 'PARIS', 'Ile de France', 'benjamin', 'dubus.benjamin1@gmail.com', 127, 'pommes', '', 0x66643230333536626634373164303332313532383763336231633031623062642e6a7067, 'variÃ©tÃ© granny smith\r\n5 kg', 0, 5, '2015-05-27 13:45:32', 0),
