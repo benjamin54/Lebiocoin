@@ -13,9 +13,17 @@
 <div id="contenuaccueil">
      
           
-            <h2>LE MINI CHAT BLABLA...</h2>
-              <h7>Venez Discuter,Echanger,Demander conseil...</h7>
-               
+            <h2>DISCUTER EN LIGNE AVEC LES AUTRES MEMBRES !</h2>
+              <h7>Venez discuter,échanger, demander conseil...</h7>
+
+            <p>
+              <label for="texte"> Votre Post:</label> 
+              <textarea name="texte" id="texte" wrap="off" rows="6" cols="50" required></textarea>      
+            </p>
+          <br>
+            <p>
+              <input type="submit" name="sauver" id="sauver" value="Publier">
+            </p>
               
                 
 <?php
