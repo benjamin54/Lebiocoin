@@ -8,7 +8,7 @@ $_SESSION['ville']=$_POST['ville'];*/
 <body>
   <div id="annonce">
       
-        <h4>JE CREE MON ANNONCE</h4>
+        <h2>JE CREE MON ANNONCE</h2>
 
         <p>
           Veuillez remplir le formulaire ci dessous. Les champs <p2 style="color:red"> * </p2> sont obligatoires.</font>
