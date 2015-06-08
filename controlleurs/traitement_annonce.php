@@ -263,7 +263,7 @@ $quantite=$_POST['quantite'];
 $prix = $_POST['prix'];
 
 
-$sql = 'INSERT INTO annonce VALUES ("","'.$codepostal.'","'.$ville.'","'.$region.'","'.$nom.'","'.$mail.'","'.$tel.'","'.$titre.'","'.$photo_annonce.'","'.$variete.'","'.$texte.'","'.$quantite.'","'.$prix.'",NOW(),"","")';
+$sql = 'INSERT INTO annonce VALUES ("","'.$codepostal.'","'.$ville.'","'.$region.'","'.$nom.'","'.$mail.'","'.$tel.'","'.$titre.'","'.$variete.'","'.$photo_annonce.'","'.$texte.'","'.$quantite.'","'.$prix.'",NOW(),"","")';
 $sql1= 'INSERT INTO categorie_produit VALUES ("","'.$nom_categoriep.'")';
 $sql2= 'INSERT INTO categorie_a VALUES ("","'.$nom_categoriea.'")';
 

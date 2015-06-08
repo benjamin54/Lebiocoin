@@ -33,9 +33,7 @@ while ($donnees = $reponse->fetch())
 		<p id="datehautgauche"><?php echo htmlentities($donnees['date_ajout']); ?></p>
 		<p>	Mise en ligne par : <?php echo htmlentities($donnees['nom']) ?>. <br />
 			<?php echo htmlentities($donnees['variete']) ?> <br/>
-			<?php echo "<img src='controlleurs/uploads/".$donnees['photo_annonce']."'srcset=\"controlleurs/uploads/".$donnees['photo_annonce']." 1x,
-             controlleurs/uploads/".$donnees['photo_annonce']." 320w 1x,
-             controlleurs/uploads/".$donnees['photo_annonce']." 320w 2x\"  width=\"300\" height=\"300\" onmouseover=\"this.width=400; this.heigth=400;\" onmouseout =\"this.width=300; this.heigth=300;\"alt=\"\">"; ?> <br/><br/>  
+			<?php echo "<img src='controlleurs/uploads/".$donnees['photo_annonce']."',  width=\"300\" height=\"300\" onmouseover=\"this.width=400; this.heigth=400;\" onmouseout =\"this.width=300; this.heigth=300;\"alt=\"\">"; ?> <br/><br/>  
 			Description : <br/> <?php echo htmlentities($donnees['texte'])?> 
 		</p>
 	</section>
