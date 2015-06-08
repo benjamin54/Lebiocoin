@@ -46,6 +46,8 @@ $insertmsg->execute(array($pseudo,$message));
           </td>
         </tr>
         <br>
+        <br>
+        <br>
         <tr>
           <td>
             <label>Message: </label>
