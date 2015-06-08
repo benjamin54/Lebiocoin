@@ -34,8 +34,8 @@ $insertmsg->execute(array($pseudo,$message));
 
     <form method="post" action ="">
   
-      <fieldset>
-        <legend><h2>Discussion</h2></legend>
+     
+        <h1>DISCUSSION</h1>
           <br>
           <tr>
           <td> 
@@ -57,10 +57,9 @@ $insertmsg->execute(array($pseudo,$message));
           </td>
         </tr>
         <br/>
-
+        <br>
         <input type="submit" name="envoyer" value="Publier"/>
 
-      </fieldset>
     </form>
 
 <?php

@@ -415,6 +415,8 @@ title {
 	color: #C3D9E0;
 }
 
+
+
 #discussion input {
 	box-shadow: 5px;
 	font-family: Lucida Sans Unicode, Lucida Grande, sans-serif;
@@ -422,7 +424,7 @@ title {
 
 #discussion textarea {
 	position: relative;
-	right: 50%;
+	left: -110%;
 }
 
 
