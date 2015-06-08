@@ -405,12 +405,12 @@ title {
 	padding-top:1%;
 	font-family: Lucida Sans Unicode, Lucida Grande, sans-serif;
 	background-color:rgba(0, 0,0, 0.0);
-	overflow:auto;
+	
 	position:absolute;
 	height:59%;
-	width: 53.5%;
-	margin-top:-48.9%;
-	margin-left: 35.7%;
+	width: 35%;
+	margin-top:-56%;
+	margin-left: 35.5%;
 	font-weight: bold;
 	color: #C3D9E0;
 }
