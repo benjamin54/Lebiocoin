@@ -504,6 +504,9 @@ footer{
 	border:none;
 	position:relative;	
 	padding-top:-5%;
+	font-family: Lucida Sans Unicode, Lucida Grande, sans-serif;
+	font-weight: bold;
+	color: #C3D9E0;
 }
 footer ul li{
 	list-style: none;
@@ -581,7 +584,7 @@ element.style {
 /*début quisommesnous*/
 #quisommesnous{
 	position:relative;
-	margin-top:-56.8%;
+	margin-top:-59.8%;
 	margin-left:40%;
 	font-family: Lucida Sans Unicode, Lucida Grande, sans-serif;
 	font-weight: bold;
