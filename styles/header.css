@@ -391,6 +391,11 @@ title {
 	color: #C3D9E0;
 }
 
+#contenuaccueil a {
+	text-decoration: underline;
+	color : #C3D9E0;
+}
+
 /*css pour placer les erreurs du formulaire d'inscription*/
 h4 {
 	

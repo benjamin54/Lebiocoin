@@ -1,12 +1,5 @@
 <!DOCTYPE html>
 
-
-
-
-
-
-
-
 <html>
 <head>
 
@@ -25,7 +18,7 @@
           
             <h2>INSCRIPTION</h2>
               
-                <p>Veuillez remplir le formulaire ci dessous. Tous les champs sont obligatoires.</p>
+                <p>Veuillez remplir le formulaire ci dessous. Tous les champs sont obligatoires (8 caractères minimum pour le mot de passe).</p>
               
                 
 
