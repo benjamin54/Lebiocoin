@@ -50,6 +50,9 @@ $_SESSION['adressemail']=$userinfo['motdepasse1'];
 header("Location:indexe.php?id=".$_SESSION['id']);
 
 }
+?>
+<div id="contenuaccueil">
+<?php
 else{
   $erreur="mauvais pseudo ou mot de passe";
 }
@@ -65,7 +68,9 @@ if(isset($erreur))
 }
 }
 
-
+?>
+</div>
+<?php
 
 
 ?>
