@@ -115,7 +115,7 @@ else{document.getElementById(elem).style.visibility="hidden";}
 <div id="connex" style="visibility: hidden" name="connex">
 	<h4>JE ME CONNECTE</h4>
 	<form method="post" action="">
-		<p1><label>Pseudo </label> : <input id="pseudo" type="text" name="adressemail"/> </p>
+		<p1><label>e-mail</label> : <input id="pseudo" type="text" name="adressemail"/> </p>
 		</br>
 		<p2><label>Mot de passe</label> : <input id="mdp" type="password" name="motdepasse1" /></p>
 			<div id="oubli"><a href="mdpo.php">J'ai oublié mon mot de passe</a></div>
