@@ -662,8 +662,8 @@ element.style {
 	font-family: georgia ;
 	background-color: #80F030;
 	position:relative;
-	top:30%;
-	left:40%;
+	top:40%;
+	left:30%;
 	border-style: inset;
 	border-color: #FF0000;
 	border-width: 10px;
@@ -681,7 +681,7 @@ element.style {
 }
 #annonce_droite{
 	position: absolute;
-	top:10%;
+	top:30%;
 	left:55%;
 	background-color: #00B000;
 	text-align: center;
