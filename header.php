@@ -27,7 +27,7 @@ else{document.getElementById(elem).style.visibility="hidden";}
           --><li class="menu1"><a href="annonce_vue.php">ANNONCE LEGUMES</li><!--
           --><li class="menu1"><a href="annonce_vue.php">ANNONCE FRUITS</a></li><!--
           --><li class="menu1"><a href="forum/index.php">FORUM</a></li><!--
-          --><li class="menu1"><a>RECETTES</a></li><!--
+          --><li class="menu1"><a href="rechercheavancee2.0.php">RECHERCHE AVANCEE</a></li><!--
       -->
   </ul>
 </div>	  
