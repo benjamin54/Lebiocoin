@@ -101,9 +101,9 @@ title {
 
 #inscription a { color: black; text-decoration: none; }
 
-#connexion a:hover  { color: transparent; text-decoration: none; cursor: pointer; }
+#connexion a:hover  { color: black; text-decoration: none; cursor: pointer; }
 
-#inscription a:hover { color: transparent;  text-decoration: none;}
+#inscription a:hover { color: black;  text-decoration: none;}
 
 #inscription{
 	font-family: Lucida Sans Unicode, Lucida Grande, sans-serif;
@@ -125,7 +125,7 @@ title {
 	width:22%;
 	height:22%;
 	margin-left:77%;
-	margin-top:-70%;
+	margin-top:-80%;
 
 }
 #connex h4{

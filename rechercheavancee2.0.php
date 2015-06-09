@@ -402,7 +402,7 @@
       </fieldset>
 
       <p>
-        <input type="submit" name="sauver" id="sauver" value="Sauvegarder l'annonce">
+        <input type="submit" name="sauver" id="sauver" value="Lancer la recherche">
       </p>
     </div>
   </form>
