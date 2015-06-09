@@ -1,5 +1,7 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
-
 <html>
 <head>
 	
@@ -134,7 +136,11 @@ if($userexist==1){
 $userinfo=$requser->fetch();
 $_SESSION['id_membre']=$userinfo['id_membre'];
 $_SESSION['adressemail']=$userinfo['motdepasse1'];
-header("Location:indexe.php?id_membre=".$_SESSION['id_membre']);
+$_SESSION['prenom']=$userinfo['prenom'];
+$_SESSION['nom']=$userinfo['nom'];
+$_SESSION['pseudo']=$userinfo['pseudo'];
+$_SESSION['region']=$userinfo['region'];
+header("Location:pagedaccueil.php?id_membre=".$_SESSION['id_membre']);
 
 }
 else{

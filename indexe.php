@@ -17,6 +17,7 @@
 <a href="pagedaccueil.php" <INPUT TYPE="submit" NAME="voir site" VALUE=" voir mon site"> </a>  
 
 <a href="decon.php">Se deconnecter</a>
+
 </CENTER>
 </body>
 </html> 
