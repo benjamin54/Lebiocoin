@@ -629,13 +629,30 @@ element.style {
 #annonce label input {
 	margin-left: 35%;
 }
-/*
-#sauver {
-	float:right;
-}
-*/
 
-/*fin style annonce.php*/
+#rechercheavancee{
+	padding:3%;
+	padding-top: 0%;
+	font-family: Lucida Sans Unicode, Lucida Grande, sans-serif;
+	background-color:rgba(0, 0,0, 0.0);
+	overflow:auto;
+	position:absolute;
+	height:65%;
+	width:51%;
+	margin-top:-59%;
+	margin-left: 36%;
+	font-weight: bold;
+	color: #C3D9E0;
+}
+
+#rechercheavancee label{
+	display: block;  /*aligner les cases formulaire*/
+	width: 50%;
+	float: left;
+}
+#rechercheavancee label input {
+	margin-left: 35%;
+}
  
 /* annonce_vue.php*/
 

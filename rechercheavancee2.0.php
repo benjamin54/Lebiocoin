@@ -3,8 +3,8 @@
 <!DOCTYPE html>
 <html>
 <body>
-  <div id="annonce">
-    <h4>Recherche avancée</h4>
+  <div id="rechercheavancee">
+    <h4>RECHERCHE AVANCEE</h4>
 
     <p>
       <font>Veuillez remplir le formulaire ci dessous.</font>
