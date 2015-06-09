@@ -29,7 +29,7 @@
                 <p> Ile de France</p>
                 
                 <div id="modif_profil">
-                    <a href=('#')> Modifier profil</a>
+                    <a href="edition_profil.php"> Modifier profil</a>
                 </div>
 
             </fieldset>
