@@ -21,12 +21,7 @@ else{document.getElementById(elem).style.visibility="hidden";}
 </head>
 
 <body>
-
-	<div id="connexion" onClick="bascule('connex');"><a>Connexion</a></div>
-
-	<div id="inscription"><a href="inscription.php">Inscription</a></div>
-
-	<div id="menu">
+<div id="menu">
 		<ul>
              <li class="menu1"><a href ="pagedaccueil.php">ACCUEIL</a></li><!--
           --><li class="menu1"><a href="annonce_vue.php">ANNONCE LEGUMES</li><!--
@@ -37,6 +32,11 @@ else{document.getElementById(elem).style.visibility="hidden";}
   </ul>
 </div>	  
 
+	<div id="connexion" onClick="bascule('connex');"><a>Connexion</a></div>
+
+	<div id="inscription"><a href="inscription.php">Inscription</a></div>
+
+	
 <div id="bloc1">
 
 	<div id="nom">

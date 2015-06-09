@@ -164,10 +164,6 @@ title {
 
 
 
-#menu{
-	z-index: 1;
-	position:fixed;
-}
 
 #menu ul {
 	position:fixed;
@@ -205,8 +201,7 @@ title {
 	color: #FCD2D7; 
 	
 }
-#menu ul li a:hover,
-#menu ul li a:focus, #connexion a:hover,#inscription a:hover,#inscription a:focus, connexion a:focus {
+#menu a:hover,#menu a:focus{
 	background : #DE001A;
 	color: #FCC7CD;
 	border: 1px solid #DE001A;
