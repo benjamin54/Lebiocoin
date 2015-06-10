@@ -1,0 +1,134 @@
+nav{
+	z-index:1;
+	margin-top:-3%;
+	position:fixed;
+	width:99%;
+	background-color:gray;
+	border-radius:2%;
+	height:12%;
+	padding:1%;
+	border-radius:10px;
+	height:10%;
+	padding-top:30px;
+	margin-top:40px;
+	font-family:georgia;
+}
+nav  ul{
+	text-align: center;
+	list-style-type:none;
+}
+nav  ul  li{
+	font-family: georgia;
+	font-weight:bold;
+	margin-top:20px;
+	display:inline;
+	padding-right: 60px;
+}
+#bandeau{
+	border-style:solid;
+	border-radius:10px;
+	margin-top:50px;
+	position:absolute;
+	background-color:green;
+	height:50%;
+	width:99%;
+}
+
+#nomdusite{
+	position:absolute;
+	margin-top:10px;
+	border-style: solid;
+	border-width:1px;
+	width:40%;
+	height:90%;
+	margin-left:180px;
+	
+}
+#nomdusite ul{
+	text-align: center;
+	list-style-type:none;
+}
+#nomdusite ul li{
+	font-weight:bolder;
+	padding-top:15px;
+}
+#agauche{
+	position:absolute;
+	margin-top:25%;
+	height:500%;
+	width:20%;
+	background-color:gray;
+	margin-top:220px;
+	height:500px;
+	width:200px;
+	background-color:gray;
+	border-radius:15px;
+}
+#adroite{
+	position:absolute;
+	margin-top:25%; 
+	right:0%;
+	height:500%;
+	width:20%;
+	background-color:gray;
+	margin-top:190px;
+	margin-left:555px; 
+	top:30px;
+	right:30px;
+	height:500px;
+	width:200px;
+	background-color:gray;
+	border-radius:15px;
+}
+.onglet1{
+	padding:5px,5px,5px,5px;
+	position:absolute;
+	margin-left:245px;
+	margin-top:220px;
+	width:150px;
+	height:40px;
+	background-color:gray;
+	border-radius:15px;
+}
+.onglet1 p{
+	font-family: georgia;
+	font-weight:bold;
+	text-align: center;
+}
+.onglet2 p{
+	font-family: georgia;
+	font-weight:bold;
+	text-align: center;
+}
+.onglet2{
+	position:absolute;
+	margin-left:400px;
+	margin-top:220px;
+	width:150px;
+	height:40px;
+	background-color:gray;
+	border-radius:15px;
+}
+#nomdusite{}
+#rechercher{}
+#annonces{
+	margin-top:220px;
+	width:500px;
+	height:420px;
+	border-style: solid;
+	margin-left:245px;
+}
+.actus{}
+#actu1{}
+#actu2{}
+#actu3{}
+#actu4{}
+#bandeaupubs{}
+footer{
+	margin-top:520px;
+	width:1000px;
+	margin-left:-245px;
+	border-radius: 10px;
+	background-color:gray;	
+}
+#pays{}
