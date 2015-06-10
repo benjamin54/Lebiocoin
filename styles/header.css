@@ -6,7 +6,6 @@ margin-left: -8%;
   height:557px;
   overflow: hidden;
   position: relative;
-  background-image: url(YOUR-URL-IMAGE.png);
 }
 .slid_1, .slid_2, .slid_3
 {
@@ -119,7 +118,7 @@ title {
 }
 #connex {
 	padding:1%;
-	background-color: #F16001D; 
+	background-color: #F1600D; 
 	color: #FCD2D7;
 	position:absolute;
 	width:22%;
