@@ -2,7 +2,7 @@
 {
   margin-left: 25%;
   margin-top: -39.1%;
-  width:57.2%;
+  width:70.2%;
   height:438px;
   overflow: hidden;
   position: relative;
@@ -11,7 +11,7 @@
 .slid_1, .slid_2, .slid_3
 {
   position: absolute;
-  width:40.2%;
+  width:130.2%;
   height:438px;
 }
 .slid_1{left: 0;}
@@ -101,15 +101,15 @@ title {
 
 #inscription a { color: black; text-decoration: none; }
 
-#connexion a:hover  { color: black; text-decoration: none; cursor: pointer; }
+#connexion a:hover  { color: black; text-decoration: none; cursor: pointer; font-size:140%; }
 
-#inscription a:hover { color: black;  text-decoration: none;}
+#inscription a:hover { color: black;  text-decoration: none; font-size:140%;}
 
 #inscription{
 	font-family: Lucida Sans Unicode, Lucida Grande, sans-serif;
 	font-weight: bold;
 	position:absolute;
-	margin-left:85%;
+	margin-left:87%;
 	margin-top:-2%;
 	padding:30%,20%,30%,20%;
 	width:7%;
@@ -166,15 +166,15 @@ title {
 
 
 #menu ul {
-	position:fixed;
-	
+	position:fixed;	
+	z-index:1;
 	list-style-type:none;
 	margin-top:-11%;
 	margin-left: -4%;
 	margin-right: -10%;
 	cursor: pointer;
 	color: #F67887;
-	width: 120%;
+	width: 110%;
 	height: 10%;
 	max-height: 231px;
 	padding-left: 1%;
@@ -227,31 +227,30 @@ title {
 
 #bloc2 {
 	position: relative;
-	margin-left: 35.8%;
-	margin-top: -42%;
+	margin-left: 35.9%;
+	margin-top: -45.7%;
 	padding-top: 2%;
 	padding-left: 2%;
 	padding-bottom: 2%;
 	padding-right: 2%;
 	background-color:rgba(0, 0,0, 0.65);
-	height: 491px;
-	width: 57.2%;
+	height: 507px;
+	width: 57%;
 }
 
 
 
 #bloc3 {
-	margin-left: 8%;
-	margin-top: 3%;
-	padding-top: 2%;
+	margin-left: -52%;
+	margin-top: 84%;
 	margin-bottom:1%;
 	padding-left: 2%;
 	padding-bottom: 2%;
 	padding-right: 2%;
 	background-color:rgba(0, 0,0, 0.65);
 	position: relative;
-	height: 12%;
-	width: 85%;
+	height: 130px;
+	width: 152%;
 
 }
 #nom h1 {
@@ -351,9 +350,10 @@ title {
 	display: block;
 	padding-left: 10%; 
 	padding-right: 10%;
-	padding-top: 8%;
-	padding-bottom: 8%;
-	background-color: #F8001D;	
+	padding-top: 9%;
+	padding-bottom: 9%;
+	background-color: #F8001D;
+
 }
 
 .menu2 a {
@@ -379,10 +379,10 @@ title {
 	background-color:rgba(0, 0,0, 0.0);
 	overflow:auto;
 	position:absolute;
-	height:50%;
-	width:51%;
-	margin-top:-57.5%;
-	margin-left: 34%;
+	height:75%;
+	width:70%;
+	margin-top:-93%;
+	margin-left: 5.5%;
 	font-weight: bold;
 	color: #C3D9E0;
 }
@@ -403,12 +403,13 @@ title {
 	font-weight: bold;
 	color: #C3D9E0;
 	background-color:rgba(0, 0,0, 0.0);
-	
+	overflow:hidden;
+	overflow-y:auto;
 	position:absolute;
-	height:59%;
-	width: 35%;
-	margin-top:-56%;
-	margin-left: 35.5%;
+	height:85%;
+	width: 85%;
+	margin-top:-96%;
+	margin-left: 5.5%;
 	
 }
 
@@ -421,7 +422,8 @@ title {
 
 #discussion textarea {
 	position: relative;
-	left: -110%;
+	left: -78%;
+	margin-top:-12%;
 }
 
 
@@ -494,17 +496,17 @@ title {
 
 
 footer{
+	top:35%;
 	margin-left:35%;
-	margin-top: -2%;
 	width:25%;
-	border:none;
 	position:relative;	
-	padding-top:-5%;
 	font-family: Lucida Sans Unicode, Lucida Grande, sans-serif;
 	font-weight: bold;
 	color: #C3D9E0;
 }
-footer ul li{
+
+footer ul {
+	
 	list-style: none;
 }
 
@@ -512,6 +514,9 @@ footer ul li a {
 	text-decoration: none;
 	color: #FCC7CD;
 }
+footer ul li a:hover{
+	font-size:140%;
+	}
 
 
 /*CSS contact */
@@ -642,10 +647,10 @@ element.style {
 	background-color:rgba(0, 0,0, 0.0);
 	overflow:auto;
 	position:absolute;
-	height:65%;
-	width:51%;
-	margin-top:-59%;
-	margin-left: 36%;
+	height:75%;
+	width:75%;
+	margin-top:-90%;
+	margin-left: 6%;
 	font-weight: bold;
 	color: #C3D9E0;
 }

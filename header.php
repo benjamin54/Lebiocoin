@@ -42,7 +42,7 @@ else{document.getElementById(elem).style.visibility="hidden";}
 	</div>
 
 	<div id="logo">
-		<img src="Images/logo.PNG" width="160" height="170"></img>
+		<a href="pagedaccueil.php"><img src="Images/logo.PNG" width="160" height="170"></img></a>
 	</div>
 
 	<div id="nom2">
@@ -64,14 +64,14 @@ else{document.getElementById(elem).style.visibility="hidden";}
 
 <div id="bloc2">
 
-	<div id="recherche">
+<!--	<div id="recherche">
 		<form >
 			<input class="barre" type="search" name="recherche" placeholder="Rechercher"/>
 			<input class="bouton" type="submit" value="OK"/>
 		</form> 
 	</div>
 </div>
-
+-->
 
 
 
@@ -86,9 +86,7 @@ else{document.getElementById(elem).style.visibility="hidden";}
 	</div>
 
 
-	<div id="revue">
-		<p class="titre_footer2">LA REVUE</p>
-	</div>
+	
 	<footer>
 		<center>
 			<ul>
