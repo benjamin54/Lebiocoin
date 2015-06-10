@@ -94,13 +94,9 @@ else{document.getElementById(elem).style.visibility="hidden";}
 	<footer>
 		<center>
 			<ul>
-				<li><a href="contact.php">Contact/Aide</a></li>
-
-				<li><a href="mentionlegale.php">Infos légales</a></li>
+				<li><a href="contact.php">Contact/Demandes</a></li>
 
 				<li><a href="quisommesnous.php">Qui sommes-nous ?</a></li>
-
-				<li><a href="conditions.php">Conditions générales de vente</a></li>
 			</ul>
 		</center>
 	</footer>
