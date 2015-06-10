@@ -1,6 +1,4 @@
-<?php
-session_start();
-?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -103,10 +101,10 @@ else{document.getElementById(elem).style.visibility="hidden";}
 </div>
 <div id="connex" style="visibility: hidden" name="connex">
 	<h4>JE ME CONNECTE</h4>
-	<form method="post" action="">
-		<p1><label>Adresse mail</label> : <input id="pseudo" type="text" name="adressemail"/> </p>
+	<form method="post" action="header.php">
+		<p1><label>Adresse mail</label> : <input id="pseudo" type="text" name="adressemail" required /> </p>
 		</br>
-		<p2><label>Mot de passe</label> : <input id="mdp" type="password" name="motdepasse1" /></p>
+		<p2><label>Mot de passe</label> : <input id="mdp" type="password" name="motdepasse1" required /></p>
 			<div id="oubli"><a href="mdpo.php">J'ai oublié mon mot de passe</a></div>
 			<p id="valider"><INPUT TYPE="submit" NAME="Valider" VALUE="VALIDER">
 			</form>
@@ -116,6 +114,8 @@ else{document.getElementById(elem).style.visibility="hidden";}
 
 	</html>
 <?php
+
+session_start();
 $bdd= new PDO('mysql:host=127.0.0.1;dbname=mabase','root','');
 if(isset($_POST['Valider']))
 {
@@ -131,22 +131,19 @@ if(isset($_POST['Valider']))
 if($userexist==1){
 $userinfo=$requser->fetch();
 $_SESSION['id_membre']=$userinfo['id_membre'];
-$_SESSION['adressemail']=$userinfo['motdepasse1'];
+$_SESSION['adressemail']=$userinfo['adressemail'];
 $_SESSION['prenom']=$userinfo['prenom'];
 $_SESSION['nom']=$userinfo['nom'];
 $_SESSION['pseudo']=$userinfo['pseudo'];
 $_SESSION['region']=$userinfo['region'];
-header("Location:pagedaccueil.php?id_membre=".$_SESSION['id_membre']);
+header("Location:compte_utilisateur.php?id_membre=".$_SESSION['id_membre']);
 
 }
 else{
-  $erreur="mauvais pseudo ou mot de passe";
+  $erreur="mauvais mail ou mot de passe";
 }
 }
-  else {
-    $erreur="Veuillez remplir tout les champs!";
-  }
-
+  
 
 if(isset($erreur))
 {
