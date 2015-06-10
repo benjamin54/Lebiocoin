@@ -58,7 +58,7 @@ else{document.getElementById(elem).style.visibility="hidden";}
   <ul>
               <li class="menu2"><a href="chat.php">Discussion membres</a></li><!--
             --><li class="menu2"><a href="listemembre.php">Gérer les membres</a></li><!--
-            --><li class="menu2"><a href="inscription.php">Gérer les annonces</a></li><!--
+            --><li class="menu2"><a href="annonce.php">Ajouter une annonce</a></li><!--
             --><li class="menu2"><a href="">Ajouter une catégorie de fruits ou légumes</a></li><!--
         --><li class="menu2"><a href="deconnexionadmin.php">Déconnexion</a></li>
     </ul>
