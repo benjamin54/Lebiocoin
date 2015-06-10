@@ -50,7 +50,7 @@ $_SESSION['ville']=$_POST['ville'];*/
             </p>
 
             <p>
-              <label for="region">D&eacutepartement/R&eacutegion:<p2 style="color:red" value="<?php if (isset($_SESSION['region'])){echo $_SESSION['region'];} ?>"> *</p2></label>
+              <label for="region">D&eacutepartement/R&eacutegion:<p2 style="color:red"  *</p2></label>
               <select name="region" id="region">
 
                 <option value="Alsace" selected>Alsace</option>
@@ -112,7 +112,7 @@ $_SESSION['ville']=$_POST['ville'];*/
             </p>
             <p>
               <label for="tel">Téléphone:<p2 style="color:red"> *</p2></label>
-              <input type="tel" name="tel" id="tel" value="" required/>
+              <input type="tel" name="tel" id="tel" value="<?php if (isset($_SESSION['adressemail'])){echo $_SESSION['adressemail'];}?>" required/>
             </p>
           </fieldset>
 
@@ -374,7 +374,7 @@ $_SESSION['ville']=$_POST['ville'];*/
 
             <p>
               <label for="quantite"> Quantité:<p2 style="color:red"> *</p2></label>
-              <input type="text" name="quantite" id="quantite" value="2" required/> (en kgs)
+              <input type="text" name="quantite" id="quantite" value="" required/> (en kgs)
             </p>
 
             <p>
