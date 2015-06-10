@@ -120,19 +120,15 @@ $reponse = $base->query('SELECT * FROM annonce WHERE date_ajout IS NOT NULL ORDE
 //toutes annonces où la ville est Paris et offres d'achat, tri plus récent
 //$reponse = $base->query('SELECT * FROM annonce WHERE id_cat_produit = 1 AND ville = PARIS AND id_cat_annonce =1 ORDER BY date_ajout DESC ');
 ?>
-<div id="recherche">
-	<form >
-		<input class="barre" type="search" name="recherche" placeholder="Rechercher"/>
-		<input class="bouton" type="submit" value="OK"/><br/>
-		<p><a href="rechercheavancee2.0.php">Recherche avancee</a></p>
-	</form>
-	
+
 </div>
+<div id="annonces">
 <?php
 // On affiche chaque entrée une à une
 while ($donnees = $reponse->fetch())
 {
 	?>
+	
 	<div id="annoncecadre">
 		<section id="annonce_gauche">
 			<p id="titreannonce">Annonce : <?php echo htmlentities($donnees['titre']); ?></p>
@@ -150,13 +146,13 @@ while ($donnees = $reponse->fetch())
 			<p>Stock : <?php echo htmlentities($donnees['quantite']); ?> kgs.</p>
 			<p>Prix : <?php echo htmlentities($donnees['prix']); ?> euros/kg.</p>
 		</section>
-	</div>
+	</div>	
 	<?php
 }
 $reponse->closeCursor(); // Termine le traitement de la requête
 
 ?>
-
+</div>
 <div id="newsletter">
 	<p class="titre_footer1">LA NEWSLETTER</p>
 	<form action="news">

@@ -601,7 +601,7 @@ element.style {
 
 
 
-/* style formulaire annonce.php */
+/* style formulaire .php */
 /*#annonce{
 	overflow:auto;
 	position: absolute;
@@ -664,38 +664,48 @@ element.style {
 }
  
 /* annonce_vue.php*/
-
+#annonces{
+	position:relative;
+	z-index:1;
+	margin-top:-44.4%;
+	margin-left:36%;
+		overflow:auto;
+		width:61%;
+		height:556px;
+		
+}
 #annoncecadre{
+	padding:3%;
 	font-size: 100%;
 	font-family: georgia ;
 	background-color: #80F030;
 	position:relative;
-	top:0%;
-	left:0%;
 	border-style: inset;
 	border-color: #FF0000;
 	border-width: 10px;
-	width:80%;
+	width:91.1%;
 }
 #annonce_gauche{
 	position: relative;
-	bottom:20%;
+	margin:auto;
 	left:5%;
 }
 #annoncecadre img{
 	max-width: 100%;
 	height: auto;
-	width:50%;
+	width:40%;
 	border-radius: 10%;
 }
 #annonce_droite{
+	top:15%;
+	bottom:15%;
 	position: absolute;
-	top:30%;
 	left:63%;
 	background-color: #00B000;
 	text-align: center;
-	width: 32%;
-	border-radius: 10%;
+	width: 35%;
+	height:auto;
+	border-radius: 0%;
 }
 #titreannonce{
 	font-weight: bold;
