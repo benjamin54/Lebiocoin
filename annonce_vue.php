@@ -153,18 +153,6 @@ $reponse->closeCursor(); // Termine le traitement de la requête
 
 ?>
 </div>
-<div id="newsletter">
-	<p class="titre_footer1">LA NEWSLETTER</p>
-	<form action="news">
-		<input type="text" name="pseudo" placeholder="Rentrer votre email" />
-		<input type="bouton" name="submit" value=" Envoyer"/>
-	</form>
-</div>
-
-
-<div id="revue">
-	<p class="titre_footer2">LA REVUE</p>
-</div>
 <div id="bloc3">
 
 	<footer>

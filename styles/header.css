@@ -619,10 +619,10 @@ element.style {
 	background-color:rgba(0, 0,0, 0.0);
 	overflow:auto;
 	position:absolute;
-	height:65%;
-	width:51%;
-	margin-top:-133%;
-	margin-left: 36%;
+	height:90%;
+	width:90%;
+	margin-top:-100%;
+	margin-left:-1%;
 	font-weight: bold;
 	color: #C3D9E0;
 }
