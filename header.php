@@ -101,7 +101,7 @@ else{document.getElementById(elem).style.visibility="hidden";}
 </div>
 <div id="connex" style="visibility: hidden" name="connex">
 	<h4>JE ME CONNECTE</h4>
-	<form method="post" action="header.php">
+	<form method="post" action="">
 		<p1><label>Adresse mail</label> : <input id="pseudo" type="text" name="adressemail" required /> </p>
 		</br>
 		<p2><label>Mot de passe</label> : <input id="mdp" type="password" name="motdepasse1" required /></p>
@@ -136,14 +136,18 @@ $_SESSION['prenom']=$userinfo['prenom'];
 $_SESSION['nom']=$userinfo['nom'];
 $_SESSION['pseudo']=$userinfo['pseudo'];
 $_SESSION['region']=$userinfo['region'];
-header("Location:compte_utilisateur.php?id_membre=".$_SESSION['id_membre']);
+$_SESSION['num']=$userinfo['num'];
+$_SESSION['ville']=$userinfo['ville'];
+header("Location:profil.php?id_membre=".$_SESSION['id_membre']);
 
 }
 else{
   $erreur="mauvais mail ou mot de passe";
 }
 }
-  
+  else {
+    $erreur="Veuillez remplir tout les champs!";
+  }
 
 if(isset($erreur))
 {

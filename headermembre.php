@@ -50,11 +50,11 @@ else{document.getElementById(elem).style.visibility="hidden";}
 
  <div id="menu_vertical">
             <ul>
-              <li class="menu2"><a href="listemembre.php">Mon profil</a></li><!--
-            --><li class="menu2"><a href="listeannonce.php">Mes annonces</a></li><!--
+              <li class="menu2"><a href="profil.php">Mon profil</a></li><!--
+            --><li class="menu2"><a href="#">Mes annonces</a></li><!--
             --><li class="menu2">Publier une annonce</li><!--
             --><li class="menu2"><a href="">Mes alertes</a></li><!--
-            --><a href="deconnexionadmin.php"><li class="menu2">Déconnexion</li></a>
+            --><a href="decomembre.php"><li class="menu2">Déconnexion</li></a>
             </ul>
  </div>
   
