@@ -210,47 +210,38 @@ CREATE TABLE IF NOT EXISTS `forum` (
 
 CREATE TABLE IF NOT EXISTS `membre` (
   `id_membre` int(11) NOT NULL AUTO_INCREMENT,
-  `prenom` varchar(12) NOT NULL,
-  `nom` varchar(20) NOT NULL,
+  `prenom` varchar(255) NOT NULL,
+  `nom` varchar(255) NOT NULL,
+  `pseudo` varchar(255) NOT NULL,
   `adressemail` varchar(320) CHARACTER SET ascii NOT NULL,
-  `motdepasse1` varchar(12) NOT NULL,
-  `motdepasse2` varchar(12) NOT NULL,
+  `token` int(11) NOT NULL,
+  `active` tinyint(1) NOT NULL,
+  `motdepasse1` text NOT NULL,
+  `motdepasse2` text NOT NULL,
+  `num` int(11) NOT NULL,
+  `region` varchar(30) NOT NULL,
   `ville` varchar(60) NOT NULL,
-  `num` int(10) NOT NULL,
-  `photo` blob NOT NULL,
   PRIMARY KEY (`id_membre`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=89 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=39 ;
 
 --
 -- Contenu de la table `membre`
 --
 
-INSERT INTO `membre` (`id_membre`, `prenom`, `nom`, `adressemail`, `motdepasse1`, `motdepasse2`, `ville`, `num`, `photo`) VALUES
-(64, 'jj', 'jj', 'jj', 'kk', 'kk', 'kk', 0, 0x31313039383336315f313338353331303330313739353830395f313130333733363337365f612e6a7067),
-(65, 'll', 'ddd', 'l@hk.fr', 'll', 'kk', 'kk', 0, ''),
-(66, 'stellina', 'ddd', 'dupontjean@gmail.com', 'zz', 'zz', 'paris', 699145449, ''),
-(67, 'stellina', 'ddd', 'dupontjean@gmail.com', 'e', 'e', 'paris', 699145449, ''),
-(68, 'stellina', 'ddd', 'dupontjean@gmail.com', 'e', 'e', 'paris', 699145449, ''),
-(69, 'stellina', 'ddd', 'dupontjean@gmail.com', 'e', 'e', 'paris', 699145449, ''),
-(70, 'stellina', 'ddd', 'dupontjean@gmail.com', 'ee', 'ee', 'paris', 699145449, ''),
-(71, 'stellina', 'ddd', 'dupontjean@gmail.com', 'e', 'e', 'paris', 699145449, ''),
-(72, 'jj', 'stell', 'dupontjean@gmail.com', 'jj', 'jj', 'paris', 0, ''),
-(73, 'po', 'stell', 'dupontjean@gmail.com', 'jj', 'kk', 'paris', 0, ''),
-(74, 'ij', 'k', 'epaude@gmail.com', 'mmmmmmmm', 'mmmmmmmm', 'llllllllllllllll', 699145449, ''),
-(75, 'ij', 'k', 'epaude@gmail.com', 'localementmp', 'localementjj', 'llllllllllllllll', 699145449, ''),
-(76, 'ij', 'k', 'epaude@gmail.com', 'qsdfghjk', 'azertyui', 'llllllllllllllll', 699145449, ''),
-(77, 'aude', 'stell', 'epaude@gmail.com', 'azertyui', 'qsdfghjk', 'paris', 699145449, ''),
-(78, 'epanda', 'stell', 'stellinaepanda@gmail.com', 'audetumsoule', 'audetumsoule', 'sucy en brie', 699145449, ''),
-(79, 'stellina', 'ddd', 'epaude@gmail.com', 'mlkjhgfd', 'mlkjhgfd', 'nn', 699145449, ''),
-(80, 'stellina', 'ddd', 'epaude@gmail.com', 'mlkjhgfd', 'mlkjhgfd', 'nn', 699145449, ''),
-(81, 'stellina', 'ddd', 'epaude@gmail.com', 'kkkkkkkk', 'kkkkkkkk', 'paris', 699145449, ''),
-(82, 'stellina', 'ddd', 'epaude@gmail.com', 'kkkkkkkk', 'kkkkkkkk', 'paris', 699145449, ''),
-(83, 'stellina', 'ddd', 'epaude@gmail.com', 'kkkkkkkk', 'kkkkkkkk', 'paris', 699145449, ''),
-(84, 'stellina', 'ddd', 'epaude@gmail.com', 'kkkkkkkk', 'kkkkkkkk', 'paris', 699145449, ''),
-(85, 'stellina', 'ddd', 'epaude@gmail.com', 'llllllll', 'llllllll', 'paris', 699145449, ''),
-(86, 'stellina', 'ddd', 'epaude@gmail.com', 'llllllll', 'llllllll', 'paris', 699145449, ''),
-(87, 'stellina', 'ddd', 'epaude@gmail.com', 'llllllll', 'llllllll', 'paris', 699145449, ''),
-(88, 'stellina', 'ddd', 'epaude@gmail.com', 'jjjjjjjj', 'jjjjjjjj', 'paris', 699145449, '');
+INSERT INTO `membre` (`id_membre`, `prenom`, `nom`, `pseudo`, `adressemail`, `token`, `active`, `motdepasse1`, `motdepasse2`, `num`, `region`, `ville`) VALUES
+(26, 'Gregoire', 'Pasquier', 'Greg', 'greg@paquier.com', 0, 0, '1f7c5c428fb85b44b3a49ef96fa84a5d2154e773', '1f7c5c428fb85b44b3a49ef96fa84a5d2154e773', 611111111, 'Ile de france ', 'Paris'),
+(27, 'Margaux', 'Pasquier', 'gomar', 'margaux@pasquier-desvignes.com', 0, 0, 'c5286886d435f3a633af89af3e2c9933634b96d6', '36decd9a51ac0534bdc6fccc7ef312dce65181b4', 622222222, 'Ile de france ', 'P'),
+(28, 'Margaux', 'Pasquier', 'gomar', 'margaux@pasquier-desvignes.com', 0, 0, 'c5286886d435f3a633af89af3e2c9933634b96d6', '36decd9a51ac0534bdc6fccc7ef312dce65181b4', 622222222, 'Ile de france ', 'P'),
+(29, 'Margaux', 'Pasquier', 'gomar', 'margaux@pasquier-desvignes.com', 0, 0, 'c5286886d435f3a633af89af3e2c9933634b96d6', '36decd9a51ac0534bdc6fccc7ef312dce65181b4', 622222222, 'Ile de france ', 'P'),
+(30, 'Margaux', 'Pasquier-Desvignes', 'gomar', 'margaux@pasquier-desvignes.com', 0, 0, 'c5286886d435f3a633af89af3e2c9933634b96d6', '36decd9a51ac0534bdc6fccc7ef312dce65181b4', 622222222, 'Ile de france ', 'Paris'),
+(31, 'Stell', 'Epan', 'Stell', 'stell@gmail.com', 0, 0, '27ec13f5df514ba0aed34430804e31062e3f4b6f', '02db0894d744ffec80293f85a359547bd33deef6', 622222222, 'Ile-de-France', 'Paris'),
+(32, 'Stell', 'Epan', 'Stell', 'stell@gmail.com', 0, 0, '27ec13f5df514ba0aed34430804e31062e3f4b6f', '02db0894d744ffec80293f85a359547bd33deef6', 622222222, 'Ile-de-France', 'Paris'),
+(33, 'Ben', 'Du', 'ben', 'ben@gmail.com', 207, 0, '9e7bc6878f15155f664887f5952d257c0d032745', '9e7bc6878f15155f664887f5952d257c0d032745', 611111111, 'Ile-de-France', 'Paris'),
+(34, 'Ben', 'Du', 'ben', 'ben@gmail.com', 224, 0, '9e7bc6878f15155f664887f5952d257c0d032745', '9e7bc6878f15155f664887f5952d257c0d032745', 611111111, 'Ile-de-France', 'Paris'),
+(35, 'Margaux', 'Pasquier', 'godmar', 'mar1@pasquier-desvignes.com', 165, 0, 'margaux1', 'margaux1', 611111111, 'Ile-de-France', 'Paris'),
+(36, 'Margaux', 'Pas', 'godmar1', 'mar2@pasquier-desvignes.com', 138, 0, 'margaux1', 'margaux1', 611111111, 'Ile-de-France', 'Paris'),
+(37, 'M', 'Pas', 'godmar2', 'mar3@pasquier-desvignes.com', 200, 0, 'margaux1', 'margaux1', 611111111, 'Ile-de-France', 'Paris'),
+(38, 'M', 'Pas', 'mar', 'mar4@pasquier-desvignes.com', 207, 0, 'margaux1', 'margaux1', 611111111, 'Ile-de-France', 'Paris');
 
 -- --------------------------------------------------------
 
