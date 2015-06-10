@@ -153,9 +153,9 @@ $reponse->closeCursor(); // Termine le traitement de la requête
 
 ?>
 </div>
-<div id="bloc3">
+<div id="bloc3bis">
 
-	<footer>
+	<footer id="footerbis">
 		<center>
 			<ul>
 				<li><a href="contact.php">Contact/Demandes</a></li>

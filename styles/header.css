@@ -252,6 +252,19 @@ title {
 	width: 152%;
 
 }
+#bloc3bis {
+	margin-left: -52%;
+	margin-top: 7%;
+	margin-bottom:1%;
+	padding-left: 2%;
+	padding-bottom: 2%;
+	padding-right: 2%;
+	background-color:rgba(0, 0,0, 0.65);
+	position: relative;
+	height: 130px;
+	width: 152%;
+
+}
 #nom h1 {
 	font-size:450%;
 	font-family:georgia;
@@ -497,6 +510,15 @@ title {
 footer{
 	top:35%;
 	margin-left:35%;
+	width:25%;
+	position:relative;	
+	font-family: Lucida Sans Unicode, Lucida Grande, sans-serif;
+	font-weight: bold;
+	color: #C3D9E0;
+}
+#footerbis{
+	top:35%;
+	margin-left:55%;
 	width:25%;
 	position:relative;	
 	font-family: Lucida Sans Unicode, Lucida Grande, sans-serif;
