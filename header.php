@@ -127,6 +127,7 @@ if(isset($_POST['Valider']))
   //execution requete
     $requser->execute(array($adressemail,$motdepasse1));
     $userexist=$requser->rowCount();
+    echo "$userexist";
     // compte le nombre de rangée qui correspondent aux informations de l'utilisateur
 if($userexist==1){
 $userinfo=$requser->fetch();
