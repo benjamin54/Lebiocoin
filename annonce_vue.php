@@ -123,7 +123,8 @@ $reponse = $base->query('SELECT * FROM annonce WHERE date_ajout IS NOT NULL ORDE
 <div id="recherche">
 		<form >
 			<input class="barre" type="search" name="recherche" placeholder="Rechercher"/>
-			<input class="bouton" type="submit" value="OK"/>
+			<input class="bouton" type="submit" value="OK"/><br/>
+			<p><a href="rechercheavancee2.0.php">Recherche avancee</a></p>
 		</form>
 		
 </div>
@@ -136,8 +137,7 @@ while ($donnees = $reponse->fetch())
 	<section id="annonce_gauche">
 		<p id="titreannonce">Annonce : <?php echo htmlentities($donnees['titre']); ?></p>
 		<p id="datehautgauche"><?php echo htmlentities($donnees['date_ajout']); ?></p>
-		<p>	Mise en ligne par : <?php echo htmlentities($donnees['nom']) ?>. <br />
-			<?php echo htmlentities($donnees['variete']) ?> <br/>
+		<p>	Mise en ligne par : <?php echo htmlentities($donnees['nom']) ?>. <br /><br/>
 			<?php echo "<img src='controlleurs/uploads/".$donnees['photo_annonce']."',  width=\"300\" height=\"300\" onmouseover=\"this.width=400; this.heigth=400;\" onmouseout =\"this.width=300; this.heigth=300;\"alt=\"\">"; ?> <br/><br/>  
 			Description : <br/> <?php echo htmlentities($donnees['texte'])?> 
 		</p>
@@ -146,7 +146,6 @@ while ($donnees = $reponse->fetch())
 		<p><?php echo htmlentities($donnees['codepostal']); ?></p>
 		<p><?php echo htmlentities($donnees['ville']); ?></p>
 		<p>Contacter : <a href="<?php 'echo htmlentities($donnees[\'mail\']);' ?>"><?php echo htmlentities($donnees['mail']); ?></a> </p>
-		<p><?php echo htmlentities($donnees['tel']); ?> </p>
 		<p>Stock : <?php echo htmlentities($donnees['quantite']); ?> kgs.</p>
 		<p>Prix : <?php echo htmlentities($donnees['prix']); ?> euros/kg.</p>
 	</section>
@@ -171,18 +170,6 @@ $date_ajout='date_ajout';
 
 <div id="bloc3">
 
-	<div id="newsletter">
-		<p class="titre_footer1">LA NEWSLETTER</p>
-		<form action="news">
-			<input type="text" name="pseudo" placeholder="Rentrer votre email" />
-			<input type="bouton" name="submit" value=" Envoyer"/>
-		</form>
-	</div>
-
-
-	<div id="revue">
-		<p class="titre_footer2">LA REVUE</p>
-	</div>
 	<footer>
 		<center>
 			<ul>

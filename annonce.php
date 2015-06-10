@@ -112,7 +112,7 @@ $_SESSION['ville']=$_POST['ville'];*/
             </p>
             <p>
               <label for="tel">Téléphone:<p2 style="color:red"> *</p2></label>
-              <input type="tel" name="tel" id="tel" value="<?php if (isset($_SESSION['num'])){echo $_SESSION['num'];}?>" required/>
+              <input type="tel" name="tel" id="tel" value="" required/>
             </p>
           </fieldset>
 

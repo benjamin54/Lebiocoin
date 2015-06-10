@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client :  127.0.0.1
--- Généré le :  Mar 09 Juin 2015 à 23:08
+-- Généré le :  Mer 10 Juin 2015 à 17:51
 -- Version du serveur :  5.6.17
 -- Version de PHP :  5.5.12
 
@@ -60,7 +60,7 @@ CREATE TABLE IF NOT EXISTS `annonce` (
   PRIMARY KEY (`id_annonce`),
   KEY `id_cat_annonce` (`id_cat_annonce`),
   KEY `id_cat_produit` (`id_cat_produit`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=79 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=82 ;
 
 --
 -- Contenu de la table `annonce`
@@ -68,24 +68,11 @@ CREATE TABLE IF NOT EXISTS `annonce` (
 
 INSERT INTO `annonce` (`id_annonce`, `codepostal`, `ville`, `region`, `nom`, `mail`, `tel`, `titre`, `variete`, `photo_annonce`, `texte`, `quantite`, `prix`, `date_ajout`, `id_cat_annonce`, `id_cat_produit`) VALUES
 (60, 75244, 'lille', 'Alsace', 'jer', 'jer@mail.fr', 127, 'avocat', '', 0x39323066396163343263303830386532326534623363366533656334393233662e6a7067, 'azdad', 0, 7, '2015-05-25 17:41:42', 0, 0),
-(61, 75014, 'PARIS', 'Ile de France', 'benjamin', 'dubus.benjamin1@gmail.com', 127, 'pommes', '', 0x61383839366637396162646435626131356561343361643565326561393734652e6a7067, 'variÃ©tÃ© granny smith\r\n5 kg', 0, 5, '2015-05-27 13:39:33', 0, 0),
-(62, 75014, 'PARIS', 'Ile de France', 'benjamin', 'dubus.benjamin1@gmail.com', 127, 'pommes', '', 0x66643230333536626634373164303332313532383763336231633031623062642e6a7067, 'variÃ©tÃ© granny smith\r\n5 kg', 0, 5, '2015-05-27 13:45:32', 0, 0),
 (63, 75014, 'PARIS', 'Ile de France', 'benjamin', 'dubus.benjamin1@gmail.com', 127, 'pommes', '', 0x62646230333739666565383737613434346637653330323536343531383730372e6a7067, 'variÃ©tÃ© granny smith\r\n5 kg', 0, 5, '2015-05-27 13:47:00', 0, 0),
-(64, 75214, 'paris', 'Ile de France', 'benjamin', 'dubus.benjamin1@gmail.com', 127, 'pomme', '', 0x30666433356233373731343566363130323738616633373364376265383535632e6a7067, 'variÃ©tÃ© granny', 0, 5, '2015-05-27 13:50:17', 0, 0),
 (65, 785, '87587', 'Alsace', '8757', '87578', 127, '8757', '', 0x34366236636165633231306562366237653166303532643933663565316465362e6a7067, '875', 0, 7785, '2015-05-27 23:08:22', 0, 0),
-(66, 75014, 'PARIS', 'Ile de France', 'benji', 'dubus.benjamin1@gmail.com', 127, 'pomme', '', 0x32326133626361396330336162616136656636636231353138323230356135652e6a7067, 'granny', 0, 10, '2015-05-28 01:00:33', 0, 0),
-(67, 75014, 'PARIS', 'Ile de France', 'benji', 'dubus.benjamin1@gmail.com', 127, 'pomme', '', 0x31663937343661346534313633363262353866316630356335396530613461332e6a7067, 'granny', 0, 10, '2015-05-28 01:03:59', 0, 0),
-(68, 75014, 'PARIS', 'Ile de France', 'benji', 'dubus.benjamin1@gmail.com', 127, 'pomme', '', 0x65303764653430346337633764326464376662633636663038656236313333302e6a7067, 'granny', 0, 10, '2015-05-28 01:06:39', 0, 0),
-(69, 75014, 'PARIS', 'Ile de France', 'benji', 'dubus.benjamin1@gmail.com', 127, 'pomme', '', 0x32646133313466383132346464636334383665323461326266336234366637622e6a7067, 'granny', 0, 10, '2015-05-28 01:06:56', 0, 0),
-(70, 75014, 'PARIS', 'Ile de France', 'benji', 'dubus.benjamin1@gmail.com', 127, 'pommes', '', 0x65363261666562656262616439313036636363333632653637356666623931632e6a7067, 'gran', 0, 10, '2015-05-28 01:10:19', 0, 0),
-(71, 75014, 'PARIS', 'Ile de France', 'benji', 'dubus.benjamin1@gmail.com', 127, 'pommes', '', 0x61613038613838633865316366363239363432343532626635663638643734372e6a7067, 'gran', 0, 10, '2015-05-28 01:10:47', 0, 0),
-(72, 75014, 'PARIS', 'Ile de France', 'benji', 'dubus.benjamin1@gmail.com', 127, 'pommes', '', 0x64353838653838303063646463306166633831323931653664396531363236332e6a7067, 'gran', 0, 10, '2015-05-28 01:14:29', 0, 0),
-(73, 75014, 'PARIS', 'Alsace', 'benjamin', 'dubus.benjamin1@gmail.com', 127, 'pomme', '', 0x61396130663366656133393037323636303361323335336130616433386564612e6a7067, 'zezez', 0, 8, '2015-06-01 17:12:29', 0, 0),
-(74, 75014, 'PARIS', 'Alsace', 'benjamin', 'dubus.benjamin1@gmail.com', 127, 'pomme', '', 0x65623633623766313432353030623066376665616332376532623466363239342e6a7067, 'zezez', 0, 8, '2015-06-01 17:15:42', 0, 0),
-(75, 75014, 'PARIS', 'Alsace', 'benjamin', 'dubus.benjamin1@gmail.com', 127, 'pomme', '', 0x39623738666531356539383161666163303362616164666462663234323930362e6a7067, 'zezez', 0, 8, '2015-06-01 17:24:50', 0, 0),
 (76, 75014, 'PARIS', 'Alsace', 'dubus', 'dubus.benjamin1@gmail.com', 127, 'avocat', '', 0x61316336343963653961653365343062383866356330633738643462316633322e6a7067, 'qseaqq', 0, 3, '2015-06-01 17:29:47', 0, 0),
 (77, 75014, 'PARIS', 'Ile de France', 'dubus', 'dubus.benjamin1@gmail.com', 127, 'pommes de terre', '', 0x31323632313633326364373466346632653632646631386362613865353739312e6a7067, 'qseaqq', 0, 3, '2015-06-01 17:31:58', 0, 0),
-(78, 75014, 'PARIS', 'Ile de France', 'dubus', 'dubus.benjamin1@gmail.com', 127, 'pomme', '', 0x34346265326532383735353936646136366338353730363162373266646532302e6a7067, 'qseaqq', 0, 5, '2015-06-01 17:32:52', 0, 0);
+(80, 75015, 'PARIS', 'Ile de France', 'ben', 'dubus.benjamin1@gmail.com', 127, 'Aubergines', '6', 0x63353963656161363763353331663032316335303436363862633461326439342e6a7067, 'Cueillies ce matin ! ', 10, 3, '2015-06-10 17:19:35', 0, 0);
 
 -- --------------------------------------------------------
 
@@ -98,7 +85,7 @@ CREATE TABLE IF NOT EXISTS `categorie_a` (
   `nom_categoriea` varchar(255) NOT NULL,
   PRIMARY KEY (`id_categoriea`),
   KEY `nom_categoriea` (`nom_categoriea`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=16 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=19 ;
 
 --
 -- Contenu de la table `categorie_a`
@@ -119,7 +106,10 @@ INSERT INTO `categorie_a` (`id_categoriea`, `nom_categoriea`) VALUES
 (12, 'achat'),
 (13, 'achat'),
 (14, 'achat'),
-(15, 'achat');
+(15, 'achat'),
+(16, 'achat'),
+(17, 'achat'),
+(18, 'achat');
 
 -- --------------------------------------------------------
 
@@ -132,7 +122,7 @@ CREATE TABLE IF NOT EXISTS `categorie_produit` (
   `nom_categoriep` varchar(255) NOT NULL,
   PRIMARY KEY (`id_categoriep`),
   KEY `nom_categoriep` (`nom_categoriep`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=16 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=19 ;
 
 --
 -- Contenu de la table `categorie_produit`
@@ -151,9 +141,12 @@ INSERT INTO `categorie_produit` (`id_categoriep`, `nom_categoriep`) VALUES
 (10, ''),
 (11, ''),
 (12, ''),
+(18, ''),
 (13, 'legume'),
 (14, 'legume'),
-(15, 'legume');
+(15, 'legume'),
+(16, 'legume'),
+(17, 'legume');
 
 -- --------------------------------------------------------
 
@@ -222,7 +215,7 @@ CREATE TABLE IF NOT EXISTS `membre` (
   `region` varchar(30) NOT NULL,
   `ville` varchar(60) NOT NULL,
   PRIMARY KEY (`id_membre`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=39 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=40 ;
 
 --
 -- Contenu de la table `membre`
@@ -241,7 +234,8 @@ INSERT INTO `membre` (`id_membre`, `prenom`, `nom`, `pseudo`, `adressemail`, `to
 (35, 'Margaux', 'Pasquier', 'godmar', 'mar1@pasquier-desvignes.com', 165, 0, 'margaux1', 'margaux1', 611111111, 'Ile-de-France', 'Paris'),
 (36, 'Margaux', 'Pas', 'godmar1', 'mar2@pasquier-desvignes.com', 138, 0, 'margaux1', 'margaux1', 611111111, 'Ile-de-France', 'Paris'),
 (37, 'M', 'Pas', 'godmar2', 'mar3@pasquier-desvignes.com', 200, 0, 'margaux1', 'margaux1', 611111111, 'Ile-de-France', 'Paris'),
-(38, 'M', 'Pas', 'mar', 'mar4@pasquier-desvignes.com', 207, 0, 'margaux1', 'margaux1', 611111111, 'Ile-de-France', 'Paris');
+(38, 'M', 'Pas', 'mar', 'mar4@pasquier-desvignes.com', 207, 0, 'margaux1', 'margaux1', 611111111, 'Ile-de-France', 'Paris'),
+(39, 'benjamin', 'dubus', 'dubus.benjamin1@gmail.com', 'dubus.benjamin1@gmail.com', 263, 1, '136b709b6ed8b6d4d703322b808b5efdd9f5792b', '136b709b6ed8b6d4d703322b808b5efdd9f5792b', 633366744, 'Ile de France', 'PARIS');
 
 -- --------------------------------------------------------
 
