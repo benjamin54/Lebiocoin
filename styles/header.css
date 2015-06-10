@@ -671,7 +671,7 @@ element.style {
 	border-style: inset;
 	border-color: #FF0000;
 	border-width: 10px;
-	width:70%;
+	width:80%;
 }
 #annonce_gauche{
 	position: relative;
@@ -686,10 +686,10 @@ element.style {
 #annonce_droite{
 	position: absolute;
 	top:30%;
-	left:55%;
+	left:63%;
 	background-color: #00B000;
 	text-align: center;
-	width: 40%;
+	width: 32%;
 	border-radius: 10%;
 }
 #titreannonce{

@@ -143,6 +143,7 @@ while ($donnees = $reponse->fetch())
 		</p>
 	</section>
 	<section id="annonce_droite">
+		<p><?php echo htmlentities($donnees['region']); ?></p>
 		<p><?php echo htmlentities($donnees['codepostal']); ?></p>
 		<p><?php echo htmlentities($donnees['ville']); ?></p>
 		<p>Contacter : <a href="<?php 'echo htmlentities($donnees[\'mail\']);' ?>"><?php echo htmlentities($donnees['mail']); ?></a> </p>
