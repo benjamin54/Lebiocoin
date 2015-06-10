@@ -119,8 +119,15 @@ $reponse = $base->query('SELECT * FROM annonce WHERE date_ajout IS NOT NULL ORDE
 //d'abord selec legumes/fruits, puis localité et achat/echange
 //toutes annonces où la ville est Paris et offres d'achat, tri plus récent
 //$reponse = $base->query('SELECT * FROM annonce WHERE id_cat_produit = 1 AND ville = PARIS AND id_cat_annonce =1 ORDER BY date_ajout DESC ');
-
-
+?>
+<div id="recherche">
+		<form >
+			<input class="barre" type="search" name="recherche" placeholder="Rechercher"/>
+			<input class="bouton" type="submit" value="OK"/>
+		</form>
+		
+</div>
+<?php
 // On affiche chaque entrée une à une
 while ($donnees = $reponse->fetch())
 {
@@ -160,13 +167,7 @@ $prix='prix';
 $date_ajout='date_ajout';
 */
 ?>
-	<div id="recherche">
-		<form >
-			<input class="barre" type="search" name="recherche" placeholder="Rechercher"/>
-			<input class="bouton" type="submit" value="OK"/>
-		</form>
-		
-	</div>
+	
 
 <div id="bloc3">
 
