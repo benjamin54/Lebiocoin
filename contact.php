@@ -58,14 +58,14 @@
        			<article id="contact">
        				<form class="ctc" method="post" action="">
 
-       				<legend>Contactez nous</legend>
-       				<label class="titre_contact" for="name">Nom</label>
+       				<legend>CONTACTEZ-NOUS !</legend>
+       				<label class="titre_contact" for="name">Nom :</label>
        				<input type="text" name="name" id="name" class="contact_input" value="<?= (isset($_POST['name']) ? $_POST['name'] : ''); ?>" required/><br>
               <?php error('name'); ?>
               <label for="email" class="titre_contact" style='margin-right: -15px;'>Email</label>
               <input type="email" name="email" id="email" class="contact_input" value="<?= (isset($_POST['email']) ? $_POST['email'] : ''); ?>" required /><br>
               <?php error('email'); ?>
-							<label  class="titre_contact" for="sujet">Sujet</label>
+							<label  class="titre_contact" for="sujet">Sujet :</label>
        				<select name="sujet" id="sujet" class="contact_sujet" value="<?= (isset($_POST['sujet']) ? $_POST['sujet'] : ''); ?>" ><br>
           			<option value="problèmes de comptes">Problèmes de compte</option>
            			<option value="suggestion">Suggestion</option>
@@ -78,7 +78,7 @@
         			<textarea id="message" name="message" class="contact_message" placeholder="Votre message"></textarea>
               <?php error('message'); ?>
               </br>	
-						 	<input type="submit" value="Envoyer" id="envoyer">
+						 	<input type="submit" value="Envoyer">
 						  
 					</form>	
 				</article>		
