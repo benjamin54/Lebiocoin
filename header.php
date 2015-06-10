@@ -7,15 +7,7 @@
 	<title>LeBioCoin</title>
 	<link rel="stylesheet" href="styles/header.css">
 	<link rel="icon" type="image/png" href="Images/favicon-32x32.png" sizes="32x32"/> <!-- ici la favicon, ici pamplemousse, se mettant à côté du title -->
-	<script language="Javascript"> 
-		function bascule(elem) 
-		{ 
-// Quel est l'état actuel ? 
-etat=document.getElementById(elem).style.visibility; 
-if(etat=="hidden"){document.getElementById(elem).style.visibility="visible";} 
-else{document.getElementById(elem).style.visibility="hidden";} 
-} 
-</script> 
+	
 </head>
 
 <body>
@@ -30,7 +22,7 @@ else{document.getElementById(elem).style.visibility="hidden";}
   </ul>
 </div>	  
 
-	<div id="connexion" onClick="bascule('connex');"><a>Connexion</a></div>
+	<div id="connexion" onClick="bascule('connex');"><a href="connexion2.0.php">Connexion</a></div>
 
 	<div id="inscription"><a href="inscription.php">Inscription</a></div>
 
@@ -97,60 +89,8 @@ else{document.getElementById(elem).style.visibility="hidden";}
 		</center>
 	</footer>
 </div>
-<div id="connex" style="visibility: hidden" name="connex">
-	<h4>JE ME CONNECTE</h4>
-	<form method="post" action="">
-		<p1><label>Adresse mail</label> : <input id="pseudo" type="text" name="adressemail" required /> </p>
-		</br>
-		<p2><label>Mot de passe</label> : <input id="mdp" type="password" name="motdepasse1" required /></p>
-			<div id="oubli"><a href="mdpo.php">J'ai oublié mon mot de passe</a></div>
-			<p id="valider"><INPUT TYPE="submit" NAME="Valider" VALUE="VALIDER">
-			</form>
-		</div>
+
 
 	</body>
 
 	</html>
-<?php
-
-session_start();
-$bdd= new PDO('mysql:host=127.0.0.1;dbname=mabase','root','');
-if(isset($_POST['Valider']))
-{
-  $adressemail=($_POST['adressemail']);
-  $motdepasse1=sha1($_POST['motdepasse1']);
-  if(!empty($adressemail) AND !empty($motdepasse1))
-  {
-    $requser=$bdd->prepare("SELECT * FROM membre WHERE adressemail=? AND motdepasse1=?");
-  //execution requete
-    $requser->execute(array($adressemail,$motdepasse1));
-    $userexist=$requser->rowCount();
-    echo "$userexist";
-    // compte le nombre de rangée qui correspondent aux informations de l'utilisateur
-if($userexist==1){
-$userinfo=$requser->fetch();
-$_SESSION['id_membre']=$userinfo['id_membre'];
-$_SESSION['adressemail']=$userinfo['adressemail'];
-$_SESSION['prenom']=$userinfo['prenom'];
-$_SESSION['nom']=$userinfo['nom'];
-$_SESSION['pseudo']=$userinfo['pseudo'];
-$_SESSION['region']=$userinfo['region'];
-$_SESSION['num']=$userinfo['num'];
-$_SESSION['ville']=$userinfo['ville'];
-header("Location:profil.php?id_membre=".$_SESSION['id_membre']);
-
-}
-else{
-  $erreur="mauvais mail ou mot de passe";
-}
-}
-  else {
-    $erreur="Veuillez remplir tout les champs!";
-  }
-
-if(isset($erreur))
-{
-  echo'<font color="red">'.$erreur."</font>";
-}
-}
-?>
