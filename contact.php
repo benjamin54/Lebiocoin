@@ -62,7 +62,7 @@
        				<label class="titre_contact" for="name">Nom :</label>
        				<input type="text" name="name" id="name" class="contact_input" value="<?= (isset($_POST['name']) ? $_POST['name'] : ''); ?>" required/><br>
               <?php error('name'); ?>
-              <label for="email" class="titre_contact" style='margin-right: -15px;'>Email</label>
+              <label for="email" class="titre_contact" style='margin-right: -15px;'>Email:</label>
               <input type="email" name="email" id="email" class="contact_input" value="<?= (isset($_POST['email']) ? $_POST['email'] : ''); ?>" required /><br>
               <?php error('email'); ?>
 							<label  class="titre_contact" for="sujet">Sujet :</label>
