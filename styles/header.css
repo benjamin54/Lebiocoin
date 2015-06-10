@@ -125,7 +125,7 @@ title {
 	width:22%;
 	height:22%;
 	margin-left:77%;
-	margin-top:-80%;
+	margin-top:-60%;
 
 }
 #connex h4{
@@ -666,12 +666,12 @@ element.style {
 	font-family: georgia ;
 	background-color: #80F030;
 	position:relative;
-	top:40%;
-	left:30%;
+	top:10%;
+	left:0%;
 	border-style: inset;
 	border-color: #FF0000;
 	border-width: 10px;
-	width:40%;
+	width:70%;
 }
 #annonce_gauche{
 	position: relative;

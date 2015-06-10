@@ -1,4 +1,4 @@
-<?php include ('header.php') ?> 
+<?php include ('headermembre.php') ?> 
 <?php
 /*$_SESSION['codepostal']=$_POST['codepostal'];
 $_SESSION['ville']=$_POST['ville'];*/
@@ -50,7 +50,7 @@ $_SESSION['ville']=$_POST['ville'];*/
             </p>
 
             <p>
-              <label for="region">D&eacutepartement/R&eacutegion:<p2 style="color:red"> *</p2></label>
+              <label for="region">D&eacutepartement/R&eacutegion:<p2 style="color:red" value="<?php if (isset($_SESSION['region'])){echo $_SESSION['region'];} ?>"> *</p2></label>
               <select name="region" id="region">
 
                 <option value="Alsace" selected>Alsace</option>
@@ -104,15 +104,15 @@ $_SESSION['ville']=$_POST['ville'];*/
             <legend><b>Vos informations</b></legend>
             <p>
               <label for="nom">Votre nom:<p2 style="color:red"> *</p2></label>
-              <input type="text" name="nom" id="nom" value="" required/>
+              <input type="text" name="nom" id="nom" value="<?php if (isset($_SESSION['nom'])){echo $_SESSION['nom'];} ?>" required/>
             </p>
             <p>
               <label for="mail">Adresse mail:<p2 style="color:red"> *</p2></label>
-              <input type="mail" name="mail" id="mail" value="<?php if (isset($_SESSION['mail'])){echo $_SESSION['mail'];}?>" required/>
+              <input type="mail" name="mail" id="mail" value="<?php if (isset($_SESSION['adressemail'])){echo $_SESSION['adressemail'];}?>" required/>
             </p>
             <p>
               <label for="tel">Téléphone:<p2 style="color:red"> *</p2></label>
-              <input type="tel" name="tel" id="tel" value="<?php if (isset($_SESSION['tel'])){echo $_SESSION['tel'];}?>" required/>
+              <input type="tel" name="tel" id="tel" value="<?php if (isset($_SESSION['num'])){echo $_SESSION['num'];}?>" required/>
             </p>
           </fieldset>
 

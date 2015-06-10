@@ -19,8 +19,8 @@
                 <img src="Images/photo_profil_defaut.png" alt="photo de profil" id="photo_profil">  
                 
                 <div id="noms">
-                    <p> Dupont </p>
-                    <p> Jean</p>
+                    <p> <?php echo htmlentities($donnees['nom']) ?> </p>
+                    <p> <?php echo htmlentities($donnees['prenom']) ?></p>
                 </div>
 
                 <p> 20/05/1990</p>

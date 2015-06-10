@@ -56,7 +56,7 @@ else{document.getElementById(elem).style.visibility="hidden";}
               <li class="menu2"><a href="chat.php">Discussion membres</a></li><!--
             --><li class="menu2"><a href="annonce.php">Déposer Annonce</a></li><!--
             --><li class="menu2"><a href="inscription.php">Mes contacts</a></li><!--
-            --><li class="menu2"><a href="compte_utilisateur.php">Mon Compte</a></li><!--
+            --><li class="menu2"><a href="profil.php">Mon Compte</a></li><!--
         --><li class="menu2"><a href="inscription.php">Déconnexion</a></li>
     </ul>
 </div>
