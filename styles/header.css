@@ -6,7 +6,7 @@
   height:438px;
   overflow: hidden;
   position: relative;
-  background-image: url(YOUR-URL-IMAGE.png);
+  
 }
 .slid_1, .slid_2, .slid_3
 {
@@ -73,7 +73,7 @@
   90% {left:-114.4%;}
 }
 body {
-	background-image:url("http://www.google.fr/url?source=imglanding&ct=img&q=http://www.tao-mieux-etre.fr/web_images/pamplemousse-muffetflickr-cc.jpg&sa=X&ei=KadsVazYBMi1UbiwgNgM&ved=0CAkQ8wc4pgI&usg=AFQjCNHYb0JLWZ968Qpg9VzUwsZocn0uWQ");
+	background-image:url("pamplemousse-muffetflickr-cc.jpg");
 	background-attachment:fixed;
 	background-size: cover; 
 }

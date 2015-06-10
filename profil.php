@@ -10,7 +10,7 @@ $requser=$bdd->prepare('SELECT * FROM membre where id_membre=?');
 $requser->execute(array($getid));
 $userinfo=$requser->fetch();
 
-
+}
 ?>
 
 <?php include("headermembre.php") ?>
@@ -20,21 +20,10 @@ $userinfo=$requser->fetch();
   Pseudo=<?php echo $userinfo['pseudo']; ?>
   <br/>
   Mail=<?php echo $userinfo['adressemail']; ?>
-<?php  
-if (isset($_SESSION['id_membre']) AND $userinfo['id_membre']==$_SESSION['id_membre']{
-  ?>
-  <br/>
-<a href="#">Editer mon profil</a>
-<?php
-}
-?>
+
 
     </div>
 
   </body>
 
   </html>
-<?php
-}
-
-?>
