@@ -19,52 +19,6 @@ else{document.getElementById(elem).style.visibility="hidden";}
 
 
 
-<?php
-
-session_start();
-$bdd= new PDO('mysql:host=127.0.0.1;dbname=mabase','root','');
-if(isset($_POST['Valider']))
-{
-          $adressemail=($_POST['adressemail']);
-          $motdepasse1=sha1($_POST['motdepasse1']);
-          if((!empty($adressemail)) && (!empty($motdepasse1)))
-          {
-                $requser=$bdd->prepare("SELECT * FROM membre WHERE adressemail=".$adressemail." AND motdepasse1=".$motdepasse1."");
-              //execution requete
-                $requser->execute();
-
-                $userinfo=$requser->fetch();
-                echo $userinfo['id_membre'];
-                // compte le nombre de rangée qui correspondent aux informations de l'utilisateur
-                if(!empty($userinfo)){
-
-                    $_SESSION['id_membre']=$userinfo['id_membre'];
-                    $_SESSION['adressemail']=$userinfo['adressemail'];
-                    $_SESSION['prenom']=$userinfo['prenom'];
-                    $_SESSION['nom']=$userinfo['nom'];
-                    $_SESSION['pseudo']=$userinfo['pseudo'];
-                    $_SESSION['region']=$userinfo['region'];
-                    $_SESSION['num']=$userinfo['num'];
-                    $_SESSION['ville']=$userinfo['ville'];
-                    header("Location:profil.php?id_membre=".$_SESSION['id_membre']);
-
-                    echo "Vous êtes maintenant bien connecté sur LeBioCoin";
-                }
-
-                else{
-                    $erreur="Pas de compte crée !";
-                }
-        }
-          else {
-            $erreur="Veuillez remplir tout les champs!";
-          }
-
-        if(isset($erreur))
-        {
-          echo $erreur;
-        }
-}
-?>
 
 
 
@@ -167,6 +121,50 @@ if(isset($_POST['Valider']))
 </html> 
 
 
+<?php
+
+session_start();
+$bdd= new PDO('mysql:host=127.0.0.1;dbname=mabase','root','');
+if(isset($_POST['Valider']))
+{
+          $adressemail=($_POST['adressemail']);
+          $motdepasse1=sha1($_POST['motdepasse1']);
+          if((!empty($adressemail)) && (!empty($motdepasse1)))
+          {
+                $requser=$bdd->prepare("SELECT * FROM membre WHERE adressemail=".$adressemail." AND motdepasse1=".$motdepasse1."");
+              //execution requete
+                $requser->execute();
+
+                $userinfo=$requser->fetch();
+                echo $userinfo['id_membre'];
+                // compte le nombre de rangée qui correspondent aux informations de l'utilisateur
+                if(!empty($userinfo)){
+
+                    $_SESSION['id_membre']=$userinfo['id_membre'];
+                    $_SESSION['adressemail']=$userinfo['adressemail'];
+                    $_SESSION['prenom']=$userinfo['prenom'];
+                    $_SESSION['nom']=$userinfo['nom'];
+                    $_SESSION['pseudo']=$userinfo['pseudo'];
+                    $_SESSION['region']=$userinfo['region'];
+                    $_SESSION['num']=$userinfo['num'];
+                    $_SESSION['ville']=$userinfo['ville'];
+                    header("Location:profil.php?id_membre=".$_SESSION['id_membre']);
+                }
+
+                else{
+                    $erreur="Pas de compte crée !";
+                }
+        }
+          else {
+            $erreur="Veuillez remplir tout les champs!";
+          }
+
+        if(isset($erreur))
+        {
+          echo $erreur;
+        }
+}
+?>
 
 
 
